@@ -140,6 +140,10 @@ WSK_branch_3_upper = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = WSK_modifier_kobold_landing
+				duration = 7300
+			}
 		}
 	}
 	
@@ -154,6 +158,48 @@ WSK_branch_3_upper = {
 				type = all
 				is_core = ROOT
 			}
+		}
+		
+		effect = {
+			
+			random_owned_province = {
+				limit = {
+					area = lower_winebay_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			
+			every_owned_province = {
+				limit = {
+					area = lower_winebay_area
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			
+			lower_bloodwine_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_flats_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+			
+			
+			
+		
 			
 			
 		

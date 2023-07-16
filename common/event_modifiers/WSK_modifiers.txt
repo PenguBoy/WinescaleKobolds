@@ -1,0 +1,9 @@
+WSK_modifier_river_traps = {
+	local_hostile_attrition = 1
+	local_defensiveness = 0.2
+}
+
+WSK_modifier_kobold_landing = {
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}

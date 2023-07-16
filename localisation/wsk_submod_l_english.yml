@@ -34,7 +34,9 @@
   WSK_expansion_overseas_desc:0 "The side of the Imperial Winebay holds many riches and controlling both sides of the strait would cement our hold of it."
   WSK_secure_the_pearlywine_desc:0 "Secure the Pearlywine"
   WSK_secure_the_pearlywine_desc:0 "The Upper Pearlywine is home to many vineyards that are yet eluding out claws, we cannot let these people keep what is rightfully ours."
-  
+ #Modifiers
+  WSK_modifier_river_traps:0 "River Traps"
+  WSK_modifier_kobold_landing:0 "Winescale Raiders"
  #Religion
   dragon_court:0 "Dragon Court"
   OLD_DRAGON_PANTHEON:0 "Old Dragons"
