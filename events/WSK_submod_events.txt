@@ -18,16 +18,17 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 10
+		months = 2
 	}
 	
 	option = {
 		name = wiscko.1.a
-		
+			
 		81 = {
 			cede_province = WSK
 			add_core = WSK
 			change_culture = winescale_kobold
+			change_province_name = "Koboldalley"
 		}
 		
 		84 = {
@@ -41,26 +42,40 @@ country_event = {
 			add_core = WSK
 			change_culture = winescale_kobold
 		}
-		
+		WSK = {
+			add_truce_with = A01
+		}
+		WSK = {
+			add_truce_with = A16
+		}
+		WSK = {
+			add_truce_with = A15
+		}
+		WSK = {
+			add_truce_with = A18
+		}
 		WSK = {
 			define_ruler = {
-				name = "Korbax Winescale"
+				name = "Korbax"
+				dynasty = "Winescale"
 				adm = 2
 				dip = 5
 				mil = 6
-				age = 31
+				age = 53
+				claim = 95
 				culture = winescale_kobold
 			}
 		}
+			
 	}
 	
 	option = {
 		name = wiscko.1.b
-		
 		81 = {
 			cede_province = WSK
 			add_core = WSK
 			change_culture = winescale_kobold
+			change_province_name = "Koboldalley"
 		}
 		
 		84 = {
@@ -74,21 +89,33 @@ country_event = {
 			add_core = WSK
 			change_culture = winescale_kobold
 		}
-		
+		WSK = {
+			add_truce_with = A01
+		}
+		WSK = {
+			add_truce_with = A16
+		}
+		WSK = {
+			add_truce_with = A15
+		}
+		WSK = {
+			add_truce_with = A18
+		}
 		WSK = {
 			define_ruler = {
-				name = "Korbax Winescale"
+				name = "Korbax"
+				dynasty = "Winescale"
 				adm = 2
 				dip = 5
 				mil = 6
-				age = 31
+				age = 53
+				claim = 95
 				culture = winescale_kobold
 			}
 		}
 		switch_tag = WSK
 	}
 }
-
 		
 		
 	
