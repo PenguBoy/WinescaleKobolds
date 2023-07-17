@@ -28,7 +28,6 @@ country_event = {
 			cede_province = WSK
 			add_core = WSK
 			change_culture = winescale_kobold
-			change_province_name = "Koboldalley"
 		}
 		
 		84 = {
@@ -42,17 +41,53 @@ country_event = {
 			add_core = WSK
 			change_culture = winescale_kobold
 		}
-		WSK = {
-			add_truce_with = A01
-		}
-		WSK = {
-			add_truce_with = A16
-		}
-		WSK = {
-			add_truce_with = A15
-		}
-		WSK = {
-			add_truce_with = A18
+		hidden_effect = {
+			81 = {
+				center_of_trade = 2
+				change_province_name = "Kobold Alley"
+			}
+			WSK = {
+				add_truce_with = A01
+			}
+			WSK = {
+				add_truce_with = A10
+			}
+			WSK = {
+				add_truce_with = A16
+			}
+			WSK = {
+				add_truce_with = A15
+			}
+			WSK = {
+				add_truce_with = A18
+			}
+			lencenor_region = {
+				discover_country = WSK
+			}
+			west_dameshead_region = {
+				discover_country = WSK
+			}
+			east_dameshead_region = {
+				discover_country = WSK
+			}
+			dameshead_sea_region = {
+				discover_country = WSK
+			}
+			divenhal_sea_region = {
+				discover_country = WSK
+			}
+			the_borders_region = {
+				discover_country = WSK
+			}
+			esmaria_region = {
+				discover_country = WSK
+			}
+			WSK = {
+				add_manpower = 10
+				add_treasury = 120
+				add_prestige = 25
+			}
+				
 		}
 		WSK = {
 			define_ruler = {
@@ -75,7 +110,6 @@ country_event = {
 			cede_province = WSK
 			add_core = WSK
 			change_culture = winescale_kobold
-			change_province_name = "Koboldalley"
 		}
 		
 		84 = {
@@ -89,17 +123,52 @@ country_event = {
 			add_core = WSK
 			change_culture = winescale_kobold
 		}
-		WSK = {
-			add_truce_with = A01
-		}
-		WSK = {
-			add_truce_with = A16
-		}
-		WSK = {
-			add_truce_with = A15
-		}
-		WSK = {
-			add_truce_with = A18
+		hidden_effect = {
+			81 = {
+				center_of_trade = 2
+				change_province_name = "Kobold Alley"
+			}
+			WSK = {
+				add_truce_with = A01
+			}
+			WSK = {
+				add_truce_with = A10
+			}
+			WSK = {
+				add_truce_with = A16
+			}
+			WSK = {
+				add_truce_with = A15
+			}
+			WSK = {
+				add_truce_with = A18
+			}
+			lencenor_region = {
+				discover_country = WSK
+			}
+			west_dameshead_region = {
+				discover_country = WSK
+			}
+			east_dameshead_region = {
+				discover_country = WSK
+			}
+			dameshead_sea_region = {
+				discover_country = WSK
+			}
+			divenhal_sea_region = {
+				discover_country = WSK
+			}
+			the_borders_region = {
+				discover_country = WSK
+			}
+			esmaria_region = {
+				discover_country = WSK
+			}
+			WSK = {
+				add_manpower = 10
+				add_treasury = 120
+				add_prestige = 25
+			}
 		}
 		WSK = {
 			define_ruler = {
@@ -116,6 +185,53 @@ country_event = {
 		switch_tag = WSK
 	}
 }
+
+country_event = {
+	id = wiscko.2
+	title = wiscko.2.t
+	desc = wiscko.2.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	goto = 81
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Stay Kobold Alley
+		name = wiscko.2.a
+		
+		81 = {
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+	
+	option = { #Move Wineport
+		name = wiscko.2.b
+		
+		101 = {
+			move_capital_effect = yes
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+	
+	option = { #Move Bottlepoint
+		name = wiscko.2.c
+		
+		86 = {
+			move_capital_effect = yes
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+		
 		
 		
 	

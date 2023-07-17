@@ -11,3 +11,12 @@ WSK_modifier_kobold_landing = {
 WSK_modifier_blood_gold_wine = {
 	development_cost = -0.075
 }
+
+WSK_modifier_secured_west = {
+	fort_defense = 0.1
+}
+
+WSK_modifier_kobold_capital = {
+	local_defensiveness = 0.2
+	reelection_cost = -0.1
+}

@@ -10,6 +10,34 @@ WSK_branch_2_upper = {
 	}
 	has_country_shield = yes
 	
+	WSK_new_capital = {
+		icon = mission_hanseatic_city
+		required_missions = {
+			WSK_consolidate_homeland
+		}
+		position = 3
+		
+		provinces_to_highlight = {
+			lower_winebay_area = {
+				limit = {
+					NOT = { development = 20 }
+				}
+			}
+		}
+		
+		trigger = {
+			lower_winebay_area = {
+				development = 20
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.2
+			}
+		}
+	}
+	
 	WSK_expansion_overseas = {
 		icon = mission_conuer_50_development
 		required_missions = {
@@ -27,12 +55,12 @@ WSK_branch_2_upper = {
 		trigger = {
 			eastern_winebay_area = {
 				type = all
-				owner = ROOT
+				owned_by = ROOT
 				is_core = ROOT
 			}
 			tretunica_area = {
 				type = all
-				owner = ROOT
+				owned_by = ROOT
 				is_core = ROOT
 			}
 		}
@@ -112,6 +140,7 @@ WSK_branch_3_upper = {
 		}
 		position = 1
 		
+		
 		trigger = {
 			if = {
 				limit = { hre_size = 1 }
@@ -132,7 +161,7 @@ WSK_branch_3_upper = {
 		effect = {
 			if = {
 				limit = { hre_size = 1 }
-				capital_scope = {
+				every_owned_province = {
 					hre = yes
 				}
 			}
@@ -166,8 +195,14 @@ WSK_branch_3_upper = {
 	WSK_consolidate_homeland = {
 		icon = mission_diplomacy_missive
 		required_missions = {
+			WSK_safeguard_lorent
 		}
 		position = 2
+		
+		provinces_to_highlight = {
+			area = lower_winebay_area
+			NOT = { owned_by = ROOT }
+		}
 		
 		trigger = {
 			lower_winebay_area = {
@@ -186,10 +221,7 @@ WSK_branch_3_upper = {
 				change_culture = winescale_kobold
 			}
 			
-			every_owned_province = {
-				limit = {
-					area = lower_winebay_area
-				}
+			lower_winebay_area = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
@@ -221,16 +253,24 @@ WSK_branch_3_upper = {
 		}
 		position = 3
 		
+		provinces_to_highlight = {
+			OR = {
+				area = lower_bloodwine_area
+				area = southern_flats_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
 		trigger = {
 			southern_flats_area = {
 				type = all
-				owner = ROOT
+				owned_by = ROOT
 				is_core = ROOT
 			}
 			
 			lower_bloodwine_area = {
-				type_all
-				owner = ROOT
+				type = all
+				owned_by = ROOT
 				is_core = ROOT
 			}
 		}
@@ -251,10 +291,7 @@ WSK_branch_3_upper = {
 				change_culture = winescale_kobold
 			}
 			
-			every_owned_province = {
-				limit = {
-					area = lower_bloodwine_area
-				}
+			lower_bloodwine_area = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
@@ -320,16 +357,24 @@ WSK_branch_3_upper = {
 		}
 		position = 4
 		
+		provinces_to_highlight = {
+			OR = {
+				area = upper_bloodwine_area
+				area = upper_winebay_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
 		trigger = {
 			upper_winebay_area = {
 				type = all
-				owner = ROOT
+				owned_by = ROOT
 				is_core = ROOT
 			}
 			
 			upper_bloodwine_area = {
 				type_all
-				owner = ROOT
+				owned_by = ROOT
 				is_core = ROOT
 			}
 		}
@@ -374,6 +419,18 @@ WSK_branch_3_upper = {
 		}
 		position = 6
 		
+		provinces_to_highlight = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+					OR = {
+						NOT = { has_building = workshop }
+						NOT = { has_building = counting_house }
+					}
+				}
+			}
+		}
+		
 		trigger = {
 			every_owned_province = {
 				limit = {
@@ -410,21 +467,15 @@ WSK_branch_3_upper = {
 				}
 				change_culture = winescale_kobold
 			}
-			random_owned_province = {
-				limit = {
-					region = lencenor_region
-					NOT = { culture = winescale_kobold }
-				}
-				change_culture = winescale_kobold
-			}
 		}
 	}
 	
 	WSK_new_koboldic_idenity = {
 		icon = mission_war_chest
 		required_missions = {
-			WSK_masters_winebay
+			WSK_masters_winebay WSK_isle_of_venail
 		}
+		position = 7
 		
 		trigger = {
 			adm_power = 100
@@ -491,7 +542,176 @@ WSK_branch_3_upper = {
 	}
 }
 					
+######################################
+######Conquest Branch 4###############
+######################################
+WSK_branch_4_upper = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = WSK
+	}
+	has_country_shield = yes
+
+	WSK_subjugate_sorncost = {
+		icon = mission_war_chest
+		required_missions = {
+			WSK_travelling_bloodwine
+		}
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sorncost_vines_area
+				area = sornhills_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			sornhills_area= {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 			
+			sorncost_vines_area = {
+				type_all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					region = area = sorncost_vines_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					region = area = sornhills_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			
+			darom_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shrouded_coast_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	
+	WSK_push_west = {
+		icon = mission_war_chest
+		required_missions = {
+			WSK_subjugate_sorncost
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = darom_area
+				area = shrouded_coast_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			darom_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			
+			shrouded_coast_area = {
+				type_all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					region = area = darom_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					region = area = shrouded_coast_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			
+			add_country_modifier = {
+				name = WSK_modifier_secured_west
+				duration = 3650
+			}
+			
+			venail_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	WSK_isle_of_venail = {
+		icon = mission_war_chest
+		required_missions = {
+			WSK_push_west
+		}
+		position = 6
+		
+		provinces_to_highlight = {
+			area = venail_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			venail_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			venail_area = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_culture = winescale_kobold
+			}
+		}
+	}
+}
+		
+		
 			
 			
 			

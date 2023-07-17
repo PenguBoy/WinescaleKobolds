@@ -1,14 +1,11 @@
 KOB_2 = {
 	slot = 2
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		AND = {
-			culture_group = kobold
-			NOT = { tag = WSK }
-		}
+		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	
@@ -124,15 +121,12 @@ KOB_2 = {
 
 KOB_3 = {
 	slot = 3
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		AND = {
-			culture_group = kobold
-			NOT = { tag = WSK }
-		}
+		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	
@@ -423,15 +417,12 @@ KOB_3 = {
 
 KOB_4 = {
 	slot = 4
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		AND = {
-			culture_group = kobold
-			NOT = { tag = WSK }
-		}
+		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	
