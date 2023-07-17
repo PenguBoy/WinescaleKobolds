@@ -37,6 +37,7 @@
  #Modifiers
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
+  WSK_modifier_blood_gold_wine:0 "Blood, Wine and Gold"
  #Religion
   dragon_court:0 "Dragon Court"
   OLD_DRAGON_PANTHEON:0 "Old Dragons"

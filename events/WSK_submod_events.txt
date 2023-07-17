@@ -44,13 +44,11 @@ country_event = {
 		
 		WSK = {
 			define_ruler = {
-				name = "Silver"
-				dynasty = "Winescale"
+				name = "Korbax Winescale"
 				adm = 2
 				dip = 5
 				mil = 6
-				age = 53
-				claim = 95
+				age = 31
 				culture = winescale_kobold
 			}
 		}
@@ -79,13 +77,11 @@ country_event = {
 		
 		WSK = {
 			define_ruler = {
-				name = "Silver"
-				dynasty = "Winescale"
+				name = "Korbax Winescale"
 				adm = 2
 				dip = 5
 				mil = 6
-				age = 53
-				claim = 95
+				age = 31
 				culture = winescale_kobold
 			}
 		}

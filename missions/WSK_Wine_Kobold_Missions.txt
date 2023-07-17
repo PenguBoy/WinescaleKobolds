@@ -27,15 +27,31 @@ WSK_branch_2_upper = {
 		trigger = {
 			eastern_winebay_area = {
 				type = all
-				country_or_subject_holds = ROOT
+				owner = ROOT
+				is_core = ROOT
 			}
 			tretunica_area = {
 				type = all
-				country_or_subject_holds = ROOT
+				owner = ROOT
+				is_core = ROOT
 			}
 		}
 		
 		effect = {
+			random_owned_province = {
+				limit = {
+					area = tretunica_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					area = eastern_winebay_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
 			41 = {
 				add_permanent_claim = ROOT
 			}
@@ -151,7 +167,7 @@ WSK_branch_3_upper = {
 		icon = mission_diplomacy_missive
 		required_missions = {
 		}
-		position = 1
+		position = 2
 		
 		trigger = {
 			lower_winebay_area = {
@@ -196,6 +212,289 @@ WSK_branch_3_upper = {
 				add_permanent_claim = ROOT
 			}
 		}
+	}
+	
+	WSK_travelling_bloodwine = {
+		icon = mission_junk_boat
+		required_missions = {
+			WSK_consolidate_homeland
+		}
+		position = 3
+		
+		trigger = {
+			southern_flats_area = {
+				type = all
+				owner = ROOT
+				is_core = ROOT
+			}
+			
+			lower_bloodwine_area = {
+				type_all
+				owner = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					area = southern_flats_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					area = lower_winebay_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			
+			every_owned_province = {
+				limit = {
+					area = lower_bloodwine_area
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			####Sorncost####
+			sornhills_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sorncost_vines_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			####Overseas####
+			eastern_winebay_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tretunica_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			####Upper Lorent####
+			upper_winebay_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bloodwine_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	WSK_new_counts_of_lorent = {
+		icon = mission_burning_seperation
+		required_missions = {
+			WSK_travelling_bloodwine
+		}
+		position = 4
+		
+		trigger = {
+			upper_winebay_area = {
+				type = all
+				owner = ROOT
+				is_core = ROOT
+			}
+			
+			upper_bloodwine_area = {
+				type_all
+				owner = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_power_projection = {
+				type = 10_permanent_power_projection
+				amount = 10
+			}
+			random_owned_province = {
+				limit = {
+					area = upper_bloodwine_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					area = upper_winebay_area
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			
+			if = {
+				NOT = {
+					accepted_culture = high_lorentish
+				}
+				add_accepted_culture = high_lorentish
+			}
+			else = {
+				add_dip_power = 100
+			}
+			upgrade_wineport_wines = yes
+		}
+	}
+	
+	WSK_masters_winebay = {
+		icon = bohemian_crystal
+		required_missions = {
+			WSK_secure_the_pearlywine WSK_new_counts_of_lorent WSK_push_west
+		}
+		position = 6
+		
+		trigger = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+					OR = {
+						region = lencenor_region
+						region = west_dameshead_region
+					}
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = WSK_modifier_blood_gold_wine
+				duration = -1
+			}
+			upgrade_wineport_wines = yes
+			random_owned_province = {
+				limit = {
+					region = lencenor_region
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					region = lencenor_region
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+			random_owned_province = {
+				limit = {
+					region = lencenor_region
+					NOT = { culture = winescale_kobold }
+				}
+				change_culture = winescale_kobold
+			}
+		}
+	}
+	
+	WSK_new_koboldic_idenity = {
+		icon = mission_war_chest
+		required_missions = {
+			WSK_masters_winebay
+		}
+		
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		
+		effect = {
+			change_primary_culture = bloodwine_kobold
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							area = sorncost_vines_area
+							area = sornhills_area
+						}
+						culture = winescale_kobold
+					}
+					change_culture = sornwine_kobold
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = upper_bloodwine_area
+							area = upper_winebay_area
+							area = lower_bloodwine_area
+							area = lower_winebay_area
+						}
+						culture = winescale_kobold
+					}
+					change_culture = bloodwine_kobold
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = darom_area
+							area = shrouded_coast_area
+						}
+						culture = winescale_kobold
+					}
+					change_culture = mistywine_kobold
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = tretunica_area
+							area = eastern_winebay_area
+							area = pearlywine_area
+							area = damespearl_area
+						}
+						culture = winescale_kobold
+					}
+					change_culture = pearlywine_kobold
+				}
+				every_province = {
+					limit = {
+						area = venail_area
+						culture = winescale_kobold
+					}
+					change_culture = venailwine_kobold
+				}
+			}
+		}
+	}
+}
+					
+			
+			
+			
+			
 			
 			
 			
