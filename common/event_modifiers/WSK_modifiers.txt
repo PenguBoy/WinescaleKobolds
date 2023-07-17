@@ -20,3 +20,7 @@ WSK_modifier_kobold_capital = {
 	local_defensiveness = 0.2
 	reelection_cost = -0.1
 }
+
+WSK_modifiers_winebay_toll = {
+	province_trade_power_value = 15
+}

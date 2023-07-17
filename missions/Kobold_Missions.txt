@@ -6,6 +6,7 @@ KOB_2 = {
 	
 	potential = {
 		culture_group = kobold
+		NOT = { culture = winescale_kobold }
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	
@@ -126,6 +127,7 @@ KOB_3 = {
 	has_country_shield = yes
 	
 	potential = {
+		NOT = { culture = winescale_kobold }
 		culture_group = kobold
 		capital_scope = { superregion = western_cannor_superregion }
 	}
@@ -423,6 +425,7 @@ KOB_4 = {
 	
 	potential = {
 		culture_group = kobold
+		NOT = { culture = winescale_kobold }
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	
