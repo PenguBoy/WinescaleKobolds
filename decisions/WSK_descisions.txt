@@ -31,7 +31,7 @@ country_decisions = {
 				NOT = { has_province_modifier = WSK_kobold_hoard_20 }
 			}
 			NOT = { has_country_modifer = WSK_kobold_hoard_expanded }
-			has_mission = WSK_caves_fit_for_hoard
+			has_mission = WSK_the_beginning_of_a_hoard
 		}
 		
 		allow = {

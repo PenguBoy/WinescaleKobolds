@@ -828,6 +828,30 @@ WSK_branch_5_hoard = {
 		}
 	}
 	
+	WSK_the_beginning_of_a_hoard = {
+		icon = mission_pf_map_table
+		required_missions = {
+			WSK_caves_fit_for_hoard
+		}
+		position = 7
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			treasury = 1
+			treasurer = 1
+		}
+		
+		effect = {
+			100 = {
+				upgrade_hoard_effect = yes
+			}
+			add_treasury = -1
+		}
+	}
+	
 	WSK_purple_scale = {
 		icon = mission_pf_map_table
 		required_missions = {

@@ -56,6 +56,8 @@
   WSK_new_capital_desc:0 "Our initial landing was less than smooth and with little consideration for proper infrastructure. So now that we have settled down, it is time to choose an official capital."
   WSK_winebay_toll_title:0 "The Winebay Toll"
   WSK_winebay_toll_desc:0 "Controlling both sides of the Winebay's entrance puts us in a position where we can demand a toll on any merchants passing through who seek to access our wine markets."
+ #Custom Tooltips
+  has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
  #Modifiers
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
