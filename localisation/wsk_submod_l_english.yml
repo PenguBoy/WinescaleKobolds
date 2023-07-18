@@ -142,4 +142,33 @@
    wiscko.5.t:0 "A Purple Scale?"
    wiscko.5.d:0 "While preparing the cave network for various purposes, one of our soldiers discovered a large purple scale. Too small to be a dragon's scale we are left wondering what creature it came from."
    wiscko.5.a:0 "A curious addition to our Hoard!"
+  #Mysterious Quakes Event
+   wiscko.6.t:0 "Mysterious Shakes!"
+   wiscko.6.d:0 "While observing some of the dwarvers help carve the walls of the caves to make them more presentable, one of the dwarves noticed the ground shake slightly.\nNot wanting to upset his benefactors, he continued digging.\nBut when the rumblings became a bit more noticeable, he informed the foremand. The scultping efforts were subsequently put on halt for a few hours to inspect the walls for cracks and stability."
+   wiscko.6.a:0 "Odd!"
+  #Missing Gold Event
+   wiscko.7.t:0 "Gold is Missing!"
+   wiscko.7.d:0 "As our technocrat was roaming the caves to get a picture of the progress on the construction, he was approached by a panicked Kobold.\nSome of the gold stored in a side chamber had gone missing and he believed the Dwarves to be at fault.\nThe Dwarves however began claiming they saw one of the wards skimming crowns off the incoming loads.\n\nIt didn't take long for the group to sink into arguing until eventually the technocrat stepped in and announced a formal investigation to be launched into this matter."
+   wiscko.7.a:0 "Wretched Thief! Whoever they are!"
+  #Corpse Found
+   wiscko.8.t:0 "Corpse Found"
+   wiscko.8.d:0 "While adding a loading some gold dug up in the caves for minting, a worker stumbled upon the mangled corpse of a soldier, the body already cold, but the wounds still fresh.\nA Mass Panic breaks out as Dwarves, goblins and kobolds flee the caves."
+   wiscko.8.a:0 "Send in the guards! Protect the workers!
+  #Rumbling in the caves intensifies
+   wiscko.9.t:0 "The Rumblings get louder!"
+   wiscko.9.d:0 "After the last incident, every worker party must be accompanied by at least one squadron of soldiers. But as work continued under new conditions, the caves began to shake more frequently.\nSome of the Dwarves say it could be the Deep Hunters they heard rumors about from travelling Goblins.\nWhile some Kobold hardlines are confident it is a sign the gods don't want them to put there hoard here."
+   wiscko.9.a:0 "Double the Cave support! Double the guards!"
+  #Footsteps approaching
+   wiscko.10.t:0 "Are you hearing this?"
+   wiscko.10.d:0 "In the last weeks, the cave rumblings have quieted down.\nBut then on one day, heavy footsteps resonated through the cave network. And much to the shock of the workers and soldiers, these footsteps were approaching the hoard.\n\nThey were approaching fast!\n\nWhatever is coming, it is big!"
+   wiscko.10.a:0 "Brace yourself!"
+  #Around the corner event
+   wiscko.11.t:0 "It is coming!"
+   wiscko.11.d:0 "The steps began to get louder and louder. And as soldier began to steady their weapons and cave workers cowered behind their improvised shield wall, everyone understood it was either fight or die. It was too late to run or get reinforcements.\n\nIt was then when another quake hit the walls as the powerful creature rapidly approached their positions.\n\nThen another quake, the footsteps' echoes became almost deafening.\n\nAnd with a final quake, a large roar boomed through the caves.\nWhatever it was, it was right around the corner!"
+   wiscko.11.a:0 "Time to fight!"
+  #Dragon is here event
+   wiscko.12.t:0 "It is here!"
+   wiscko.12.d:0 "Everyone's nervers were on edge but as the creature came out of the deep it leaped past the line of defense. All that could be seen was a stripe of purple as the monster dashed past them towards the main hall.\nThe Kobolds sounded alarm that the hoard was in danger and every able bodied soldier rushed to the main hall, weapons in hand.\n\nBut when they arrived they couldn't believe their eyes. This was no creature looking to steal their gold...\n...it was a Dragon!\nBrilliant purple scales reflected the candlelight onto the walls.\nThe Kobolds achieved what their brethren never could, they attracted a dragon to their hoard. And as the reality sunk in, the Kobolds laid down their weapons and bowed before her."
+   wiscko.12.a:0 "Blessed be our Hoard!"
+   
    

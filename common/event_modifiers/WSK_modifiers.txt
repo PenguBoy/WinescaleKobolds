@@ -37,6 +37,10 @@ WSK_modifier_population_caves = {
 	global_unrest = 2
 }
 
+WSK_modifier_cave_rumblings = {
+	global_unrest = 1
+}
+
 
 ########################
 ##Scripted Hoard Effect#

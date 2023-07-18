@@ -451,7 +451,7 @@ country_event = {
 		name = wiscko.4.b
 	}
 }
-
+#Let the Hunt begin
 country_event = {
 	id = wiscko.5
 	title = wiscko.5.t
@@ -470,4 +470,191 @@ country_event = {
 		set_country_flag = WSK_let_dragon_hunting_begin_flag
 	}
 }
-			
+#Mysterious Quakes
+country_event = {
+	id = wiscko.6
+	title = wiscko.6.t
+	desc = wiscko.6.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_mission = WSK_purple_scale
+		has_country_flag = WSK_let_dragon_hunting_begin_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = { #Mysterious Quakes
+		name = wiscko.6.a
+		
+		add_country_modifier = {
+			name = WSK_modifier_cave_rumblings
+			duration = 365
+		}
+		set_country_flag = WSK_mysterious_quakes_flag
+	}
+}
+#Missing Gold
+country_event = {
+	id = wiscko.7
+	title = wiscko.7.t
+	desc = wiscko.7.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_mysterious_quakes_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = { #Missing Gold
+		name = wiscko.7.a
+		add_treasury = -200
+		
+		set_country_flag = WSK_missing_gold_flag
+	}
+}
+#Corpse Found
+country_event = {
+	id = wiscko.8
+	title = wiscko.8.t
+	desc = wiscko.8.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_missing_gold_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = wiscko.8.a
+		add_manpower = -0.001
+		add_stability = -1
+		set_country_flag = WSK_corpse_found_flag
+	}
+}
+#Rumblings get louder
+country_event = {
+	id = wiscko.9
+	title = wiscko.9.t
+	desc = wiscko.9.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_corpse_found_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = wiscko.9.a
+		
+		add_country_modifier = {
+			name = WSK_modifier_cave_rumblings
+			duration = 730
+		}
+		
+		set_country_flag = WSK_rumblings_get_louder_flag
+	}
+}
+#Footsteps approaching
+country_event = {
+	id = wiscko.10
+	title = wiscko.10.t
+	desc = wiscko.10.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_rumblings_get_louder_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = wiscko.10.a
+		
+		set_country_flag = WSK_footsteps_approaching_flag
+	}
+}
+#It is around the corner
+country_event = {
+	id = wiscko.11
+	title = wiscko.11.t
+	desc = wiscko.11.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_footsteps_approaching_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = wiscko.11.a
+		
+		set_country_flag = WSK_around_the_corner_flag
+	}
+}
+#Dragon is here
+country_event = {
+	id = wiscko.12
+	title = wiscko.12.t
+	desc = wiscko.12.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_around_the_corner_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = wiscko.12.a
+		add_stability = 2
+		add_prestige = 25
+		set_country_flag = WSK_dragon_arrived_flag
+	}
+}	
