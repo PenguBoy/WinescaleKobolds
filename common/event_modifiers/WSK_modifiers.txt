@@ -41,6 +41,10 @@ WSK_modifier_cave_rumblings = {
 	global_unrest = 1
 }
 
+WSK_modifier_koboldic_identity = {
+	num_accepted_cultures = 3
+}
+
 
 ########################
 ##Scripted Hoard Effect#

@@ -227,7 +227,8 @@ WSK_branch_3_upper = {
 			}
 			
 			change_religion = regent_court
-			set_country_flag = malliath_regent_court_deity_flag
+			custom_tooltip = malliath_regent_court_deity_tooltip
+			set_country_flag = malliath_available_flag
 			lower_winebay_area = {
 				type = all
 				limit = {
@@ -336,7 +337,7 @@ WSK_branch_3_upper = {
 			}
 			random_owned_province = {
 				limit = {
-					area = lower_winebay_area
+					area = lower_bloodwine_area
 					NOT = { culture = winescale_kobold }
 				}
 				change_culture = winescale_kobold
@@ -522,12 +523,24 @@ WSK_branch_3_upper = {
 		
 		effect = {
 			change_primary_culture = bloodwine_kobold
+			
+			add_accepted_culture = sornwine_kobold
+			add_accepted_culture = pearlywine_kobold
+			add_accepted_culture = venailwine_kobold
+			add_accepted_culture = mistywine_kobold
+			
+			add_country_modifier = {
+				name = WSK_modifier_koboldic_identity
+				duration = -1
+			}
+			
 			hidden_effect = {
 				every_province = {
 					limit = {
 						OR = {
 							area = sorncost_vines_area
 							area = sornhills_area
+							area = southern_flats_area
 						}
 						culture = winescale_kobold
 					}
@@ -897,6 +910,33 @@ WSK_branch_5_hoard = {
 			}
 		}
 	}
+	
+	WSK_dragon_overloard = {
+		icon = mission_pf_map_table
+		required_missions = {
+			WSK_purple_scale
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = has_finished_dragon_events_tooltip
+				
+				has_country_flag = WSK_dragon_arrived_flag
+			}
+		}
+		
+		effect = {
+			custom_tooltip = sevydeira_available_regent_court_tooltip
+			set_country_flag = sevydeira_available_flag
+			upgrade_hoard_effect = yes
+		}
+	}
+}
 		
 		
 			

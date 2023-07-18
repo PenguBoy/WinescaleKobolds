@@ -1,15 +1,32 @@
 
 # Do not change tags in here without changing every other reference to them.
 # If adding new dieties, make sure they are uniquely named
+####Regent Court exclusive######
+###########################################################################
+malliath = {
+	production_efficiency = 0.15
+	technology_cost = -0.1
+	
+	potential = {
+		religion = regent_court
+		NOT = { has_country_flag = sevydeira_available_flag }
+		has_country_flag = malliath_available_flag
+	}
+	
+	sprite = 5
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+####Dragon Court######
 ###########################################################################
 jyntas_the_brass = { #Balgar the Builder
 	build_cost = -0.1
 	artillery_power = 0.1
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 7
@@ -24,9 +41,7 @@ xyras_the_teal = { #Munas
 	leader_naval_manuever = 1
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -41,9 +56,7 @@ elkasas_the_white = {
 	hostile_attrition = 1
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -71,13 +84,16 @@ aakhet_the_bronze = {
 }
 ###################################################################################
 sevydeira_the_purple = { #Hunter of the Deep
-	improve_relations_modifier = 0.2
-	diplomats = 1
+	legitimacy = 1
+	republican_tradition = 0.3
+	country_diplomatic_power = 1
 	
 	potential = {
 		OR = {
 			religion = dragon_court
+			religion = regent_court
 		}
+		has_country_flag = sevydeira_available_flag
 	}
 	
 	sprite = 5
@@ -92,9 +108,7 @@ balris_the_gold = {
 	trade_efficiency = 0.1
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -109,9 +123,7 @@ iothoral_the_green = {
 	global_missionary_strength = 0.02
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -126,9 +138,7 @@ noivvyl_the_new_red = {
 	ae_impact = -0.1
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -143,9 +153,7 @@ tayekan_the_blue = {
 	spy_offence = 0.25
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
@@ -161,9 +169,7 @@ quissar_the_new_black = {
 
 	
 	potential = {
-		OR = {
-			religion = dragon_court
-		}
+		religion = dragon_court
 	}
 	
 	sprite = 5
