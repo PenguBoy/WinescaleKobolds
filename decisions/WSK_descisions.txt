@@ -1,0 +1,199 @@
+
+country_decisions = {
+	
+	WSK_expand_hoard_decision = {
+		major = yes
+		color = { 107 9 56 }
+		
+		potential = {
+			100 = {
+				OR = {
+					has_province_modifier = WSK_kobold_hoard_1
+					has_province_modifier = WSK_kobold_hoard_2
+					has_province_modifier = WSK_kobold_hoard_3
+					has_province_modifier = WSK_kobold_hoard_4
+					has_province_modifier = WSK_kobold_hoard_5
+					has_province_modifier = WSK_kobold_hoard_6
+					has_province_modifier = WSK_kobold_hoard_7
+					has_province_modifier = WSK_kobold_hoard_8
+					has_province_modifier = WSK_kobold_hoard_9
+					has_province_modifier = WSK_kobold_hoard_10
+					has_province_modifier = WSK_kobold_hoard_11
+					has_province_modifier = WSK_kobold_hoard_12
+					has_province_modifier = WSK_kobold_hoard_13
+					has_province_modifier = WSK_kobold_hoard_14
+					has_province_modifier = WSK_kobold_hoard_15
+					has_province_modifier = WSK_kobold_hoard_16
+					has_province_modifier = WSK_kobold_hoard_17
+					has_province_modifier = WSK_kobold_hoard_18
+					has_province_modifier = WSK_kobold_hoard_19
+				}
+				NOT = { has_province_modifier = WSK_kobold_hoard_20 }
+			}
+			NOT = { has_country_modifer = WSK_kobold_hoard_expanded }
+			has_mission = WSK_caves_fit_for_hoard
+		}
+		
+		allow = {
+			if = {
+				limit = {
+					100 = {
+				has_province_modifier = WSK_kobold_hoard_1
+					}
+				}
+				treasury = 100
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_2
+					}
+				}
+				treasury = 115
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_3
+					}
+				}
+				treasury = 130
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_4
+					}
+				}
+				treasury = 150
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_5
+					}
+				}
+				treasury = 170
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_6
+					}
+				}
+				treasury = 200
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_7
+					}
+				}
+				treasury = 230
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_8
+					}
+				}
+			treasury = 280
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_9
+					}
+				}
+				treasury = 330
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_10
+					}
+				}
+				treasury = 405
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_11
+					}
+			}
+				treasury = 480
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_12
+					}
+				}
+				treasury = 580
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_13
+					}
+				}
+				treasury = 750
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_14
+					}
+				}
+				treasury = 1000
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_15
+					}
+				}
+				treasury = 1500
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_16
+					}
+				}
+				treasury = 2500
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_17
+					}
+				}
+				treasury = 5000
+			}
+			else_if = {
+				limit = {
+					100 = {
+						has_province_modifier = WSK_kobold_hoard_18
+					}
+				}
+				treasury = 7500
+			}
+			else = {
+				treasury = 10000
+			}
+		}
+		
+		effect = {
+			
+			country_event = {
+				id = wiscko.4
+			}
+		}
+	}
+}
+				
+		
+		
+			
+					

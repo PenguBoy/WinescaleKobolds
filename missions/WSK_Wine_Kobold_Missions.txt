@@ -790,6 +790,7 @@ WSK_branch_5_hoard = {
 		required_missions = {
 			WSK_digging_operations
 		}
+		position = 6
 		
 		provinces_to_highlight = {
 			province_id = 100
@@ -824,6 +825,56 @@ WSK_branch_5_hoard = {
 			country_event = {
 				id = wiscko.3
 			}
+		}
+	}
+	
+	WSK_purple_scale = {
+		icon = mission_pf_map_table
+		required_missions = {
+			WSK_the_beginning_of_a_hoard
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = has_hoard_above_lvl_3_mission_tooltip
+				100 = {
+					OR = {
+						has_province_modifier = WSK_kobold_hoard_3
+						has_province_modifier = WSK_kobold_hoard_4
+						has_province_modifier = WSK_kobold_hoard_5
+						has_province_modifier = WSK_kobold_hoard_6
+						has_province_modifier = WSK_kobold_hoard_7
+						has_province_modifier = WSK_kobold_hoard_8
+						has_province_modifier = WSK_kobold_hoard_9
+						has_province_modifier = WSK_kobold_hoard_10
+						has_province_modifier = WSK_kobold_hoard_11
+						has_province_modifier = WSK_kobold_hoard_12
+						has_province_modifier = WSK_kobold_hoard_13
+						has_province_modifier = WSK_kobold_hoard_14
+						has_province_modifier = WSK_kobold_hoard_15
+						has_province_modifier = WSK_kobold_hoard_16
+						has_province_modifier = WSK_kobold_hoard_17
+						has_province_modifier = WSK_kobold_hoard_18
+						has_province_modifier = WSK_kobold_hoard_19
+						has_province_modifier = WSK_kobold_hoard_20
+					}
+				}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.5
+			}
+		}
+	}
+		
+		
 			
 			
 			

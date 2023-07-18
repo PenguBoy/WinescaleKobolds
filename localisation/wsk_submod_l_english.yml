@@ -63,6 +63,28 @@
   WSK_modifier_secured_west:0 "Secured the West"
   WSK_modifier_kobold_capital:0 "A Kobold Capital"
   WSK_modifiers_winebay_toll:0 "Winebay Toll"
+ #Hoard Modifiers
+  WSK_kobold_hoard_expanded:0 "Hoard expanded"
+  WSK_kobold_hoard_1:0 "Pathetic Hoard"
+  WSK_kobold_hoard_2:0 "Slightly Less Pathetic Hoard"
+  WSK_kobold_hoard_3:0 "Paltry Hoard"
+  WSK_kobold_hoard_4:0 "Miniscule Hoard"
+  WSK_kobold_hoard_5:0 "Teeny Hoard"
+  WSK_kobold_hoard_6:0 "Tiny Hoard"
+  WSK_kobold_hoard_7:0 "Small Hoard"
+  WSK_kobold_hoard_8:0 "Mediocre Hoard"
+  WSK_kobold_hoard_9:0 "Medium Hoard"
+  WSK_kobold_hoard_10:0 "Above average Hoard"
+  WSK_kobold_hoard_11:0 "Respectable Hoard"
+  WSK_kobold_hoard_12:0 "Big Hoard"
+  WSK_kobold_hoard_13:0 "Large Hoard"
+  WSK_kobold_hoard_14:0 "Vast Hoard"
+  WSK_kobold_hoard_15:0 "Massive Hoard"
+  WSK_kobold_hoard_16:0 "Enormous Hoard"
+  WSK_kobold_hoard_17:0 "Colossal Hoard"
+  WSK_kobold_hoard_18:0 "Mighty Hoard"
+  WSK_kobold_hoard_19:0 "Gargantuan Hoard"
+  WSK_kobold_hoard_20:0 "The Hoard of Hoards"
  #Religion
   dragon_court:0 "Dragon Court"
   OLD_DRAGON_PANTHEON:0 "Old Dragons"
@@ -88,20 +110,34 @@
    quissar_the_new_black:0 "Quissar"
    quissar_the_new_black_desc:0 ""
  #Decisions
-  wine_kobold_identity_title:0 "A new Kobold Identity"
-  wine_kobold_identity_desc:0 "We have long distinguished our brethren through the color of our scales, but alas no more. From this day forward, the Kobolds of the Winebay shall be a new breed of Kobold, one that distinguishes each other through the quality of their wine."
-  revive_winescale_identity_title:0 "Reclaim the Winescale"
-  revive_winescale_identity_desc:0 "The lands of the Winebay Kobolds have long lacked a homeland, it is time to change that."
+  #Expand the Hoard
+   WSK_expand_hoard_decision_title:0 "Expand our Hoard"
+   WSK_expand_hoard_decision_desc:0 "Our national treasury is ripe with shinies, time to fuel some of it into our glorious Hoard."
  #Events
   #Spawnable First Event
    wiscko.1.t:0 "The Burgundy Scale!"
    wiscko.1.d:0 "A minority among the Redscale Kobolds were always discriminated by their brethren, as they were cursed with darker colored scales as any other Kobold. On one day, they had enough of the killing and persecution that they preferred to wander across Lencenor.\nIt didn't take long for these Kobolds to be picked up by Lorentish Guards but they did not fight, they pleaded. And as their leader requested an audience with the person who ruled these lands, and after long begging and pleading he was brought before Kylian VI.\nThe benevolent king listened to the plight of the small monster as he explained his people's desire for a place to settle free of discrimination and bloodshed. But the King was already hatching a plan.\nHe offered the Kobolds a place in his empire if they were able to claw it from the hands of the Winebayers, even offering to equip them with weapons and tools for the quest.\nThe Kobold accepted the offer but just as Kylian planned to stab the Kobolds in the back later, so knew the leader that such a knife to the spine was not unlikely.\n\n\nTravelling down the Bloodwine at night, the Kobolds took out severl borderguards until they stood at the gates of the Foxalley.\nAfter a week of heavy fighting in the streets and a series of Miscommunications between Rubenaire and the Winebay League, the Kobolds managed to to occupy a series of coastal cities.\n\n\nWith newfound pride about their color they name their clan the Winescale in honor of their new homeland."
    wiscko.1.a:0 "Good Riddance!"
    wiscko.1.b:0 "We are the Winescale"
+  #New Capital
    wiscko.2.t:0 "A New Capital"
    wiscko.2.d:0 "We have to choose where our glorious capital hoard will be so we can set up proper defenses."
    wiscko.2.a:0 "Stay in Kobold Alley!"
    wiscko.2.b:0 "Move the hoard to Wineport"
    wiscko.2.c:0 "Bottlepoint is the right place."
-  #Mission Events
-  
+  #Explore Aenhill Caves
+   wiscko.3.t:0 "Explore the Caves!"
+   wiscko.3.d:0 "As we discovered what looks like an extensive cave network underneath the Aenhill, we need to determind who we use to explore and map these caves."
+   wiscko.3.a:0 "Hire Mercenaries"
+   wiscko.3.b:0 "Use our own manpower"
+   wiscko.3.c:0 "Force local kobolds to explore"
+  #Expand Hoard event
+   wiscko.4.t:0 "Expand the Hoard!"
+   wiscko.4.d:0 "Some of the crowns in our treasury would better off in our Hoard instead."
+   wiscko.4.a:0 "More Gold for Dragon Gods!"
+   wiscko.4.b:0 "Maybe another time."
+  #Purple Scale found event
+   wiscko.5.t:0 "A Purple Scale?"
+   wiscko.5.d:0 "While preparing the cave network for various purposes, one of our soldiers discovered a large purple scale. Too small to be a dragon's scale we are left wondering what creature it came from."
+   wiscko.5.a:0 "A curious addition to our Hoard!"
+   

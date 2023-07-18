@@ -6,7 +6,7 @@ country_event = {
 	id = wiscko.1
 	title = wiscko.1.t
 	desc = wiscko.1.d
-	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	picture = SHIP_SAILING_eventPicture
 	goto = 81
 	
 	fire_only_once = yes
@@ -190,7 +190,7 @@ country_event = {
 	id = wiscko.2
 	title = wiscko.2.t
 	desc = wiscko.2.d
-	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	picture = COURT_eventPicture
 	goto = 81
 	
 	fire_only_once = yes
@@ -231,8 +231,243 @@ country_event = {
 			}
 		}
 	}
+}
 		
-		
+country_event = {
+	id = wiscko.3
+	title = wiscko.3.t
+	desc = wiscko.3.d
+	picture = SAD_MERCHANT_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
 		
 	
+	option = { #Hire Mercenaries to explore the caves
+		name = wiscko.3.a
+		add_treasury = -100
+		add_country_modifier = {
+			name = WSK_modifier_merc_caves
+			duration = 1825
+		}
+	}
+	
+	option = { #Use soldiers to explore caves
+		name = wiscko.3.b
+		add_manpower = -5
+		add_country_modifier = {
+			name = WSK_modifier_soldiers_caves
+			duration = 1825
+		}
+	}
+	
+	option = { #Use local peasants to explore
+		name = wiscko.3.a
+		random_owned_province = {
+			limit = {
+				base_tax = 3
+			}
+			add_base_tax = -2
+		}
+		add_country_modifier = {
+			name = WSK_modifier_population_caves
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.4
+	title = wiscko.4.t
+	desc = wiscko.4.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #expand hoard
+		name = wiscko.4.a
+		if = {
+			limit = {
+				100 = {
+			has_province_modifier = WSK_kobold_hoard_1
+				}
+			}
+			add_treasury = -100
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_2
+				}
+			}
+			add_treasury = -115
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_3
+				}
+			}
+			add_treasury = -130
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_4
+				}
+			}
+			add_treasury = -150
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_5
+				}
+			}
+			add_treasury = -170
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_6
+				}
+			}
+			add_treasury = -200
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_7
+				}
+			}
+			add_treasury = -230
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_8
+				}
+			}
+			add_treasury = -280
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_9
+				}
+			}
+			add_treasury = -330
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_10
+				}
+			}
+			add_treasury = -405
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_11
+				}
+			}
+			add_treasury = -480
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_12
+				}
+			}
+			add_treasury = -580
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_13
+				}
+			}
+			add_treasury = -750
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_14
+				}
+			}
+			add_treasury = -1000
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_15
+				}
+			}
+			add_treasury = -1500
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_16
+				}
+			}
+			add_treasury = -2500
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_17
+				}
+			}
+			add_treasury = -5000
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_18
+				}
+			}
+			add_treasury = -7500
+		}
+		else = {
+			add_treasury = -10000
+		}
+		100 = {
+			upgrade_hoard_effect = yes
+		}
+		add_country_modifier = {
+			name = WSK_kobold_hoard_expanded
+			duration = 5475
+		}
+	}
+	
+	option = {
+		name = wiscko.4.b
+	}
+}
+
+country_event = {
+	id = wiscko.5
+	title = wiscko.5.t
+	desc = wiscko.5.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Only one option: This event sets the flag for the dragon horror events
+		name = wiscko.5.a
+		
+		add_prestige = 10
+		set_country_flag = WSK_let_dragon_hunting_begin_flag
+	}
+}
 			
