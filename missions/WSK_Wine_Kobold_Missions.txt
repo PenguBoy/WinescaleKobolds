@@ -747,8 +747,83 @@ WSK_branch_4_upper = {
 		}
 	}
 }
+######################################
+######Hoard Branch 5##################
+######################################	
+WSK_branch_5_hoard = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = WSK
+	}
+	has_country_shield = yes
+
+	WSK_digging_operations = {
+		icon = mission_cannons_firing
+		required_missions = {
+			WSK_subjugate_sorncost
+		}
+		position = 5
 		
+		provinces_to_highlight = {
+			province_id = 100
+		}
 		
+		trigger = {
+			treasury = 30
+			OR = {
+				philosopher = 1
+				natural_scientist = 1
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.3
+			}
+		}
+	}
+	
+	WSK_caves_fit_for_hoard = {
+		icon = mission_subdue_rajputana
+		required_missions = {
+			WSK_digging_operations
+		}
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			
+			if = {
+				limit = { exists = A20 }
+				A20 = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+				treasury = 50
+			}
+			else = {
+				treasury = 75
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = { exists = A20 }
+				add_treasury = -50
+			}
+			else = {
+				add_treasury = -75
+			}
+				
+			country_event = {
+				id = wiscko.3
+			}
 			
 			
 			
