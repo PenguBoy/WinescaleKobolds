@@ -15,6 +15,7 @@
   mistywine_kobold:0 "Mistywine Kobold"
   sornwine_kobold:0 "Sornywine Kobold"
   bloodwine_kobold:0 "Bloodywine Kobold"
+  silmunywine_kobold:0 "Silmuneywine Kobold"
  #Gov Reforms
   winemake_technocracy_republic_reform:0 "Winemaker Technocracy"
   winemake_technocracy_republic_reform_desc:0 "Born out of Koboldic ingenuity and the mercantile and economic situation of the winebay."
@@ -85,12 +86,16 @@
   WSK_interior_riverways_desc:0 "The Interior Riverways in the Western Dameshead are the source of much of the local trade flow, with them under our control we can slowly weaken Wesdam."
   WSK_crush_wesdam_title:0 "Crush Wesdam"
   WSK_crush_wesdam_desc:0 "Wesdam has been a thorn in our side for too long, because as long as they control the Módgate our vineyards won't be safe from Northern invaders."
+  WSK_garrison_act_title:0 "The Garrison Expansion Act"
+  WSK_garrison_act_desc:0 "With Kobolds working new vineyards in different parts of the country, we can utilize some of the excess migrants and population to expand our garrisons and border patrols."
  #Custom Tooltips
   has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
   has_finished_dragon_events_tooltip:0 "Have discovered the origin of the Purple Scale"
   sevydeira_available_regent_court_tooltip:0 "Sevydeira is now available as a personal deity for the Regent Court.\nMalliath is no longer available as a deity for the Regent Court."
   malliath_regent_court_deity_tooltip:0 "Malliath is now available as a personal deity for the Regent Court."
   is_winekobold_region_tooltip:0 "Is in the South Lencenor Region"
+  provinces_now_produce_wine_tooltip:0 "Many provinces across our nation will now produce wine."
+  kobolds_settle_wesdam_tooltip:0 "Kobolds will settle down alongside the Silmunaroy."
  #Modifiers
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
@@ -103,6 +108,7 @@
   WSK_modifier_invested_wine:0 "Expanded Vineyards"
   WSK_modifier_kobold_cities:0 "Kobold Cities"
   WSK_modifier_fortified_frontier:0 "Massively Expanded Garrisons"
+  WSK_modifier_immigration_port:0 "Major Immigration Port"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Pathetic Hoard"

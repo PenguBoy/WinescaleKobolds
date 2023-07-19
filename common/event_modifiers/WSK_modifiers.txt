@@ -60,6 +60,11 @@ WSK_modifier_fortified_frontier = {
 	local_garrison_size = 0.5
 }
 
+WSK_modifier_immigration_port = {
+	province_trade_power_value = 15
+	local_unrest = 2
+}
+
 
 ########################
 ##Scripted Hoard Effect#

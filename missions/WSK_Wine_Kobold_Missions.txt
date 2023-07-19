@@ -62,6 +62,9 @@ WSK_branch_1 = {
 				area = shrouded_coast_area
 				area = darom_area
 				area = southern_flats_area
+				area = pearlywine_area
+				area = carneteria_area
+				area = woodwell_area
 			}
 			NOT = {
 				AND = {
@@ -72,6 +75,21 @@ WSK_branch_1 = {
 		}
 		
 		trigger = {
+			woodwell_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
+			carneteria_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
+			pearlywine_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
 			darom_area = {
 				type = all
 				has_production_building_trigger = yes
@@ -87,33 +105,51 @@ WSK_branch_1 = {
 				has_production_building_trigger = yes
 				development = 12
 			}
-			trade_goods_produced_amount = {
+			trading_part = {
 				trade_goods = wine
-				amount = 33
+				amount = 0.33
 			}
 		}
 		
 		effect = {
-			102 = {
-				change_trade_goods = wine
-			}
-			58 = {
-				change_trade_goods = wine
-			}
-			78 = {
-				change_trade_goods = wine
-			}
-			83 = {
-				change_trade_goods = wine
-			}
-			82 = {
-				change_trade_goods = wine
-			}
-			96 = {
-				change_trade_goods = wine
-			}
-			105 = {
-				change_trade_goods = wine
+			custom_tooltip = provinces_now_produce_wine_tooltip
+			hidden_effect = {
+				102 = {
+					change_trade_goods = wine
+				}
+				58 = {
+					change_trade_goods = wine
+				}
+				78 = {
+					change_trade_goods = wine
+				}
+				83 = {
+					change_trade_goods = wine
+				}
+				82 = {
+					change_trade_goods = wine
+				}
+				96 = {
+					change_trade_goods = wine
+				}
+				105 = {
+					change_trade_goods = wine
+				}
+				22 = {
+					change_trade_goods = wine
+				}
+				20 = {
+					change_trade_goods = wine
+				}
+				31 = {
+					change_trade_goods = wine
+				}
+				40 = {
+					change_trade_goods = wine
+				}
+				32 = {
+					change_trade_goods = wine
+				}
 			}
 		}
 	}
@@ -329,7 +365,7 @@ WSK_branch_2 = {
 	WSK_interior_riverways = {
 		icon = mission_conquer_riga
 		required_missions = {
-			WSK_expansion_overseas
+			WSK_secure_the_pearlywine
 		}
 		position = 5
 		
@@ -371,13 +407,21 @@ WSK_branch_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			windtower_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
 	WSK_crush_wesdam = {
 		icon = mission_conquer_riga
 		required_missions = {
-			WSK_expansion_overseas
+			WSK_interior_riverways
 		}
 		position = 5
 		
@@ -385,6 +429,7 @@ WSK_branch_2 = {
 			OR = {
 				area = carneteria_area
 				area = wesdam_area
+				area = windtower_area
 			}
 		}
 		
@@ -395,6 +440,11 @@ WSK_branch_2 = {
 				is_core = ROOT
 			}
 			carneteria_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			windtower_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -419,19 +469,66 @@ WSK_branch_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			
-			10 = {
-				if = {
-					limit = {
-						primary_culure = bloodwine_kobold
+			custom_tooltip = kobolds_settle_wesdam_tooltip
+			hidden_effect = {
+				10 = {
+					if = {
+						limit = {
+							primary_culure = bloodwine_kobold
+						}
+						change_culture = silmunywine_kobold
 					}
-					change_culture = pearlywine_kobold
+					else = {
+						change_culture = winescale_kobold
+					}
 				}
-				else = {
-					change_culture = winescale_kobold
+				15 = {
+					if = {
+						limit = {
+							primary_culure = bloodwine_kobold
+						}
+						change_culture = silmunywine_kobold
+					}
+					else = {
+						change_culture = winescale_kobold
+					}
+				}
+				20 = {
+					if = {
+						limit = {
+							primary_culure = bloodwine_kobold
+						}
+						change_culture = silmunywine_kobold
+					}
+					else = {
+						change_culture = winescale_kobold
+					}
+				}
+				19 = {
+					if = {
+						limit = {
+							primary_culure = bloodwine_kobold
+						}
+						change_culture = silmunywine_kobold
+					}
+					else = {
+						change_culture = winescale_kobold
+					}
+				}
+				13 = {
+					if = {
+						limit = {
+							primary_culure = bloodwine_kobold
+						}
+						change_culture = silmunywine_kobold
+					}
+					else = {
+						change_culture = winescale_kobold
+					}
 				}
 			}
 		}
+	}
 		
 	
 	
@@ -902,6 +999,7 @@ WSK_branch_3 = {
 			add_accepted_culture = pearlywine_kobold
 			add_accepted_culture = venailwine_kobold
 			add_accepted_culture = mistywine_kobold
+			add_accepted_culture = silmunywine_kobold
 			
 			
 			
@@ -950,6 +1048,18 @@ WSK_branch_3 = {
 						culture = winescale_kobold
 					}
 					change_culture = pearlywine_kobold
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = neckcliffe_area
+							area = windtower_area
+							area = carneteria_area
+							area = wesdam_area
+						}
+						culture = winescale_kobold
+					}
+					change_culture = silmunywine_kobold
 				}
 				every_province = {
 					limit = {
@@ -1126,7 +1236,15 @@ WSK_branch_4 = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
-				change_culture = winescale_kobold
+				if = {
+					limit = {
+						primary_culure = bloodwine_kobold
+					}
+					change_culture = venailwine_kobold
+				}
+				else = {
+					change_culture = winescale_kobold
+				}
 			}
 		}
 	}

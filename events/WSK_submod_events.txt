@@ -681,7 +681,15 @@ country_event = {
 		capital_scope = {
 			add_base_tax = 2
 		}
-		set_country_flag = WSK_flood_begins_flag
+		random_owned_province = {
+			limit = {
+				is_winekobold_region = yes
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = WSK_modifier_immigration_port
+				duration = -1
+			}
 	}
 }
 

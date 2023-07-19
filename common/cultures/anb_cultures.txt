@@ -1492,6 +1492,10 @@ wine_kobold_g = {
 		primary = WSK
 	}
 	
+	silmunywine_kobold = {
+		primary = WSK
+	}
+	
 	dynasty_names = {
 		Winesinger Scalebrewer Grapescale Winescale Winetail Vineyardtrapper Trapsetter Winespike Grapesinger Pearlyscale Mistyscale Sornyscale Venailyscale Bloodyscale
 		Lowear Hardwax Broadnose Smallbristle Talltooth Goodflame Losteye Smallpick Smallspike Smalltail Lazyteeth Trapsmith Trapmaster

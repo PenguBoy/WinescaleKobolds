@@ -12,7 +12,9 @@ WSK_great_flood_disaster = {
 	can_start = {
 		has_any_disaster = no
 		has_mission = WSK_rapid_urbanization
-		has_country_flag = WSK_flood_begins_flag
+		any_owned_province = {
+			has_province_modifier = WSK_modifier_immigration_port
+		}
 	}
 	
 	
