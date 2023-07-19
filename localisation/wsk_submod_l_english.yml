@@ -4,6 +4,9 @@
   WSK_ADJ:0 "Winescale"
   WINE_KOBOLD_LEAFUE:0 "Wine Kobold League"
   WINE_KOBOLD_LEAFUE_ADJ:0 "Wine Kobold"
+ #Disaster
+  WSK_great_flood_disaster:0 "The Great Flood"
+  desc_WSK_great_flood_disaster:0 "Our nation is suffering from housing shortages, overwhelmed administration and poverty."
  #cultures
   winescale_kobold:0 "Winescale Kobold"
   wine_kobold_g:0 "Wine Kobold"

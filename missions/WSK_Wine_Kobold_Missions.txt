@@ -258,6 +258,29 @@ WSK_branch_2 = {
 			}
 		}
 	}
+	
+	WSK_great_flood = {
+		icon = mission_green_village
+		required_missions = {
+			WSK_rapid_urbanization
+		}
+		position = 10
+		
+		trigger = {
+			has_disaster = WSK_great_flood_disaster
+		}
+		
+		effect = {
+			define_ruler = {
+				name = "Maranaxa Shrewdclaw"
+				age = 20
+				adm = 6
+				dip = 6
+				mil = 3
+				female = yes
+			}
+			
+				
 }
 ######################################
 ######Branch 3########################
