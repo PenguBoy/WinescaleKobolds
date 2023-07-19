@@ -13,9 +13,9 @@ WSK_branch_1 = {
 	WSK_winebay_toll = {
 		icon = mission_early_game_buildings
 		required_missions = {
-			WSK_secure_the_pearlywine
+			WSK_expansion_overseas
 		}
-		position = 6
+		position = 5
 		
 		provinces_to_highlight = {
 			OR = {
@@ -47,6 +47,143 @@ WSK_branch_1 = {
 				}
 			}
 			upgrade_wineport_wines = yes
+		}
+	}
+	
+	WSK_fertile_soil_act = {
+		icon = mission_green_village
+		required_missions = {
+			WSK_great_flood
+		}
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = shrouded_coast_area
+				area = darom_area
+				area = southern_flats_area
+			}
+			NOT = {
+				AND = {
+					has_production_building_trigger = yes
+					development = 12
+				}
+			}
+		}
+		
+		trigger = {
+			darom_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
+			shrouded_coast_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
+			southern_flats_area = {
+				type = all
+				has_production_building_trigger = yes
+				development = 12
+			}
+			trade_goods_produced_amount = {
+				trade_goods = wine
+				amount = 33
+			}
+		}
+		
+		effect = {
+			102 = {
+				change_trade_goods = wine
+			}
+			58 = {
+				change_trade_goods = wine
+			}
+			78 = {
+				change_trade_goods = wine
+			}
+			83 = {
+				change_trade_goods = wine
+			}
+			82 = {
+				change_trade_goods = wine
+			}
+			96 = {
+				change_trade_goods = wine
+			}
+			105 = {
+				change_trade_goods = wine
+			}
+		}
+	}
+	
+	WSK_garrison_act = {
+		icon = mission_green_village
+		required_missions = {
+			WSK_fertile_soil_act
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 102
+				province_id = 78
+				province_id = 58
+				province_id = 108
+				province_id = 74
+				province_id = 114
+				province_id = 69
+				province_id = 61
+				province_id = 67
+				province_id = 28
+				province_id = 17
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					province_id = 102
+					province_id = 78
+					province_id = 58
+					province_id = 108
+					province_id = 74
+					province_id = 114
+					province_id = 69
+					province_id = 61
+					province_id = 67
+					province_id = 28
+					province_id = 17
+				}
+				fort_level = 2
+				value = 5
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 102
+						province_id = 78
+						province_id = 58
+						province_id = 108
+						province_id = 74
+						province_id = 114
+						province_id = 69
+						province_id = 61
+						province_id = 67
+						province_id = 28
+						province_id = 17
+					}
+					fort_level = 2
+				}
+				add_province_modifier = {
+					name = WSK_modifier_fortified_frontier
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -170,14 +307,138 @@ WSK_branch_2 = {
 					duration = -1
 				}
 			}
+			pearlywine_area_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			woodwell_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
+	
+	WSK_interior_riverways = {
+		icon = mission_conquer_riga
+		required_missions = {
+			WSK_expansion_overseas
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = woodwell_area
+				area = pearlywine_area
+			}
+		}
+		
+		trigger = {
+			woodwell_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			pearlywine_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+		
+			carneteria_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wesdam_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	WSK_crush_wesdam = {
+		icon = mission_conquer_riga
+		required_missions = {
+			WSK_expansion_overseas
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = carneteria_area
+				area = wesdam_area
+			}
+		}
+		
+		trigger = {
+			wesdam_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			carneteria_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+		
+			neckcliffe_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			damespearl_area_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			10 = {
+				if = {
+					limit = {
+						primary_culure = bloodwine_kobold
+					}
+					change_culture = pearlywine_kobold
+				}
+				else = {
+					change_culture = winescale_kobold
+				}
+			}
+		}
+		
 	
 	
 	WSK_industrial_wine = {
 		icon = glory_to_turin
 		required_missions = {
-			WSK_new_koboldic_idenity
+			WSK_new_koboldic_idenity WSK_crush_wesdam
 		}
 		position = 8
 		
@@ -248,6 +509,7 @@ WSK_branch_2 = {
 					is_winekobold_region = yes
 					OR = {
 						has_terrain = farmlands
+						has_terrain = city_terrain
 						trade_goods = wine
 					}
 				}
@@ -279,7 +541,9 @@ WSK_branch_2 = {
 				mil = 3
 				female = yes
 			}
-			
+			change_government_reform_progress = 20
+		}
+	}
 				
 }
 ######################################

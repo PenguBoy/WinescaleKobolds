@@ -77,6 +77,14 @@
   WSK_industrial_wine_desc:0 "With a solid hold on the wine producing areas of Lencenor, we can now put our gaze towards expanding the local vineyards."
   WSK_rapid_urbanization_title:0 "Rapid Urbanization"
   WSK_rapid_urbanization_desc:0 "Kobolds multiply, fast. We need to found new cities and expand existing ones to keep up with the rapidly growing population."
+  WSK_great_flood_title:0 "The Great Flood"
+  WSK_great_flood_desc:0 "The Great Flood has gripped our nation!"
+  WSK_fertile_soil_act_title:0 "Fertile Soil Act"
+  WSK_fertile_soil_act_desc:0 "Soon after the Great Flood began, Maranaxa came up with an idea to dillute our urban population. By creating incentives for winemakers to establish vineyards along other rives on the peripheries, we were able to lessen the burden on the cities around the Winebay."
+  WSK_interior_riverways_title:0 "Interior Riverways"
+  WSK_interior_riverways_desc:0 "The Interior Riverways in the Western Dameshead are the source of much of the local trade flow, with them under our control we can slowly weaken Wesdam."
+  WSK_crush_wesdam_title:0 "Crush Wesdam"
+  WSK_crush_wesdam_desc:0 "Wesdam has been a thorn in our side for too long, because as long as they control the Módgate our vineyards won't be safe from Northern invaders."
  #Custom Tooltips
   has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
   has_finished_dragon_events_tooltip:0 "Have discovered the origin of the Purple Scale"
@@ -94,6 +102,7 @@
   WSK_modifier_cave_rumblings:0 "Cave Rumblings"
   WSK_modifier_invested_wine:0 "Expanded Vineyards"
   WSK_modifier_kobold_cities:0 "Kobold Cities"
+  WSK_modifier_fortified_frontier:0 "Massively Expanded Garrisons"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Pathetic Hoard"
