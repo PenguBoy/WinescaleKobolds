@@ -1,0 +1,23 @@
+
+
+is_winekobold_region = {
+	custom_trigger_tooltip = {
+		tooltip = is_winekobold_region_tooltip
+		OR = {
+			area = sorncost_vines_area
+			area = sornhills_area
+			area = southern_flats_area
+			area = upper_bloodwine_area
+			area = upper_winebay_area
+			area = lower_bloodwine_area
+			area = lower_winebay_area
+			area = darom_area
+			area = shrouded_coast_area
+			area = tretunica_area
+			area = eastern_winebay_area
+			area = pearlywine_area
+			area = damespearl_area
+			area = venail_area
+		}
+	}
+}

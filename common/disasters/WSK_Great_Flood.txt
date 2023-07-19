@@ -1,0 +1,81 @@
+
+WSK_great_flood_disaster = {
+	ended_by_country_breaking_to_rebels = no
+	potential = {
+		tag = WSK
+		NOT = { has_mission = WSK_stemmed_tide }
+		has_mission = WSK_rapid_urbanization
+	}
+
+	
+	
+	can_start = {
+		has_any_disaster = no
+		has_mission = WSK_rapid_urbanization
+		has_country_flag = WSK_flood_begins_flag
+	}
+	
+	
+	can_stop = {
+        has_mission = WSK_stemmed_tide
+	}
+		
+	
+	
+	progress = {
+		modifier = {
+			factor = 2
+			has_mission = WSK_rapid_urbanization
+		}
+		modifier = {
+			factor = 0.2
+			total_development = 400
+		}
+		modifier = {
+			factor = 0.4
+			total_development = 400
+		}
+		modifier = {
+			factor = 0.6
+			total_development = 600
+		}
+		modifier = {
+			factor = 1
+			total_development = 800
+		}
+		modifier = {
+			factor = -0.5
+			adm = 6
+		}
+	}
+	
+	
+	
+	can_end = {
+		has_mission = WSK_stemmed_tide
+	}
+	
+
+	modifier = {
+		development_cost = 0.2
+		governing_capacity_modifier = -0.45
+		build_cost = 0.25
+		technology_cost = 0.1
+		global_tax_modifier = -0.2
+		trade_efficiency = -0.2
+		production_efficiency = -0.2
+		global_unrest = 5
+	}
+	
+	
+	on_start = wiscko.14
+	on_end = wiscko.15
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+		}
+	}
+}
+

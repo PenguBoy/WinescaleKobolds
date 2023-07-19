@@ -12,6 +12,9 @@
   mistywine_kobold:0 "Mistywine Kobold"
   sornwine_kobold:0 "Sornywine Kobold"
   bloodwine_kobold:0 "Bloodywine Kobold"
+ #Gov Reforms
+  winemake_technocracy_republic_reform:0 "Winemaker Technocracy"
+  winemake_technocracy_republic_reform_desc:0 "Born out of Koboldic ingenuity and the mercantile and economic situation of the winebay."
  #Ideas
   WSK_ideas:0 "Winescale Ideas"
   WSK_ideas_start:0 "Winescale Traditions"
@@ -67,11 +70,16 @@
   WSK_purple_scale_desc:0 "What's this?"
   WSK_dragon_overloard_title:0 "Newfound Guardian"
   WSK_dragon_overloard_desc:0 "All praise the Hoard!"
+  WSK_industrial_wine_title:0 "Industrial Winemaking"
+  WSK_industrial_wine_desc:0 "With a solid hold on the wine producing areas of Lencenor, we can now put our gaze towards expanding the local vineyards."
+  WSK_rapid_urbanization_title:0 "Rapid Urbanization"
+  WSK_rapid_urbanization_desc:0 "Kobolds multiply, fast. We need to found new cities and expand existing ones to keep up with the rapidly growing population."
  #Custom Tooltips
   has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
   has_finished_dragon_events_tooltip:0 "Have discovered the origin of the Purple Scale"
   sevydeira_available_regent_court_tooltip:0 "Sevydeira is now available as a personal deity for the Regent Court.\nMalliath is no longer available as a deity for the Regent Court."
   malliath_regent_court_deity_tooltip:0 "Malliath is now available as a personal deity for the Regent Court."
+  is_winekobold_region_tooltip:0 "Is in the South Lencenor Region"
  #Modifiers
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
@@ -79,6 +87,10 @@
   WSK_modifier_secured_west:0 "Secured the West"
   WSK_modifier_kobold_capital:0 "A Kobold Capital"
   WSK_modifiers_winebay_toll:0 "Winebay Toll"
+  WSK_modifier_koboldic_identity:0 "Wine Kobold Identity"
+  WSK_modifier_cave_rumblings:0 "Cave Rumblings"
+  WSK_modifier_invested_wine:0 "Expanded Vineyards"
+  WSK_modifier_kobold_cities:0 "Kobold Cities"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Pathetic Hoard"
@@ -168,7 +180,7 @@
   #Corpse Found
    wiscko.8.t:0 "Corpse Found"
    wiscko.8.d:0 "While adding a loading some gold dug up in the caves for minting, a worker stumbled upon the mangled corpse of a soldier, the body already cold, but the wounds still fresh.\nA Mass Panic breaks out as Dwarves, goblins and kobolds flee the caves."
-   wiscko.8.a:0 "Send in the guards! Protect the workers!
+   wiscko.8.a:0 "Send in the guards! Protect the workers!"
   #Rumbling in the caves intensifies
    wiscko.9.t:0 "The Rumblings get louder!"
    wiscko.9.d:0 "After the last incident, every worker party must be accompanied by at least one squadron of soldiers. But as work continued under new conditions, the caves began to shake more frequently.\nSome of the Dwarves say it could be the Deep Hunters they heard rumors about from travelling Goblins.\nWhile some Kobold hardlines are confident it is a sign the gods don't want them to put there hoard here."
@@ -185,5 +197,17 @@
    wiscko.12.t:0 "It is here!"
    wiscko.12.d:0 "Everyone's nervers were on edge but as the creature came out of the deep it leaped past the line of defense. All that could be seen was a stripe of purple as the monster dashed past them towards the main hall.\nThe Kobolds sounded alarm that the hoard was in danger and every able bodied soldier rushed to the main hall, weapons in hand.\n\nBut when they arrived they couldn't believe their eyes. This was no creature looking to steal their gold...\n...it was a Dragon!\nBrilliant purple scales reflected the candlelight onto the walls.\nThe Kobolds achieved what their brethren never could, they attracted a dragon to their hoard. And as the reality sunk in, the Kobolds laid down their weapons and bowed before her."
    wiscko.12.a:0 "Blessed be our Hoard!"
+  #Great Flood launch event
+   wiscko.13.t:0 "The Great Flood!"
+   wiscko.13.d:0 "Not soon after the esablishment of new cities in our realm, the news spread around Cannor about an independent and wealthy Kobold nation.\nIt didn't take long until hordes upon hordes of Kobolds, Goblins and even Humans flooded our ports in search of a better life.\nAnd while groups of settlers are nothing new, that didn't prepare us for the sheer amount of people entering our borders."
+   wiscko.13.a:0 "We beat Lorent, we can beat this!"
+  #Great Flood disaster begins
+   wiscko.14.t:0 "The Great Flood grips our nation!"
+   wiscko.14.d:0 "Our cities are bursting at the seams, out administration is overwhelmed and the streets are filled with angry Kobolds who came looking for a better life and got nothing!"
+   wiscko.14.a:0 "Time to step up and slove problems."
+  #Stemmed the Tide
+   wiscko.15.t:0 "Stemmed the Tide!"
+   wiscko.15.d:0 "Thanks to smart policy making, clever investments and a lot of blood, sweat and tears, we finally revamped our nation to be able to withstand any settler rush.
+   wiscko.15.a:0 "Glory to us!"
    
    

@@ -45,6 +45,16 @@ WSK_modifier_koboldic_identity = {
 	num_accepted_cultures = 3
 }
 
+WSK_modifier_invested_wine = {
+	local_build_cost = -0.1
+	local_build_time = -0.1
+}
+
+WSK_modifier_kobold_cities = {
+	local_development_cost = -0.05
+	local_governing_cost = -0.1
+}
+
 
 ########################
 ##Scripted Hoard Effect#

@@ -655,4 +655,64 @@ country_event = {
 		add_prestige = 25
 		set_country_flag = WSK_dragon_arrived_flag
 	}
-}	
+}
+
+
+country_event = {
+	id = wiscko.13
+	title = wiscko.13.t
+	desc = wiscko.13.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_mission = WSK_rapid_urbanization
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = wiscko.13.a
+		capital_scope = {
+			add_base_tax = 2
+		}
+		set_country_flag = WSK_flood_begins_flag
+	}
+}
+
+country_event = {
+	id = wiscko.14
+	title = wiscko.14.t
+	desc = wiscko.14.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.14.a
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = wiscko.15
+	title = wiscko.15.t
+	desc = wiscko.15.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.15.a
+		add_stability = 2
+	}
+}

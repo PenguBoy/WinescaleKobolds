@@ -1,7 +1,7 @@
 ######################################
-######Winebay Toll###############
+######Branch 1########################
 ######################################
-WSK_branch_1_upper = {
+WSK_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -53,9 +53,9 @@ WSK_branch_1_upper = {
 			
 					
 ######################################
-######Conquest Branch 1###############
+######Branch 2########################
 ######################################
-WSK_branch_2_upper = {
+WSK_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -172,11 +172,97 @@ WSK_branch_2_upper = {
 			}
 		}
 	}
+	
+	
+	WSK_industrial_wine = {
+		icon = glory_to_turin
+		required_missions = {
+			WSK_new_koboldic_idenity
+		}
+		position = 8
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = lower_bloodwine_area
+					area = upper_bloodwine_area
+				}
+				trade_goods = wine
+				has_manufactory_trigger = yes
+				value = 3
+			}
+		}
+		
+		effect = {
+			98 = {
+				change_trade_goods = wine
+			}
+			69 = {
+				change_trade_goods = wine
+			}
+			68 = {
+				change_trade_goods = wine
+			}
+			48 = {
+				change_trade_goods = wine
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = lower_bloodwine_area
+						area = lower_winebay_area
+						area = upper_bloodwine_area
+					}
+				}
+				add_province_modifier = {
+					name = WSK_modifier_invested_wine
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	
+	WSK_rapid_urbanization = {
+		icon = mission_green_village
+		required_missions = {
+			WSK_industrial_wine
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			is_winekobold_region = yes
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_winekobold_region = yes
+				development = 25
+				value = 20
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					is_winekobold_region = yes
+					OR = {
+						has_terrain = farmlands
+						trade_goods = wine
+					}
+				}
+				add_province_modifier = {
+					name = WSK_modifier_kobold_cities
+					duration = -1
+				}
+			}
+		}
+	}
 }
 ######################################
-######Conquest Branch 2###############
+######Branch 3########################
 ######################################
-WSK_branch_3_upper = {
+WSK_branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -212,9 +298,7 @@ WSK_branch_3_upper = {
 		effect = {
 			if = {
 				limit = { hre_size = 1 }
-				every_owned_province = {
-					hre = yes
-				}
+				set_in_empire = yes
 			}
 			else = {
 				every_owned_province = {
@@ -523,16 +607,16 @@ WSK_branch_3_upper = {
 		
 		effect = {
 			change_primary_culture = bloodwine_kobold
-			
+			add_country_modifier = {
+				name = WSK_modifier_koboldic_identity
+				duration = -1
+			}
 			add_accepted_culture = sornwine_kobold
 			add_accepted_culture = pearlywine_kobold
 			add_accepted_culture = venailwine_kobold
 			add_accepted_culture = mistywine_kobold
 			
-			add_country_modifier = {
-				name = WSK_modifier_koboldic_identity
-				duration = -1
-			}
+			
 			
 			hidden_effect = {
 				every_province = {
@@ -593,9 +677,9 @@ WSK_branch_3_upper = {
 }
 					
 ######################################
-######Conquest Branch 4###############
+######Branch 4########################
 ######################################
-WSK_branch_4_upper = {
+WSK_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -761,9 +845,9 @@ WSK_branch_4_upper = {
 	}
 }
 ######################################
-######Hoard Branch 5##################
+######Branch 5########################
 ######################################	
-WSK_branch_5_hoard = {
+WSK_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -936,12 +1020,8 @@ WSK_branch_5_hoard = {
 			upgrade_hoard_effect = yes
 		}
 	}
-}
-		
-		
-			
-			
-			
+}	
+
 			
 			
 			

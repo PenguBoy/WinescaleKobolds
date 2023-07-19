@@ -5,7 +5,7 @@
 ###########################################################################
 malliath = {
 	production_efficiency = 0.15
-	technology_cost = -0.1
+	technology_cost = -0.075
 	
 	potential = {
 		religion = regent_court
