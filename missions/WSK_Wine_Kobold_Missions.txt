@@ -96,6 +96,35 @@ WSK_branch_1 = {
 		}
 	}
 	
+	WSK_qumado_draushum = {
+		icon = mission_establish_high_seas_navy
+		required_missions = {
+			WSK_colony_of_werzarsklooh
+		}
+		position = 4
+		
+		trigger = {
+			has_flagship = yes
+			navy_size = 60
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = WSK_modifier_qumado_draushum
+				duration = -1
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				create_flagship = { 
+					name = "Qumado Draushum"
+					type = heavy_ship
+				}
+			}
+		}
+	}
+	
 	
 	WSK_winebay_toll = {
 		icon = mission_early_game_buildings
@@ -801,7 +830,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_vertical_housing_act
 		}
-		position = 11
+		position = 12
 		
 		trigger = {
 			OR = {
@@ -832,7 +861,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_dwarven_council WSK_garrison_act WSK_fiogram_deforestation_act
 		}
-		position = 12
+		position = 13
 		
 		trigger = {
 			stability = 1
@@ -1271,7 +1300,7 @@ WSK_branch_3 = {
 		required_missions = {
 			WSK_great_flood
 		}
-		position = 10
+		position = 11
 		
 		provinces_to_highlight = {
 			area = fiorgram_island_area
@@ -1290,22 +1319,87 @@ WSK_branch_3 = {
 				}
 				951 = {
 					owner = {
-						add_treasury = 2000
+						add_treasury = 500
 					}
+					cede_province = WSK
+					add_core = WSK
+					change_culture = bloodwine_kobold
 				}
-				add_treasury = -2000
-				fiorgram_island_area = {
-					cede_province = ROOT
-					add_core = ROOT
-					change_culture = ROOT
-				}
+				add_treasury = -500
 			}
 			else = {
-				add_treasury = -2000
-				fiorgram_island_area = {
-					cede_province = ROOT
-					add_core = ROOT
-					change_culture = ROOT
+				951 = {
+					create_colony = 1000
+					add_core = WSK
+				}
+			}
+			
+			if = {
+				limit = {
+					950 = {
+						NOT = { is_empty = yes }
+					}
+				}
+				950 = {
+					owner = {
+						add_treasury = 500
+					}
+					cede_province = WSK
+					add_core = WSK
+					change_culture = bloodwine_kobold
+				}
+				add_treasury = -500
+			}
+			else = {
+				950 = {
+					create_colony = 1000
+					add_core = WSK
+				}
+			}
+			
+			if = {
+				limit = {
+					949 = {
+						NOT = { is_empty = yes }
+					}
+				}
+				949 = {
+					owner = {
+						add_treasury = 500
+					}
+					cede_province = WSK
+					add_core = WSK
+					change_culture = bloodwine_kobold
+				}
+				add_treasury = -500
+			}
+			else = {
+				949 = {
+					create_colony = 1000
+					add_core = WSK
+				}
+			}
+			
+			if = {
+				limit = {
+					924 = {
+						NOT = { is_empty = yes }
+					}
+				}
+				924 = {
+					owner = {
+						add_treasury = 500
+					}
+					cede_province = WSK
+					add_core = WSK
+					change_culture = bloodwine_kobold
+				}
+				add_treasury = -500
+			}
+			else = {
+				924 = {
+					create_colony = 1000
+					add_core = WSK
 				}
 			}
 		}
@@ -1316,7 +1410,7 @@ WSK_branch_3 = {
 		required_missions = {
 			WSK_fiogram_purchase_act
 		}
-		position = 11
+		position = 12
 		
 		provinces_to_highlight = {
 			area = fiorgram_island_area
