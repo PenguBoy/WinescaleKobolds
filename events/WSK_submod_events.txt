@@ -690,6 +690,7 @@ country_event = {
 				name = WSK_modifier_immigration_port
 				duration = -1
 			}
+		}
 	}
 }
 
@@ -724,3 +725,132 @@ country_event = {
 		add_stability = 2
 	}
 }
+
+country_event = {
+	id = wiscko.16
+	title = wiscko.16.t
+	desc = wiscko.16.d
+	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+	goto = 406
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.16.a
+		
+		add_years_of_income = -2
+		
+		add_country_modifier = {
+			name = WSK_modifier_gnoll_slaves
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = wiscko.16.b
+		
+		add_years_of_income = -2.5
+		
+		add_country_modifier = {
+			name = WSK_modifier_lizard_slaves
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = wiscko.16.c
+		
+		add_years_of_income = -3
+		
+		add_country_modifier = {
+			name = WSK_modifier_harpy_slaves
+			duration = 9125
+		}
+	}
+}
+	
+province_event = {
+	id = wiscko.17
+	title = wiscko.17.t
+	desc = wiscko.17.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		owner = {
+			has_mission = WSK_vertical_housing_act
+			tag = WSK
+		}
+		OR = {
+			has_terrain = farmlands
+			has_terrain = city_terrain
+		}
+		development = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = {
+			factor = 10
+			owner = {
+				has_mission = WSK_dwarven_council
+			}
+		}
+	}
+	
+	option = {
+		name = wiscko.17.a
+			
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+			
+		add_devastation = 25
+	}
+}
+
+province_event = {
+	id = wiscko.18
+	title = wiscko.18.t
+	desc = wiscko.18.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		owner = {
+			has_mission = WSK_vertical_housing_act
+			tag = WSK
+		}
+		OR = {
+			has_terrain = farmlands
+			has_terrain = city_terrain
+		}
+		development = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 10
+			owner = {
+				has_mission = WSK_dwarven_council
+			}
+		}
+	}
+	
+	option = {
+		name = wiscko.18.a
+			
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+			
+		add_devastation = 50
+	}
+}
+
+
+
+
+
+

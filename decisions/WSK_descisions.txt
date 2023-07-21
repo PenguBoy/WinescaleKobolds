@@ -6,6 +6,7 @@ country_decisions = {
 		color = { 107 9 56 }
 		
 		potential = {
+			tag = WSK
 			100 = {
 				OR = {
 					has_province_modifier = WSK_kobold_hoard_1
@@ -191,6 +192,31 @@ country_decisions = {
 			}
 		}
 	}
+
+	
+	WSK_slaves_for_our_vineyard_decision = {
+		major = yes
+		color = { 54 54 54 }
+		
+		potential = {
+			has_mission = WSK_colony_of_werzarsklooh
+			tag = WSK
+			NOT = { has_country_modifier = WSK_modifier_gnoll_slaves }
+			NOT = { has_country_modifier = WSK_modifier_lizard_slaves }
+			NOT = { has_country_modifier = WSK_modifier_harpy_slaves }
+		}
+		
+		allow = {
+			years_of_income = 2
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.16
+			}
+		}
+	}
+			
 }
 				
 		

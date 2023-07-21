@@ -2,6 +2,8 @@
  #countries
   WSK:0 "Winescale"
   WSK_ADJ:0 "Winescale"
+  VWR:0 "Venailywine Republic"
+  VWR_ADJ:0 "Venailywine
   WINE_KOBOLD_LEAFUE:0 "Wine Kobold League"
   WINE_KOBOLD_LEAFUE_ADJ:0 "Wine Kobold"
  #Disaster
@@ -20,23 +22,27 @@
   winemake_technocracy_republic_reform:0 "Winemaker Technocracy"
   winemake_technocracy_republic_reform_desc:0 "Born out of Koboldic ingenuity and the mercantile and economic situation of the winebay."
  #Ideas
-  WSK_ideas:0 "Winescale Ideas"
-  WSK_ideas_start:0 "Winescale Traditions"
-  WSK_ideas_bonus:0 "Winescale Ambitions"
-  WSK_kobold_wine:0 "Kobold Wine"
-  WSK_kobold_wine_desc:0 "The Winescale Kobolds managed to combine there natural affinity for engineering and large populations to cultivate vineyards and produce high-quality wine in quanities unmatched by any other society."
-  WSK_artificers:0 "Winebay Artificery"
-  WSK_artificers_desc:0 "'Shoot first, Shoot again, and if they move then shoot some more' is the motto inscribed on the doors of the artificer guild in Wineport."
-  WSK_winebay_hoard:0 "Hoard of wine and gold"
-  WSK_winebay_hoard_desc:0 "Even when the Wine kobolds later abandoned their koboldic ties, their roots and desires to hoard wealth never went away."
-  WSK_hold_back_lorent:0 "Hold back Lorent"
-  WSK_hold_back_lorent_desc:0 "Forged in the fires of combat with Lorent, our very existence became dependent on our ability to hold back their forces."
-  WSK_kobolic_ingenuity:0 "Koboldic Ingenuity"
-  WSK_kobolic_ingenuity_desc:0 "Expert trappers, masters of the cannon and chief winemaker, our ingenuity became the very key to our dominance."
-  WSK_draconic_artillery:0 "Draconic Artillery"
-  WSK_draconic_artillery_desc:0 "The cannons we designed were made in the liking of a dragon, so when our enemies spot the their gilded heads they would know death would soon follow."
-  WSK_river_urbanization:0 "River urbanization"
-  WSK_river_urbanization_desc:0 "Kobolds are many and grow fast, so we need to construct numerous urban centers along the many rivers we control to ensure we can fit our population."
+  #Main Ideas WSK
+   WSK_ideas:0 "Winescale Ideas"
+   WSK_ideas_start:0 "Winescale Traditions"
+   WSK_ideas_bonus:0 "Winescale Ambitions"
+   WSK_kobold_wine:0 "Kobold Wine"
+   WSK_kobold_wine_desc:0 "The Winescale Kobolds managed to combine there natural affinity for engineering and large populations to cultivate vineyards and produce high-quality wine in quanities unmatched by any other society."
+   WSK_artificers:0 "Winebay Artificery"
+   WSK_artificers_desc:0 "'Shoot first, Shoot again, and if they move then shoot some more' is the motto inscribed on the doors of the artificer guild in Wineport."
+   WSK_winebay_hoard:0 "Hoard of wine and gold"
+   WSK_winebay_hoard_desc:0 "Even when the Wine kobolds later abandoned their koboldic ties, their roots and desires to hoard wealth never went away."
+   WSK_hold_back_lorent:0 "Hold back Lorent"
+   WSK_hold_back_lorent_desc:0 "Forged in the fires of combat with Lorent, our very existence became dependent on our ability to hold back their forces."
+   WSK_kobolic_ingenuity:0 "Koboldic Ingenuity"
+   WSK_kobolic_ingenuity_desc:0 "Expert trappers, masters of the cannon and chief winemaker, our ingenuity became the very key to our dominance."
+   WSK_draconic_artillery:0 "Draconic Artillery"
+   WSK_draconic_artillery_desc:0 "The cannons we designed were made in the liking of a dragon, so when our enemies spot the their gilded heads they would know death would soon follow."
+   WSK_river_urbanization:0 "River urbanization"
+   WSK_river_urbanization_desc:0 "Kobolds are many and grow fast, so we need to construct numerous urban centers along the many rivers we control to ensure we can fit our population."
+  #Venailywine Republic Ideas
+   VWR_ideas:0 "Venailywine Ideas"
+   VWR_ideas_start:0 "Venailywine Traditions
  #Missions
   WSK_expansion_overseas_title:0 "Expansion Overseas"
   WSK_expansion_overseas_desc:0 "The side of the Imperial Winebay holds many riches and controlling both sides of the strait would cement our hold of it."
@@ -88,6 +94,16 @@
   WSK_crush_wesdam_desc:0 "Wesdam has been a thorn in our side for too long, because as long as they control the Módgate our vineyards won't be safe from Northern invaders."
   WSK_garrison_act_title:0 "The Garrison Expansion Act"
   WSK_garrison_act_desc:0 "With Kobolds working new vineyards in different parts of the country, we can utilize some of the excess migrants and population to expand our garrisons and border patrols."
+  WSK_free_kobold_navy_title:0 "Free Kobold Navy"
+  WSK_free_kobold_navy_desc:0 "How can we claim to be the masters of wine and gold if we don't have the navy to project our power?"
+  WSK_found_navigational_school_title:0 "Maritime Navigation School"
+  WSK_found_navigational_school_desc:0 "The Kobold Maritime Navigation School of Coruan became known in the early years of our nation as the premiere school for admirals, cartographers and sailors in the Winebay."
+  WSK_colony_of_werzarsklooh_title:0 "A Kobold Colony"
+  WSK_colony_of_werzarsklooh_desc:0 "The island of Akanu would give us premium access to the slave markets of Sarhal. So why shouldn't we take it?"
+  WSK_fiogram_purchase_act_title:0 "Fiorgram Purchase Act"
+  WSK_fiogram_purchase_act_desc:0 "We have to find ways to outsource some of the incoming migrants, one of our advisors proposed to use some of our wealth to acquire an Island in Aelentir."
+  WSK_fiogram_deforestation_act_title:0 "Fiorgram Deforestation Act"
+  WSK_fiogram_deforestation_act_desc:0 "Now being in possession of the island of Fiorgram we can send batches of soldiers overseas to clear the land for settlers."
  #Custom Tooltips
   has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
   has_finished_dragon_events_tooltip:0 "Have discovered the origin of the Purple Scale"
@@ -96,6 +112,9 @@
   is_winekobold_region_tooltip:0 "Is in the South Lencenor Region"
   provinces_now_produce_wine_tooltip:0 "Many provinces across our nation will now produce wine."
   kobolds_settle_wesdam_tooltip:0 "Kobolds will settle down alongside the Silmunaroy."
+  allows_kobold_buy_slaves_decision_tooltip:0 "Enables a decision to purchase slaves from Salahad to supplement our vineyards."
+  bad_housing_events_can_fire_tooltip:0 "Due to relaxed safety precautions, some houses might collapse."
+  bad_housing_events_less_likely_tooltip:0 "Bad Infrastructure events are now significantly less likely."
  #Modifiers
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
@@ -109,6 +128,13 @@
   WSK_modifier_kobold_cities:0 "Kobold Cities"
   WSK_modifier_fortified_frontier:0 "Massively Expanded Garrisons"
   WSK_modifier_immigration_port:0 "Major Immigration Port"
+  WSK_modifier_kobold_navy:0 "Free Kobold Navy"
+  WSK_modifier_kobold_navigational_school:0 "Coruan Maritime Navigation School"
+  WSK_modifier_gnoll_slaves:0 "Gnollish Slaves"
+  WSK_modifier_lizard_slaves:0 "Lizardfolk Slaves"
+  WSK_modifier_harpy_slaves:0 "Harpy Slaves"
+  WSK_modifier_vertical_housing:0 "Vertical Housing"
+  WSK_modifier_fiorgram_deforestation:0 "Fiorgram Deforestation"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Pathetic Hoard"
@@ -160,6 +186,9 @@
   #Expand the Hoard
    WSK_expand_hoard_decision_title:0 "Expand our Hoard"
    WSK_expand_hoard_decision_desc:0 "Our national treasury is ripe with shinies, time to fuel some of it into our glorious Hoard."
+  #Slave Trade
+   WSK_slaves_for_our_vineyard_decision_title:0 "Brows the Slave Markets"
+   WSK_slaves_for_our_vineyard_decision_desc:0 "We can send an envoy to Sarhal to browse the local slave markets."
  #Events
   #Spawnable First Event
    wiscko.1.t:0 "The Burgundy Scale!"
@@ -227,5 +256,18 @@
    wiscko.15.t:0 "Stemmed the Tide!"
    wiscko.15.d:0 "Thanks to smart policy making, clever investments and a lot of blood, sweat and tears, we finally revamped our nation to be able to withstand any settler rush.
    wiscko.15.a:0 "Glory to us!"
-   
+  #Slave Imports
+   wiscko.16.t:0 "Sarhal Slave Trade"
+   wiscko.16.d:0 "Having a colony grants up opportunities to import special slaves from Sarhal to fill our local and military needs."
+   wiscko.16.a:0 "We need Gnolls!"
+   wiscko.16.b:0 "What about the Lizardfolk?"
+   wiscko.16.c:0 "We yearn for Harpies."
+  #Building Collapses
+   wiscko.17.t:0 "Building in [Root.GetName] collapsed!"
+   wiscko.17.d:0 "Due to shoddy and rushed craftsmanship, a large residential building in [Root.GetName] collapsed. Killing many of its residents."
+   wiscko.17.a:0 "Where are the Dwarves when you need them!"
+  #District on Fire
+   wiscko.18.t:0 "[Root.GetName] District in Flames!"
+   wiscko.18.d:0 "Cheap materials and reckless behavior resulted in a large fire in [Root.GetName], burning down a small part of the city."
+   wiscko.18.a:0 "It can't be helped."
    

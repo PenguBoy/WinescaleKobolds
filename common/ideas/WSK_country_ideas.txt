@@ -1,0 +1,98 @@
+#############Submod Idea Sets#################
+##############################################
+#########Winescale Ideas (unspecific)#########
+
+WSK_ideas = {
+	start = {
+		development_cost = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = WSK
+	}
+	free = yes
+	
+	WSK_kobold_wine = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	WSK_artificers = {
+		fire_damage = 0.15
+		discipline = 0.05
+	}
+	
+	WSK_winebay_hoard = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	WSK_hold_back_lorent = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+	
+	WSK_kobolic_ingenuity = {
+		artillery_cost = -0.2
+	}
+	
+	WSK_draconic_artillery = {
+		backrow_artillery_damage = 0.15
+	}
+	
+	WSK_river_urbanization = {
+		state_governing_cost = -0.2
+	}
+}
+
+
+#########Venailywine Ideas#########
+
+VWR_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	bonus = {
+		artillery_fire = 0.5
+	}
+	
+	trigger = {
+		tag = WSK
+	}
+	free = yes
+	
+	VWR_master_glassmakers = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	VWR_elven_knowledge = {
+		naval_attrition = -0.1
+	}
+	
+	VWR_shipbuilders = {
+		galley_power = 0.2
+		galley_cost = -0.2
+	}
+	
+	VWR_born_sailors = {
+		global_sailors_modifier = 0.2
+	}
+	
+	WSK_kobolic_ingenuity = {
+		ship_durability = 0.1
+	}
+	
+	WSK_draconic_artillery = {
+		backrow_artillery_damage = 0.15
+	}
+	
+	VWR_isle_of_venail = {
+		development_cost = -0.1
+	}
+}

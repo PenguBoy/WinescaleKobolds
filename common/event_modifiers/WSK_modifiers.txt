@@ -65,6 +65,43 @@ WSK_modifier_immigration_port = {
 	local_unrest = 2
 }
 
+WSK_modifier_kobold_navy = {
+	ship_durability = 0.1
+	sailors_recovery_speed = 0.5
+}
+
+WSK_kobold_navigational_school = {
+	navy_tradition_decay = -0.01
+	naval_forcelimit = 5
+}
+
+WSK_modifier_gnoll_slaves = {
+	land_attrition = -0.1
+	global_prov_trade_power_modifier = 0.15
+	shock_damage = 0.075
+}
+
+WSK_modifier_lizard_slaves = {
+	global_ship_cost = -0.15
+	production_efficiency = 0.1
+	naval_morale = 0.1
+}
+
+WSK_modifier_harpy_slaves = {
+	movement_speed = 0.2
+	state_maintenance_modifier = -0.15
+	global_trade_goods_size_modifier = 0.075
+}
+	
+WSK_modifier_vertical_housing = {
+	local_development_cost = -0.15
+	statewide_governing_cost = -0.2
+}
+
+WSK_modifier_fiorgram_deforestation = {
+	local_development_cost = -0.2
+	local_build_cost = -0.15
+}
 
 ########################
 ##Scripted Hoard Effect#
