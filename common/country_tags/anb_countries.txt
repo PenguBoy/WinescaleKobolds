@@ -1,6 +1,7 @@
 #Submod
 
 WSK = "countries/Winescale.txt"
+VWR = "countries/Venailywine.txt"
 
 #Anbennar
 A01 = "countries/Lorent.txt"

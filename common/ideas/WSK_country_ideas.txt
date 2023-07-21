@@ -63,7 +63,7 @@ VWR_ideas = {
 	}
 	
 	trigger = {
-		tag = WSK
+		tag = VWR
 	}
 	free = yes
 	

@@ -1,0 +1,10 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = technocracy_republic_reform
+government_rank = 1
+primary_culture = venailywine_kobold
+religion = regent_court
+technology_group = tech_cannorian
+
+capital = 93

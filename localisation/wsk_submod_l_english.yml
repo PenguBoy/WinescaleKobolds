@@ -25,7 +25,7 @@
   #Main Ideas WSK
    WSK_ideas:0 "Winescale Ideas"
    WSK_ideas_start:0 "Winescale Traditions"
-   WSK_ideas_bonus:0 "Winescale Ambitions"
+   WSK_ideas_bonus:0 "Winescale Ambition"
    WSK_kobold_wine:0 "Kobold Wine"
    WSK_kobold_wine_desc:0 "The Winescale Kobolds managed to combine there natural affinity for engineering and large populations to cultivate vineyards and produce high-quality wine in quanities unmatched by any other society."
    WSK_artificers:0 "Winebay Artificery"
@@ -42,7 +42,18 @@
    WSK_river_urbanization_desc:0 "Kobolds are many and grow fast, so we need to construct numerous urban centers along the many rivers we control to ensure we can fit our population."
   #Venailywine Republic Ideas
    VWR_ideas:0 "Venailywine Ideas"
-   VWR_ideas_start:0 "Venailywine Traditions
+   VWR_ideas_start:0 "Venailywine Traditions"
+   VWR_ideas_bonus:0 "Venailywine Ambition"
+   VWR_master_glassmakers:0 "Master Glassmakers"
+   VWR_master_glassmakers_desc:0 "Due to a lack of good soil and rivers for large scale vineyards, the Kobolds on Venail quickly diverted their focus. Instead prioritizing exotic ingredients and artistic bottles over the quality of the beverage."
+   VWR_elven_knowledge:0 "Elven Knowledge"
+   VWR_elven_knowledge_desc:0 "The Elves that inhabited this island before us did help us in a few ways, some of those that stayed back were expert navigators and shipmakers."
+   VWR_shipbuilders:0 "Isle of Shipbuilders"
+   VWR_shipbuilders_desc:0 "These shipmakers slowly transferred their knowledge to us, granting the Venailywine Kobolds a reputation of seafarers."
+   VWR_born_sailors:0 "Seafarers"
+   VWR_born_sailors_desc:0 "And as seafarers, every Kobold born on this island learns from an early age what it takes to be a sailor and the essentials of life on sea."
+   VWR_isle_of_venail:0 "Isle of Venail"
+   VWR_isle_of_venail_desc:0 "Oh the Isle of Venail, our humble home and peaceful retreat."
  #Missions
   WSK_expansion_overseas_title:0 "Expansion Overseas"
   WSK_expansion_overseas_desc:0 "The side of the Imperial Winebay holds many riches and controlling both sides of the strait would cement our hold of it."
