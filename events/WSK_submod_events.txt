@@ -849,8 +849,130 @@ province_event = {
 	}
 }
 
+country_event = {
+	id = wiscko.19
+	title = wiscko.19.t
+	desc = wiscko.19.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.19.a
+		if = {
+			limit = {
+				A11 = {
+					elector = yes
+				}
+			}
+			A11 = {
+				elector = no
+			}
+			WSK = {
+				elector = yes
+			}
+		}
+		else = {
+			random_elector = {
+				elector = no
+			}
+			WSK = {
+				elector = yes
+			}
+		}
+		WSK = {
+			country_event = {
+				id = wiscko.20
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {
+		name = wiscko.19.b
+		
+		WSK = {
+			country_event = {
+				id = wiscko.21
+			}
+			add_prestige = -50
+		}
+	}
+}
 
+country_event = {
+	id = wiscko.20
+	title = wiscko.20.t
+	desc = wiscko.20.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.20.a
+		
+		add_prestige = 20
+		
+	}
+}
 
-
-
-
+country_event = {
+	id = wiscko.21
+	title = wiscko.21.t
+	desc = wiscko.21.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.21.a
+		
+		set_in_empire = no
+	}
+	
+	option = {
+		name = wiscko.21.b
+		
+		add_stability = -1
+	}
+	
+}
+	
+country_event = {
+	id = wiscko.22
+	title = wiscko.22.t
+	desc = wiscko.22.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Dragon Head Cannons
+		name = wiscko.22.a
+	
+		custom_tooltip = dragon_head_cannons_tooltip
+		set_country_flag = WSK_dragon_head_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	
+	option = { #Bottleneck Cannons
+		name = wiscko.22.b
+	
+		custom_tooltip = bottleneck_cannons_tooltip
+		set_country_flag = WSK_bottleneck_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	
+	option = { #Most efficient Cannons
+		name = wiscko.22.c
+	
+		custom_tooltip = efficient_cannons_tooltip
+		set_country_flag = WSK_efficient_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}

@@ -1477,7 +1477,7 @@ wine_kobold_g = {
 	}
 	
 	venailwine_kobold = {
-		primary = WSK
+		primary = VWR
 	}
 	
 	mistywine_kobold = {
@@ -1511,7 +1511,49 @@ wine_kobold_g = {
 		Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra
 	}
 }
+
+imperial_wine_kobold_g = {
+	graphical_culture = westerngfx
 	
+	imperial_pearlywine_kobold = {
+		primary = WSK
+	}
+	
+	imperial_venailwine_kobold = {
+		primary = VWR
+	}
+	
+	imperial_mistywine_kobold = {
+		primary = WSK
+	}
+	
+	imperial_sornwine_kobold = {
+		primary = WSK
+	}
+	
+	imperial_bloodwine_kobold = {
+		primary = WSK
+	}
+	
+	imperial_silmunywine_kobold = {
+		primary = WSK
+	}
+	
+	dynasty_names = {
+		Winesinger Scalebrewer Grapescale Winescale Winetail Vineyardtrapper Trapsetter Winespike Grapesinger Pearlyscale Mistyscale Sornyscale Venailyscale Bloodyscale
+		Lowear Hardwax Broadnose Smallbristle Talltooth Goodflame Losteye Smallpick Smallspike Smalltail Lazyteeth Trapsmith Trapmaster
+		Wineclaw Grapeclaw Pearlyclaw Bloodyclaw Mistyclaw Sornyclaw Lorentyclaw
+		Nimbleclaw Trapdagger Rumbledagger Minedagger Quickdagger Darktrap Fangsplitter Fangclaw Trapfang Slipscale
+	
+	}
+	male_names = {
+		Arru Deekin Vrik Nark Drighad Grator Zurzu Zurzumex Nalnaz Vud Dak Nak Irto Ogra Kovu Egi Miglo Vitru Ekbo Marku Zold Savlet Mavlik Sozrir Znorbriz Ravrurt Erkil Grigze Qupzax 
+		Dhan Mork Dizzap Dhesesk Realp Dhild Vhitir Itrol Zipzek Qradez Qalk Aakax Dheep Rax Nerlisk Zarril Zux Adrax Jukop Vren Qirnux
+	}
+	female_names = {
+		Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra
+	}
+}
 
 kobold = {
 	graphical_culture = westerngfx

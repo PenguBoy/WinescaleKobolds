@@ -171,7 +171,7 @@ WSK_branch_1 = {
 		required_missions = {
 			WSK_great_flood
 		}
-		position = 11
+		position = 14
 		
 		provinces_to_highlight = {
 			OR = {
@@ -276,7 +276,7 @@ WSK_branch_1 = {
 		required_missions = {
 			WSK_fertile_soil_act
 		}
-		position = 12
+		position = 15
 		
 		provinces_to_highlight = {
 			OR = {
@@ -656,126 +656,13 @@ WSK_branch_2 = {
 			}
 		}
 	}
-		
-	
-	
-	WSK_industrial_wine = {
-		icon = glory_to_turin
-		required_missions = {
-			WSK_new_koboldic_idenity WSK_crush_wesdam
-		}
-		position = 8
-		
-		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					area = lower_bloodwine_area
-					area = upper_bloodwine_area
-				}
-				trade_goods = wine
-				has_manufactory_trigger = yes
-				value = 3
-			}
-		}
-		
-		effect = {
-			upgrade_wineport_wines = yes
-			98 = {
-				change_trade_goods = wine
-			}
-			69 = {
-				change_trade_goods = wine
-			}
-			68 = {
-				change_trade_goods = wine
-			}
-			48 = {
-				change_trade_goods = wine
-			}
-			every_owned_province = {
-				limit = {
-					OR = {
-						area = lower_bloodwine_area
-						area = lower_winebay_area
-						area = upper_bloodwine_area
-					}
-				}
-				add_province_modifier = {
-					name = WSK_modifier_invested_wine
-					duration = 9125
-				}
-			}
-		}
-	}
-	
-	
-	WSK_rapid_urbanization = {
-		icon = mission_a_million_rice_fields
-		required_missions = {
-			WSK_industrial_wine
-		}
-		position = 9
-		
-		provinces_to_highlight = {
-			is_winekobold_region = yes
-		}
-		
-		trigger = {
-			num_of_owned_provinces_with = {
-				is_winekobold_region = yes
-				development = 25
-				value = 20
-			}
-		}
-		
-		effect = {
-			every_owned_province = {
-				limit = {
-					is_winekobold_region = yes
-					OR = {
-						has_terrain = farmlands
-						has_terrain = city_terrain
-						trade_goods = wine
-					}
-				}
-				add_province_modifier = {
-					name = WSK_modifier_kobold_cities
-					duration = -1
-				}
-			}
-		}
-	}
-	
-	WSK_great_flood = {
-		icon = mission_green_village
-		required_missions = {
-			WSK_rapid_urbanization
-		}
-		position = 10
-		
-		trigger = {
-			has_disaster = WSK_great_flood_disaster
-		}
-		
-		effect = {
-			define_ruler = {
-				name = "Maranaxa Shrewdclaw"
-				age = 20
-				adm = 6
-				dip = 6
-				mil = 3
-				female = yes
-			}
-			change_government_reform_progress = 20
-		}
-	}
 	
 	WSK_vertical_housing_act = {
 		icon = mission_hanseatic_city
 		required_missions = {
 			WSK_great_flood
 		}
-		position = 11
+		position = 14
 		
 		provinces_to_highlight = {
 			OR = {
@@ -830,7 +717,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_vertical_housing_act
 		}
-		position = 12
+		position = 15
 		
 		trigger = {
 			OR = {
@@ -861,7 +748,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_dwarven_council WSK_garrison_act WSK_fiogram_deforestation_act
 		}
-		position = 13
+		position = 16
 		
 		trigger = {
 			stability = 1
@@ -1295,12 +1182,123 @@ WSK_branch_3 = {
 		}
 	}
 	
+	WSK_industrial_wine = {
+		icon = glory_to_turin
+		required_missions = {
+			WSK_new_koboldic_idenity WSK_crush_wesdam
+		}
+		position = 8
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = lower_bloodwine_area
+					area = upper_bloodwine_area
+				}
+				trade_goods = wine
+				has_manufactory_trigger = yes
+				value = 3
+			}
+		}
+		
+		effect = {
+			upgrade_wineport_wines = yes
+			98 = {
+				change_trade_goods = wine
+			}
+			69 = {
+				change_trade_goods = wine
+			}
+			68 = {
+				change_trade_goods = wine
+			}
+			48 = {
+				change_trade_goods = wine
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = lower_bloodwine_area
+						area = lower_winebay_area
+						area = upper_bloodwine_area
+					}
+				}
+				add_province_modifier = {
+					name = WSK_modifier_invested_wine
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	
+	WSK_rapid_urbanization = {
+		icon = mission_a_million_rice_fields
+		required_missions = {
+			WSK_industrial_wine
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			is_winekobold_region = yes
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_winekobold_region = yes
+				development = 25
+				value = 20
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					is_winekobold_region = yes
+					OR = {
+						has_terrain = farmlands
+						has_terrain = city_terrain
+						trade_goods = wine
+					}
+				}
+				add_province_modifier = {
+					name = WSK_modifier_kobold_cities
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	WSK_great_flood = {
+		icon = mission_green_village
+		required_missions = {
+			WSK_rapid_urbanization
+		}
+		position = 13
+		
+		trigger = {
+			has_disaster = WSK_great_flood_disaster
+		}
+		
+		effect = {
+			define_ruler = {
+				name = "Maranaxa Shrewdclaw"
+				age = 20
+				adm = 6
+				dip = 6
+				mil = 3
+				female = yes
+			}
+			change_government_reform_progress = 20
+		}
+	}
+	
 	WSK_fiogram_purchase_act = {
 		icon = mission_war_chest
 		required_missions = {
 			WSK_great_flood
 		}
-		position = 11
+		position = 14
 		
 		provinces_to_highlight = {
 			area = fiorgram_island_area
@@ -1410,7 +1408,7 @@ WSK_branch_3 = {
 		required_missions = {
 			WSK_fiogram_purchase_act
 		}
-		position = 12
+		position = 15
 		
 		provinces_to_highlight = {
 			area = fiorgram_island_area
@@ -1612,6 +1610,57 @@ WSK_branch_4 = {
 			}
 		}
 	}
+	
+	WSK_venailywine_crisis = {
+		icon = mission_invade_arakan
+		required_missions = {
+			WSK_new_koboldic_idenity
+		}
+		position = 8
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = solved_venailywine_crisis_tooltip
+				OR = {
+					has_country_modifier = WSK_modifier_solved_vwr_peace
+					has_country_modifier = WSK_modifier_solved_vwr_war
+				}
+			}
+		}
+		
+		effect = {
+			override_country_name = WINE_KOBOLD_LEAFUE
+			
+			add_country_modifier = {
+				name = WSK_modifier_kobold_constitution
+				duration = -1
+			}
+		}
+	}
+	
+	WSK_matter_of_empire = {
+		icon = friends_in_high_places
+		required_missions = {
+			WSK_venailywine_crisis
+		}
+		position = 9
+		
+		trigger = {
+			total_development = 600
+			custom_trigger_tooltip = {
+				tooltip = WSK_demonsterized_tooltip
+				NOT = { has_country_modifier = monstrous_nation }
+			}
+		}
+		
+		effect = {
+			emperor = {
+				country_event = {
+					id = wiscko.19
+				}
+			}
+		}
+	}			
 }
 ######################################
 ######Branch 5########################
@@ -1624,7 +1673,28 @@ WSK_branch_5 = {
 		tag = WSK
 	}
 	has_country_shield = yes
-
+	
+	WSK_dragon_cannons = {
+		icon = mission_cannons_firing
+		required_missions = {
+		}
+		position = 1
+		
+		trigger = {
+			treasury = 200
+			artist = 2
+			artillery_fraction = 0.1
+		}
+		
+		effect = {
+			add_treasury = -200
+			country_event = {
+				id = wiscko.22
+			}
+		}
+	}
+	
+	
 	WSK_digging_operations = {
 		icon = mission_cannons_firing
 		required_missions = {
@@ -1789,7 +1859,186 @@ WSK_branch_5 = {
 			upgrade_hoard_effect = yes
 		}
 	}
-}	
+	
+	WSK_draconic_emergence = {
+		icon = mission_feast
+		required_missions = {
+			WSK_dragon_overloard
+		}
+		position = 10
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				has_hoard_above_lvl_7_mission_tooltip
+				100 = {
+					OR = {
+						has_province_modifier = WSK_kobold_hoard_7
+						has_province_modifier = WSK_kobold_hoard_8
+						has_province_modifier = WSK_kobold_hoard_9
+						has_province_modifier = WSK_kobold_hoard_10
+						has_province_modifier = WSK_kobold_hoard_11
+						has_province_modifier = WSK_kobold_hoard_12
+						has_province_modifier = WSK_kobold_hoard_13
+						has_province_modifier = WSK_kobold_hoard_14
+						has_province_modifier = WSK_kobold_hoard_15
+						has_province_modifier = WSK_kobold_hoard_16
+						has_province_modifier = WSK_kobold_hoard_17
+						has_province_modifier = WSK_kobold_hoard_18
+						has_province_modifier = WSK_kobold_hoard_19
+						has_province_modifier = WSK_kobold_hoard_20
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = WSK_modifier_draconic_evolution_1
+				duration = -1
+			}
+		}
+		
+	WSK_draconic_evolution = {
+		icon = mission_feast
+		required_missions = {
+			WSK_draconic_emergence
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				has_hoard_above_lvl_10_mission_tooltip
+				100 = {
+					OR = {
+						has_province_modifier = WSK_kobold_hoard_10
+						has_province_modifier = WSK_kobold_hoard_11
+						has_province_modifier = WSK_kobold_hoard_12
+						has_province_modifier = WSK_kobold_hoard_13
+						has_province_modifier = WSK_kobold_hoard_14
+						has_province_modifier = WSK_kobold_hoard_15
+						has_province_modifier = WSK_kobold_hoard_16
+						has_province_modifier = WSK_kobold_hoard_17
+						has_province_modifier = WSK_kobold_hoard_18
+						has_province_modifier = WSK_kobold_hoard_19
+						has_province_modifier = WSK_kobold_hoard_20
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 25
+			remove_country_modifier = WSK_modifier_draconic_evolution_1
+			add_country_modifier = {
+				name = WSK_modifier_draconic_evolution_2
+				duration = -1
+			}
+		}
+	}
+	
+	WSK_draconic_mastery = {
+		icon = mission_feast
+		required_missions = {
+			WSK_draconic_evolution
+		}
+		position = 14
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				has_hoard_above_lvl_15_mission_tooltip
+				100 = {
+					OR = {
+						has_province_modifier = WSK_kobold_hoard_15
+						has_province_modifier = WSK_kobold_hoard_16
+						has_province_modifier = WSK_kobold_hoard_17
+						has_province_modifier = WSK_kobold_hoard_18
+						has_province_modifier = WSK_kobold_hoard_19
+						has_province_modifier = WSK_kobold_hoard_20
+					}
+				}
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = WSK_modifier_draconic_evolution_2
+			add_country_modifier = {
+				name = WSK_modifier_draconic_evolution_3
+				duration = -1
+			}
+		}
+	}
+	
+	
+	WSK_draconic_ascendency = {
+		icon = mission_feast
+		required_missions = {
+			WSK_draconic_mastery
+		}
+		position = 16
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				has_hoard_above_lvl_18_mission_tooltip
+				100 = {
+					OR = {
+						has_province_modifier = WSK_kobold_hoard_18
+						has_province_modifier = WSK_kobold_hoard_19
+						has_province_modifier = WSK_kobold_hoard_20
+					}
+				}
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = WSK_modifier_draconic_evolution_3
+			add_country_modifier = {
+				name = WSK_modifier_draconic_evolution_4
+				duration = -1
+			}
+		}
+	}
+	
+	WSK_hoard_of_hoards = {
+		icon = mission_feast
+		required_missions = {
+			WSK_draconic_ascendency
+		}
+		position = 18
+		
+		provinces_to_highlight = {
+			province_id = 100
+		}
+		
+		trigger = {
+			100 = {
+				has_province_modifier = WSK_kobold_hoard_20
+			}
+		}
+		effect = {
+			100 = {
+				change_trade_goods = precursor_relics
+			}
+		}
+	}
+	
+}			
 
 			
 			

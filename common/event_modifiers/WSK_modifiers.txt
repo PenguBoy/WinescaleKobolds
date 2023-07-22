@@ -103,6 +103,40 @@ WSK_modifier_fiorgram_deforestation = {
 	local_build_cost = -0.15
 }
 
+WSK_modifier_kobold_constitution = {
+	candidate_random_bonus = 1
+	election_cycle = -1
+}
+
+WSK_modifier_draconic_evolution_1 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.05
+	fire_damage_received = -0.05
+}
+
+WSK_modifier_draconic_evolution_2 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.1
+	shock_damage_received = -0.5
+}
+
+WSK_modifier_draconic_evolution_3 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+	
+}
+
+WSK_modifier_draconic_evolution_4 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.15
+	shock_damage_received = -0.15
+	discipline = 0.05
+}
+
 ########################
 ##Scripted Hoard Effect#
 ########################
