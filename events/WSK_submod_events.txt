@@ -976,3 +976,16 @@ country_event = {
 			swap_free_idea_group = yes
 		}
 	}
+}
+
+
+country_event = {
+	id = wiscko.23
+	title = wiscko.23.t
+	desc = wiscko.23.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Gold
+		

@@ -9,7 +9,7 @@
  #Disaster
   WSK_great_flood_disaster:0 "The Great Flood"
   desc_WSK_great_flood_disaster:0 "Our nation is suffering from housing shortages, overwhelmed administration and poverty."
- #cultures
+ #Cultures
   #Winescale
    winescale_kobold:0 "Winescale Kobold"
   #Wine Kobold
@@ -165,6 +165,12 @@
   WSK_draconic_ascendency_desc:0 "We are strong, faster, and hit harder than any Kobold could have imagined, our artificers having become feared among all the lands."
   WSK_hoard_of_hoards_title:0 "Hoard of Hoards"
   WSK_hoard_of_hoards_desc:0 "Out hoard is occupying nearly the entire close surface caves, the sheer amount of gold we've accumulated has begun to somehow affect the surrounding stone and other items."
+  WSK_dragon_cannons_title:0 "Dragon Head Cannons"
+  WSK_dragon_cannons_desc:0 "Our artillery is the centerpiece of our military might, we cannot affort to have them look ugly or bland!"
+  WSK_experimental_shells_title:0 "Experimental Shells"
+  WSK_experimental_shells_desc:0 "Togther with the Artificers we should be able to develop a unique type of shell for our army that will allow us to master the battlefied."
+  WSK_masters_of_cannons_title:0 "Masters of Explosions"
+  WSK_masters_of_cannons_desc:0 "Explosions and Cannons, the art of our nation is volatile and beautiful. And we are the best at it!"
  #Custom Tooltips
   has_hoard_above_lvl_3_mission_tooltip:0 "Have a Hoard level 3 or higher"
   has_finished_dragon_events_tooltip:0 "Have discovered the origin of the Purple Scale"
@@ -182,7 +188,10 @@
   dragon_head_cannons_tooltip:0 "Choose a dragon's head for our cannon design"
   bottleneck_cannons_tooltip:0 "Choose a bottle design for our cannon design"
   efficient_cannons_tooltip:0 "Pick the most efficient cannon design"
+  experimental_shells_tooltip:0 "The Experimental Shells privilege become available for the artificer estate."
+  10_prod_wine_tooltip:0 "All wine provinces with at least 10 production development receive +19% production efficiency for 25 years."
  #Modifiers
+  damestear_fermentation:0 "Damestear Fermentation"
   WSK_modifier_river_traps:0 "River Traps"
   WSK_modifier_kobold_landing:0 "Winescale Raiders"
   WSK_modifier_blood_gold_wine:0 "Blood, Wine and Gold"
@@ -207,6 +216,9 @@
   WSK_modifier_draconic_evolution_2:0 "Draconic Evolution"
   WSK_modifier_draconic_evolution_3:0 "Draconic Mastery"
   WSK_modifier_draconic_evolution_4:0 "Draconic Ascendence"
+  WSK_modifier_masters_of_cannons:0 "Masters of the Cannon"
+  WSK_modifier_mechanized_racking:0 "Mechanized Racking"
+  WSK_modifier_experimental_shells:0 "Experimental Shells"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Level 1:Pathetic Hoard"
@@ -261,6 +273,11 @@
   #Slave Trade
    WSK_slaves_for_our_vineyard_decision_title:0 "Brows the Slave Markets"
    WSK_slaves_for_our_vineyard_decision_desc:0 "We can send an envoy to Sarhal to browse the local slave markets."
+ #Priviliges
+  artifice_WSK_experimental_shells:0 "Experimental Shells"
+  artifice_WSK_experimental_shells_desc:0 "Through combining various materials and detonators, we finally found a type of cannon shell that explodes slightly before impact, magnifying the explosive force."
+  artifice_WSK_mecha_racking:0 "Mechanized Racking"
+  artifice_WSK_mecha_racking_desc:0 " "
  #Events
   #Spawnable First Event
    wiscko.1.t:0 "The Burgundy Scale!"
@@ -358,4 +375,7 @@
    wiscko.21.b:0 "We are a natural part of the Empire, even if unwanted."
   #Cannon Designs
    wiscko.22.t:0 "Our cannon design"
-   wiscko.22.d:0 "Our artillery is both our best offense and best defense, it would be a shame to 
+   wiscko.22.d:0 "Our artillery is both our best offense and best defense, it would be a shame to not have a unique design."
+   wiscko.22.a:0 "Dragons!"
+   wiscko.22.b:0 "Wine Bottles?"
+   wiscko.22.c:0 "Just keep it simple."

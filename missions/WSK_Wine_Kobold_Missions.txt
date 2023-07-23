@@ -657,6 +657,128 @@ WSK_branch_2 = {
 		}
 	}
 	
+	WSK_wine_guild = {
+		icon = mission_guarded_market
+		required_missions = {
+			WSK_industrial_wine
+		}
+		position = 9
+		
+		trigger = {
+			capital_scope = {
+				has_tax_building_trigger = yes
+			}
+			estate_influence = {
+				estate = estate_artificers
+				influence = 40
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = WSK_modifier_winebay_artificer_guild
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	WSK_artificer_grapepickers = {
+		icon = mission_city_prosperity
+		required_missions = {
+			WSK_industrial_wine
+		}
+		position = 9
+		
+		trigger = {
+			num_of_rajput = 25
+			estate_loyalty = {
+				estate = estate_artificers
+				loyalty = 60
+			}
+		}
+		
+		effect = {
+			upgrade_wineport_wines = yes
+			custom_tooltip = 10_prod_wine_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						base_procuction = 10
+						trade_goods = wine
+					}
+					add_province_modifier = {
+						name = WSK_modifier_artificer_assissted_vineyards
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+	
+	WSK_damestear_fermentation = {
+		icon = mission_hanseatic_city
+		required_missions = {
+			WSK_artificer_grapepickers
+		}
+		position = 10
+		
+		trigger = {
+			OR = {
+				any_ally = {
+					any_owned_province = {
+						trade_goods = damestear
+					}
+				}
+				any_owned_province = {
+					trade_goods = damestear
+				}
+				treasury = 250
+			}
+		}
+		
+		effect = {
+			change_price = {
+				trade_goods = wine
+				key = damestear_fermentation
+				value = 0.15
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							any_ally = {
+								any_owned_province = {
+									trade_goods = damestear
+								}
+							}
+							any_owned_province = {
+								trade_goods = damestear
+							}
+						}
+					}
+				}
+				add_treasury = -250
+			}
+		}
+	}
+	
+	WSK_machanized_racking = {
+		icon = mission_city_prosperity
+		required_missions = {
+			WSK_damestear_fermentation
+		}
+		position = 10
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_artificers
+				influence = 55
+			}
+			
+	
 	WSK_vertical_housing_act = {
 		icon = mission_hanseatic_city
 		required_missions = {
@@ -1682,7 +1804,7 @@ WSK_branch_5 = {
 		
 		trigger = {
 			treasury = 200
-			artist = 2
+			artist = 3
 			artillery_fraction = 0.1
 		}
 		
@@ -1690,6 +1812,47 @@ WSK_branch_5 = {
 			add_treasury = -200
 			country_event = {
 				id = wiscko.22
+			}
+		}
+	}
+	
+	WSK_experimental_shells = {
+		icon = mission_cannons_firing
+		required_missions = {
+			WSK_dragon_cannons
+		}
+		position = 2
+		
+		trigger = {
+			is_in_deficit = no
+			fortification_expert = 3
+			artillery_fraction = 0.25
+			army_size_percentage = 0.75
+		}
+		
+		effect = {
+			custom_tooltip = experimental_shells_tooltip
+		}
+	}
+	
+	WSK_masters_of_cannons = {
+		icon = mission_cannons_firing
+		required_missions = {
+			WSK_experimental_shells
+		}
+		position = 3
+		
+		trigger = {
+			is_in_deficit = no
+			recruitmaster = 3
+			artillery_fraction = 0.5
+			army_size_percentage = 0.75
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = WSK_modifier_masters_of_cannons
+				duration = -1
 			}
 		}
 	}

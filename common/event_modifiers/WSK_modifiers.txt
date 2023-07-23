@@ -137,6 +137,32 @@ WSK_modifier_draconic_evolution_4 = {
 	discipline = 0.05
 }
 
+WSK_modifier_experimental_shells = {
+	artillery_power = 0.2
+}
+
+WSK_modifier_masters_of_cannons = {
+	artillery_cost = -0.33
+}
+
+WSK_modifier_winebay_artificer_guild = {
+	artificers_influence_modifier = 0.1
+	artificers_loyalty_modifier = 0.1
+}
+
+WSK_modifier_artificer_assissted_vineyards = {
+	local_production_efficiency = 0.1
+}
+
+WSK_modifier_experimental_shells = {
+	artillery_level_modifier = 1
+	artillery_levels_available_vs_fort = 2
+}
+
+WSK_modifier_mechanized_racking = {
+	global_trade_goods_size_modifier = 0.25
+}
+
 ########################
 ##Scripted Hoard Effect#
 ########################
