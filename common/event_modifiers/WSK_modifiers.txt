@@ -164,6 +164,23 @@ WSK_modifier_mechanized_racking = {
 }
 
 ########################
+##Wine Hoard Modifier###
+########################
+
+WSK_wine_hoard_modifier_elven = {
+	republican_tradition = 1
+	legitimacy = 1.5
+}
+
+WSK_wine_hoard_modifier_dwarven = {
+	global_allowed_num_of_manufactories = 1
+}
+
+WSK_wine_hoard_modifier_bulwari = {
+	
+	
+
+########################
 ##Scripted Hoard Effect#
 ########################
 

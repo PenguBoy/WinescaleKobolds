@@ -777,6 +777,45 @@ WSK_branch_2 = {
 				estate = estate_artificers
 				influence = 55
 			}
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				trade_goods = wine
+				value = 12
+			}
+		}
+		
+		effect = {
+			custom_tooltip = enables_racking_priv_tooltip
+		}
+	}
+	
+	WSK_great_wine_hoard = {
+		icon = mission_dominate_home_trade_node
+		required_missions = {
+			WSK_machanized_racking WSK_central_filtration
+		}
+		
+		
+		trigger = {
+			trading_part = {
+				trade_goods = wine
+				amount = 0.66
+			}
+			
+			treasury = 4000
+		}
+		
+		effect = {
+			add_great_project = {
+				type = great_wine_hoard_monument
+				instant = yes
+			}
+			country_event = {
+				id = wiscko.23
+			}
+		}
+	}
+			
 			
 	
 	WSK_vertical_housing_act = {

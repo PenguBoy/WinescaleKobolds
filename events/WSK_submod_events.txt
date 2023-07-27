@@ -987,5 +987,96 @@ country_event = {
 	
 	is_triggered_only = yes
 		
-	option = { #Gold
+	option = { #Elven Architecture
+		name = wiscko.23.a
+		set_country_flag = elven_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+	
+	option = { #Dwarven Architecture
+		name = wiscko.23.b
+		set_country_flag = dwarven_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+	
+	option = { #Bulwari Architecture
+		name = wiscko.23.c
+		set_country_flag = bulwari_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.24
+	title = wiscko.24.t
+	desc = wiscko.24.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
 		
+	option = { #Marble Hoard
+		name = wiscko.24.a
+		set_country_flag = marble_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+	
+	option = { #Exotic Wood Hoard
+		name = wiscko.24.b
+		set_country_flag = exwood_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+	
+	option = { #Dragon Stone Hoard
+		name = wiscko.24.c
+		set_country_flag = dragon_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.25
+	title = wiscko.25.t
+	desc = wiscko.25.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Greenery Hoard
+		name = wiscko.25.a
+		set_country_flag = greenery_accent_flag
+	}
+	
+	option = { #Statues Hoard
+		name = wiscko.25.b
+		set_country_flag = statues_accent_flag
+	}
+	
+	option = { #Bookshelves Hoard
+		name = wiscko.25.c
+		set_country_flag = books_accent_flag
+	}
+}

@@ -190,6 +190,17 @@
   efficient_cannons_tooltip:0 "Pick the most efficient cannon design"
   experimental_shells_tooltip:0 "The Experimental Shells privilege become available for the artificer estate."
   10_prod_wine_tooltip:0 "All wine provinces with at least 10 production development receive +19% production efficiency for 25 years."
+  enables_racking_priv_tooltip:0 "The Mechanized Racking privilege becomes available for the artificer estate, granting +25% goods produced."
+  elven_architecture_tooltip:0 "Have selected Elven Architecture as the hoard's style."
+  dwarven_architecture_tooltip:0 "Have selected Dwarven Architecture as the hoard's style."
+  bulwari_architecture_tooltip:0 "Have selected Bulwari Architecture as the hoard's style."
+  marble_material_tooltip:0 "Have selected Marble as the hoard's main construction material."
+  exwood_material_tooltip:0 "Have selected Exotic Wood as the hoard's main construction material."
+  dragon_material_tooltip:0 "Have selected Imported stone from the Dragon Heights as the hoard's main construction material."
+  greenery_accent_tooltip:0 "Have chosen Greenery as the hoard's accessories."
+  statues_accent_tooltip:0 "Have chosen Warrior Sculptures as the hoard's accessories."
+  books_accent_tooltip:0 "Have chosen bookshelves as the hoard's accessories."
+  
  #Modifiers
   damestear_fermentation:0 "Damestear Fermentation"
   WSK_modifier_river_traps:0 "River Traps"
@@ -379,3 +390,10 @@
    wiscko.22.a:0 "Dragons!"
    wiscko.22.b:0 "Wine Bottles?"
    wiscko.22.c:0 "Just keep it simple."
+  #Wine Hoard Style selection
+   wiscko.23.t:0 "Our Wine Hoard - Style"
+   wiscko.23.d:0 "We can select a style for the wine storage hoard we are constructing under the Aenhill."
+   wiscko.23.a:0 "Elven Architecture"
+   wiscko.23.b:0 "Dwarven Architecture"
+   wiscko.23.c:0 "Bulwari Architecture"
+  #Wine Hoard - Material Selection
