@@ -163,22 +163,38 @@ WSK_modifier_mechanized_racking = {
 	global_trade_goods_size_modifier = 0.25
 }
 
-########################
-##Wine Hoard Modifier###
-########################
-
-WSK_wine_hoard_modifier_elven = {
-	republican_tradition = 1
-	legitimacy = 1.5
+WSK_modifier_gold_mithril = {
+	trade_efficiency = 0.1
 }
 
-WSK_wine_hoard_modifier_dwarven = {
-	global_allowed_num_of_manufactories = 1
+WSK_modifier_copper_mithril = {
+	production_efficiency = 0.1
 }
 
-WSK_wine_hoard_modifier_bulwari = {
-	
-	
+WSK_modifier_iron_mithril = {
+	global_tax_modifier = 0.15
+}
+
+WSK_modifier_central_filtration = {
+	trade_goods_size = 2
+}
+
+WSK_modifier_jewel_march = {
+	land_morale = 0.1
+}
+
+WSK_modifier_kobold_league_con = {
+	candidate_random_bonus = 3
+	election_cycle = -1
+}
+
+WSK_modifier_wine_leviathan = {
+	trade_efficiency = 0.1
+}
+
+WSK_modifier_pax_vinum = {
+	trade_goods_size = 0.5
+}
 
 ########################
 ##Scripted Hoard Effect#

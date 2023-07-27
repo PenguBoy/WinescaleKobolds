@@ -166,6 +166,69 @@ WSK_branch_1 = {
 		}
 	}
 	
+	WSK_mithril_aging = {
+		icon = mission_mountain_castle
+		required_missions = {
+			WSK_artificer_grapepickers
+		}
+		position = 11
+		
+		trigger = {
+			any_country = {
+				any_owned_province = {
+					trade_goods = mithril
+				}
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.26
+			}
+		}
+	}
+	
+	WSK_filtration_plant = {
+		icon = mission_mountain_castle
+		required_missions = {
+			WSK_mithril_aging
+		}
+		position = 12
+		
+		trigger = {
+			any_owned_province = {
+				has_terrain = city_terrain
+				development = 50
+			}
+		}
+		
+		effect = {
+			upgrade_wineport_wines = yes
+			random_owned_province = {
+				limit = {
+					development = 50
+					has_terrain = city_terrain
+				}
+				add_province_modifier = {
+					name = WSK_modifier_central_filtration
+					duration = -1
+				}
+				if = {
+					limit = {
+						NOT = { trade_goods = wine }
+					}
+					change_trade_goods = wine
+				}
+			}
+		}
+	}
+					
+				
+	
 	WSK_fertile_soil_act = {
 		icon = mission_green_village
 		required_missions = {
@@ -689,7 +752,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_industrial_wine
 		}
-		position = 9
+		position = 10
 		
 		trigger = {
 			num_of_rajput = 25
@@ -722,7 +785,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_artificer_grapepickers
 		}
-		position = 10
+		position = 11
 		
 		trigger = {
 			OR = {
@@ -770,7 +833,7 @@ WSK_branch_2 = {
 		required_missions = {
 			WSK_damestear_fermentation
 		}
-		position = 10
+		position = 12
 		
 		trigger = {
 			estate_influence = {
@@ -792,9 +855,9 @@ WSK_branch_2 = {
 	WSK_great_wine_hoard = {
 		icon = mission_dominate_home_trade_node
 		required_missions = {
-			WSK_machanized_racking WSK_central_filtration
+			WSK_machanized_racking WSK_filtration_plant
 		}
-		
+		position = 13
 		
 		trigger = {
 			trading_part = {
@@ -1392,11 +1455,46 @@ WSK_branch_3 = {
 		}
 	}
 	
+	WSK_bottleworks = {
+		icon = mission_rb_grow_the_channel
+		required_missions = {
+			WSK_industrial_wine WSK_wine_guild
+		}
+		position = 10
+		
+		provinces_to_highlight = {
+			province_id = 86
+		}
+		
+		trigger = {
+			86 = {
+				has_production_building_trigger = yes
+				num_free_building_slots = 0
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					86 = {
+						NOT = { has_building = mills }
+					}
+				}
+				86 = { add_building = mills }
+			}
+			else = {
+				86 = {
+					add_base_production = 3
+				}
+			}
+		}
+	}
+		
 	
 	WSK_rapid_urbanization = {
 		icon = mission_a_million_rice_fields
 		required_missions = {
-			WSK_industrial_wine
+			WSK_bottleworks
 		}
 		position = 12
 		
@@ -1587,6 +1685,34 @@ WSK_branch_3 = {
 				add_province_modifier = {
 					name = WSK_modifier_fiorgram_deforestation
 					duration = 18250
+				}
+			}
+		}
+	}
+	
+	WSK_pax_vinum = {
+		icon = mission_war_chest
+		required_missions = {
+			WSK_stemmed_tide WSK_economic_dominance
+		}
+		position = 17
+		
+		trigger = {
+			total_development = 1000
+			prestige = 75
+			any_ally = {
+				is_great_power = yes
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+				}
+				add_province_modifier = {
+					name = WSK_modifier_pax_vinum
+					duration = -1
 				}
 			}
 		}
@@ -1804,7 +1930,7 @@ WSK_branch_4 = {
 		required_missions = {
 			WSK_venailywine_crisis
 		}
-		position = 9
+		position = 10
 		
 		trigger = {
 			total_development = 600
@@ -1820,8 +1946,98 @@ WSK_branch_4 = {
 					id = wiscko.19
 				}
 			}
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				months = 300
+				target = A11
+			}
 		}
-	}			
+	}
+
+	WSK_jewel_dispute = {
+		icon = friends_in_high_places
+		required_missions = {
+			WSK_matter_of_empire
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 43
+				province_id = 46
+			}
+		}
+		
+		trigger = {
+			OR = {
+				AND = {
+					A11 = {
+						is_subject_of = ROOT
+					}
+					owns_or_non_sovereign_subject_of = 43
+					owns_or_non_sovereign_subject_of = 46
+				}
+				AND = {
+					owns = 43
+					owns = 46
+				}
+			}
+			
+				
+		}
+		
+		effect = {
+			country_event = {
+				id = wiscko.27
+			}
+		}
+	}
+	
+	WSK_wine_kobold_league = {
+		icon = mission_rb_war_of_the_roses
+		required_missions = {
+			WSK_jewel_dispute
+		}
+		position = 14
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				culture_group = wine_kobold_g
+				development = 20
+				value = 30
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = WSK_modifier_kobold_constitution
+			add_country_modifier = {
+				name = WSK_modifier_kobold_league_con
+				duration = -1
+			}
+		}
+	}
+	
+	WSK_economic_dominance = {
+		icon = mission_asian_trader
+		required_missions = {
+			WSK_wine_kobold_league
+		}
+		position = 16
+		
+		trigger = {
+			monthly_income = 500
+			num_of_loans = 0
+			NOT = { inflation = 0.01 }
+		}
+		
+		effect = {
+			upgrade_wineport_wines = 1
+			add_country_modifier = {
+				name = WSK_modifier_wine_leviathan
+				duration = 18250
+			}
+		}
+	}		
 }
 ######################################
 ######Branch 5########################
@@ -2075,7 +2291,7 @@ WSK_branch_5 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				has_hoard_above_lvl_7_mission_tooltip
+				tooltip = has_hoard_above_lvl_7_mission_tooltip
 				100 = {
 					OR = {
 						has_province_modifier = WSK_kobold_hoard_7
@@ -2104,6 +2320,7 @@ WSK_branch_5 = {
 				duration = -1
 			}
 		}
+	}
 		
 	WSK_draconic_evolution = {
 		icon = mission_feast
@@ -2118,7 +2335,7 @@ WSK_branch_5 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				has_hoard_above_lvl_10_mission_tooltip
+				tooltip = has_hoard_above_lvl_10_mission_tooltip
 				100 = {
 					OR = {
 						has_province_modifier = WSK_kobold_hoard_10
@@ -2160,7 +2377,7 @@ WSK_branch_5 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				has_hoard_above_lvl_15_mission_tooltip
+				tooltip = has_hoard_above_lvl_15_mission_tooltip
 				100 = {
 					OR = {
 						has_province_modifier = WSK_kobold_hoard_15
@@ -2197,7 +2414,7 @@ WSK_branch_5 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				has_hoard_above_lvl_18_mission_tooltip
+				tooltip = has_hoard_above_lvl_18_mission_tooltip
 				100 = {
 					OR = {
 						has_province_modifier = WSK_kobold_hoard_18

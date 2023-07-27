@@ -128,6 +128,252 @@ great_wine_hoard_monument = {
 				}
 			}
 			modifier = {
+				republican_tradition = 0.3
+				legitimacy = 0.5
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = bulwari_architecture_tooltip
+					has_country_flag = bulwari_architecture_flag
+				}
+			}
+			modifier = {
+				development_cost_modifier = -0.03
+			}
+		}
+		
+		########################Material#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = marble_material_tooltip
+					has_country_flag = marble_material_flag
+				}
+			}
+			modifier = {
+				diplomatic_upkeep = 1
+				diplomatic_reputation = 1
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = dragon_material_tooltip
+					has_country_flag = dragon_material_flag
+				}
+			}
+			modifier = {
+				monthly_fervor_increase = 0.5
+				church_power_modifier = 0.1
+				papal_influence = 1
+			}
+		}
+		
+		########################Accessories#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = greenery_accent_tooltip
+					has_country_flag = greenery_accent_flag
+				}
+			}
+			modifier = {
+				hostile_attrition = 1
+				max_hostile_attrition = 1
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = statues_accent_tooltip
+					has_country_flag = statues_accent_flag
+				}
+			}
+			modifier = {
+				yearly_army_professionalism = 0.01
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = 	books_accent_tooltip
+					has_country_flag = books_accent_flag
+				}
+			}
+			modifier = {
+				idea_cost = -0.05
+			}
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			army_tradition = 0.25
+			prestige = 0.25
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+		
+		########################Style#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = elven_architecture_tooltip
+					has_country_flag = elven_architecture_flag
+				}
+			}
+			modifier = {
+				republican_tradition = 0.6
+				legitimacy = 1
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = bulwari_architecture_tooltip
+					has_country_flag = bulwari_architecture_flag
+				}
+			}
+			modifier = {
+				development_cost_modifier = -0.075
+			}
+		}
+		
+		########################Material#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = marble_material_tooltip
+					has_country_flag = marble_material_flag
+				}
+			}
+			modifier = {
+				diplomatic_upkeep = 1
+				diplomatic_reputation = 1
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = dragon_material_tooltip
+					has_country_flag = dragon_material_flag
+				}
+			}
+			modifier = {
+				monthly_fervor_increase = 1
+				church_power_modifier = 0.2
+				papal_influence = 1.5
+			}
+		}
+		
+		########################Accessories#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = greenery_accent_tooltip
+					has_country_flag = greenery_accent_flag
+				}
+			}
+			modifier = {
+				hostile_attrition = 1
+				max_hostile_attrition = 1
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = statues_accent_tooltip
+					has_country_flag = statues_accent_flag
+				}
+			}
+			modifier = {
+				yearly_army_professionalism = 0.015
+			}
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = 	books_accent_tooltip
+					has_country_flag = books_accent_flag
+				}
+			}
+			modifier = {
+				idea_cost = -0.075
+			}
+		}	
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			army_tradition = 0.5
+			prestige = 0.5
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+		
+		########################Style#################################
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = elven_architecture_tooltip
+					has_country_flag = elven_architecture_flag
+				}
+			}
+			modifier = {
 				republican_tradition = 1
 				legitimacy = 1.5
 			}
@@ -232,114 +478,6 @@ great_wine_hoard_monument = {
 			}
 			modifier = {
 				idea_cost = -0.1
-			}
-		}
-		
-		
-	}
-
-	tier_2 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 240
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 2500
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-			local_defensiveness = 0.25
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {
-		}
-		
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					OR = { 
-						tag = FRA 
-						was_tag = FRA 
-						overlord = {
-							OR = { 
-								tag = FRA 
-								was_tag = FRA 
-							}
-						}
-					}
-				}
-				FRA = { mission_completed = fra_london }
-			}
-			modifier = {
-				max_absolutism = 10
-				max_revolutionary_zeal = 5
-			}
-		}	
-	}
-
-	tier_3 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 480
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 5000
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-			local_defensiveness = 0.25
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {
-		}
-		
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					OR = { 
-						tag = FRA 
-						was_tag = FRA 
-						overlord = {
-							OR = { 
-								tag = FRA 
-								was_tag = FRA 
-							}
-						}
-					}
-				}
-				FRA = { mission_completed = fra_london }
-			}
-			modifier = {
-				max_absolutism = 10
-				max_revolutionary_zeal = 10
 			}
 		}	
 	}

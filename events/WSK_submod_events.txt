@@ -1080,3 +1080,108 @@ country_event = {
 		set_country_flag = books_accent_flag
 	}
 }
+
+
+country_event = {
+	id = wiscko.26
+	title = wiscko.26.t
+	desc = wiscko.26.d
+	picture = indiangfx_ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Gold
+		name = wiscko.26.a
+		add_country_modifier = {
+			name = WSK_modifier_gold_mithril
+			duration = 5475
+		}
+	}
+	
+	option = { #Copper
+		name = wiscko.26.b
+		add_country_modifier = {
+			name = WSK_modifier_copper_mithril
+			duration = 5475
+		}
+	}
+	
+	option = { #ron
+		name = wiscko.26.c
+		add_country_modifier = {
+			name = WSK_modifier_iron_mithril
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.27
+	title = wiscko.27.t
+	desc = wiscko.27.d
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Make March
+		name = wiscko.27.a
+		A11 = {
+			override_country_name = JEWEL_MARCHES
+		}
+		if = {
+			limit = {
+				owns_or_non_sovereign_subject_of = 43
+			}
+			43 = {
+				cede_province = A11
+			}
+		}
+		
+		if = {
+			limit = {
+				owns_or_non_sovereign_subject_of = 46
+			}
+			43 = {
+				cede_province = A11
+			}
+		}
+		
+		every_owned_province = {
+			limit = {
+				area = neckcliffe_area
+			}
+			cede_province = A11
+			if = {
+				limit = {
+					NOT = {
+						is_core = A11
+					}
+				}
+				add_core = A11
+			}
+		}
+		create_march = A11
+		
+		
+		add_country_modifier = {
+			name = WSK_modifier_jewel_march
+			duration = -1
+		}
+	}
+	
+	option = { #Make March
+		name = wiscko.27.b
+		
+		add_stability = 1
+	}
+}
+	
+
+
+
+
+
+
+
+
+
