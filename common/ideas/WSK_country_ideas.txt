@@ -66,7 +66,7 @@ WSK_ideas_dragon = {
 	
 	trigger = {
 		tag = WSK
-		WSK_dragon_head_cannons_flag
+		has_country_flag = WSK_dragon_head_cannons_flag
 	}
 	free = yes
 	
@@ -117,7 +117,7 @@ WSK_ideas_bottle = {
 	
 	trigger = {
 		tag = WSK
-		WSK_bottleneck_cannons_flag
+		has_country_flag = WSK_bottleneck_cannons_flag
 	}
 	free = yes
 	
@@ -168,7 +168,7 @@ WSK_ideas_efficient = {
 	
 	trigger = {
 		tag = WSK
-		WSK_bottleneck_cannons_flag
+		has_country_flag = WSK_efficient_cannons_flag
 	}
 	free = yes
 	
@@ -196,11 +196,11 @@ WSK_ideas_efficient = {
 	}
 	
 	WSK_efficient_artillery = {
-		backrow_artillery_damage = 0.2
+		backrow_artillery_damage = 0.15
 	}
 	
 	WSK_river_urbanization = {
-		state_governing_cost = -0.2
+		state_governing_cost = -0.15
 	}
 }
 
@@ -250,3 +250,60 @@ VWR_ideas = {
 		development_cost = -0.1
 	}
 }
+
+###########Silverscale Ideas#############
+
+SSK_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.5
+		cavalry_power = 0.33
+	}
+	
+	bonus = {
+		cavalry_cost = -0.2
+	}
+	
+	trigger = {
+		tag = SSK
+	}
+	free = yes
+	
+	SSK_walls_of_castanor = {
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}
+	
+	SSK_drakehound_riders = {
+		cavalry_shock = 0.25
+		can_recruit_hussars = yes
+	}
+	
+	SSK_city_of_worlds_desire = {
+		development_cost = -0.1
+	}
+	
+	SSK_scourge_of_escann = {
+		movement_speed = 0.2
+		cavalry_flanking = 1
+	}
+	
+	SSK_combat_excellence = {
+		leader_land_fire = 1
+		leader_land_manuever = 1
+	}
+	
+	SSK_tolerant_militarism = {
+		national_unrest = -3
+		discipline = 0.075
+	}
+	
+	SSK_shock_and_awe = {
+		shock_damage = 0.15
+	}
+}
+	
+	
+	
+		
+	
+	

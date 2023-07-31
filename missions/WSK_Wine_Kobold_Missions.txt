@@ -750,7 +750,7 @@ WSK_branch_2 = {
 	WSK_artificer_grapepickers = {
 		icon = mission_city_prosperity
 		required_missions = {
-			WSK_industrial_wine
+			WSK_wine_guild
 		}
 		position = 10
 		

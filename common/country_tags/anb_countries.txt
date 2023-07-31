@@ -2,6 +2,7 @@
 
 WSK = "countries/Winescale.txt"
 VWR = "countries/Venailywine.txt"
+SSK = "countries/Silverscale.txt"
 
 #Anbennar
 A01 = "countries/Lorent.txt"

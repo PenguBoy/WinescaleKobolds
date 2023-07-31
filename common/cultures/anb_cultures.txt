@@ -1587,6 +1587,9 @@ kobold = {
 	goldscale_kobold = {
 		primary = Y85 #Balrijin
 	}
+	silverscale_kobold = {
+		primary = SSK
+	}
 	steelscale_kobold = {
 		primary = H31 #Zurzumexia
 	}
