@@ -10,7 +10,7 @@ primary_culture = silverscale_kobold
 religion = kobold_dragon_cult
 technology_group = tech_cannorian
 
-capital = 829
+capital = 841
 
 1430.10.21 = {
 	monarch = {

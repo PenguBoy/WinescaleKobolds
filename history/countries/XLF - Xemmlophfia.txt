@@ -1,0 +1,9 @@
+
+setup_vision = yes
+government = monarchy
+government_rank = 1
+primary_culture = silverscale_kobold
+religion = the_jadd
+technology_group = tech_cannorian
+
+capital = 833

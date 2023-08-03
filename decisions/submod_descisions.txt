@@ -216,7 +216,33 @@ country_decisions = {
 			}
 		}
 	}
-			
+	
+	XLF_proclaim_sunscale_theocracy_decision = {
+		major = yes
+		color = { 242 91 31 }
+		
+		potential = {
+			tag = XLF
+			not = { has_country_flag = proclaimed_sunscale_theo_flag }
+		}
+		
+		allow = {
+			religion = sun_dragon_cult
+			full_idea_group = religious_ideas
+			religious_unity = 0.9
+		}
+		
+		effect = {
+			hidden_effect = {
+				change_country_color = {
+					color = { 252 20 20 }
+				}
+			}
+			override_country_name = SUNSCALE_THEO
+			change_government = theocracy
+			set_country_flag = proclaimed_sunscale_theo_flag
+		}
+	}		
 }
 				
 		

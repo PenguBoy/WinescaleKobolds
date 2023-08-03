@@ -3,6 +3,7 @@
 WSK = "countries/Winescale.txt"
 VWR = "countries/Venailywine.txt"
 SSK = "countries/Silverscale.txt"
+XLF = "countries/Wallkingdom.txt"
 
 #Anbennar
 A01 = "countries/Lorent.txt"

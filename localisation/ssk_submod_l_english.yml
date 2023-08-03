@@ -1,0 +1,76 @@
+﻿l_english:
+ #Monuments
+ #countries
+  SSK:0 "Silverscale"
+  SSK_ADJ:0 "Silverscale"
+  XLF:0 "Ibilzex"
+  XLF_ADJ:0 "Ibilzex"
+  SUNSCALE_THEO:0 "Sunscale Order"
+  SUNSCALE_THEO_ADJ:0 "Sunscale Order"
+ #Disaster
+ #Cultures
+  #Silverscale
+   silverscale_kobold:0 "Silverscale Kobold"
+  #Grand Escanni Group
+   escanni_empire_g:0 "Grand Escanni"
+   sunscale_kobold:0 "Sunscale Kobold"
+   coalscale_kobold:0 "Coalscale Kobold"
+   eastwaller_kobold:0 "Eastwaller Kobold"
+   westwaller_kobold:0 "Westwaller Kobold"
+   suntouched_halfling:0 "Sunfoot Halfling"
+   sunstone_dwarf:0 "Sunstone Dwarf"
+   suntouched_gnolls:0 "Sunfang Gnoll"
+   suntouched_harpies:0 "Sunfire Harpy"
+   west_suntouched_goblins:0 "Western Suntouched Goblin"
+   north_suntouched_goblins:0 "Northern Suntouched Goblin"
+   east_suntouched_goblins:0 "Eastern Suntouched Goblin"
+   north_suntouched_orcs:0 "Northern Suntouched Orc"
+   south_suntouched_orcs:0 "Southern Suntouched Orc"
+   silvermere_humans:0 "Silvermere Human"
+   blademarcher_humans:0 "Blademarcher Human"
+   mire_humans:0 "Mire Human"
+   forestborn_humans:0 Forrestborn Human"
+   suntide_elf:0 "Sunaxe Elf"
+ #Gov Reforms
+ #Ideas
+  #Main Ideas SSK
+   SSK_ideas:0 "Silverscale Ideas"
+   SSK_ideas_start:0 "Silverscale Traditions"
+   SSK_ideas_bonus:0 "Silverscale Ambition"
+   SSK_walls_of_castanor:0 "White Walls of Castanor"
+   SSK_walls_of_castanor_desc:0 "Sheltered behind these massive walls the Kobold Empire of Escann can safely project it's power across the continent."
+   SSK_drakehound_riders:0 "Drakehound Riders"
+   SSK_drakehound_riders_desc:0 "The Drakehounds native to the hills around the Marrhold have been driven many beast tamers to despair. But it was the unusual bond between Kobolds and their species that allowed us to tame them and together create the fiercest cavalry of the region."
+   SSK_city_of_worlds_desire:0 "City of World's Desire"
+   SSK_city_of_worlds_desire_desc:0 "Formerly known as Castonath, the City of Arkiver is coveted by many but held only by us."
+   SSK_scourge_of_escann:0 "Scourge of Escann"
+   SSK_scourge_of_escann_desc:0 "Fast Drakehounds, lightning quick formations and allies to both men and monsters, the Kobolds of Escann put the fear of Surael in all who refuse to embrace the light."
+   SSK_combat_excellence:0 "Soldier's of Surael"
+   SSK_combat_excellence_desc:0 "Our purpuse is to purge the darkness from Escann and Anbennar, our generals are trained to ensure our enemies receive salvation."
+   SSK_tolerant_militarism:0 "All are brave and bright."
+   SSK_tolerant_militarism_desc:0 "Every creature can contain a light, we do not discriminate as all are welcome under the Surael's protection."
+   SSK_beast_tamers:0 "Beast Tamers"
+   SSK_beast_tamers_desc:0 "No beast is incorrigeable, no creature is ugly. They all just need to be treated with dignity and respect and they will follow your righteous call."
+  #Main Ideas XLF
+   XLF_ideas:0 "Ibilzex Ideas"
+   XLF_ideas_start:0 "Ibilzex Traditions"
+   XLF_ideas_bonus:0 "Ibilzex Ambition"
+ #Missions
+ #Custom Tooltips
+ #Modifiers
+ #Religion
+  sun_dragon_cult:0 "Sun Dragon Cult"
+  sun_dragon_cult_desc:0 "Borne from a schism between the Jadd and the Kobold Nation in Escann that only recently embraced the light, this branch of the Sun Cult stipulates that Surael's true original form was that of a shining dragon and that the other heresies assumption about Surael's form are blasphemous."
+  sun_dragon_cult_rebels_demand: "Convert $COUNTRYNAME$"
+  sun_dragon_cult_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+  sun_dragon_cult_rebels_title: "Religious"
+  sun_dragon_cult_rebels_name: "$RELIGION$ Zealots"
+  sun_dragon_cult_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+  sun_dragon_cult_rebels_army: "$RELIGION$ Army"
+ #Decisions
+  #Establish Ibilzex
+   SSK_wallkingdom_nation_decision_title:0 "Establish Ibilzex"
+   SSK_wallkingdom_nation_decision_desc:0 "The Walls around inner cannor are ideal to shelter a prosperous and powerful Kobold empire."
+  #Establish Sunscale
+   XLF_proclaim_sunscale_theocracy_decision_title:0 "Establish the Sunscale Order"
+   XLF_proclaim_sunscale_theocracy_decision_desc:0 "The structure of our nation needs to adapt to further aid us in spreading the light."

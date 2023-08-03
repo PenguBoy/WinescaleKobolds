@@ -9,7 +9,7 @@ WSK_ideas = {
 	}
 	
 	bonus = {
-		artillery_fire = 1
+		artillery_fire = 0.75
 	}
 	
 	trigger = {
@@ -25,7 +25,7 @@ WSK_ideas = {
 	}
 	
 	WSK_artificers = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 		discipline = 0.05
 	}
 	
@@ -256,7 +256,7 @@ VWR_ideas = {
 SSK_ideas = {
 	start = {
 		fort_maintenance_modifier = -0.5
-		cavalry_power = 0.33
+		cavalry_power = 0.4
 	}
 	
 	bonus = {
@@ -288,7 +288,7 @@ SSK_ideas = {
 	}
 	
 	SSK_combat_excellence = {
-		leader_land_fire = 1
+		leader_land_shock = 1
 		leader_land_manuever = 1
 	}
 	
@@ -297,13 +297,60 @@ SSK_ideas = {
 		discipline = 0.075
 	}
 	
-	SSK_shock_and_awe = {
-		shock_damage = 0.15
+	SSK_beast_tamers = {
+		cavalry_cost = -0.2
 	}
 }
 	
+####Dos-Grikor
 	
+XLF_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.5
+		cavalry_power = 0.4
+	}
 	
-		
+	bonus = {
+		shock_damage = 0.15
+	}
+	
+	trigger = {
+		tag = XLF
+	}
+	free = yes
+	
+	SSK_walls_of_castanor = {
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}
+	
+	SSK_drakehound_riders = {
+		cavalry_shock = 0.5
+		can_recruit_hussars = yes
+	}
+	
+	SSK_city_of_worlds_desire = {
+		development_cost = -0.1
+	}
+	
+	SSK_scourge_of_escann = {
+		movement_speed = 0.25
+		cavalry_flanking = 1
+	}
+	
+	SSK_combat_excellence = {
+		leader_land_shock = 2
+		leader_land_manuever = 1
+	}
+	
+	SSK_tolerant_militarism = {
+		global_unrest = -3
+		discipline = 0.075
+	}
+	
+	SSK_beast_tamers = {
+		cavalry_cost = -0.25
+	}
+}	
 	
 	

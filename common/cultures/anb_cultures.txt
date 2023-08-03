@@ -1469,6 +1469,215 @@ dwarven = {
 	}
 }
 
+escanni_empire_g = {
+	graphical_culture = westerngfx
+	
+	sunscale_kobold = {
+		primary = XLF
+	}
+	
+	coalscale_kobold = {
+	}
+	
+	eastwaller_kobold = {
+	}
+	
+	westwaller_kobold = {
+	}
+	
+	#######################################
+	#####Escanni Halflings#################
+	#######################################
+	
+	suntouched_halfling = {
+		male_names = {
+			Adran Albert Aldred Alfons Alfred Alos Alain Ardan Ardor Aril Artorian Artur Aucan Austyn Awen Borian Brandon Brayan Brayden Calas Castén Castín Daran 
+			Darran Denar Edmund Elran Erel Eren Erlan Evin Galin Gelman Kalas Laurens Marion Maurise Nara Olor Otó Reán Riannón Ricain Ríon Robin Rogier Sandur Taelar 
+			Thal Thiren Tomás Trian Trystan Varian Varion Varil Varilor Vincen Willam Dustin Avery Lucian Luciana Dominic Vernell Arman Cecill Tristan Alvar Adelar 
+			Teagan Andrel Frederic Adrien Adrian Ademar Valeran Valen Corin
+		}
+		female_names = {
+			Adra Alara Amarien Aria Calassa Aucanna Casténnia Castína Cela Celadora Clarimonde Eilís Eilísabet Erela Erella Galina Galinda Laurenne Lianne 
+			Madaléin Maria Marianna Mariana Marianne Marien Marina Réanna Thalia Varina Varinna Alina Arabella Margery Cecille Kerstin Alisanne Isobel Isabel 
+			Isabella Bella Adeline Amina Willamina Aldresia Sofie Sofia Sybille Constance Eléanore Valence Emilíe Gisíle Athana Corina Corin Cora Lisolette
+		}
+	}
+	
+	#######################################
+	#####Sunstone Dwarves##################
+	#######################################
+	
+	sunstone_dwarf = {
+		male_names = {
+			Adar Adranbur Adûn Balgar Balgor Balin Bardin Bardur Beldûn Belgar Bofur Bolin Bombur Borin Brann Brok Bruenor Calin Cûn Dagran Dain Dalbaran Dalmund Dolin Dorin Dorri Durbûr Durin Dwalin Dwarin Edûn Falstad 
+			Farûn Fimbur Flondi Foldan Gorar Goren Gotrek Grim Grimmar Grimmun Gromar Gronmar Grûaim Grûar Grûn Gundobad Gundobar Gundobin Gundomar Hardûn Harlûn Harrûk Hjal Hjalmar 
+			Karrom Kazadûr Khadan Kildan Kildar Kildûm Kûrgûm Lodûn Lorek Lorimbur Madarûn Magar 
+			Magni Magnus Magûn Morzad Muradin Nali Nalin Norbûn Norbûr Nori Norimbur Norin Odar Odur Odûn Okar Olin Orim Orin Ragun Ragund Runmar Rûnimûr 
+			Sevrund Simbûr Simur Simûn Sindri Snorri Storin Storlin Storum Thargas Thargor Thinbur Thindobar Thindri Thingrim Thinobad Thorar Thorgrim Thorin Thrain Thrair Thror Thrûn Thrûr Thudri Tungdil 
+			Ungrim Urist Urûr
+		}
+		female_names = {
+			Adala Aira Anvi Auci Balga Barila Barra Belga Belgia Bella Branma Brenla Brenleil Brenlel Brina Broga Bronis Cala Dalina 
+			Dwalra Edeth Etta Grelba Grimma Groria Gruia Isondi Lahgi Lisban Magda Mistri Moira Mori Moria Naim Ovondi Ronla Sivondi Tharkuni Thohga Ungi
+		}
+	}
+	
+	#######################################
+	#####Escanni Gnolls####################
+	#######################################
+	
+	suntouched_gnolls = {
+		male_names = {
+			Kozmar Okhakk Rokkghuk Vazkar Vozzkur Therkez Uc Ic Ac Dryz Dokk Vyzzek Krix Krixxar Trouk Ghaturr Kaazuah Xokir Moukxac Kryt Aakk Krourron Krourr Brurr Treng Trengruc Vazguel Drizz Yeenoghu Yeeno Zagmarrk
+		}
+		female_names = {
+			Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra Ik Izz Vierha Ygzaath Grezra Zheh Khusa Zhaduura Agga Szonith Aznah Aznahk To Szura Szuril Seilzu Trangka Vazga Yeena Zagara
+		}
+	}
+	
+	#######################################
+	#####Escanni Harpies###################
+	#######################################
+	
+	suntouched_harpies = {
+		male_names = {
+			Aban Abazu Absol Adad Akur Aloros Anshar Arad Arashk Arhab Arsham Arvand Ashan Ashur Asor Atbin Athan Awbal Baraz Barid Barseen Bavar Behlil Berk Bullud Bupalos Cahit Dagan Darab Darian Dariush Dartaxes Demartos Demos Durul Duzan Duzar Duzi Ekrem Erbay Erol Erten Fazil Giz Hazan Hermeias Himmet Huran Husaam Hyaclos Idad Idris Ikelos Irran Iskrates Jahangir Jareer Kalib Kaptan Kartal Kaveh Kikud Korydon Laris Larza Limer Lykidas Marod Marodeen Mehran Mesten Nahroon Naram Numair Oktan Oreias Panthes Raafi Rabon Radin Rimush Saamir Sabum Saed Samiun Sargin Sepeh Serim Sharaf Suhlamu Temenos Theron Tozan Tydeos Udish Ufuk Yazkur Zaid Zamman Zimud Zimudar 
+			Adrahel Alarian Aldarian Aldarion Alvarion Andrellion Arantir Ardor Ardorian Arfil Artorian Darandil Daraztarion Denarion Dorendor Eborian Elanil Eledas Eletar Eletor Elrian 
+			Elriandor Eranil Erelas Erendil Erlanil Evindal Filinar Finorian Ivran Ivrandil Ivrandir Jaerel Jahelor Jaher Kalazandal Kalazandur Kalinael Kalindal Kalindil Kalindor Kalrodir 
+			Kamnar Kamnarian Kamnaril Karodir Keladil Kelador Keladorian Keleorn Kelmonias Munarion Nezterin Oloris Pelodir Taelar Taelarian Taelarios Talanil Talanor Thelrion Thirendil Tirendir 
+			Tretinor Triandil Ultarion Urion Vaceran Varamael Varamar Varamel Varamelian Varanar Varilor Vindal Zerondal Zerondar Zerondor
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran Chandrasen Chandranarayan Chaturanan Chilarai Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha Gajnarayan Gopala Govindachandra Govindapala Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan  Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha Bhairav Singh Bhavesh Bhogishwar Dev Singh Dhir Singh Dhireshwar Ganeshwar Singh Gang Dev Harasimhadeva Hari Singh Hemant Sen Kameshwar Kirti Singh Jyotirishwar Laxman Sen Laxminath Singh Dev Madanpal Nanya Dev Nar Singh Narsingh Dev Padma Singh Rambhadra Singh Dev Rameshwar Samant Sen Shakrasingh Dev Shiv Singh Vallal Sen Vijay Sen Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Aamina Abella Amata Amina Anatu Aqeela Araha Arahuna Arwia Asiah Baila Benan Canfeda Damrina Derya Dilara Elif Elina Elmas Emmita Ettu Fatma Gula Haala Haamida Hasibe Ia Iltani I?tara Jannat Kamelya Kishar Kullaa Leja Lubna Mardina Mudam Musheera Nadide Nahrina Nardina Nesrin Ninsunu Nuriye Nusaiba Nuzha Omara Pari Qamara Rahma Saba Sabahat Samra Semiha Seyma Sireen Ura Yamima Yamina Zakiti Zeyni 
+			Alarawel Amarien Ariathen Ariatra Erela?a Filinara Imariel Iztralania Kalindel Keladora Ladrindel Lezlindel Liandiel Narawen Panoril Taliandel Varila Varilia Varinna Vehari Veharia Zelussa 
+			Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi Devavati Devi Ahiylya Gandharavati Malika Bibi Sharat Kamala Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata Syamadevi Vijnayavati Vina Yajnavati 
+		}
+	}
+	
+	#######################################
+	#####Suntouched Goblins################
+	#######################################
+	
+	west_suntouched_goblins = {
+		dynasty_names = {
+			Nettlehunter Crystalparts Highmaw Ironbrew Dewbrew Cragroar Skullchewer Plainbreaker Orbhunter Ironbane #Namegenerator
+			pobnek-Lunk pobnek-Qalk pobnek-Noppes pobnek-Uskoa pobnek-Tegil pobnek-Zunewl #After persons
+			Sertin pobnek-Mal pobnek-Mit pobek-Zan pobnek-Mokmok
+		
+			Skullgrinder "Mountain-Eater" Ironskin Ironhide Deadhide Hammerfist Hammerspike Spikefist Swordfist "Dead-eye" Bloodspear Blackheart Manhunter Pureblood "Bright Eyes" "Eagle Eyes" "Half-Tongue" "Grog-Maker" Deathmonger
+			Swordmaster Warborn Stoneskin Warmonger Rockskull Skullblade Skullhorn Ogreborn Deadeye Longtooth Pigsnout Regehammer Crueldrum Stonefist Angerfang Steelsword Warpsteel Deathforge Cravenkiller Hellspitter Rocksnarler
+			Deadbreath Bitteraxe Shadowfeast Bloodfeast Redfeast Bloodscream Wildmarcher Brokenhammer Brokentusk "No-eyes" Silentblade Rageblood Rageblade Doomhammer Hellscream Blackhand Saurfang Bladefist Bloodreaver
+			Brightflesh Grandguard Armorskin Armorhide Steelhide Metalhide Metaljaw Sharpears Halfblood Ragechain Chaoschain Chaosblade Flameseeker Fireblood Battlefire Thunderstorm Thunderblood Thunderfang Axemaul Shadowblood
+		}
+		male_names = {
+			Chab Lunk Verk Reb Oubblig Krenzurd Rarsiff Jenthib Idrarseff Porgattub	#Namegenerator
+			Deekin Qalk Aakax Dheep Rax Nerlisk Zarril Zux Adrax Jukop Vren Qirnux #Borrowed from Orcish
+			Platzak Noppes Perzuk Feruk Kukov Varabo Zazak Prilric Jeembol Garut Zawul#Made up
+		}
+		female_names = {
+			Oxa Uskoa Yutu Guklo Lancha Oktu Zektuphru Gregnuphri Asigloo Motchenboa #Namegenerator
+			Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra #Borrowed from Orcish
+			Hefta Zunewl Amegikra Floorce Dodoca Gosvo-Garde #Made up
+		}
+	}
+	
+	north_suntouched_goblins = {
+		dynasty_names = {
+			Nettlehunter Crystalparts Highmaw Ironbrew Dewbrew Cragroar Skullchewer Plainbreaker Orbhunter Ironbane #Namegenerator
+			pobnek-Lunk pobnek-Qalk pobnek-Noppes pobnek-Uskoa pobnek-Tegil pobnek-Zunewl #After persons
+			Sertin pobnek-Mal pobnek-Mit pobek-Zan pobnek-Mokmok
+		
+			Skullgrinder "Mountain-Eater" Ironskin Ironhide Deadhide Hammerfist Hammerspike Spikefist Swordfist "Dead-eye" Bloodspear Blackheart Manhunter Pureblood "Bright Eyes" "Eagle Eyes" "Half-Tongue" "Grog-Maker" Deathmonger
+			Swordmaster Warborn Stoneskin Warmonger Rockskull Skullblade Skullhorn Ogreborn Deadeye Longtooth Pigsnout Regehammer Crueldrum Stonefist Angerfang Steelsword Warpsteel Deathforge Cravenkiller Hellspitter Rocksnarler
+			Deadbreath Bitteraxe Shadowfeast Bloodfeast Redfeast Bloodscream Wildmarcher Brokenhammer Brokentusk "No-eyes" Silentblade Rageblood Rageblade Doomhammer Hellscream Blackhand Saurfang Bladefist Bloodreaver
+			Brightflesh Grandguard Armorskin Armorhide Steelhide Metalhide Metaljaw Sharpears Halfblood Ragechain Chaoschain Chaosblade Flameseeker Fireblood Battlefire Thunderstorm Thunderblood Thunderfang Axemaul Shadowblood
+		}
+		male_names = {
+			Chab Lunk Verk Reb Oubblig Krenzurd Rarsiff Jenthib Idrarseff Porgattub	#Namegenerator
+			Deekin Qalk Aakax Dheep Rax Nerlisk Zarril Zux Adrax Jukop Vren Qirnux #Borrowed from Orcish
+			Platzak Noppes Perzuk Feruk Kukov Varabo Zazak Prilric Jeembol Garut Zawul#Made up
+		}
+		female_names = {
+			Oxa Uskoa Yutu Guklo Lancha Oktu Zektuphru Gregnuphri Asigloo Motchenboa #Namegenerator
+			Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra #Borrowed from Orcish
+			Hefta Zunewl Amegikra Floorce Dodoca Gosvo-Garde #Made up
+		}
+	}
+	
+	east_suntouched_goblins = {
+		dynasty_names = {
+			Nettlehunter Crystalparts Highmaw Ironbrew Dewbrew Cragroar Skullchewer Plainbreaker Orbhunter Ironbane #Namegenerator
+			pobnek-Lunk pobnek-Qalk pobnek-Noppes pobnek-Uskoa pobnek-Tegil pobnek-Zunewl #After persons
+			Sertin pobnek-Mal pobnek-Mit pobek-Zan pobnek-Mokmok
+		
+			Skullgrinder "Mountain-Eater" Ironskin Ironhide Deadhide Hammerfist Hammerspike Spikefist Swordfist "Dead-eye" Bloodspear Blackheart Manhunter Pureblood "Bright Eyes" "Eagle Eyes" "Half-Tongue" "Grog-Maker" Deathmonger
+			Swordmaster Warborn Stoneskin Warmonger Rockskull Skullblade Skullhorn Ogreborn Deadeye Longtooth Pigsnout Regehammer Crueldrum Stonefist Angerfang Steelsword Warpsteel Deathforge Cravenkiller Hellspitter Rocksnarler
+			Deadbreath Bitteraxe Shadowfeast Bloodfeast Redfeast Bloodscream Wildmarcher Brokenhammer Brokentusk "No-eyes" Silentblade Rageblood Rageblade Doomhammer Hellscream Blackhand Saurfang Bladefist Bloodreaver
+			Brightflesh Grandguard Armorskin Armorhide Steelhide Metalhide Metaljaw Sharpears Halfblood Ragechain Chaoschain Chaosblade Flameseeker Fireblood Battlefire Thunderstorm Thunderblood Thunderfang Axemaul Shadowblood
+		}
+		male_names = {
+			Chab Lunk Verk Reb Oubblig Krenzurd Rarsiff Jenthib Idrarseff Porgattub	#Namegenerator
+			Deekin Qalk Aakax Dheep Rax Nerlisk Zarril Zux Adrax Jukop Vren Qirnux #Borrowed from Orcish
+			Platzak Noppes Perzuk Feruk Kukov Varabo Zazak Prilric Jeembol Garut Zawul#Made up
+		}
+		female_names = {
+			Oxa Uskoa Yutu Guklo Lancha Oktu Zektuphru Gregnuphri Asigloo Motchenboa #Namegenerator
+			Eru Tegil Ikse Uho Gakar Laadaa Lerlam Sersa Alra Vakkra #Borrowed from Orcish
+			Hefta Zunewl Amegikra Floorce Dodoca Gosvo-Garde #Made up
+		}
+	}
+	
+	#######################################
+	#####Suntouched Orcs###################
+	#######################################
+	
+	north_suntouched_orcs = {
+		male_names = {
+			Adûl Amug Azukor Bagga Bakbur Bhagzud Bolg Borgu Bork Bral Brasûr Burggob Bârog Bûbol Bûth Conakk Dhog Dramm Drazad Drok Dub Dugz Durg Dûsh Flak Flogg Fubar Gakk Garl Garm Ghad Ghash Ghudd Ghudrag Ghurâd Ghâm Gluk Gokk Golm Grisha Grom Gruk Grumger Gubû Gukk Gund Hoglik Hork Horza Hoshgrish Hura Ikom Ishmoz Kargath Khagor Khrosh Kilrogg Korgus Koth Krakhorn Krimp Krûk Kuga Kurd Larluk Lorm Luga Lurb Mabug Maknag Maku Mogg Mogru Mozû Mûg Mûl Muzû Norsko Norûk Nâkra Nârug Nâzu Ogal Ogbûr Ogg Okegg Olrok Orgrim Orlog Orok Orokâg Orthog Prak Pug Pushkrimp Ragdug Rakk Rash Ratak Regar Ronk Rug Samûr Shador Shaka Shâg Skak Skoth Skun Snafu Stakugâ Takra Tarz Thrak Thrâl Tugog Tuhorn Tûka Uddâg Ugakuga Ugol Ukbuk Urim Urimguk Ushak Uzûl Varbuk Varok Zathra Zhorg Zhuk Zog Zosh Zugor Zur Zêb Zûka 
+		}
+		female_names = {
+			Ahe Ahza Atu Awa Aâdga Bhiel Borba Burâ Dhoulza Etrega Ghorza Glasha Grama Grane Gârona Khaara Lagba Lamma Lazga Mewa Muroga Neevnûz Ohdaka Orbha Orâph Ovga Rerkêl Rurti Shel Sheru Tidû Tâtga Uglâim Uroph Vogaa Voltga Yagza Zien 
+		}
+	}
+	
+	south_suntouched_orcs = {
+		male_names = {
+			Adûl Amug Azukor Bagga Bakbur Bhagzud Bolg Borgu Bork Bral Brasûr Burggob Bârog Bûbol Bûth Conakk Dhog Dramm Drazad Drok Dub Dugz Durg Dûsh Flak Flogg Fubar Gakk Garl Garm Ghad Ghash Ghudd Ghudrag Ghurâd Ghâm Gluk Gokk Golm Grisha Grom Gruk Grumger Gubû Gukk Gund Hoglik Hork Horza Hoshgrish Hura Ikom Ishmoz Kargath Khagor Khrosh Kilrogg Korgus Koth Krakhorn Krimp Krûk Kuga Kurd Larluk Lorm Luga Lurb Mabug Maknag Maku Mogg Mogru Mozû Mûg Mûl Muzû Norsko Norûk Nâkra Nârug Nâzu Ogal Ogbûr Ogg Okegg Olrok Orgrim Orlog Orok Orokâg Orthog Prak Pug Pushkrimp Ragdug Rakk Rash Ratak Regar Ronk Rug Samûr Shador Shaka Shâg Skak Skoth Skun Snafu Stakugâ Takra Tarz Thrak Thrâl Tugog Tuhorn Tûka Uddâg Ugakuga Ugol Ukbuk Urim Urimguk Ushak Uzûl Varbuk Varok Zathra Zhorg Zhuk Zog Zosh Zugor Zur Zêb Zûka 
+		}
+		female_names = {
+			Ahe Ahza Atu Awa Aâdga Bhiel Borba Burâ Dhoulza Etrega Ghorza Glasha Grama Grane Gârona Khaara Lagba Lamma Lazga Mewa Muroga Neevnûz Ohdaka Orbha Orâph Ovga Rerkêl Rurti Shel Sheru Tidû Tâtga Uglâim Uroph Vogaa Voltga Yagza Zien 
+		}
+	}
+	
+	#######################################
+	#####Sun Humans########################
+	#######################################
+	
+	silvermere_humans = {
+	
+	}
+	
+	blademarcher_humans = {
+	
+	}
+	
+	mire_humans = {
+	
+	}
+	
+	forestborn_humans = {
+	
+	}
+	
+	#######################################
+	#####Escanni Elves#####################
+	#######################################
+	
+	suntide_elf = {
+	}
+}
+
 wine_kobold_g = {
 	graphical_culture = westerngfx
 	

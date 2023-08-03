@@ -1,0 +1,19 @@
+
+# No previous file for Guatemala
+culture = silverscale_kobold
+religion = kobold_dragon_cult
+capital = ""
+owner = SSK
+add_core = SSK
+controller = SSK
+hre = no
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+trade_goods = grain
+
+native_size = 68
+native_ferocity = 10
+native_hostileness = 10
