@@ -86,6 +86,10 @@
    VWR_born_sailors_desc:0 "And as seafarers, every Kobold born on this island learns from an early age what it takes to be a sailor and the essentials of life on sea."
    VWR_isle_of_venail:0 "Isle of Venail"
    VWR_isle_of_venail_desc:0 "Oh the Isle of Venail, our humble home and peaceful retreat."
+ #Holy Orders
+  order_of_jewelrymakers:0 "Guild of Jewelrymakers"
+  order_of_winemakers:0 "Guild of Winemakers"
+  order_of_blacksmiths:0 "Guild of Blacksmiths
  #Missions
   WSK_expansion_overseas_title:0 "Expansion Overseas"
   WSK_expansion_overseas_desc:0 "The side of the Imperial Winebay holds many riches and controlling both sides of the strait would cement our hold of it."

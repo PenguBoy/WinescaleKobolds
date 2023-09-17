@@ -1176,9 +1176,41 @@ country_event = {
 	}
 }
 	
-
-
-
+country_event = { #Venailglass Issue
+	id = wiscko.28
+	title = wiscko.28.t
+	desc = wiscko.28.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		has_mission = WSK_venailywine_crisis
+		tag = WSK
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #Insist on Wine Quality
+		name = wiscko.28.a
+		
+		venail_area = {
+			add_province_modifier = {
+				name = WSK_modifier_venail_unrest
+				duration = 5475
+			}
+		}
+	}
+	
+	option = { #Grant them more freedoms
+		name = wiscko.28.b
+		
+		venail_area = {
+			add_local_autonomy = 50
+		}
+	}
+}
 
 
 
