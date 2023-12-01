@@ -1192,6 +1192,10 @@ country_event = { #Venailglass Issue
 		months = 24
 	}
 	
+	immediate = {
+		set_country_flag = venailywine_issue_opener_flag
+	}
+	
 	option = { #Insist on Wine Quality
 		name = wiscko.28.a
 		
@@ -1212,8 +1216,24 @@ country_event = { #Venailglass Issue
 	}
 }
 
-
-
+country_event = { #Venail Kobolds challenge regulations
+	id = wiscko.29
+	title = wiscko.29.t
+	desc = wiscko.29.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		has_country_flag = venailywine_issue_opener_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = { #
+		name = wiscko.29.a
+		
+	
 
 
 

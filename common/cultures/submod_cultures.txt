@@ -1,3 +1,12 @@
+kobold = {
+	winescale_kobold = {
+		primary = WSK
+	}
+}
+
+###########################################
+#####Winescale Group#######################
+###########################################
 
 wine_kobold_g = {
 	graphical_culture = westerngfx
@@ -42,6 +51,11 @@ wine_kobold_g = {
 	}
 }
 
+#############################################
+####Imperial Winekobold Group#Unused#########
+#############################################
+
+
 imperial_wine_kobold_g = {
 	graphical_culture = westerngfx
 	
@@ -85,8 +99,16 @@ imperial_wine_kobold_g = {
 	}
 }
 
+###########################################
+#####Escanni Culture Group#################
+###########################################
+
 escanni_empire_g = {
 	graphical_culture = westerngfx
+	
+	#######################################
+	#####Escanni Kobolds###################
+	#######################################
 	
 	sunscale_kobold = {
 		primary = XLF

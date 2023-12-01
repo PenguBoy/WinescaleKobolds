@@ -1475,9 +1475,6 @@ kobold = {
 	redscale_kobold = {
 		primary = A26 #Redscale Clan
 	}
-	winescale_kobold = {
-		primary = WSK
-	}
 	bluescale_kobold = {
 		primary = A27 #Bluescale Clan
 	}
