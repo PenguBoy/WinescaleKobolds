@@ -5,7 +5,7 @@ tags={
 	"New Nations"
 }
 dependcies = {
-	"Anbennar-PublicFork"
+	"Anbennar: A Fantasy Total Conversion"
 }
 name="Anbennar - A Kobold Submod"
-supported_version="1.35.6"
+supported_version="1.36.2"
