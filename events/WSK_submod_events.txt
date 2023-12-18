@@ -1198,61 +1198,52 @@ country_event = { #Venailglass Issue
 		set_country_flag = venailywine_issue_opener_flag
 	}
 	
-	option = { #Insist on Wine Quality
+	option = { #accomodate the kobolds on the island
 		name = wiscko.28.a
 		
 		venail_area = {
 			add_province_modifier = {
 				name = WSK_modifier_venail_unrest
-				duration = 5475
+				duration = -1
 			}
+		}
+		venail_area = {
+			limit = {
+				NOT = { trade_goods = glass }
+			}
+			change_trade_goods = glass
 		}
 	}
 	
-	option = { #Grant them more freedoms
+	option = { #the Venailywine March
 		name = wiscko.28.b
 		
 		venail_area = {
-			type = all
-			add_local_autonomy = 50
+			cede_province = VWR
+			add_core = VWR
+			add_base_production = 3
+			add_base_tax = 3
+		}
+	}
+	
+	option = { #Nonsense we have standards
+		name = wiscko.28.c
+		
+		add_country_modifier = {
+			name = WSK_modifier_standardized_wine
+			duration = -1
+		}
+		
+		venail_area = {
+			add_province_modifier = {
+				name = WSK_modifier_venail_refused_help
+				duration = -1
+			}
 		}
 	}
 }
 
-country_event = { #Venail declared independence (Violent Outcome)
-	id = wiscko.29
-	title = wiscko.29.t
-	desc = wiscko.29.d
-	picture = CIVIL_WAR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		has_country_flag = venailywine_issue_opener_flag
-		NOT = { has_country_flag = venailywine_issue_reached_peace_flag }
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-	}
-	
-	option = { #
-		name = wiscko.29.a
-		
-		venail_area = {
-			type = all
-			cede_province = VWR
-			add_core = VWR
-		}
-		
-		VWR = {
-			declare_war_with_cb = {
-				who = WSK
-				casus_belli = cb_independence
-			}
-		}
-	}
-}
+
 		
 	
 

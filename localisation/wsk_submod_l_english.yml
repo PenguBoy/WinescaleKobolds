@@ -235,6 +235,7 @@
   greenery_accent_tooltip:0 "Have chosen Greenery as the hoard's accessories."
   statues_accent_tooltip:0 "Have chosen Warrior Sculptures as the hoard's accessories."
   books_accent_tooltip:0 "Have chosen bookshelves as the hoard's accessories."
+  unlock_guilds_tooltip:0 "Completing the mission gives access to the Kobold Guilds. (Holy Orders)"
  #Modifiers
   damestear_fermentation:0 "Damestear Fermentation"
   WSK_modifier_river_traps:0 "River Traps"
@@ -271,7 +272,9 @@
   WSK_modifier_jewel_march:0 "Jewel Marcher Lords"
   WSK_modifier_kobold_league_con:0 "Kobold League Constitution"
   WSK_modifier_wine_leviathan:0 "Wine Leviathan"
-  WSK_modifier_venail_unrest:0 "Venailywine Dispute"
+  WSK_modifier_venail_unrest:0 "Venail Kobold Laissez-Faire policy"
+  WSK_modifier_standardized_wine:0 "Standarized Wine Quality"
+  WSK_modifier_venail_refused_help:0 "Stifled Autonomy"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Level 1:Pathetic Hoard"
@@ -461,3 +464,9 @@
    wiscko.27.d:0 "With control over Jewelpoint we can establish the Jewel Marches or decide to retain these lands for ourselves."
    wiscko.27.a:0 "Establish the Lordship"
    wiscko.27.b:0 "These lands are ours!"
+  #Venailywine Dispute
+   wiscko.28.t:0 "The Issue of the Venail Glass"
+   wiscko.28.d:0 "Over the last decades since our takeover of Venail, a new kinda of Wine culture has developed on the Island. The Venail Kobolds pride themselves more on the artistic sculpting of the glass rather than the quality of the wine. And this difference has boiled over into a dispute that we need to solve before we can move forward."
+   wiscko.28.a:0 "We should accomodate them! Better Glass and better Wine!"
+   wiscko.28.b:0 "Create a proper republic out of these lands."
+   wiscko.28.c:0 "We will give them nothing!"

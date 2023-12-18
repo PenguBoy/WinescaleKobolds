@@ -196,6 +196,20 @@ WSK_modifier_pax_vinum = {
 	trade_goods_size = 0.5
 }
 
+WSK_modifier_venail_unrest = {
+	local_development_cost = -0.25
+	trade_value = 5
+	min_local_autonomy = 10
+}
+	
+WSK_modifier_standardized_wine = {
+	trade_efficiency = 0.1
+}
+
+WSK_modifier_venail_refused_help = {
+	local_unrest = 6
+}
+
 ########################
 ##Scripted Hoard Effect#
 ########################

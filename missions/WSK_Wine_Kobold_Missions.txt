@@ -1917,7 +1917,7 @@ WSK_branch_4 = {
 		
 		effect = {
 			override_country_name = WINE_KOBOLD_LEAFUE
-			
+			custom_tooltip = unlock_guilds_tooltip
 			add_country_modifier = {
 				name = WSK_modifier_kobold_constitution
 				duration = -1
