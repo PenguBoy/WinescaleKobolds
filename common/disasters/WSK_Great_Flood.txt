@@ -3,15 +3,15 @@ WSK_great_flood_disaster = {
 	ended_by_country_breaking_to_rebels = no
 	potential = {
 		tag = WSK
-		NOT = { has_mission = WSK_stemmed_tide }
-		has_mission = WSK_rapid_urbanization
+		NOT = { mission_completed = WSK_stemmed_tide }
+		mission_completed = WSK_rapid_urbanization
 	}
 
 	
 	
 	can_start = {
 		has_any_disaster = no
-		has_mission = WSK_rapid_urbanization
+		mission_completed = WSK_rapid_urbanization
 		any_owned_province = {
 			has_province_modifier = WSK_modifier_immigration_port
 		}
@@ -19,15 +19,19 @@ WSK_great_flood_disaster = {
 	
 	
 	can_stop = {
-        has_mission = WSK_stemmed_tide
+        mission_completed = WSK_stemmed_tide
 	}
 		
 	
 	
 	progress = {
 		modifier = {
-			factor = 2
-			has_mission = WSK_rapid_urbanization
+			factor = 0.5
+			mission_completed = WSK_rapid_urbanization
+		}
+		modifier = {
+			factor = 0.1
+			total_development = 400
 		}
 		modifier = {
 			factor = 0.2
@@ -35,14 +39,10 @@ WSK_great_flood_disaster = {
 		}
 		modifier = {
 			factor = 0.4
-			total_development = 400
-		}
-		modifier = {
-			factor = 0.6
 			total_development = 600
 		}
 		modifier = {
-			factor = 1
+			factor = 0.6
 			total_development = 800
 		}
 		modifier = {
@@ -54,7 +54,7 @@ WSK_great_flood_disaster = {
 	
 	
 	can_end = {
-		has_mission = WSK_stemmed_tide
+		mission_completed = WSK_stemmed_tide
 	}
 	
 

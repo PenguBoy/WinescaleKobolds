@@ -1,11 +1,16 @@
-version="1.35.6"
+version="1.36.2"
 tags={
 	"Alternative History"
-	"Missions And Decisions"
+	"events"
+	"Gameplay"
+	"Map"
 	"New Nations"
+	"Missions And Decisions"
+	"Expansion"
 }
-dependcies = {
+dependcies={
 	"Anbennar: A Fantasy Total Conversion"
 }
 name="Anbennar - A Kobold Submod"
 supported_version="1.36.2"
+remote_file_id="3117269246"

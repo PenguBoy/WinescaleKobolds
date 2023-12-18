@@ -5,7 +5,7 @@ order_of_jewelrymakers = {
     icon = GFX_holy_order_judges
     trigger = {
 		tag = WSK
-		has_mission = WSK_venailywine_crisis
+		mission_completed = WSK_venailywine_crisis
 	}
     cost = 150
     cost_type = adm_power
@@ -40,7 +40,7 @@ order_of_winemakers = {
     icon = GFX_holy_order_servants_of_surael
     trigger = {
 		tag = WSK
-		has_mission = WSK_venailywine_crisis
+		mission_completed = WSK_venailywine_crisis
     }
     cost = 150
     cost_type = dip_power
@@ -99,7 +99,7 @@ order_of_blacksmiths = {
     icon = GFX_holy_order_exemplars
     trigger = {
 		tag = WSK
-		has_mission = WSK_venailywine_crisis
+		mission_completed = WSK_venailywine_crisis
     }
     cost = 150
     cost_type = mil_power

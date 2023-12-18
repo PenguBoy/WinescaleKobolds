@@ -480,7 +480,7 @@ country_event = {
 	
 	trigger = {
 		tag = WSK
-		has_mission = WSK_purple_scale
+		mission_completed = WSK_purple_scale
 		has_country_flag = WSK_let_dragon_hunting_begin_flag
 	}
 	
@@ -668,7 +668,7 @@ country_event = {
 	
 	trigger = {
 		tag = WSK
-		has_mission = WSK_rapid_urbanization
+		mission_completed = WSK_rapid_urbanization
 		
 	}
 	
@@ -777,7 +777,7 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			has_mission = WSK_vertical_housing_act
+			mission_completed = WSK_vertical_housing_act
 			tag = WSK
 		}
 		OR = {
@@ -793,7 +793,7 @@ province_event = {
 		modifier = {
 			factor = 10
 			owner = {
-				has_mission = WSK_dwarven_council
+				mission_completed = WSK_dwarven_council
 			}
 		}
 	}
@@ -817,7 +817,7 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			has_mission = WSK_vertical_housing_act
+			mission_completed = WSK_vertical_housing_act
 			tag = WSK
 		}
 		OR = {
@@ -833,7 +833,7 @@ province_event = {
 		modifier = {
 			factor = 10
 			owner = {
-				has_mission = WSK_dwarven_council
+				mission_completed = WSK_dwarven_council
 			}
 		}
 	}
@@ -1185,7 +1185,7 @@ country_event = { #Venailglass Issue
 	fire_only_once = yes
 	
 	trigger = {
-		has_mission = WSK_venailywine_crisis
+		mission_completed = WSK_new_koboldic_idenity
 		tag = WSK
 		
 	}
@@ -1219,11 +1219,12 @@ country_event = { #Venailglass Issue
 		name = wiscko.28.b
 		
 		venail_area = {
-			cede_province = VWR
-			add_core = VWR
+			create_march = VSK
 			add_base_production = 3
 			add_base_tax = 3
 		}
+		
+		
 	}
 	
 	option = { #Nonsense we have standards

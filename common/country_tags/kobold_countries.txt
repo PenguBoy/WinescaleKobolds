@@ -1,0 +1,6 @@
+#Submod
+
+WSK = "countries/Winescale.txt"
+VWR = "countries/Venailywine.txt"
+SSK = "countries/Silverscale.txt"
+XLF = "countries/Wallkingdom.txt"
