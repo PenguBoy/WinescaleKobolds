@@ -1883,17 +1883,7 @@ WSK_branch_4 = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
-				if = {
-					limit = {
-						ROOT = {
-							primary_culure = bloodwine_kobold
-						}
-					}
-					change_culture = venailwine_kobold
-				}
-				else = {
-					change_culture = winescale_kobold
-				}
+				change_culture = winescale_kobold
 			}
 		}
 	}
