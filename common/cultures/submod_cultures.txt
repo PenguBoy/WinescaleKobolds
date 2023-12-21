@@ -2,6 +2,10 @@ kobold = {
 	winescale_kobold = {
 		primary = WSK
 	}
+	
+	silverscale_kobold = {
+		primary = SSK
+	}
 }
 
 ###########################################

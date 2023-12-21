@@ -6,6 +6,7 @@ capital = ""
 owner = SSK
 add_core = SSK
 controller = SSK
+tribal_owner = SSK
 hre = no
 
 base_tax = 4

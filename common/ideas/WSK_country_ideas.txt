@@ -255,12 +255,12 @@ VWR_ideas = {
 
 SSK_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.5
-		cavalry_power = 0.4
+		fort_maintenance_modifier = -0.3
+		cavalry_power = 0.33
 	}
 	
 	bonus = {
-		cavalry_cost = -0.2
+		yearly_army_professionalism = 0.01
 	}
 	
 	trigger = {
@@ -269,13 +269,12 @@ SSK_ideas = {
 	free = yes
 	
 	SSK_walls_of_castanor = {
-		hostile_attrition = 2
-		max_hostile_attrition = 2
+		hostile_attrition = 1
+		max_hostile_attrition = 1
 	}
 	
 	SSK_drakehound_riders = {
-		cavalry_shock = 0.25
-		can_recruit_hussars = yes
+		cav_to_inf_ratio = 0.25
 	}
 	
 	SSK_city_of_worlds_desire = {
@@ -288,13 +287,12 @@ SSK_ideas = {
 	}
 	
 	SSK_combat_excellence = {
-		leader_land_shock = 1
 		leader_land_manuever = 1
 	}
 	
 	SSK_tolerant_militarism = {
-		national_unrest = -3
-		discipline = 0.075
+		national_unrest = -2
+		discipline = 0.05
 	}
 	
 	SSK_beast_tamers = {

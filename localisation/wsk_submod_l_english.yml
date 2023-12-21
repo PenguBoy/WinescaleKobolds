@@ -50,8 +50,8 @@
    WSK_hold_back_lorent_desc:0 "Forged in the fires of combat with Lorent, our very existence became dependent on our ability to hold back their forces."
    WSK_kobolic_ingenuity:0 "Koboldic Ingenuity"
    WSK_kobolic_ingenuity_desc:0 "Expert trappers, masters of the cannon and chief winemaker, our ingenuity became the very key to our dominance."
-   WSK_draconic_artillery:0 "Draconic Artillery"
-   WSK_draconic_artillery_desc:0 "The cannons we designed were made in the liking of a dragon, so when our enemies spot the their gilded heads they would know death would soon follow."
+   WSK_kobold_artillery:0 "Draconic Artillery"
+   WSK_kobold_artillery_desc:0 "The cannons we designed were made in the liking of a dragon, so when our enemies spot the their gilded heads they would know death would soon follow."
    WSK_river_urbanization:0 "River urbanization"
    WSK_river_urbanization_desc:0 "Kobolds are many and grow fast, so we need to construct numerous urban centers along the many rivers we control to ensure we can fit our population."
   #Dragon Head Artillery
@@ -264,6 +264,7 @@
   WSK_modifier_draconic_evolution_4:0 "Draconic Ascendence"
   WSK_modifier_masters_of_cannons:0 "Masters of the Cannon"
   WSK_modifier_mechanized_racking:0 "Mechanized Racking"
+  WSK_modifier_pax_vinum:0 "Pax Vinum"
   WSK_modifier_experimental_shells:0 "Experimental Shells"
   WSK_modifier_gold_mithril:0 "Mithril-Gold Aging Vats"
   WSK_modifier_copper_mithril:0 "Mithril-Copper Aging Vats"
@@ -275,6 +276,7 @@
   WSK_modifier_venail_unrest:0 "Venail Kobold Laissez-Faire policy"
   WSK_modifier_standardized_wine:0 "Standarized Wine Quality"
   WSK_modifier_venail_refused_help:0 "Stifled Autonomy"
+  WSK_modifier_winebay_artificer_guild:0 "Winebay Artificer Guild"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Level 1:Pathetic Hoard"
@@ -302,6 +304,7 @@
   OLD_DRAGON_PANTHEON:0 "Old Dragons"
   #Dragons
    malliath:0 "Malliath"
+   malliath_desc:0 ""
    jyntas_the_brass:0 "Jyntas"
    jyntas_the_brass_desc:0 ""
    xyras_the_teal:0 "Xyras"
