@@ -8559,7 +8559,7 @@ artifice_WSK_experimental_shells = {
 	loyalty = 0.1
 	influence = 0 #artificer privileges must never affect influence due to the fact influence affects points
 	is_valid = {
-		has_mission = WSK_experimental_shells
+		mission_completed = WSK_experimental_shells
 	}
 	can_select = {
 		artifice_has_points_for_basic = yes
@@ -8607,7 +8607,7 @@ artifice_WSK_mecha_racking = {
 	loyalty = 0.1
 	influence = 0 #artificer privileges must never affect influence due to the fact influence affects points
 	is_valid = {
-		has_mission = WSK_machanized_racking
+		mission_completed = WSK_machanized_racking
 	}
 	can_select = {
 		artifice_has_points_for_advanced = yes

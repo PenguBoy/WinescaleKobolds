@@ -2844,7 +2844,10 @@ culture_is_hobgoblin = {
 }
 
 culture_is_kobold = {
-	culture_group = kobold
+	OR = {
+		culture_group = kobold
+		culture_group = wine_kobold_g
+	}
 }
 
 culture_is_lizardfolk = {
