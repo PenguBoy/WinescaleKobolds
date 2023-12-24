@@ -196,7 +196,7 @@ WSK_ideas_efficient = {
 	}
 	
 	WSK_efficient_artillery = {
-		backrow_artillery_damage = 0.15
+		backrow_artillery_damage = 0.2
 	}
 	
 	WSK_river_urbanization = {

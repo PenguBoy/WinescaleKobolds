@@ -1,5 +1,23 @@
 
 country_decisions = {
+
+	WSK_slaves_for_our_vineyard_decision = {
+		major = yes
+		color = { 10 10 10 }
+		
+		potential = {
+			tag = WSK
+			NOT = { has_country_modifier = WSK_modifier_gnoll_slaves }
+			NOT = { has_country_modifier = WSK_modifier_gnoll_slaves }
+			NOT = { has_country_modifier = WSK_modifier_gnoll_slaves }
+			mission_completed = WSK_colony_of_werzarsklooh
+		}
+		
+		effect = {
+			country_event = wiscko.16
+		}
+	}
+			
 	
 	WSK_expand_hoard_decision = {
 		major = yes
@@ -32,7 +50,7 @@ country_decisions = {
 				NOT = { has_province_modifier = WSK_kobold_hoard_20 }
 			}
 			NOT = { has_country_modifier = WSK_kobold_hoard_expanded }
-			has_mission = WSK_the_beginning_of_a_hoard
+			mission_completed = WSK_the_beginning_of_a_hoard
 		}
 		
 		allow = {

@@ -48,6 +48,9 @@ country_event = {
 					name = monstrous_nation
 					duration = -1
 				}
+				add_adm_tech = 1
+				add_dip_tech = 1
+				add_mil_tech = 1
 			}
 			81 = {
 				center_of_trade = 2
@@ -773,6 +776,10 @@ country_event = {
 			name = WSK_modifier_harpy_slaves
 			duration = 9125
 		}
+	}
+	
+	option = {
+		name = wiscko.16.d
 	}
 }
 	

@@ -425,7 +425,7 @@ WSK_branch_2 = {
 		position = 3
 		
 		provinces_to_highlight = {
-			area = lower_bloodwine_area
+			area = lower_winebay_area
 		}
 		
 		trigger = {
@@ -1380,6 +1380,13 @@ WSK_branch_3 = {
 				}
 				every_province = {
 					limit = {
+						area = venail_area
+						culture = winescale_kobold
+					}
+					change_culture = venailwine_kobold
+				}
+				every_province = {
+					limit = {
 						OR = {
 							area = tretunica_area
 							area = eastern_winebay_area
@@ -1541,7 +1548,7 @@ WSK_branch_3 = {
 		
 		effect = {
 			define_ruler = {
-				name = "Maranaxa Shrewdclaw"
+				name = "Iris Wineclaw"
 				age = 20
 				adm = 6
 				dip = 6
@@ -2055,6 +2062,7 @@ WSK_branch_5 = {
 		
 		effect = {
 			add_treasury = -200
+			custom_tooltip = cannon_modifiers_tooltip
 			country_event = {
 				id = wiscko.22
 			}

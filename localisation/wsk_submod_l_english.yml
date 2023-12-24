@@ -236,6 +236,7 @@
   statues_accent_tooltip:0 "Have chosen Warrior Sculptures as the hoard's accessories."
   books_accent_tooltip:0 "Have chosen bookshelves as the hoard's accessories."
   unlock_guilds_tooltip:0 "Completing the mission gives access to the Kobold Guilds. (Holy Orders)"
+  cannon_modifiers_tooltip:0 "Depending on what option we pick, our national idea 'Draconic Artillery' gets an additional modifier.\nDragon Head Artillery:+15% Artillery Combat Ability. \nBottleneck Artilley:+25% siege ability. \nEfficient Artillery: The Backrow Artillery damage from the idea gets doubled."
  #Modifiers
   damestear_fermentation:0 "Damestear Fermentation"
   WSK_modifier_river_traps:0 "River Traps"
@@ -408,8 +409,9 @@
    wiscko.16.t:0 "Sarhal Slave Trade"
    wiscko.16.d:0 "Having a colony grants up opportunities to import special slaves from Sarhal to fill our local and military needs."
    wiscko.16.a:0 "We need Gnolls!"
-   wiscko.16.b:0 "What about the Lizardfolk?"
-   wiscko.16.c:0 "We yearn for Harpies."
+   wiscko.16.b:0 "We necessitate Lizardfolk!"
+   wiscko.16.c:0 "We require Harpies!"
+   wiscko.16.d:0 "Maybe this isn't the time."
   #Building Collapses
    wiscko.17.t:0 "Building in [Root.GetName] collapsed!"
    wiscko.17.d:0 "Due to shoddy and rushed craftsmanship, a large residential building in [Root.GetName] collapsed. Killing many of its residents."
