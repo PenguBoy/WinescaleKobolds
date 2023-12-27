@@ -1905,11 +1905,14 @@ WSK_branch_4 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = solved_venailywine_crisis_tooltip
-				OR = {
-					has_country_modifier = WSK_modifier_solved_vwr_peace
-					has_country_modifier = WSK_modifier_solved_vwr_war
-				}
+				has_country_flag = solved_venailywine_flag
 			}
+			
+			venail_area = {
+				type = all
+				has_manufactory_trigger = yes
+			}
+			
 		}
 		
 		effect = {
@@ -2172,10 +2175,6 @@ WSK_branch_5 = {
 			}
 			else = {
 				add_treasury = -75
-			}
-				
-			country_event = {
-				id = wiscko.3
 			}
 		}
 	}

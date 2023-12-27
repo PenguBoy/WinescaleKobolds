@@ -451,7 +451,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = WSK_kobold_hoard_expanded
-			duration = 5475
+			duration = 1095
 		}
 	}
 	
@@ -1209,7 +1209,7 @@ country_event = { #Venailglass Issue
 	}
 	
 	immediate = {
-		set_country_flag = venailywine_issue_opener_flag
+		set_country_flag = solved_venailywine_flag
 	}
 	
 	option = { #accomodate the kobolds on the island

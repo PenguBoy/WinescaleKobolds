@@ -14,7 +14,9 @@ country_decisions = {
 		}
 		
 		effect = {
-			country_event = wiscko.16
+			country_event = {
+				id = wiscko.16
+			}
 		}
 	}
 			

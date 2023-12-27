@@ -278,6 +278,9 @@
   WSK_modifier_standardized_wine:0 "Standarized Wine Quality"
   WSK_modifier_venail_refused_help:0 "Stifled Autonomy"
   WSK_modifier_winebay_artificer_guild:0 "Winebay Artificer Guild"
+  WSK_modifier_merc_caves:0 "Mercenary Labour"
+  WSK_modifier_population_caves:0 "Compelled public Labour"
+  WSK_modifier_soldiers_caves:0 "Military Labour"
  #Hoard Modifiers
   WSK_kobold_hoard_expanded:0 "Hoard expanded"
   WSK_kobold_hoard_1:0 "Level 1:Pathetic Hoard"
@@ -331,7 +334,7 @@
    WSK_expand_hoard_decision_title:0 "Expand our Hoard"
    WSK_expand_hoard_decision_desc:0 "Our national treasury is ripe with shinies, time to fuel some of it into our glorious Hoard."
   #Slave Trade
-   WSK_slaves_for_our_vineyard_decision_title:0 "Brows the Slave Markets"
+   WSK_slaves_for_our_vineyard_decision_title:0 "Browse the Slave Markets"
    WSK_slaves_for_our_vineyard_decision_desc:0 "We can send an envoy to Sarhal to browse the local slave markets."
  #Priviliges
   artifice_WSK_experimental_shells:0 "Experimental Shells"
