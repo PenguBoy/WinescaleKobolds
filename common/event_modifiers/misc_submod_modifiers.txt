@@ -1,0 +1,3 @@
+LSK_copper_island_modifier = {
+	trade_goods_size = 2
+}

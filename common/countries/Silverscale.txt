@@ -161,4 +161,3 @@ army_names = {
 fleet_names = {
 	"Kobildzani Fleet" "Gem Squadron" "Storm Squadron" "Sapphire Squadron" "Ruby Squadron" "Junk Squadron" "Emerald Squadron"
 }
-}

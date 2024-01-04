@@ -9,7 +9,7 @@ WSK_modifier_kobold_landing = {
 }
 
 WSK_modifier_blood_gold_wine = {
-	development_cost = -0.075
+	development_cost = -0.05
 }
 
 WSK_modifier_secured_west = {
@@ -56,8 +56,8 @@ WSK_modifier_kobold_cities = {
 }
 
 WSK_modifier_fortified_frontier = {
-	local_defensiveness = 0.15
-	local_garrison_size = 0.5
+	local_defensiveness = 0.1
+	local_garrison_size = 0.25
 }
 
 WSK_modifier_immigration_port = {
@@ -66,35 +66,35 @@ WSK_modifier_immigration_port = {
 }
 
 WSK_modifier_kobold_navy = {
-	ship_durability = 0.1
-	sailors_recovery_speed = 0.5
+	ship_durability = 0.05
+	sailors_recovery_speed = 0.2
 }
 
 WSK_kobold_navigational_school = {
-	navy_tradition_decay = -0.01
+	navy_tradition_decay = -0.005
 	naval_forcelimit = 5
 }
 
 WSK_modifier_gnoll_slaves = {
 	land_attrition = -0.1
-	global_prov_trade_power_modifier = 0.15
-	shock_damage = 0.075
+	global_prov_trade_power_modifier = 0.1
+	shock_damage = 0.05
 }
 
 WSK_modifier_lizard_slaves = {
-	global_ship_cost = -0.15
-	production_efficiency = 0.1
-	naval_morale = 0.1
+	global_ship_cost = -0.1
+	production_efficiency = 0.05
+	naval_morale = 0.05
 }
 
 WSK_modifier_harpy_slaves = {
-	movement_speed = 0.2
-	state_maintenance_modifier = -0.15
-	global_trade_goods_size_modifier = 0.075
+	movement_speed = 0.1
+	state_maintenance_modifier = -0.1
+	global_trade_goods_size_modifier = 0.05
 }
 	
 WSK_modifier_vertical_housing = {
-	local_development_cost = -0.15
+	local_development_cost = -0.1
 	statewide_governing_cost = -0.2
 }
 
@@ -118,7 +118,7 @@ WSK_modifier_draconic_evolution_2 = {
 	is_rajput_modifier = yes
 	morale_damage = 0.1
 	fire_damage_received = -0.1
-	shock_damage_received = -0.5
+	shock_damage_received = -0.05
 }
 
 WSK_modifier_draconic_evolution_3 = {
@@ -138,11 +138,11 @@ WSK_modifier_draconic_evolution_4 = {
 }
 
 WSK_modifier_experimental_shells = {
-	artillery_power = 0.2
+	artillery_power = 0.15
 }
 
 WSK_modifier_masters_of_cannons = {
-	artillery_cost = -0.33
+	artillery_cost = -0.15
 }
 
 WSK_modifier_winebay_artificer_guild = {
@@ -160,7 +160,7 @@ WSK_modifier_experimental_shells = {
 }
 
 WSK_modifier_mechanized_racking = {
-	global_trade_goods_size_modifier = 0.25
+	global_trade_goods_size_modifier = 0.2
 }
 
 WSK_modifier_gold_mithril = {
@@ -180,11 +180,11 @@ WSK_modifier_central_filtration = {
 }
 
 WSK_modifier_jewel_march = {
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 WSK_modifier_kobold_league_con = {
-	candidate_random_bonus = 3
+	candidate_random_bonus = 2
 	election_cycle = -1
 }
 

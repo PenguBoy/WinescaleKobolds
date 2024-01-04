@@ -984,6 +984,7 @@ ruler_is_kobold = {
 			ruler_culture = darkscale_kobold
 			ruler_culture = goldscale_kobold
 			ruler_culture = steelscale_kobold
+			ruler_culture = copperscale_kobold
 		}
 	}
 }
@@ -1755,6 +1756,7 @@ consort_is_kobold = {
 			consort_culture = darkscale_kobold
 			consort_culture = goldscale_kobold
 			consort_culture = steelscale_kobold
+			consort_culture = copperscale_kobold
 			
 			
 			consort_culture = winescale_kobold
@@ -2411,6 +2413,7 @@ heir_is_kobold = {
 			heir_culture = darkscale_kobold
 			heir_culture = goldscale_kobold
 			heir_culture = steelscale_kobold
+			heir_culture = copperscale_kobold
 		}
 	}
 }
@@ -2626,6 +2629,7 @@ heir_is_ruinborn = {
 monstrous_culture = {
 	OR = {
 		culture_group = kobold
+		culture_group = wine_kobold_g
 		culture_group = orcish
 		culture_group = gnollish
 		culture_group = goblin
@@ -2666,6 +2670,7 @@ culture_is_short_lived = {
 		culture_group = vyzemby
 		culture_group = harimari
 		culture_group = kobold
+		culture_group = wine_kobold_g
 		culture_group = lizardfolk
 		culture_group = orcish
 		culture_group = gnollish
@@ -3725,6 +3730,7 @@ has_kobold_advisor = {
 			employed_advisor = { culture = darkscale_kobold }
 			employed_advisor = { culture = goldscale_kobold }
 			employed_advisor = { culture = steelscale_kobold }
+			employed_advisor = { culture = copperscale_kobold }
 			
 			employed_advisor = { winescale_kobold }
 			employed_advisor = { pearlywine_kobold }
@@ -3748,6 +3754,7 @@ has_kobold_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = darkscale_kobold }
 			employed_advisor = { category = $category$ culture = goldscale_kobold }
 			employed_advisor = { category = $category$ culture = steelscale_kobold}
+			employed_advisor = { category = $category$ culture = copperscale_kobold}
 			
 			employed_advisor = { category = $category$ winescale_kobold }
 			employed_advisor = { category = $category$ pearlywine_kobold }

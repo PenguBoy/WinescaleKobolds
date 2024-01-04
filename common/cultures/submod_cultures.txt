@@ -6,6 +6,10 @@ kobold = {
 	silverscale_kobold = {
 		primary = SSK
 	}
+	
+	copperscale_kobold = {
+		primary = LSK
+	}
 }
 
 ###########################################

@@ -25,8 +25,7 @@ WSK_ideas = {
 	}
 	
 	WSK_artificers = {
-		fire_damage = 0.1
-		discipline = 0.05
+		fire_damage = 0.15
 	}
 	
 	WSK_winebay_hoard = {
@@ -76,7 +75,6 @@ WSK_ideas_dragon = {
 	
 	WSK_artificers = {
 		fire_damage = 0.15
-		discipline = 0.05
 	}
 	
 	WSK_winebay_hoard = {
@@ -300,7 +298,7 @@ SSK_ideas = {
 	}
 }
 	
-####Dos-Grikor
+####Ibilzex
 	
 XLF_ideas = {
 	start = {
@@ -350,5 +348,59 @@ XLF_ideas = {
 		cavalry_cost = -0.25
 	}
 }	
+
+##############################################
+###############Lelazex Ideas##################
+
+LSK_ideas = {
+	start = {
+		development_cost_in_primary_culture = -0.2
+		naval_morale_damage = 0.15
+	}
+	
+	bonus = {
+		heavy_ship_cost = -0.1
+		heavy_ship_power = 0.1
+	}
+	
+	trigger = {
+		tag = LSK
+	}
+	free = yes
+	
+	LSK_copper_island = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	LSK_settle_cloves = {
+		colonists = 1
+		colony_cost_modifier = -0.5
+	}
+	
+	LSK_fahvanosy_ambition = {
+		regiment_disembark_speed = 0.2
+		global_sailors_modifier = 0.25
+	}
+	
+	LSK_forgotten_bolds = {
+		republican_tradition = 0.5
+		legitimacy = 1
+		devotion = 1
+	}
+	
+	LSK_scaly_solidarity = {
+		diplomatic_reputation = 1
+	}
+	
+	LSK_sea_of_riches = {
+		merchants = 1
+		global_prov_trade_power_modifier = 0.2
+	}
+	
+	LSK_defend_our_shores = {
+		own_coast_naval_combat_bonus = 1
+	}
+}
+	
 	
 	
