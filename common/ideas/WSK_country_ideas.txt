@@ -253,8 +253,8 @@ VWR_ideas = {
 
 SSK_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.3
-		cavalry_power = 0.33
+		tribal_development_growth = 0.03
+		cavalry_power = 0.30
 	}
 	
 	bonus = {
@@ -280,7 +280,7 @@ SSK_ideas = {
 	}
 	
 	SSK_scourge_of_escann = {
-		movement_speed = 0.2
+		movement_speed = 0.1
 		cavalry_flanking = 1
 	}
 	

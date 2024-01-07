@@ -1,11 +1,11 @@
 ﻿l_english:
  #countries
-  LSK:0 "Lelazex"
-  LSK_ADJ:0 "Lelazexi"
+  LSK:0 "Copperscale"
+  LSK_ADJ:0 "Copperscale"
  #cultures
   copperscale_kobold:0 "Copperscale Kobold"
  #modifiers
-  LSK_copper_island_modifier:0 "Copper Island"
+  LSK_copper_island_modifier:0 "Copper Sand"
  #ideas
   LSK_ideas:0 "Copperscale Ideas"
   LSK_ideas_start:0 "Copperscale Traditions"
