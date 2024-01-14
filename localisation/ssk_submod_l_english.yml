@@ -3,8 +3,8 @@
  #countries
   SSK:0 "Silverscale"
   SSK_ADJ:0 "Silverscale"
-  XLF:0 "Ibilzex"
-  XLF_ADJ:0 "Ibilzex"
+  XLF:0 "Zurizex"
+  XLF_ADJ:0 "Zurizex"
   SUNSCALE_THEO:0 "Sunscale Order"
   SUNSCALE_THEO_ADJ:0 "Sunscale Order"
  #Disaster
@@ -52,9 +52,9 @@
    SSK_beast_tamers:0 "Beast Tamers"
    SSK_beast_tamers_desc:0 "No beast is incorrigeable, no creature is ugly. They all just need to be treated with dignity and respect and they will follow your righteous call."
   #Main Ideas XLF
-   XLF_ideas:0 "Ibilzex Ideas"
-   XLF_ideas_start:0 "Ibilzex Traditions"
-   XLF_ideas_bonus:0 "Ibilzex Ambition"
+   XLF_ideas:0 "Zurizex Ideas"
+   XLF_ideas_start:0 "Zurizex Traditions"
+   XLF_ideas_bonus:0 "Zurizex Ambition"
  #Missions
  #Custom Tooltips
  #Modifiers
@@ -69,7 +69,7 @@
   sun_dragon_cult_rebels_army: "$RELIGION$ Army"
  #Decisions
   #Establish Ibilzex
-   SSK_wallkingdom_nation_decision_title:0 "Establish Ibilzex"
+   SSK_wallkingdom_nation_decision_title:0 "Establish Zurizex"
    SSK_wallkingdom_nation_decision_desc:0 "The Walls around inner cannor are ideal to shelter a prosperous and powerful Kobold empire."
   #Establish Sunscale
    XLF_proclaim_sunscale_theocracy_decision_title:0 "Establish the Sunscale Order"

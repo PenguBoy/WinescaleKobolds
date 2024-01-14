@@ -174,14 +174,27 @@
 #####################
 
 #Inner Castonath
-833 = Ipor Murrverra #Northern Walled City
-832 = Vrend Murrverra #Western Walled City
-831 = Zego Murrverra #Southern Walled City
-840 = Ivagoturex #River Castle
-843 = Erronkazald #Challenge Wood
-847 = Aintzidea #Glory Path
-845 = Kobildzidea #Kobold's path
-829 = Vezilarra #Wet Silver
-830 = Zego Ataya #Southern Gate
-754 = Vrend Ataya #Western Gate
-834 = Zafirbikuzi #Saphire Watch
+833 = "Ipor Murrverra" #Northern Walled City
+832 = "Vrend Murrverra" #Western Walled City
+831 = "Zego Murrverra" #Southern Walled City
+840 = "Ivagoturex" #River Castle
+843 = "Erronkazald" #Challenge Wood
+847 = "Aintzidea" #Glory Path
+845 = "Kobildzidea" #Kobold's path
+829 = "Vezilarra" #Wet Silver
+830 = "Zego Ataya" #Southern Gate
+754 = "Vrend Ataya" #Western Gate
+834 = "Zafirbikuzi" #Saphire Watch
+
+#Serpent Reach
+4039 = "Zutaraydden" #Fire Mountain
+4040 = "Labzarxan" #Lava Sea
+2949 = "Zutarforgaketza" #Fire Forge
+4041 = "Bihotzix Aydden" #Heart of the Mountain
+
+#Cannor
+81 = "Kobildezidora" #Kobold Road"
+86 = "Flazkokapyx" #Bottle Cape"
+101 = "Ardoperd" #Wine Port
+97 = "Gurtzax Minara" #Temple of Minara
+38 = "Zusarperd" #Old Port

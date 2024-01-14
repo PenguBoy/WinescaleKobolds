@@ -9,13 +9,12 @@ redscale_sprite_pack	 = {
  			was_tag = A26
 			primary_culture = redscale_kobold
 			primary_culture = copperscale_kobold
-			tag = Z55
-			tag = Z56
 			
 			#Submod
 			culture_group = wine_kobold_g
 			tag = WSK
 			tag = VWR
+			culture = darkscale_kobold
 		}
 	}
 
