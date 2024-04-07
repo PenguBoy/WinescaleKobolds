@@ -1,0 +1,165 @@
+country_decisions = {
+
+	castellyr_nation_kobold = {
+		major = yes
+		potential = {
+			capital_scope = {
+				region = inner_castanor_region
+			}
+			NOT = { exists = B31 } #Castellyr doesn't exist
+			tag = SSK
+			NOT = { has_country_flag = adventurer_derived_government }	#if you've formed something like Nurcestir, you wont be able to form Castellyr. You need to form it while you're an adventurer
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_castellyr_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 840
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+			}
+			AND = {
+				region = inner_castanor_region
+				NOT = {
+					ROOT = {
+						num_of_owned_provinces_with = {
+							value = 10
+							region = inner_castanor_region
+						}
+					}
+				}
+				NOT = { owned_by = ROOT }
+			}
+		}
+			
+		allow = {
+			owns_core_province = 840	#North Citadel
+			adm_tech = 7
+			government_rank = 1
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			if = {
+				limit = { has_adventurer_reform = yes }
+				has_reform = found_our_nation
+				has_reform = local_administration
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				region = inner_castanor_region
+			}
+		}
+			
+		effect = {
+			if = {
+				limit = { has_reform = adventurer_reform }
+				set_country_flag = adventurer_derived_government
+			}
+			change_tag = B31
+			
+			if = {
+				limit = { OR = { has_reform = adventurer_reform has_country_flag = adventurer_derived_government } }
+				adventurer_legacy_effect = yes
+				country_event = { id = marcher.1 days = 1 }
+			}
+				
+			custom_tooltip = SSK_form_castellyr_tooltip
+				
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = silverscale_kobold
+					}
+					change_culture = castellyr_kobold
+				}
+				change_primary_culture = castellyr_kobold
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			
+			#Claims
+			castonath_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			trialmount_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			lower_nath_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			upper_nath_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			westgate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			southgate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			nortmere_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = B31
+			}
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_castellyr_flag
+			clr_country_flag = knightly_order_adventurer
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}

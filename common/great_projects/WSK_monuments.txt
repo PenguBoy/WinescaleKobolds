@@ -3,7 +3,7 @@ great_wine_hoard_monument = {
 	start = 100
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1820.1.1.1
+	date = 1444.1.1
 	
 	#time to build
 	time = {
@@ -20,18 +20,21 @@ great_wine_hoard_monument = {
 	move_days_per_unit_distance = 7
 	
 	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 1
+	starting_tier = 0
 	
 	#project type
 	type = monument
 
 	#can we build it?
 	build_trigger = {
-		OR = {
-			culture_group = wine_kobold_g
-			culture_group = imperial_wine_kobold_g
-			culture_group = kobold
+		owner = {
+			OR = {
+				culture_group = wine_kobold_g
+				culture_group = imperial_wine_kobold_g
+				culture_group = kobold
+			}
 		}
+		
 	}
 
 	#what to do when it's built
@@ -44,24 +47,30 @@ great_wine_hoard_monument = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
-			culture_group = wine_kobold_g
-			culture_group = imperial_wine_kobold_g
-			culture_group = kobold
+		owner = {
+			OR = {
+				culture_group = wine_kobold_g
+				culture_group = imperial_wine_kobold_g
+				culture_group = kobold
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			culture_group = wine_kobold_g
-			culture_group = imperial_wine_kobold_g
-			culture_group = kobold
+		owner = {
+			OR = {
+				culture_group = wine_kobold_g
+				culture_group = imperial_wine_kobold_g
+				culture_group = kobold
+			}
+			mission_completed = WSK_great_wine_hoard
 		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+		always = yes
 	}
 
 	#tier data
@@ -106,6 +115,7 @@ great_wine_hoard_monument = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -124,7 +134,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = elven_architecture_tooltip
-					has_country_flag = elven_architecture_flag
+					owner = {
+						has_country_flag = elven_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -137,7 +149,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = bulwari_architecture_tooltip
-					has_country_flag = bulwari_architecture_flag
+					owner = {
+						has_country_flag = bulwari_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -150,7 +164,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = marble_material_tooltip
-					has_country_flag = marble_material_flag
+					owner = {
+						has_country_flag = marble_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -163,7 +179,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = dragon_material_tooltip
-					has_country_flag = dragon_material_flag
+					owner = {
+						has_country_flag = dragon_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -178,7 +196,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = greenery_accent_tooltip
-					has_country_flag = greenery_accent_flag
+					owner = {
+						has_country_flag = greenery_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -191,7 +211,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = statues_accent_tooltip
-					has_country_flag = statues_accent_flag
+					owner = {
+						has_country_flag = statues_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -203,7 +225,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = 	books_accent_tooltip
-					has_country_flag = books_accent_flag
+					owner = {
+						has_country_flag = books_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -234,8 +258,6 @@ great_wine_hoard_monument = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -247,7 +269,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = elven_architecture_tooltip
-					has_country_flag = elven_architecture_flag
+					owner = {
+						has_country_flag = elven_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -260,7 +284,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = bulwari_architecture_tooltip
-					has_country_flag = bulwari_architecture_flag
+					owner = {
+						has_country_flag = bulwari_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -273,7 +299,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = marble_material_tooltip
-					has_country_flag = marble_material_flag
+					owner = {
+						has_country_flag = marble_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -286,7 +314,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = dragon_material_tooltip
-					has_country_flag = dragon_material_flag
+					owner = {
+						has_country_flag = dragon_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -301,7 +331,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = greenery_accent_tooltip
-					has_country_flag = greenery_accent_flag
+					owner = {
+						has_country_flag = greenery_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -314,7 +346,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = statues_accent_tooltip
-					has_country_flag = statues_accent_flag
+					owner = {
+						has_country_flag = statues_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -326,11 +360,13 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = 	books_accent_tooltip
-					has_country_flag = books_accent_flag
+					owner = {
+						has_country_flag = books_accent_flag
+					}
 				}
 			}
 			modifier = {
-				idea_cost = -0.075
+				idea_cost = -0.1
 			}
 		}	
 	}
@@ -352,13 +388,15 @@ great_wine_hoard_monument = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+		}
+		
+		region_modifier = {
 			local_defensiveness = 0.25
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -370,7 +408,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = elven_architecture_tooltip
-					has_country_flag = elven_architecture_flag
+					owner = {
+						has_country_flag = elven_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -383,7 +423,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = dwarven_architecture_tooltip
-					has_country_flag = dwarven_architecture_flag
+					owner = {
+						has_country_flag = dwarven_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -395,7 +437,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = bulwari_architecture_tooltip
-					has_country_flag = bulwari_architecture_flag
+					owner = {
+						has_country_flag = bulwari_architecture_flag
+					}
 				}
 			}
 			modifier = {
@@ -408,7 +452,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = marble_material_tooltip
-					has_country_flag = marble_material_flag
+					owner = {
+						has_country_flag = marble_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -421,7 +467,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = exwood_material_tooltip
-					has_country_flag = exwood_material_flag
+					owner = {
+						has_country_flag = exwood_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -433,7 +481,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = dragon_material_tooltip
-					has_country_flag = dragon_material_flag
+					owner = {
+						has_country_flag = dragon_material_flag
+					}
 				}
 			}
 			modifier = {
@@ -448,7 +498,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = greenery_accent_tooltip
-					has_country_flag = greenery_accent_flag
+					owner = {
+						has_country_flag = greenery_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -461,7 +513,9 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = statues_accent_tooltip
-					has_country_flag = statues_accent_flag
+					owner = {
+						has_country_flag = statues_accent_flag
+					}
 				}
 			}
 			modifier = {
@@ -473,11 +527,13 @@ great_wine_hoard_monument = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = 	books_accent_tooltip
-					has_country_flag = books_accent_flag
+					owner = {
+						has_country_flag = books_accent_flag
+					}
 				}
 			}
 			modifier = {
-				idea_cost = -0.1
+				idea_cost = -0.2
 			}
 		}	
 	}

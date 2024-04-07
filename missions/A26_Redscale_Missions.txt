@@ -1,0 +1,891 @@
+######################################
+######Branch 1########################
+######################################
+A26_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = A26
+	}
+	has_country_shield = yes
+	
+	A26_economic_incentives = {
+		icon = mission_pol_develop_countryside
+		required_missions = {
+		}
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dragondowns_area
+				area = dragonpoint_area
+			}
+			has_terrain = farmlands
+			NOT = {
+				num_of_times_improved_by_owner = 3
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_eco_incentives_tooltip
+				dragondowns_area = {
+					type = all
+					OR = {
+						NOT = { has_terrain = farmlands }
+					
+						AND = {
+							has_terrain = farmlands
+							num_of_times_improved_by_owner = 3
+						}
+					}
+				}
+				dragonpoint_area = {
+					type = all
+					OR = {
+						NOT = { has_terrain = farmlands }
+					
+						AND = {
+							has_terrain = farmlands
+							num_of_times_improved_by_owner = 3
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_eco_incent
+				duration = 7300
+			}
+		}
+	}
+	
+	A26_kobildzan_wool = {
+		icon = mission_rb_conquer_wales
+		required_missions = {
+			A26_economic_incentives
+		}
+		position = 3
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = wool
+				has_building = textile
+				value = 20
+			}
+		}
+		
+		effect = {
+			change_price = {
+				trade_goods = wool
+				key = RSC_wool_price
+				value = 0.2
+				duration = 7300
+			}
+		}
+	}
+	
+	A26_weaving_expertise = {
+		icon = industrialized_rhineland
+		required_missions = {
+			A26_kobildzan_wool
+		}
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 191
+		}
+		
+		trigger = {
+			191 = {
+				has_building = textile
+				has_production_building_trigger = yes
+				development = 20
+			}
+		}
+		
+		effect = {
+			custom_tooltip = RSC_distribute_10_dev_wool_tooltip
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								trade_goods = wool
+							}
+							add_base_production = 1
+						}
+					"
+				}
+			}
+			custom_tooltip = RSC_wool_to_cloth_events_tooltip
+		}
+	}
+	
+	A26_black_gold = {
+		icon = mission_rb_prospect_for_coal
+		required_missions = {
+			A26_weaving_expertise
+		}
+		position = 5
+		
+		trigger = {
+			has_institution = enlightenment
+			
+			any_owned_province = {
+				development = 25
+				has_terrain = cavern
+				trade_goods = coal
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			mission_reward_artifice_points_1 = yes
+			custom_tooltip = RSC_prospect_coal_tooltip
+		}
+	}	
+}	
+######################################
+######Branch 2########################
+######################################
+A26_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = A26
+	}
+	has_country_shield = yes
+	
+	A26_prepare_defenses = {
+		icon = alpine_defenses
+		required_missions = {
+		}
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			every_province = {
+				limit = {
+					owned_by = A06
+				}
+				add_core = ROOT
+			}
+			
+			170 = {
+				add_building = fort_15th
+				
+				add_province_modifier = {
+					name = RSC_modifier_kobold_fortifications
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	A26_deal_with_nimscodd = {
+		icon = mission_impaled_soldies
+		required_missions = {
+			A26_prepare_defenses
+		}
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = storm_isles_area
+				area = nimscodd_area
+				area = gnomish_pass_area
+			}
+			NOT = {
+				province_id = 144
+			}
+		}
+		
+		trigger = {
+			storm_isles_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			nimscodd_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			gnomish_pass_area = {
+				type = all
+				OR = {
+					province_id = 144
+					
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+			
+			NOT = {
+				exists = A06
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			
+			reaver_coast_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			iochand_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A26_sack_portnamm = {
+		icon = mission_humiliate_lubeck
+		required_missions = {
+			A26_deal_with_nimscodd
+		}
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = reaver_coast_area
+				area = iochand_area
+				province_id = 144
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			reaver_coast_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			iochand_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			144 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			126 = {
+				add_province_modifier = {
+					name = RSC_modifier_kobold_colony
+					duration = 18250
+				}
+				set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+		}
+	}		
+	
+	A26_coast_fisheries = {
+		icon = mission_rb_cod_wars
+		required_missions = {
+			A26_sack_portnamm
+			A26_weaving_expertise
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dragondowns_area
+				area = dragonpoint_area
+				area = reaver_coast_area
+				area = gnomish_pass_area
+			}
+			trade_goods = fish
+			NOT = { has_dock_building_trigger = yes }
+			NOT = { has_building = wharf }
+		}
+		
+		trigger = {
+			dragondowns_area = {
+				type = all
+				trade_goods = fish
+				has_dock_building_trigger = yes
+				has_building = wharf
+			}
+			dragonpoint_area = {
+				type = all
+				trade_goods = fish
+				has_dock_building_trigger = yes
+				has_building = wharf
+			}
+			reaver_coast_area = {
+				type = all
+				trade_goods = fish
+				has_dock_building_trigger = yes
+				has_building = wharf
+			}
+			gnomish_pass_area = {
+				type = all
+				trade_goods = fish
+				has_dock_building_trigger = yes
+				has_building = wharf
+			}
+		}
+		
+		effect = {
+			custom_tooltip = RSC_fisheries_prod_tooltip
+			if = {
+				limit = {
+					trade_goods_produced_amount = {
+						trade_goods = fish
+						amount = 25
+					}
+					NOT = { is_year = 1600 }
+				}
+				
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = dragondowns_area
+							area = dragonpoint_area
+							area = reaver_coast_area
+							area = gnomish_pass_area
+						}
+						trade_goods = fish
+					}
+					add_province_modifier = {
+						name = RSC_modifier_fish_produce_four
+						duration = -1
+					}
+				}
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = dragondowns_area
+							area = dragonpoint_area
+							area = reaver_coast_area
+							area = gnomish_pass_area
+						}
+						trade_goods = fish
+					}
+					add_province_modifier = {
+						name = RSC_modifier_fish_produce_two
+						duration = -1
+					}
+				}
+			}
+		}
+	}		
+}
+
+######################################
+######Branch 3########################
+######################################
+A26_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = A26
+	}
+	has_country_shield = yes
+	
+	A26_hoard_with_army = {
+		icon = gory_to_the_black_army
+		required_missions = {
+			A26_prepare_defenses
+		}
+		position = 2
+		
+		trigger = {
+			army_professionalism = 0.3
+			army_tradition = 75
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_kobold_drill
+				duration = -1
+			}
+		}
+	}
+	
+	A26_natural_affinity = {
+		icon = mission_guns_of_urban
+		required_missions = {
+			A26_hoard_with_army
+		}
+		position = 3
+		
+		trigger = {
+			artillery_fraction = 0.4
+			num_of_artillery = 30
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_kobild_arti
+				duration = 7300
+			}
+		}
+	}
+	
+	A26_isles_of_wonder = {
+		icon = mission_rb_inland_india
+		required_missions = {
+			A26_deal_with_nimscodd
+		}
+		
+		provinces_to_highlight = {
+			province_id = 146
+		}
+		
+		trigger = {
+			146 = {
+				owned_by = ROOT
+				num_of_times_improved_by_owner = 10
+				has_production_building_trigger = yes
+				has_building = mills
+			}
+		}
+		
+		effect = {
+			146 = {
+				add_province_modifier = {
+					name = RSC_modifier_baycodds_prod
+					duration = -1
+				}
+				
+				center_of_trade = 2
+			}
+			
+			mission_reward_artifice_points_1 = yes
+		}
+	}			
+	
+	A26_kobildzani_united = {
+		icon = mission_plc_governance_act
+		required_missions = {
+			A26_sack_portnamm
+			A26_kobold_council
+		}
+		position = 5
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = dragon_coast_region
+				development = 15
+				value = 15
+			}
+		}
+		
+		effect = {
+			change_tag = Z38
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			
+			dragon_coast_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = Z38
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_kobildzan_flag
+			lock_racial_admin = yes
+			hidden_effect = {
+				override_country_name = RED_KOBILDZAN
+				change_country_color = { country = A26 }
+			}
+		}
+	}
+}
+	
+
+######################################
+######Branch 4########################
+######################################
+A26_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = A26
+	}
+	has_country_shield = yes
+	
+	A26_military_advancement = {
+		icon = mission_united_knight_order
+		required_missions = {
+		}
+		position = 1
+		
+		trigger = {
+			mil_power = 125
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		
+		effect = {
+			add_mil_tech = 1
+			if = { 
+				limit = {	
+					A27 = { exists = yes }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = A27
+				} 
+			}
+		}
+	}
+	
+	A26_getting_blue = {
+		icon = mission_longships
+		required_missions = {
+			A26_military_advancement
+		}
+		position = 2
+		
+		trigger = {
+			dragonspine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dragonheights_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dragondepth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {	
+					A27 = { exists = yes }
+				}
+					
+				inherit = A27
+			}
+			
+			if = { 
+				limit = {	
+					A28 = { exists = yes }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = A28
+				} 
+			}
+		}
+	}
+		
+	A26_greener_pastures = {
+		icon = mission_rb_conquer_wales
+		required_missions = {
+			A26_getting_blue
+		}
+		position = 3
+		
+		trigger = {
+			coddorran_heights_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			694 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+			
+		effect = {
+			if = {
+				limit = {	
+					A28 = { exists = yes }
+				}
+					
+				inherit = A28
+			}
+				
+			200 = {
+				if = {
+					limit = {
+						NOT = {
+							has_fort_building_trigger = yes
+						}
+					}
+					add_building = fort_15th
+				}
+				
+					
+				add_province_modifier = {
+					name = RSC_modifier_kobold_fortifications
+					duration = -1
+				}
+			}
+		}
+	}
+
+	A26_kobold_council = {
+		icon = mission_develop_the_scandes
+		required_missions = {
+			A26_greener_pastures
+		}
+		position = 4
+		
+		trigger = {
+			employed_advisor = {
+				category = MIL
+			}
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			
+			NOT = {
+				is_in_deficit = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_koboldic_council
+				duration = 5475
+			}
+		}
+	}
+}
+
+
+######################################
+######Branch 5########################
+######################################
+A26_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = A26
+	}
+	has_country_shield = yes
+	
+	A26_kobold_society = {
+		icon = mission_plc_governance_act
+		required_missions = {
+		}
+		position = 1
+		
+		trigger = {
+			adm_power = 300
+			prestige = 20
+		}
+		
+		effect = {
+			add_adm_tech = 1
+			capital_scope = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+			
+			add_country_modifier = {
+				name = RSC_modifier_sociatal_adaptation
+				duration = 18250
+			}
+		}
+	}
+	
+	A26_
+	
+	A26_room_for_moor = {
+		icon = mission_invade_island
+		required_missions = {
+			A26_greener_pastures
+		}
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = westmoor_proper_area
+				area = moorhills_area
+				area = beronmoor_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		
+		trigger = {
+			westmoor_proper_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			
+			moorhills_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			
+			beronmoor_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			196 = {
+				add_province_modifier = {
+					name = RSC_modifier_kobold_fortifications
+					duration = -1
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							has_fort_building_trigger = yes
+						}
+					}
+					add_building = fort_15th
+				}
+			}
+		}
+	}
+	
+	A26_drain_the_moor = {
+		icon = mission_rice_field
+		required_missions = {
+			A26_room_for_moor
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = moorhills_area
+				area = beronmoor_area
+				area = westmoor_proper_area
+			}
+			has_terrain = marsh
+			NOT = {
+				has_manpower_building_trigger = yes
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_westmoors_manpower_building_tooltip
+				
+				moorhills_area = {
+					type = all
+					owned_by = ROOT
+					OR = {
+						NOT = {
+							has_terrain = marsh
+						}
+						
+						has_manpower_building_trigger = yes
+					}
+				}
+				
+				beronmoor_area = {
+					type = all
+					owned_by = ROOT
+					OR = {
+						NOT = {
+							has_terrain = marsh
+						}
+						
+						has_manpower_building_trigger = yes
+					}
+				}
+				
+				westmoor_proper_area = {
+					type = all
+					owned_by = ROOT
+					OR = {
+						NOT = {
+							has_terrain = marsh
+						}
+						
+						has_manpower_building_trigger = yes
+					}
+				}
+			}
+			has_institution = global_trade
+			manpower = 20
+		}
+		
+		effect = {
+			custom_tooltip = RSC_westmoor_drained_tooltip
+			
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = westmoor_proper_area
+							area = beronmoor_area
+							area = moorhills_area
+						}
+						has_terrain = marsh
+					}
+					
+					add_province_modifier = {
+						name = RSC_modifier_westmoor_drained
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+					
+		

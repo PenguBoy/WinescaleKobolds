@@ -124,7 +124,7 @@
 190 = "Exaixzakaydex" # Storm isles
 197 = "Iskalbaia" # Scalebay
 198 = "Ayddenkayd" # Mountain island
-199 = "Bykayd" # Two islands
+199 = "Bykaydak" # Two islands
 200 = "Ayddenivrip" # Mountain reach
 694 = "Vurtekemb" # Green coast
 #Reveria, Portnamm
@@ -190,7 +190,7 @@
 4039 = "Zutaraydden" #Fire Mountain
 4040 = "Labzarxan" #Lava Sea
 2949 = "Zutarforgaketza" #Fire Forge
-4041 = "Bihotzix Aydden" #Heart of the Mountain
+4041 = "Bihotzexa Aydden" #Heart of the Mountain
 
 #Cannor
 81 = "Kobildezidora" #Kobold Road"
@@ -198,3 +198,40 @@
 101 = "Ardoperd" #Wine Port
 97 = "Gurtzax Minara" #Temple of Minara
 38 = "Zusarperd" #Old Port
+
+#Blackscale Triarchy
+
+452 = "Varribixkayd" #Gem Island
+510 = "Zingiragoturex" #Swamp Castle
+511 = "Iratxokazald" #Goblin Forest
+512 = "Ourdexa Garu" #Ourdish Pass
+513 = "Haitztorra" #Human Tower
+514 = "Baianuorak" #Bay Hills
+515 = "Iratxonuorak" #Goblin Hills
+516 = "Pontuakapyx" #Pointy Cape
+517 = "Nuokapyx" #Hilly Cape
+518 = "Kobildlurreratze" #Kobold Landing (reference to the Greenscale MT)
+519 = "Itxaropenaydden" #Hope Mountain
+521 = "Tayekanix Zerga" #Tayekans' Tribute (Essentially a nod to the Greenscales original home close to the dragon cost)
+522 = "Arruaxix Zun" #Ruins of the Sun
+523 = "Zatitunuo" #Split Hill
+525 = "Arbexataya" #Harbor Gate
+526 = "Arbex Zakanean" #Harbor Hold
+527 = "Irraydden" #Gold Mountain
+528 = "Bakartigaru" #Lonely Pass
+529 = "Huztaydden" #Empty Mountain
+530 = "Berinabaia" #Glass Bay
+531 = "Puzkatukemb" #Broken Coast
+533 = "Erripkayd" #Far Island
+534 = "Haitzurdinahea" #Marble Mouth
+535 = "Merxakazald" #Purple Forest
+536 = "Berinaviri" #Glass City
+581 = "Birrixkayd" #New Island
+2942 = "Haitzurdin Zakanean" #Marble Hold
+3223 = "Zugeakitzal" #Serpent Shadow
+4238 = "Berina Zakanean" #Glass Hold
+6759 = "Zilarragaru" #Silver Pass
+6760 = "Puzkatukaydak" #Broken Islands
+6762 = "Humacexa Kayd" #Island of Humac
+
+

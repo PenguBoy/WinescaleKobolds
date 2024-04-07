@@ -6,7 +6,8 @@ KOB_2 = {
 	
 	potential = {
 		culture_group = kobold
-		NOT = { culture = winescale_kobold }
+		NOT = { tag = WSK }
+		NOT = { tag = A26 }
 		capital_scope = { superregion = western_cannor_superregion }
 	}
 	

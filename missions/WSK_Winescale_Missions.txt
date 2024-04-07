@@ -523,7 +523,7 @@ WSK_branch_2 = {
 					duration = -1
 				}
 			}
-			pearlywine_area_area = {
+			pearlywine_area = {
 				type = all
 				limit = {
 					NOT = { is_core = ROOT }
@@ -641,7 +641,7 @@ WSK_branch_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			damespearl_area_area = {
+			damespearl_area = {
 				type = all
 				limit = {
 					NOT = { is_core = ROOT }
@@ -654,7 +654,7 @@ WSK_branch_2 = {
 				10 = {
 					if = {
 						limit = {
-							ROOT = {
+							owner = {
 								primary_culure = bloodwine_kobold
 							}
 						}
@@ -667,7 +667,7 @@ WSK_branch_2 = {
 				15 = {
 					if = {
 						limit = {
-							ROOT = {
+							owner = {
 								primary_culure = bloodwine_kobold
 							}
 						}
@@ -680,7 +680,7 @@ WSK_branch_2 = {
 				20 = {
 					if = {
 						limit = {
-							ROOT = {
+							owner = {
 								primary_culure = bloodwine_kobold
 							}
 						}
@@ -693,7 +693,7 @@ WSK_branch_2 = {
 				19 = {
 					if = {
 						limit = {
-							ROOT = {
+							owner = {
 								primary_culure = bloodwine_kobold
 							}
 						}
@@ -706,7 +706,7 @@ WSK_branch_2 = {
 				13 = {
 					if = {
 						limit = {
-							ROOT = {
+							owner = {
 								primary_culure = bloodwine_kobold
 							}
 						}
@@ -848,7 +848,16 @@ WSK_branch_2 = {
 		}
 		
 		effect = {
-			custom_tooltip = enables_racking_priv_tooltip
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+					region = lencenor_region
+				}
+				add_province_modifier = {
+					name = WSK_mech_rack_modifier
+					duration = 3650
+				}
+			}
 		}
 	}
 	
@@ -862,16 +871,25 @@ WSK_branch_2 = {
 		trigger = {
 			trading_part = {
 				trade_goods = wine
-				amount = 0.66
+				value = 0.66
+			}
+			
+			100 = {
+				OR = {
+					culture = winescale_kobold
+					culture = sornwine_kobold
+				}
 			}
 			
 			treasury = 4000
 		}
 		
 		effect = {
-			add_great_project = {
-				type = great_wine_hoard_monument
-				instant = yes
+			100 = {
+				add_great_project_tier = {
+					type = great_wine_hoard_monument
+					tier = 1
+				}
 			}
 			country_event = {
 				id = wiscko.23
@@ -952,7 +970,7 @@ WSK_branch_2 = {
 						value = 100
 					}
 				}
-				has_years_of_income = 2
+				years_of_income = 2
 			}
 		}
 		
@@ -1571,7 +1589,7 @@ WSK_branch_3 = {
 		}
 		
 		trigger = {
-			has_treasury = 2000
+			treasury = 2000
 		}
 		
 		effect = {
@@ -2031,7 +2049,7 @@ WSK_branch_4 = {
 		}
 		
 		effect = {
-			upgrade_wineport_wines = 1
+			upgrade_wineport_wines = yes
 			add_country_modifier = {
 				name = WSK_modifier_wine_leviathan
 				duration = 18250
@@ -2087,7 +2105,10 @@ WSK_branch_5 = {
 		}
 		
 		effect = {
-			custom_tooltip = experimental_shells_tooltip
+			add_country_modifier = {
+				name = WSK_experimental_shells_modifier
+				duration = -1
+			}
 		}
 	}
 	

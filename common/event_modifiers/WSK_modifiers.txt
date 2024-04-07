@@ -312,3 +312,21 @@ WSK_kobold_hoard_20 = {
 	development_cost = -0.20
 	global_trade_goods_size_modifier = 0.1
 }
+
+WSK_experimental_shells_modifier = {
+	artillery_fire = 0.5
+}
+
+WSK_mech_rack_modifier = {
+	trade_goods_size = 1
+}
+
+WSK_modifier_qumado_draushum = {
+	max_flagships = 1
+	leader_naval_manuever = 1
+}
+
+WSK_modifier_kobold_navigational_school = {
+	admiral_cost = -0.2
+	max_admiral_maneuver = 1
+}

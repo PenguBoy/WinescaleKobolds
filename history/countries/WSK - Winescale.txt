@@ -10,6 +10,10 @@ technology_group = tech_kobold
 
 capital = 81
 
+1000.1.1 = { 
+	set_country_flag = semi_monstrous
+}
+
 1428.3.18 = {
 	monarch = {
 		name = "Korbax Winescale"

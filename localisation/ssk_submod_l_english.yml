@@ -11,6 +11,7 @@
  #Cultures
   #Silverscale
    silverscale_kobold:0 "Silverscale Kobold"
+   castellyr_kobold:0 "Castellyr Kobold"
   #Grand Escanni Group
    escanni_empire_g:0 "Grand Escanni"
    sunscale_kobold:0 "Sunscale Kobold"
@@ -74,3 +75,6 @@
   #Establish Sunscale
    XLF_proclaim_sunscale_theocracy_decision_title:0 "Establish the Sunscale Order"
    XLF_proclaim_sunscale_theocracy_decision_desc:0 "The structure of our nation needs to adapt to further aid us in spreading the light."
+  #Form Castellyr
+   castellyr_nation_kobold_title:0 "Revive the Kingdom of Castellyr"
+   castellyr_nation_kobold_desc:0 "The Kingdom of Castellyr, also known as the Kingdom of the Silver Dragon, was the feudal successor to ancient Castanor. Castellyr was first amongst equals in Feudal Escann, and was the shining bastion of the East.\n\n§R(If you're an Adventurer, this is mutually exclusive from the Form Our Own Country! decision)§!"

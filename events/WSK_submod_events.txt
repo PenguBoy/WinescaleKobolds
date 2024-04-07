@@ -54,7 +54,6 @@ country_event = {
 			}
 			81 = {
 				center_of_trade = 2
-				change_province_name = "Kobold Alley"
 			}
 			WSK = {
 				add_truce_with = A01
@@ -136,7 +135,6 @@ country_event = {
 		hidden_effect = {
 			81 = {
 				center_of_trade = 2
-				change_province_name = "Kobold Alley"
 			}
 			WSK = {
 				add_truce_with = A01
@@ -876,7 +874,7 @@ country_event = {
 		if = {
 			limit = {
 				A11 = {
-					elector = yes
+					is_elector = yes
 				}
 			}
 			A11 = {
@@ -1000,9 +998,16 @@ country_event = {
 	picture = INVENTION_eventPicture
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_treasury = -4000
+		}
+	}
 		
 	option = { #Elven Architecture
 		name = wiscko.23.a
+		custom_tooltip = elven_architecture_event_tooltip
 		set_country_flag = elven_architecture_flag
 		hidden_effect = {
 			country_event = {
@@ -1013,6 +1018,7 @@ country_event = {
 	
 	option = { #Dwarven Architecture
 		name = wiscko.23.b
+		custom_tooltip = dwarven_architecture_event_tooltip
 		set_country_flag = dwarven_architecture_flag
 		hidden_effect = {
 			country_event = {
@@ -1023,6 +1029,7 @@ country_event = {
 	
 	option = { #Bulwari Architecture
 		name = wiscko.23.c
+		custom_tooltip = bulwari_architecture_event_tooltip
 		set_country_flag = bulwari_architecture_flag
 		hidden_effect = {
 			country_event = {
@@ -1042,6 +1049,7 @@ country_event = {
 		
 	option = { #Marble Hoard
 		name = wiscko.24.a
+		custom_tooltip = marble_material_event_tooltip
 		set_country_flag = marble_material_flag
 		hidden_effect = {
 			country_event = {
@@ -1052,6 +1060,7 @@ country_event = {
 	
 	option = { #Exotic Wood Hoard
 		name = wiscko.24.b
+		custom_tooltip = exwood_material_event_tooltip
 		set_country_flag = exwood_material_flag
 		hidden_effect = {
 			country_event = {
@@ -1062,6 +1071,7 @@ country_event = {
 	
 	option = { #Dragon Stone Hoard
 		name = wiscko.24.c
+		custom_tooltip = dragon_material_event_tooltip
 		set_country_flag = dragon_material_flag
 		hidden_effect = {
 			country_event = {
@@ -1081,16 +1091,19 @@ country_event = {
 		
 	option = { #Greenery Hoard
 		name = wiscko.25.a
+		custom_tooltip = greenery_accent_event_tooltip
 		set_country_flag = greenery_accent_flag
 	}
 	
 	option = { #Statues Hoard
 		name = wiscko.25.b
+		custom_tooltip = statues_accent_event_tooltip
 		set_country_flag = statues_accent_flag
 	}
 	
 	option = { #Bookshelves Hoard
 		name = wiscko.25.c
+		custom_tooltip = books_accent_event_tooltip
 		set_country_flag = books_accent_flag
 	}
 }

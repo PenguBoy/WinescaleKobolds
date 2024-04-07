@@ -970,6 +970,8 @@ ruler_is_kobold = {
 			ruler_culture = bloodwine_kobold
 			ruler_culture = silmunywine_kobold
 			
+			ruler_culture = castellyr_kobold
+			
 			ruler_culture = imperial_pearlywine_kobold
 			ruler_culture = imperial_venailwine_kobold
 			ruler_culture = imperial_mistywine_kobold
@@ -1758,6 +1760,7 @@ consort_is_kobold = {
 			consort_culture = steelscale_kobold
 			consort_culture = copperscale_kobold
 			
+			consort_culture = castellyr_kobold
 			
 			consort_culture = winescale_kobold
 			consort_culture = pearlywine_kobold
@@ -2399,6 +2402,8 @@ heir_is_kobold = {
 			heir_culture = bloodwine_kobold
 			heir_culture = silmunywine_kobold
 			
+			heir_culture = castellyr_kobold
+			
 			heir_culture = imperial_pearlywine_kobold
 			heir_culture = imperial_venailwine_kobold
 			heir_culture = imperial_mistywine_kobold
@@ -2852,6 +2857,7 @@ culture_is_kobold = {
 	OR = {
 		culture_group = kobold
 		culture_group = wine_kobold_g
+		culture = castellyr_kobold
 	}
 }
 
@@ -3732,6 +3738,8 @@ has_kobold_advisor = {
 			employed_advisor = { culture = steelscale_kobold }
 			employed_advisor = { culture = copperscale_kobold }
 			
+			employed_advisor = { culture = castellyr_kobold }
+			
 			employed_advisor = { winescale_kobold }
 			employed_advisor = { pearlywine_kobold }
 			employed_advisor = { venailwine_kobold }
@@ -3755,6 +3763,8 @@ has_kobold_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = goldscale_kobold }
 			employed_advisor = { category = $category$ culture = steelscale_kobold}
 			employed_advisor = { category = $category$ culture = copperscale_kobold}
+			
+			employed_advisor = { category = $category$ culture = castellyr_kobold }
 			
 			employed_advisor = { category = $category$ winescale_kobold }
 			employed_advisor = { category = $category$ pearlywine_kobold }
@@ -4444,6 +4454,16 @@ has_kobold_accepted_culture = {
 		accepted_culture = darkscale_kobold
 		accepted_culture = goldscale_kobold
 		accepted_culture = steelscale_kobold
+		
+		accepted_culture = winescale_kobold
+		accepted_culture = pearlywine_kobold
+		accepted_culture = venailwine_kobold
+		accepted_culture = mistywine_kobold
+		accepted_culture = sornwine_kobold
+		accepted_culture = bloodwine_kobold
+		accepted_culture = silmunywine_kobold
+			
+		accepted_culture = castellyr_kobold
 	}
 }
 

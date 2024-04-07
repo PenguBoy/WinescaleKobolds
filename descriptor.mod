@@ -8,7 +8,7 @@ tags={
 	"Missions And Decisions"
 	"Expansion"
 }
-dependcies={
+dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 }
 name="Anbennar - A Kobold Submod"
