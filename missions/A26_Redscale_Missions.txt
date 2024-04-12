@@ -148,8 +148,56 @@ A26_branch_1 = {
 			mission_reward_artifice_points_1 = yes
 			custom_tooltip = RSC_prospect_coal_tooltip
 		}
-	}	
-}	
+	}
+
+	A26_approach_calamity = {
+		icon = mission_potosi_silver
+		required_missions = {
+			A26_new_home
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_endralliande
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_colonize_endrall_tooltip
+				
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 7
+					colonial_region = colonial_endralliande
+					is_city = yes
+				}
+				941 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			941 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				center_of_trade = 2
+				
+				change_trade_goods = sugar
+			}
+			
+			colonial_endralliande = {
+				type = all
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
 ######################################
 ######Branch 2########################
 ######################################
@@ -329,29 +377,60 @@ A26_branch_2 = {
 		}
 		
 		trigger = {
-			dragondowns_area = {
-				type = all
-				trade_goods = fish
-				has_dock_building_trigger = yes
-				has_building = wharf
-			}
-			dragonpoint_area = {
-				type = all
-				trade_goods = fish
-				has_dock_building_trigger = yes
-				has_building = wharf
-			}
-			reaver_coast_area = {
-				type = all
-				trade_goods = fish
-				has_dock_building_trigger = yes
-				has_building = wharf
-			}
-			gnomish_pass_area = {
-				type = all
-				trade_goods = fish
-				has_dock_building_trigger = yes
-				has_building = wharf
+			custom_trigger_tooltip = {
+				tooltip = RSC_fisheries_requir_tooltip
+				dragondowns_area = {
+					type = all
+					OR = {
+						NOT = {
+							trade_goods = fish
+						}
+						AND = {
+							trade_goods = fish
+							has_dock_building_trigger = yes
+							has_building = wharf
+						}
+					}
+				}
+				dragonpoint_area = {
+					type = all
+					OR = {
+						NOT = {
+							trade_goods = fish
+						}
+						AND = {
+							trade_goods = fish
+							has_dock_building_trigger = yes
+							has_building = wharf
+						}
+					}
+				}
+				reaver_coast_area = {
+					type = all
+					OR = {
+						NOT = {
+							trade_goods = fish
+						}
+						AND = {
+							trade_goods = fish
+							has_dock_building_trigger = yes
+							has_building = wharf
+						}
+					}
+				}
+				gnomish_pass_area = {
+					type = all
+					OR = {
+						NOT = {
+							trade_goods = fish
+						}
+						AND = {
+							trade_goods = fish
+							has_dock_building_trigger = yes
+							has_building = wharf
+						}
+					}
+				}
 			}
 		}
 		
@@ -400,7 +479,138 @@ A26_branch_2 = {
 				}
 			}
 		}
-	}		
+	}
+	
+	A26_new_home = {
+		icon = mission_rb_cod_wars
+		required_missions = {
+			A26_fishers_tale
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			province_id = 1202
+		}
+		
+		trigger = {
+			1202 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			1202 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				change_trade_goods = gold
+				
+				add_province_modifier = {
+					name = RSC_modifier_dalaire_mine
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	A26_cementing_presence = {
+		icon = mission_launch_a_flagship
+		required_missions = {
+			A26_new_home
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_dalaire
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_colonize_dalaire_tooltip
+				
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 8
+					colonial_region = colonial_dalaire
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_kobold_rush_aelentir
+				duration = 9125
+			}
+		}
+	}
+	
+	A26_dominate_aelentir = {
+		icon = mission_retake_ceuta
+		required_missions = {
+			A26_cementing_presence
+			A26_approach_calamity
+		}
+		position = 10
+		
+		trigger = {
+			endralliande_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1504 = { #Banished Isles
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			1527 = { #Ruined sea
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			1576 = { #Dalaire
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			
+			colony = 5
+			
+			NOT = {
+				any_country = {
+					num_of_colonists = 1
+					navy_size = ROOT
+				}
+			}	
+		}
+		
+		effect = {
+			1202 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				
+				add_province_modifier = {
+					name = RSC_modifier_kobold_colonial_port
+					duration = -1
+				}
+			}
+			
+			941 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				
+				add_province_modifier = {
+					name = RSC_modifier_kobold_colonial_port
+					duration = -1
+				}
+			}
+		}
+	}
 }
 
 ######################################
@@ -522,10 +732,28 @@ A26_branch_3 = {
 			dragon_coast_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					NOT = { is_claim = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = Z38
 			}
+			
+			southroy_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			deranne_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			
 			add_country_modifier = {
@@ -537,6 +765,182 @@ A26_branch_3 = {
 			hidden_effect = {
 				override_country_name = RED_KOBILDZAN
 				change_country_color = { country = A26 }
+			}
+		}
+	}
+	
+	A26_develop_highlands = {
+		icon = alpine_fortifications
+		required_missions = {
+			A26_kobildzani_united
+		}
+		position = 6
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = dragon_coast_region
+				num_of_times_improved_by_owner = 3
+				OR = {
+					has_terrain = highlands
+					has_terrain = hills
+				}
+				value = 10
+			}
+		}
+		
+		every_owned_province = {
+			limit = {
+				region = dragon_coast_region
+				OR = {
+					has_terrain = highlands
+					has_terrain = hills
+				}
+			}
+			add_province_modifier = {
+				name = RSC_modifier_hillside_settlements
+				duration = -1
+			}
+		}
+	}
+	
+	A26_fishers_tale = {
+		icon = mission_look_west
+		required_missions = {
+		}
+		position = 7
+		
+		trigger = {
+			num_of_light_ship = 15
+			treasury = 100
+		}
+		
+		effect = {
+			create_explorer = {
+				tradition = 60
+			}
+			
+			far_sea_area = {
+				discover_country = ROOT
+			}
+			
+			if = {
+				limit = {
+					1001 = {
+						is_empty = yes
+					}
+				}
+				1001 = {
+					add_siberian_construction = 400
+				}
+			}
+			else = {
+				add_permanent_claim = ROOT
+			}
+			1481 = {
+				change_province_name = "Erzileku Sea"
+			}
+		}
+	}
+
+	A26_five_port_system = {
+		icon = mission_control_the_barbary_coast
+		required_missions = {
+			A26_fishers_tale
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 93
+				province_id = 85
+				province_id = 112
+				province_id = 126
+				province_id = 102
+			}
+			NOT = { development = 25 }
+			NOT = { has_trade_building_trigger = yes }
+		}
+		
+		trigger = {
+			93 = {
+				development = 25
+				has_trade_building_trigger = yes
+			}
+			85 = {
+				development = 25
+				has_trade_building_trigger = yes
+			}
+			112 = {
+				development = 25
+				has_trade_building_trigger = yes
+			}
+			102 = {
+				development = 25
+				has_trade_building_trigger = yes
+			}
+			126 = {
+				development = 25
+				has_trade_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 85
+						province_id = 112
+						province_id = 126
+						province_id = 102
+					}
+				}
+				add_province_modifier = {
+					name = RSC_modifier_five_port_system
+					duration = -1
+				}
+			}
+			
+			93 = {
+				center_of_trade = 2
+				add_province_modifier = {
+					name = RSC_modifier_five_port_system
+					duration = -1
+				}
+			}
+		}
+	}
+
+	A26_grand_capital = {
+		icon = develop_provence
+		required_missions = {
+			A26_five_port_system
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			province_id = 177
+		}
+		
+		trigger = {
+			177 = {
+				owned_by = ROOT
+				development = 30
+				num_free_building_slots = 0
+				has_construction = no
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			177 = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+				
+				add_province_modifier = {
+					name = RSC_modifier_grand_capital
+					duration = -1
+				}
 			}
 		}
 	}
@@ -702,6 +1106,514 @@ A26_branch_4 = {
 			}
 		}
 	}
+	
+	A26_push_down_coast = {
+		icon = mission_develop_the_scandes
+		required_missions = {
+			A26_kobildzani_united
+		}
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = deranne_area
+				area = southroy_area
+				province_id = 130
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			deranne_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			southroy_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			130 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			112 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				
+				add_province_modifier = {
+					name = RSC_modifier_kobold_colony
+					duration = 3650
+				}
+			}
+			
+			darom_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			venail_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shrouded_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			85 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A26_top_bottom = {
+		icon = mission_northumberland_coast
+		required_missions = {
+			A26_push_down_coast
+			A26_push_north
+		}
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = shrouded_coast_area
+				area = darom_area
+				area = venail_area
+				province_id = 85
+			}
+		}
+		
+		trigger = {
+			darom_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			venail_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			shrouded_coast_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			85 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 30
+			custom_tooltip = RSC_power_projection_tooltip
+			hidden_effect = {
+				add_power_projection = { 
+					type = 25_permanent_power_projection
+					amount = 25 
+				}
+			}
+			
+			add_country_modifier = {
+				name = RSC_modifier_naval_hegemon
+				duration = -1
+			}
+		}
+	}
+	
+	A26_southern_route = {
+		icon = mission_claim_the_canaries
+		required_missions = {
+			A26_fishers_tale
+			A26_naval_innovation
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			province_id = 5792
+		}
+		
+		trigger = {
+			5792 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					6319 = {
+						is_empty = yes
+					}
+				}
+				6319 = {
+					add_siberian_construction = 600
+				}
+			}
+			else = {
+				add_permanent_claim = ROOT
+			}
+			
+			5792 = {
+				add_province_modifier = {
+					name = RSC_modifier_southern_trade_posts
+					duration = -1
+				}
+			}
+			6319 = {
+				add_province_modifier = {
+					name = RSC_modifier_southern_trade_posts
+					duration = -1
+				}
+			}
+			
+			dogo_babolo_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			narawan_jigin_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asanbosom_tu_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A26_create_foothold = {
+		icon = mission_nah_ravine_dwellers
+		required_missions = {
+			A26_southern_route
+		}
+		position = 9
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dogo_babolo_area
+				area = narawan_jigin_area
+				area = asanbosom_tu_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = dogo_babolo_area
+					area = narawan_jigin_area
+					area = asanbosom_tu_area
+				}
+				value = 5
+			}
+		}
+		
+		effect = {
+			custom_tooltip = RSC_lelanan_and_surr_claims_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							province_id = 5821
+							province_id = 6599
+							province_id = 6604
+							province_id = 5822
+							province_id = 6611
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	A26_found_gozatviri = {
+		icon = mission_convert_bengal
+		required_missions = {
+			A26_create_foothold
+		}
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5821
+				province_id = 6599
+				province_id = 6604
+				province_id = 5822
+				province_id = 6611
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_lelanan_and_surr_conq_tooltip
+				num_of_owned_provinces_with = {
+					OR = {
+						province_id = 5821
+						province_id = 6604
+						province_id = 5822
+						province_id = 6611
+					}
+					is_core = ROOT
+					value = 2
+				}
+				6599 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			6599 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				
+				change_trade_goods = spices
+				change_province_name = "Gozatviri"
+			}
+			
+			fahvanosy_region = {
+				type = all
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A26_the_kuz = {
+		icon = mission_dominate_persian_gulf
+		required_missions = {
+			A26_found_gozatviri
+		}
+		position = 11
+		
+		provinces_to_highlight = {
+			region = fahvanosy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = fahvanosy_region
+				value = 20
+			}
+		}
+		
+		effect = {
+			custom_tooltip = RSC_release_KUZ_tooltip
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = KUZ
+			}
+			
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = fahvanosy_region
+					}
+					add_core = KUZ
+					if = {
+						limit = { is_core = ROOT }
+						remove_core = ROOT
+					}
+				}
+				release = KUZ
+				KUZ = {
+					change_government = republic
+					add_government_reform = trade_company_government
+					change_religion = ROOT
+					change_primary_culture = ROOT
+				
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+					add_treasury = 200
+					set_prestige_to_zero = yes
+					add_republican_tradition = 100
+					
+					move_capital_effect = 6599
+				}
+			}
+		}
+	}
+	
+	A26_masters_of_sarhal = {
+		icon = mission_cromandel_coast
+		required_missions = {
+			A26_the_kuz
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			region = fahvanosy_region
+			NOT = { area = ibibakely_area }
+			NOT = { area = tebolelmasi_area }
+			NOT = { area = tebajik_area }
+			NOT = { area = zohejirofo_area }
+			NOT = { area = velanynosy_area }
+			NOT = { area = far_uelos_isles_area }
+			NOT = { area = sil_berkhens_land_area }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = RSC_northern_island_conquered_tooltip
+				fahvanosy_region = {
+					type = all
+					OR = {
+						NOT = { area = ibibakely_area }
+						NOT = { area = tebolelmasi_area }
+						NOT = { area = tebajik_area }
+						NOT = { area = zohejirofo_area }
+						NOT = { area = velanynosy_area }
+						NOT = { area = far_uelos_isles_area }
+						NOT = { area = sil_berkhens_land_area }
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			KUZ = {
+				add_country_modifier = {
+					name = RSC_modifier_KUZ_trade
+					duration = -1
+				}
+			}
+			
+			velanynosy_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			inner_rankaty_islands_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			outer_rankaty_islands_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	A26_control_passages = {
+		icon = mission_colonize_the_west
+		required_missions = {
+			A26_masters_of_sarhal
+			A26_hoard_spices
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = velanynosy_area
+				area = inner_rankaty_islands_area
+				area = outer_rankaty_islands_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			velanynosy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_rankaty_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			outer_rankaty_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 3255
+						province_id = 3254
+						province_id = 5833
+						province_id = 5834
+						province_id = 3257
+					}
+				}
+				add_province_modifier = {
+					name = RSC_modifier_lel_passage_monopoly
+					duration = -1
+				}
+			}
+			
+			custom_tooltip = RSC_claim_on_trade_center_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							superregion = east_sarhal_superregion
+							superregion = south_sarhal_superregion
+							superregion = south_haless_superregion
+							superregion = rahen_superregion
+							superregion = yanshen_superregion
+						}
+						has_port = yes
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
 }
 
 
@@ -732,8 +1644,9 @@ A26_branch_5 = {
 			add_adm_tech = 1
 			capital_scope = {
 				add_institution_embracement = {
-				which = feudalism
-				value = 100
+					which = feudalism
+					value = 100
+				}
 			}
 			
 			add_country_modifier = {
@@ -743,7 +1656,30 @@ A26_branch_5 = {
 		}
 	}
 	
-	A26_
+	A26_a_new_path_forward = {
+		icon = mission_empire
+		required_missions = {
+			A26_kobold_society
+		}
+		position = 2
+		
+		trigger = {
+			government_reform_progress = 75
+			reform_level = 3
+			stability = 2
+		}
+		
+		effect = {
+			add_prestige = 30
+			
+			country_event = {
+				id = rsc.1
+			}
+			
+			add_stability = -2
+		}
+	}
+		
 	
 	A26_room_for_moor = {
 		icon = mission_invade_island
@@ -883,6 +1819,200 @@ A26_branch_5 = {
 						duration = 7300
 					}
 				}
+			}
+			
+			serpentshead_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			mawriver_area = {
+				type = all
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A26_push_north = {
+		icon = mission_expand_into_the_forest
+		required_missions = {
+			A26_kobildzani_united
+			A26_drain_the_moor
+		}
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = serpentshead_area
+				province_id = 695
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			serpentshead_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			
+			695 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			698 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				center_of_trade = 2
+			}
+		}
+	}
+	
+	A26_naval_innovation = {
+		icon = mission_longships
+		required_missions = {
+		}
+		position = 7
+		
+		trigger = {
+			dip_power = 125
+			num_of_galley = 10
+			177 = { owned_by = ROOT }
+		}
+		
+		effect = {
+			add_dip_tech = 1
+			
+			177 = {
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+			}
+			
+			add_country_modifier = {
+				name = RSC_modifier_cheap_heavies
+				duration = 7300
+			}
+		}
+	}
+				
+	A26_lost_brethren = {
+		icon = mission_defy_the_dragon
+		required_missions = {
+			A26_create_foothold
+		}
+		position = 10
+		
+		trigger = {
+			if = {
+				limit = {
+					exists = LSK
+				}
+				reverse_has_opinion = {
+					who = LSK
+					value = 120
+				}
+			}
+			else = {
+				porhonozy_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = LSK
+				}
+				LSK = {
+					country_event = {
+						id = rsc.7
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_mil_power = 100
+				add_dip_power = 100
+			}
+		}
+	}
+	
+	A26_hoard_spices = {
+		icon = mission_dominate_persian_gulf
+		required_missions = {
+			A26_the_kuz
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = ibibakely_area
+				area = tebolelmasi_area
+				area = tebajik_area
+				area = zohejirofo_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = KUZ }
+			}
+		}
+		
+		trigger = {
+			ibibakely_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = KUZ
+				}
+			}
+			tebajik_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = KUZ
+				}
+			}
+			tebolelmasi_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = KUZ
+				}
+			}
+			zohejirofo_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = KUZ
+				}
+			}
+			velanynosy_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = KUZ
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = RSC_modifier_lord_of_cloves
+				duration = 12045
 			}
 		}
 	}

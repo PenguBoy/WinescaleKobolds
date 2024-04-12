@@ -6,6 +6,11 @@
   MSK_ADJ:0 "Mithrilscale"
   FSK:0 "Forgescale"
   FSK_ADJ:0 "Forgescale"
+ #navy doctrines
+  copperscale_mass_sailor_ships:0 "Mass Kobold Ships"
+  copperscale_mass_sailor_ships_desc:0 "The Copperscales have shrewdly developed a superior way to do naval combat. By using the simple method of 'More Kobolds on Ship = More Good' that utilizes their smaller size to full effect."
+  greenscale_kobold_privateers:0 "Greenscale Privateers"
+  greenscale_kobold_privateers_desc:0 "In an expert effort to screw over the Gnomes, the Greenscales have established a culture that is very proficient in taking what is other people's stuff and making it theirs."
  #cultures
   copperscale_kobold:0 "Copperscale Kobold"
  #modifiers

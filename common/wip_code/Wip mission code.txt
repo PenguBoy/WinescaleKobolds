@@ -1,0 +1,184 @@
+	A26_noble_cause = {
+		icon = mission_settlers_north
+		required_missions = {
+			A26_kobildzani_united
+		}
+		position = 6
+		
+		trigger = {
+			army_size = 40
+			treasury = 1000
+			custom_trigger_tooltip = {
+				tooltip = RSC_gawed_lorent_you_not_war_tooltip
+				A13 = {
+					NOT = {
+						is_at_war = yes
+					}
+				}
+				A26 = {
+					NOT = {
+						is_at_war = yes
+					}
+				}
+				A01 = {
+					NOT = {
+						is_at_war = yes
+					}
+				}
+			}
+					
+		}
+		
+		effect = {
+			add_treasury = -1000
+			custom_tooltip = RSC_liberate_halflings_tooltip
+				
+			hidden_effect = {
+				viswall_area = {
+					cede_province = Z39
+					add_core = Z39
+				}
+				
+				Z39 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+			
+				lorentish_approach_area = {
+					cede_province = A70
+					add_core = A70
+				}
+				
+				A70 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+				
+				the_borders_area = {
+					cede_province = A69
+					add_core = A69
+				}
+				
+				A69 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+				
+				thomsbridge_area = {
+					cede_province = A68
+					add_core = A68
+				}
+				
+				A68 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+
+				roysfort_area = {
+					limit = {
+						NOT = {
+							province_id = 130
+						}
+					}
+					cede_province = A67
+					add_core = A67
+				}
+				
+				A67 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+					
+				applefields_area = {
+					cede_province = A64
+					add_core = A64
+				}
+				
+				A64 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+					
+				pearpoint_area = {
+					cede_province = A65
+					add_core = A65
+				}
+				
+				A65 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+					
+				norley_area = {
+					cede_province = A71
+					add_core = A71
+				}
+				
+				A71 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							exists = A12
+						}
+					}
+					every_province = {
+						limit = {
+							culture = imperial_halfling
+						}
+						cede_province = A12
+						add_core = A12
+					}
+					set_global_flag = RSC_beepeck_not_exist_when_revolt_flag
+				}
+				
+				A12 = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+					}
+					grant_independence = yes
+				}
+			}
+				
+			country = {
+				id = rsc.2
+			}
+		}
+	}

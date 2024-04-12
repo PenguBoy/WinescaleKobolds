@@ -12,7 +12,7 @@ RSC_modifier_fish_produce_two = {
 }
 
 RSC_modifier_kobold_colony = {
-	local_development_cost_modifier = -0.2
+	local_development_cost_modifier = -0.3
 	local_manpower_modifier = -0.8
 	local_production_efficiency = -0.8
 	local_tax_modifier = -0.8
@@ -47,3 +47,60 @@ RSC_modifier_sociatal_adaptation = {
 	monthly_reform_progress_modifier = 0.33
 	state_maintenance_modifier = -0.15
 }
+
+RSC_modifier_naval_hegemon = {
+	naval_forcelimit_modifier = 0.25
+	global_sailors_modifier = 0.25
+}
+
+RSC_modifier_hillside_settlements = {
+	local_development_cost = -0.15
+	local_build_cost = -0.1
+}
+
+RSC_modifier_five_port_system = {
+	province_trade_power_value = 20
+}
+
+RSC_modifier_dalaire_mine = {
+	trade_goods_size = 2
+	local_gold_depletion_chance_modifier = -0.5
+}
+
+RSC_modifier_kobold_colonial_port = {
+	province_trade_power_value = 30
+}
+
+RSC_modifier_lel_passage_monopoly = {
+	province_trade_power_value = 10
+}
+
+RSC_modifier_southern_trade_posts = {
+	province_trade_power_value = 10
+}
+
+RSC_modifier_kobold_rush_aelentir = {
+	colonist_placement_chance = 0.25
+	global_colonial_growth = 20
+}
+
+RSC_modifier_KUZ_trade = {
+	global_prov_trade_power_modifier = 0.3
+}
+
+RSC_modifier_lord_of_cloves = {
+	colonists = 1
+	colony_development_boost = 1
+}
+
+RSC_modifier_cheap_heavies = {
+	heavy_ship_cost = -0.75
+	heavy_ship_power = 0.1
+}
+
+RSC_modifier_grand_capital = {
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_manpower_modifier = 0.5
+}
+	
