@@ -1,0 +1,73 @@
+######################################
+######Branch 3########################
+######################################
+BSK_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = A26
+			tag = R82
+		}
+	}
+	has_country_shield = yes
+	
+	R82_draconic_lies = {
+		icon = mission_end_manipuri_raids
+		required_missions = {
+		}
+		position = 1
+		
+		trigger = {
+			if = {
+				limit = {
+					exists = Y85
+				}
+				Y85 = {
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+					}
+				}
+			}
+			
+			else = {
+				dip = 50
+			}
+		}
+		
+		effect = {
+			add_truce_with = Y46
+			add_truce_with = Y30
+		}
+	}
+	
+	R82_prepare_departure = {
+		icon = mission_conquer_malwa_bah
+		required_missions = {
+			R82_draconic_lies
+		}
+		position = 2
+		
+		trigger = {
+			NOT = {
+				army_size = 1
+			}
+			treasury = 50
+		}
+		
+		effect = {
+			
+			country_event = {
+				id = xerd.1
+			}
+		}
+	}
+}

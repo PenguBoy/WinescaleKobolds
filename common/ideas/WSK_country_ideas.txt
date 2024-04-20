@@ -484,3 +484,54 @@ MSK_ideas = {
 		stability_cost_modifier = -0.1
 	}
 }
+
+#########Binunsironkinnara Ideas#########
+
+BSK_ideas = {
+	start = {
+		infantry_power = 0.2
+		coast_raid_range = 1
+	}
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = BSK
+	}
+	free = yes
+	
+	BSK_naaleni_co_government = {
+		disengagement_chance = 0.1
+	}
+	
+	BSK_monument_builders = {
+		build_cost = -0.15
+	}
+	
+	BSK_bi_racial_cooperation = {
+		technology_cost = -0.1
+	}
+	
+	BSK_legacy_rak_six_points = {
+		army_tradition_decay = -0.01
+	}
+	
+	BSK_prosperity_in_philantropy = {
+		inflation_reduction = 0.1
+		global_monthly_devastation = -0.3
+	}
+	
+	BSK_cosmopolitan_city_of_balrijing = {
+		num_accepted_cultures = 3
+		promote_culture_cost = -0.5
+	}
+	
+	BSK_dragon_of_sarhal = {
+		shock_damage_received = -0.10
+		defensiveness = 0.3
+	}
+}
+	
+	
+	

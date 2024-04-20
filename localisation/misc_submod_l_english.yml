@@ -6,6 +6,8 @@
   MSK_ADJ:0 "Mithrilscale"
   FSK:0 "Forgescale"
   FSK_ADJ:0 "Forgescale"
+  CBR:0 "Binunsirónkinnara"
+  CBR_ADJ:0 "Binunsirónkinnara"
  #navy doctrines
   copperscale_mass_sailor_ships:0 "Mass Kobold Ships"
   copperscale_mass_sailor_ships_desc:0 "The Copperscales have shrewdly developed a superior way to do naval combat. By using the simple method of 'More Kobolds on Ship = More Good' that utilizes their smaller size to full effect."

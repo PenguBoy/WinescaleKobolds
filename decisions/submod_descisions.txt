@@ -211,6 +211,244 @@ country_decisions = {
 				id = wiscko.4
 			}
 		}
+	}
+
+	BSK_capacity_indicator = {
+		major = yes
+		
+		potential = {
+			tag = R82
+			has_country_flag = r82_can_see_capacity_decision_flag
+		}
+		
+		allow = {
+			always = no
+		}
+		
+		effect = {
+			
+			#Capacity 7
+			if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 7
+					}
+				}
+				custom_tooltip = R82_display_capacity_7_tooltip
+			}
+			#Capacity 6
+			else_if = { 
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 6
+					}
+				}
+				custom_tooltip = R82_display_capacity_6_tooltip
+			}
+			#Capacity 5
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 5
+					}
+				}
+				custom_tooltip = R82_display_capacity_5_tooltip
+			}
+			#Capacity 4
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 4
+					}
+				}
+				custom_tooltip = R82_display_capacity_4_tooltip
+			}
+			#Capacity 3
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 3
+					}
+				}
+				custom_tooltip = R82_display_capacity_3_tooltip
+			}
+			#Capacity 2
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 2
+					}
+				}
+				custom_tooltip = R82_display_capacity_2_tooltip
+			}
+			#Capacity 1
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 1
+					}
+				}
+				custom_tooltip = R82_display_capacity_1_tooltip
+			}
+			#Capacity 0
+			else_if = {
+				limit = {
+					check_variable = {
+						which = xerd_departure_capacity
+						value = 0
+					}
+				}
+				custom_tooltip = R82_display_capacity_0_tooltip
+			}
+			
+			#Tea Tooltip
+			if = {
+				limit = {
+					has_country_flag = r82_take_tea_plants_flag
+				}
+				custom_tooltip = R82_has_tea_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_tea_plants_flag
+					}
+				}
+				custom_tooltip = R82_not_has_tea_tooltip
+			}
+			
+			#Scrolls
+			if = {
+				limit = {
+					has_country_flag = r82_take_scrolls_flag
+				}
+				custom_tooltip = R82_has_scrolls_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_scrolls_flag
+					}
+				}
+				custom_tooltip = R82_not_has_scrolls_tooltip
+			}
+			
+			#Advisors
+			if = {
+				limit = {
+					has_country_flag = r82_take_advisors_flag
+				}
+				custom_tooltip = R82_has_advisors_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_advisors_flag
+					}
+				}
+				custom_tooltip = R82_not_has_advisors_tooltip
+			}
+			
+			#Disciples
+			if = {
+				limit = {
+					has_country_flag = r82_take_disciples_flag
+				}
+				custom_tooltip = R82_has_disciples_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_disciples_flag
+					}
+				}
+				custom_tooltip = R82_not_has_disciples_tooltip
+			}
+			
+			#Porcelain
+			if = {
+				limit = {
+					has_country_flag = r82_take_porcelain_flag
+				}
+				custom_tooltip = R82_has_porcelain_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_porcelain_flag
+					}
+				}
+				custom_tooltip = R82_not_has_porcelain_tooltip
+			}
+			
+			#Mercenaries
+			if = {
+				limit = {
+					has_country_flag = r82_take_merc_flag
+				}
+				custom_tooltip = R82_has_mercs_tooltip
+			}
+			else_if = {
+				limit = {
+					has_country_flag = r82_take_better_merc_flag
+				}
+				custom_tooltip = R82_has_better_mercs_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_country_flag = r82_take_merc_flag
+							has_country_flag = r82_take_better_merc_flag
+						}
+					}
+				}
+				custom_tooltip = R82_not_has_mercs_tooltip
+			}
+			
+			#Silk
+			if = {
+				limit = {
+					has_country_flag = r82_take_silk_flag
+				}
+				custom_tooltip = R82_has_silk_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_silk_flag
+					}
+				}
+				custom_tooltip = R82_not_has_silk_tooltip
+			}
+			
+			
+			#Shipwrights
+			if = {
+				limit = {
+					has_country_flag = r82_take_shipwrights_flag
+				}
+				custom_tooltip = R82_has_shipwrights_tooltip
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = r82_take_shipwrights_flag
+					}
+				}
+				custom_tooltip = R82_not_has_shipwrights_tooltip
+			}
+			
+			#Spare Capacity Explainer
+			custom_tooltip = R82_spare_capacity_explainer_tooltip
+		}
 	}		
 }
 				

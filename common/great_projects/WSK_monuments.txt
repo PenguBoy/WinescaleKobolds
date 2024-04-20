@@ -538,3 +538,135 @@ great_wine_hoard_monument = {
 		}	
 	}
 }
+
+balris_memorial = {
+	# province it starts in
+	start = 6659
+	date = 1444.01.01	#1549.3.29
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+		owner = {
+			OR = {
+				primary_culture = goldscale_kobold
+				primary_culture = naleni_harpy
+			}
+		}
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				primary_culture = goldscale_kobold
+				primary_culture = naleni_harpy
+			}
+		}
+	}
+
+	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				primary_culture = goldscale_kobold
+				primary_culture = naleni_harpy
+			}
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_development_cost = -0.15
+			province_trade_power_value = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_missionary_strength = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			manpower_in_true_faith_provinces= 0.10
+			province_trade_power_value = 15
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			global_missionary_strength = 0.02
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 4000
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+		}
+		area_modifier = {
+			manpower_in_true_faith_provinces= 0.20
+		}
+		region_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			own_coast_naval_combat_bonus = 1.0
+			global_missionary_strength = 0.03
+		}
+		on_upgraded = {
+		}
+	}
+}
