@@ -7,3 +7,19 @@ R82_modifier_xerd_cultural_limits = {
 R82_modifier_xerd_no_limits = {
 	local_development_cost = -0.3
 }
+
+R82_modifier_brave_new_diplomacy = {
+	improve_relation_modifier = 0.25
+	diplomatic_reputation = 2
+}
+
+R82_modifier_balrijing = {
+	fort_level = 1
+	tax_income = 12
+}
+
+R82_modifier_balrijing_2 = {
+	fort_level = 2
+	tax_income = 24
+}
+

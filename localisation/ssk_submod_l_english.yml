@@ -58,7 +58,9 @@
    XLF_ideas_bonus:0 "Zurizex Ambition"
  #Missions
  #Custom Tooltips
+  SSK_form_castellyr_tooltip:0 "Every province in our Empire that has the Silverscale Kobold culture will change to Castellyr Kobold."
  #Modifiers
+  mythical_cavalry_drakehounds:0 "Drake Hound Cavalry"
  #Religion
   sun_dragon_cult:0 "Sun Dragon Cult"
   sun_dragon_cult_desc:0 "Borne from a schism between the Jadd and the Kobold Nation in Escann that only recently embraced the light, this branch of the Sun Cult stipulates that Surael's true original form was that of a shining dragon and that the other heresies assumption about Surael's form are blasphemous."
@@ -69,6 +71,9 @@
   sun_dragon_cult_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
   sun_dragon_cult_rebels_army: "$RELIGION$ Army"
  #Decisions
+  #Drake Hounds
+   SSK_drakehounds_decision_title:0 "Establish Drake Hound Regiments"
+   SSK_drakehounds_decision_desc:0 "This decision is temporary until this tag has a Mission Tree."
   #Establish Ibilzex
    SSK_wallkingdom_nation_decision_title:0 "Establish Zurizex"
    SSK_wallkingdom_nation_decision_desc:0 "The Walls around inner cannor are ideal to shelter a prosperous and powerful Kobold empire."

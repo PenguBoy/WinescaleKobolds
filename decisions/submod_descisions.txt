@@ -1,9 +1,29 @@
 
 country_decisions = {
+	
+	SSK_drakehounds_decision = {
+		major = yes
+		color = { 132 161 207 }
+		
+		potential = {
+			has_idea = SSK_drakehound_riders
+			has_dlc = "Lions of the North"
+			NOT = {
+				has_country_flag = established_drake_hounds_flag
+			}
+		}
+		
+		effect = {
+			enable_mythical_cavalry = { mount = drakehounds }
+			set_country_flag = established_drake_hounds_flag
+		}
+	}
 
 	WSK_slaves_for_our_vineyard_decision = {
 		major = yes
-		color = { 10 10 10 }
+		color = { 155 169 191 }
+		
+		
 		
 		potential = {
 			tag = WSK

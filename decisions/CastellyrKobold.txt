@@ -95,8 +95,8 @@ country_decisions = {
 					}
 					change_culture = castellyr_kobold
 				}
-				change_primary_culture = castellyr_kobold
 			}
+			change_primary_culture = castellyr_kobold
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			if = {

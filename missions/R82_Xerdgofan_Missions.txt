@@ -1,4 +1,104 @@
 ######################################
+######Branch 2########################
+######################################
+#BSK_branch_2 = {
+#	slot = 2
+#	generic = no
+#	ai = yes
+#	potential = {
+#		always = no
+#	}
+#	has_country_shield = yes
+#	
+#	R82_found_Balrijing = {
+#		icon = mission_subjugate_saurashtra
+#		required_missions = {
+#			R82_birth_of_a_nation
+#		}
+#		position = 7
+#		
+#		provinces_to_highlight = {
+#			province_id = 6659
+#		}
+#		
+#		trigger = {
+#			6659 = {
+#				has_tax_building_trigger = yes
+#				has_trade_building_trigger = yes
+#			}
+#		}
+		
+		effect = {
+			hidden_effect = {
+				1344 = {
+					change_province_name = "Coast of Balrijing"
+				}
+			}
+			custom_tooltip = R82_balrijing_dev_tooltip
+			
+			
+			hidden_effect = {
+				for_variable_amount = {
+					variable = xerd_departure_capacity
+
+					effect = "
+						6599 = {
+							add_base_manpower = 2
+							add_base_production = 2
+							add_base_tax = 2
+						}
+					"
+				}
+			}
+			6599 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				add_harpy_minority_size_effect = yes
+				change_province_name = "Balrijing"
+				rename_capital = "Balrijing"
+				
+				add_province_modifier = {
+					name = R82_modifier_balrijing
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	R82_renaissance_city = {
+		icon = mission_subjugate_saurashtra
+		required_missions = {
+			R82_found_Balrijing
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			province_id = 6659
+		}
+		
+		trigger = {
+			6659 = {
+				development = 20
+				renaissance = 100
+				num_of_buildings_in_province = 5
+			}
+		}
+		
+		effect = {
+			6659 = {
+				remove_province_modifier = R82_modifier_balrijing
+				
+				add_province_modifier = {
+					name = R82_modifier_balrijing_2
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+
+######################################
 ######Branch 3########################
 ######################################
 BSK_branch_3 = {
@@ -7,7 +107,7 @@ BSK_branch_3 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = A26
+			tag = BSK
 			tag = R82
 		}
 	}
@@ -67,6 +167,195 @@ BSK_branch_3 = {
 			
 			country_event = {
 				id = xerd.1
+			}
+		}
+	}
+	
+	R82_brave_new_world = {
+		icon = mission_conquer_andhra_bah
+		required_missions = {
+			R82_prepare_departure
+		}
+		position = 3
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = R82_relocated_sarhal_tooltip
+				
+				NOT = {
+					any_owned_province = {
+						continent = asia
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = R82_modifier_brave_new_diplomacy
+				duration = 5475
+			}
+		}
+	}
+	
+	R82_strange_friends = {
+		icon = mission_fortify_rajputana
+		required_missions = {
+			R82_brave_new_world
+		}
+		position = 4
+		
+		trigger = {
+			if = {
+				limit = {
+					L55 = {
+						exists = yes
+					}
+				}
+				reverse_has_opinion = {
+					who = L55
+					value = 0
+				}
+			}
+			else = {
+				bedaphire_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					L55 = {
+						exists = yes
+					}
+				}
+				add_historical_friend = L55
+				L55 = {
+					add_historical_friend = ROOT
+				}
+			}
+			
+			else = {
+				add_dip_power = 100
+			}
+		}
+	}
+	
+	R82_trans_racial_cooperation = {
+		icon = mission_follow_the_brahmaputra
+		required_missions = {
+			R82_strange_friends
+		}
+		position = 5
+		
+		trigger = {
+			if = {
+				limit = {
+					L55 = {
+						exists = yes
+					}
+				}
+				OR = {
+					alliance_with = L55
+					reverse_has_opinion = {
+						who = L55
+						value = 75
+					}
+				}
+			}
+			
+			else = {
+				capital = 6659
+				6659 = {
+					num_of_times_improved_by_owner = 5
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					L55 = {
+						exists = yes
+					}
+				}
+				
+				L55 = {
+					country_event = {
+						id = xerd.13
+						days = 0
+					}
+				}
+			}
+			
+			else = {
+				add_accepted_culture = naleni_harpy
+				every_owned_province = {
+					limit = {
+						culture = naleni_harpy
+					}
+					
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+	
+	R82_birth_of_a_nation = {
+		icon = mission_growth_of_golconda
+		required_missions = {
+			R82_trans_racial_cooperation
+		}
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = bedaphire_area
+				area = irkan_eparta_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			bedaphire_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			
+			irkan_eparta_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			change_tag = BSK
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			telekenid_region = {
+				type = all
+				limit = {
+					NOT = {
+						OR = {
+							is_permanent_claim = ROOT
+							owned_by = ROOT
+						}
+					}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

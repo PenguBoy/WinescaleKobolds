@@ -7,6 +7,9 @@
  #modifiers
   R82_modifier_xerd_cultural_limits:0 "Cultural Protections"
   R82_modifier_xerd_no_limits:0 "No Cultural Protections"
+  R82_modifier_brave_new_diplomacy:0 "Sarhali Diplomacy"
+  R82_modifier_balrijing:0 "Grand City of Balrijing"
+  R82_modifier_balrijing_2:0 "Metropolis of Balrijing"
  #tooltips
   R82_increase_capacity_by_1_tooltip:0 "§GTaking this with us will increase our current capacity by 1.§!"
   R82_reduce_capacity_by_1_tooltip:0 "§OTaking this with us will decrease our current capacity by 1.§!"
@@ -52,6 +55,8 @@
   R82_dont_have_space_2_tooltip:0 "§RWe do not have the required capacity to take this with us. (Need 2)§!"
   R82_shipwrights_tooltip:0 "Taking experienced Shipwrights with us will allow us to more heavily focus on coastal infrastructure and naval power."
   R82_silk_tooltip:0 "Taking Mulberry Seeds with us will allow us to produce Silk later."
+  R82_relocated_sarhal_tooltip:0 "Have left Haless behind and relocated to Sarhal."
+  R82_balrijing_dev_tooltip:0 "For every remaining point of §GCapacity§! that we had left when we departed Haless, Balrijing will gain §G2/2/2§! Development."
  #decisions
   BSK_capacity_indicator_title:0 "Our current cargo capacity."
   BSK_capacity_indicator_desc:0 " "
@@ -60,6 +65,16 @@
   R82_draconic_lies_desc:0 "When the Balrijin announced their renewed efforts to search for the benevolent Balris it should have been seen as an insult to Kobold kind! Various documents in our possession describe Balris' flight path to be to the south and even though they had access to these documents they still made up such an obvious lie. It has come very clear to us that their goal is to keep Balris all to themselves and to mislead everyone else, so it falls to us to organize our own search for Balris by sailing south where he is supposed to be!"
   R82_prepare_departure_title:0 "Last Preparations"
   R82_prepare_departure_desc:0 "With our aim directed at Sarhal we have to make the final preparations and decided what to take with us and what to leave behind."
+  R82_brave_new_world_title:0 "Brave New World"
+  R82_brave_new_world_desc:0 "We have said goodbye to our old home and now are in strange new lands.\nEven though Rahenni merchants have a long history of trading posts in Sarhal, so it is by no means an unexplored region, but to the Golden Kobolds of Yanshen it can only be described as a massive leap into the unkown and our prime objective is to find frineds while the protection from our former Overlord is still in effect."
+  R82_strange_friends_title:0 "Strange Friends"
+  R82_strange_friends_desc:0 "With our close proximity to the Matriarchy of the Naleni it has become obvious to us that they aren't too different from the Harpies back in Yanshen.\nAnd as an old proverb of Balris preaches that §Y'One usually meets the best of friends in the most unusual places'§!, so should we take this gamble and approach them with gifts and smiles, especially since our contact with the Feng means we should have no difficulties of understanding their language."
+  R82_trans_racial_cooperation_title:0 "Cross-Racial Cooperation"
+  R82_trans_racial_cooperation_desc:0 "With our two nations approaching each other diplomatically at a rapid pace we have come to suggest the ultimate cooperation.\nTo forge a bond between our two races that is unbreakable, to create a Co-Government of Harpies and Kobolds, each of us building and learning from the strengths of the other. A Symbiotic relationship to last the ages."
+  R82_birth_of_a_nation_title:0 "Birth of a Nation"
+  R82_birth_of_a_nation_desc:0 "In 1475 the Naleni Matriarchy fused with the Xerdgonfa Exiles to create the Binunsirónkinnara State.\nOver the next centuries the two races would work in unison to create not only one of the most tolerant states on the continent, their strategic location and colonization efforts made them a power on par with the Winescale League, Eborthil-Busilar or even the mighty Lorent."
+  R82_found_Balrijing_title:0 "Foundation of a Metropolis"
+  R82_found_Balrijing_desc:0 "Not long after the establishment of the Binunsirónkinnara State, the former Naleni capital of Jezarpizu became the home of the Kobold administration.\nAnd while it wasn't until about a hundred years later that the Constitution would recognize the name of 'Balrijing' as the name of the city, the name was so commonly used that it had long become the de facto name of the city."
  #events
   #Preparations Event
    xerd.1.title:0 "Initial Preparations"
@@ -110,7 +125,7 @@
    xerd.9.c:0 "§gTake some Mulberry Seeds with us§!"
    xerd.9.d:0 "Recruit some Shipwrights"
    xerd.9.e:0 "Don't recruit the Shipwrights"
-   xerd.9.f:0 "§gTake some Mulberry Seeds with us§!"
+   xerd.9.f:0 "§gRecruit some Shipwrights§!"
    xerd.9.g:0 "Let's set sail!"
   #Settling down
    xerd.11.title:0 "Where to settle?"
@@ -118,6 +133,18 @@
    xerd.11.a:0 "Approach the Pirate Queen"
    xerd.11.b:0 "Approach the Iyarhashar"
    xerd.11.c:0 "Settle for the unclaimed"
+  #Selling homeland event
+   xerd.12.title:0 "The Province of Xerdgonfa"
+  #Subjugation of Harpies
+   xerd.13.title:0 "A Kobold Offer"
+  #They said Yes
+   xerd.14.title:0 "They accepted!"
+   xerd.14.desc:0 "With our proposal not falling on death ears, the Naleni have approved this union between our two peoples."
+   xerd.14.a:0 "Towards a brighter future!"
+  #They denied
+   xerd.15.title:0 "They refused!"
+   xerd.15.desc:0 "These wretched air chickens have denied us our glorious future together, but their land shall still be ours!"
+   xerd.15.a:0 "To War!"
  #ideas
   #Binunsirónkinnara
     BSK_ideas:0 "Binunsirónkinnara Ideas"

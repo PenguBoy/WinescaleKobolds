@@ -254,7 +254,7 @@ VWR_ideas = {
 SSK_ideas = {
 	start = {
 		tribal_development_growth = 0.05
-		cavalry_power = 0.30
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -273,6 +273,7 @@ SSK_ideas = {
 	
 	SSK_drakehound_riders = {
 		cav_to_inf_ratio = 0.25
+		can_recruit_hussars = yes
 	}
 	
 	SSK_city_of_worlds_desire = {
@@ -282,6 +283,7 @@ SSK_ideas = {
 	SSK_scourge_of_escann = {
 		movement_speed = 0.1
 		cavalry_flanking = 1
+		special_unit_forcelimit = 0.20
 	}
 	
 	SSK_combat_excellence = {
@@ -294,7 +296,7 @@ SSK_ideas = {
 	}
 	
 	SSK_beast_tamers = {
-		cavalry_cost = -0.2
+		cavalry_cost = -0.3
 	}
 }
 	
@@ -303,7 +305,7 @@ SSK_ideas = {
 XLF_ideas = {
 	start = {
 		fort_maintenance_modifier = -0.5
-		cavalry_power = 0.4
+		cavalry_power = 0.33
 	}
 	
 	bonus = {
@@ -345,7 +347,7 @@ XLF_ideas = {
 	}
 	
 	SSK_beast_tamers = {
-		cavalry_cost = -0.25
+		cavalry_cost = -0.5
 	}
 }	
 

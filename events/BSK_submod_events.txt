@@ -1016,8 +1016,8 @@ country_event = { #City of Sramaya
 		highlight = yes
 		ROOT = {
 			country_event = {
-				id = xerd.9
-				days = 40
+				id = xerd.11
+				days = 20
 			}
 		}
 	}
@@ -1056,6 +1056,23 @@ country_event = { #Island matters
 	
 	fire_only_once = yes
 	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				grant_independence = yes
+			}
+			if = {
+				limit = {
+					exists = Y28
+				}
+				Y28 = {
+					create_guarantee = ROOT
+				}
+			}
+		}
+	}
+				
+	
 	option = {
 		#Buy Monglingsaau
 		name = xerd.11.a
@@ -1092,6 +1109,7 @@ country_event = { #Island matters
 			cede_province = ROOT
 			add_core = ROOT
 			change_culture = ROOT
+			change_religion = ROOT
 			remove_core = R04
 			add_base_tax = 1
 			add_base_production = 1
@@ -1115,8 +1133,6 @@ country_event = { #Island matters
 	
 	option = {
 		#settle Ganhbayen
-		option = {
-		#Buy Monglingsaau
 		name = xerd.11.c
 		
 		3246 = {
@@ -1156,6 +1172,7 @@ country_event = { #Homeland Matters
 	fire_only_once = yes
 
 	option = {
+		name = xerd.12.a
 		trigger = {
 			has_global_flag = r82_provonce_decolo_flag
 		}
@@ -1166,7 +1183,7 @@ country_event = { #Homeland Matters
 	}
 	
 	option = {
-		
+		name = xerd.12.b
 		trigger = {
 			has_global_flag = r82_ceded_province_flag
 		}
@@ -1179,4 +1196,78 @@ country_event = { #Homeland Matters
 		}
 	}
 }
+
+country_event = { #Naleni subjugation
+	id = xerd.13
+	title = xerd.13.title
+	desc = xerd.13.desc
+	picture = indiangfx_ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = xerd.13.a
+		ai_chance = { factor = 100 }
 		
+		R82 = {
+			country_event = {
+				id = xerd.14
+			}
+		}
+	}
+	
+	option = {
+		name = xerd.13.b
+		ai_chance = { factor = 0 }
+		
+		R82 = {
+			country_event = {
+				id = xerd.15
+			}
+		}
+	}
+}
+
+
+country_event = { #Naleni agreed
+	id = xerd.14
+	title = xerd.14.title
+	desc = xerd.14.desc
+	picture = indiangfx_NEW_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = xerd.14.a
+		inherit = L55
+		add_accepted_culture = naleni_harpy
+		
+		large_increase_of_harpy_tolerance_effect = yes
+	}
+}
+
+country_event = { #Naleni refused
+	id = xerd.15
+	title = xerd.15.title
+	desc = xerd.15.desc
+	picture = indiangfx_NEW_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = xerd.15.a
+		every_province = {
+			limit = {
+				owned_by = L55
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
