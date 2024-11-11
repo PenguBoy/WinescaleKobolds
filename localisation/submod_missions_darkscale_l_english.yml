@@ -1,0 +1,142 @@
+﻿l_english:
+ Z55_memories_nimrith_title:0 "Memories of Nimrith"
+ Z55_memories_nimrith_desc:0 ""
+
+ Z55_seize_mithradhum_title:0 "Seize Mithradhûm"
+ Z55_seize_mithradhum_desc:0 "The Hold of Mithradhûm, home of honesty and truth has become the shelter of Goblins, it's wealth fueling their raids and armies. Conquering it would be a devastating loss to the Goblin Warbands and could mark a turning point for Darkscale metalurgy."
+
+ Z55_restore_western_holds_title:0 "Restore the Western Holds"
+ Z55_restore_western_holds_desc:0 "The Holds of Mithradhûm, Haraz Orldhûm and Er-Natvir definitely have seen better times, merely conquering them won't let us found an Empire, only by restoring them to their former Glory can we truly begin to even partially ecclipse Aul-Dwarov."
+
+ Z55_burn_khugdihr_title:0 "Revenge on Khugdihr"
+ Z55_burn_khugdihr_desc:0 ""
+
+ Z55_remains_nimrith_title:0 "The Remains of Nimrith"
+ Z55_remains_nimrith_desc:0 ""
+
+ Z55_secure_the_junctions_title:0 "Secure the Junctions"
+ Z55_secure_the_junctions_desc:0 "The tunnels that connect Kuvëndihr to the rail system are one of the biggest weakpoints for our fledling realm. Making sure both of these junctions are securely under our control will guarantee Goblins and Orcs can't easily lay siege to our Holds."
+
+ Z55_secure_orldhum_title:0 "Conquer Haraz Orldhûm"
+ Z55_secure_orldhum_desc:0 "Gems deep in stone sleep,\nDwarven hands carve ancient light;\nKobolds' eyes gleam bright.\n\n~Darkscale Poem about the Gems of Haraz Orldhûm."
+
+ Z55_dream_of_crown_title:0 "Dreams of a Crown"
+ Z55_dream_of_crown_desc:0 "The Darkscale Kobolds of these caves have long dreamed of being more than just a disorganized tribe scattered within these dark Depths. But there are the stories and myths of the mountain within which the Dwarven Kings reigned but has now been shattered. maybe we can dislodge whoever has claimed it and reforge the crown."
+
+ Z55_light_at_the_end_title:0 "The End of the Tunnel"
+ Z55_light_at_the_end_desc:0 "At last we have reached the end of these caves on our journey, and before us stretches the once mighty Vale. But crossing these Marshes infested with grotesque ogres will be a challenge. We cannot back down now!"
+
+ Z55_temp_home_title:0 "A Temporary Home"
+ Z55_temp_home_desc:0 "The Hold of Orlazam-az-dihr, home of the Ramsteel Dwarves, the lunatics that once mounted a desperate charge. Foolish, but also heroic and despite every Dwarf perishing in that charge, they were able to incur devastating losses onto the Orcs. This place will make a fine temporary home for our quest to seize Amaldihr."
+
+ Z55_dwarven_metal_title:0 "Last of the Ramsteel"
+ Z55_dwarven_metal_desc:0 "Even though the Ramsteel Dwarves seemingly took the secrets of how to forge Ramsteel to their graves, and much of the Hold was desecrated and looted, these orcs left behind a significant amount of Dwarven-sized weaponry—too small for Orcish hands to use.\n\nThough they are too heavy for most Kobolds, equipping even a few of our strongest warriors will make them formidable shock troops, significantly boosting morale."
+
+ Z55_final_preparations_title:0 "Final Preparations"
+ Z55_final_preparations_desc:0 "Equipped with Dwarven weapons, all Northern Darkscales have heeded the call and gathered in this Hold. May Nimrith guide us as we march to claim our Destiny. These Orcs will not know what hit them!"
+
+ Z55_shatter_shatterers_title:0 "Shatter the Shatterers"
+ Z55_shatter_shatterers_desc:0 "In 1453, a force of eighty thousand Kobolds, aided by smaller contingents of freed Goblins, marched on Amldihr from Orlazdam-az-dihr.\nThe main force, led by Drakan Darkscale, brother of Zorên, stormed the Eastern Entrance. A few days later, a smaller contingent led by Zorên himself assaulted through the Southern Gate.\n\nWith both sides of Amldihr under pressure, the second siege of Amldihr began. For four years, the Kobolds besieged the Hold until the remaining orcs, who had neither starved nor been used for food, fled into the Serpentspine through the Hall of Ancestors, believing they could retake the Hold at any time.\n\nAnd with that, in early 1458, Darkscale proclaimed the conquest of Amldihr—now known to the Kobolds as Kuvëndihr."
+
+ Z55_found_kuvendihr_title:0 "The Seat of  the Red"
+ Z55_found_kuvendihr_desc:0 "The Great Hold of Kuvëndihr, once the throne of the largest Dwarven realm now rests within the hands of the Spawn of Nimrith. But what we have conquered is not the lustrous Hold of old, but a decaying ruin. We have to rebuild these halls to once again summon the great Red back into this world."
+
+ Z55_take_natvir_title:0 "Last of the Railskulkers"
+ Z55_take_natvir_desc:0 "The wretched Railskulkers threaten to secure uncontested control over all Trade and Movement in the Northern Serpentspine due to their control over Ez-Natvir, this cannot be tolerated and we have to end their hold over this Hold."
+
+ Z55_secure_the_rail_title:0 "Secure the Rail Lines"
+ Z55_secure_the_rail_desc:0 "The Dagrinrod and Dwarovrod systems that connect the five holds and our Capital to each other is vulnerable, and building checkpoints and fortifications will not only ensure patrols don't have to expect surprises but it will make the transportation of goods easier and could later encourage powers from the East and West to use us as a middlekobold for Trade."
+
+ Z55_ring_blood_gold_title:0 "Ring of Blood and Gold"
+ Z55_ring_blood_gold_desc:0 "Much Kobold Blood was spilled in the consolidation of the Northern Ring of the Serpentspine centered around Kuvëndihr under our Claws. But it is undeniable that we have forged an empire built on Blood and Gold!"
+
+ Z55_reach_for_stars_title:0 "Reach for the Stars"
+ Z55_reach_for_stars_desc:0 "The Sapphire Dwarves are told to have gona insane after witnessing truly ungodly things in the skies. But us Kobolds are too smart to fall to the same fate, so we ought to take the Hold of the Sky Watchers and decide later what to do with the remains of their great lense."
+
+ Z55_restore_eastern_holds_title:0 "Restore the Eastern Holds"
+ Z55_restore_eastern_holds_desc:0 "The Eastern Holds have summer similar decline and disrepair than the Western ones, even though Dûr-Vazhatun, being a surface hold, was hit particularly hard and is in a state of complete decreptitness.\nWe should invest in making both Holds shine brighter than they ever did under the dwarves."
+
+ Z55_secure_the_entrances_title:0 "Secure the Entrances"
+ Z55_secure_the_entrances_desc:0 "Before we can truly step into the Vale we have to make sure no Ogre chief is able to mount an assault on Kuvëndihr, the two mighty entrances to the Hold shall be fortified with Kobold traps and massive walls."
+
+ Z55_settle_vale_title:0 "Settle the Vale"
+ Z55_settle_vale_desc:0 "Ah the Vale, nestled underneath the watchful eyes of the Dwarven Hold of Amaldihr, the Serpent's Vale is a haunting remnant of a bygone era. Once a fertile tapestry of terraced farms carved into the valley slopes, the land thrived under dwarven ingenuity, its fields cascading in lush, orderly rows. But in the final, tumultuous days of the Dwarven Empire, the intentional flooding transformed this once-prosperous valley into a marshland of ruin and violence. Now, mist drapes over stagnant waters, and ancient, submerged terraces lie hidden beneath murky depths. The valley has become the domain of ogres, formidable creatures that stalk the swampy terraces and make their lairs in the watery ruins, tracing new paths through the remains of dwarven civilization. Here, nature reclaims what was once forged, the ogres reigning where dwarves once sowed, and the silent stones of Amaldihr bear witness to the decline."
+
+ Z56_ancestral_home_title:0 "Ancestral Home"
+ Z56_ancestral_home_desc:0 "Despite taking over Kuvëndihr and making it the seat of our power, we have never forgotten where we came from and the time has come to put our old caves back under our control."
+
+ Z56_northern_caves_title:0 "The Gem Mines"
+ Z56_northern_caves_desc:0 "The Mines surrounding Haraz Orldhûm have been the source of most of the gems that fueled the jewelry makers of those Dwarves, maybe we can reactivate some of those mines for our own benefits."
+
+ Z56_goblin_caves_title:0 "The Goblin Caves"
+ Z56_goblin_caves_desc:0 "The various caves created by previous attempts to build the Dagrinrod have become home to decentralized goblin tribes.\nWe absolutely cannot allow these caves to remain outside our domain, where they pose a threat to the trade routes of the underground rail lines"
+
+ Z56_southern_junction_title:0 "Southern Junction"
+ Z56_southern_junction_desc:0 "The Dagrinrod and Dwarovrod meet at the southern exchange, a place that is essentiall to running our empire if we don't want to overuse Er-Natvir for this sake, but we cannot forget to add contingencies if enemy forces every aproach from the South."
+
+ Z56_hold_bad_luck_title:0 "Hold of Bad Luck"
+ Z56_hold_bad_luck_desc:0 "The Hold of Verkal Kozenad, the place of thievery, assassins and skulduggery. But even with their abundance of skill they had a tendency to accidentally reveal their plots and gained notoriety for having bad luck. We will not repeat their mistakes, but lest hope we don't inherit their luck."
+
+ Z56_masters_south_title:0 "Masters of the South"
+ Z56_masters_south_desc:0 "The South is conquered and subdued, our large host patrols the vast rail, no outside empire, no horde of orcs will be able to dislodge us, the Kobolds of Kuvëndihr stand eternal."
+
+ Z56_gate_escann_title:0 "Gate to Escann"
+ Z56_gate_escann_desc:0 "The caves to our west lead to Escann, we have no desire of these lands filled with tall Dwarves and Orcs, so we would have better to just fortify them to our best abilities and never look back."
+
+ Z56_ovdal_asra_title:0 "Search for the forgotten Hold"
+ Z56_ovdal_asra_desc:0 "Ovdal Asra is long gone, they sacrificed their hold to save others, but the Asra Bank reached it and found the gem, so it must be there and even though they collapsed it, we can just dig it out right?"
+
+ Z56_kuvendihr_dig_6_title:0 "Digging Operations"
+ Z56_kuvendihr_dig_6_desc:0 "The nearly inexhaustible demand for space in our capital must be met!\nWe must dig even deeper!"
+
+ Z56_kobold_brethren_title:0 "Kobold Brethren"
+ Z56_kobold_brethren_desc:0 "The Lair of Zokkorna is important for two reasons.\nOn one side, its cave system has an entrance to the Deepwoods, the realm of the fey, where elves, goblins, and orcs vie for control.\nOn the other, it is home to the Darkscale clan of the Mithrilscale.\n\nSecuring these caves could allow us to seal the entrance and prevent the fey from sinking their fangs into the Serpentspine.\nAdditionally, we could bring our Kobold brethren into our Empire."
+
+ Z56_anumdihr_question_title:0 "The Question of Ânumdihr"
+ Z56_anumdihr_question_desc:0 "Ânumdihr has long fallen to the Humans, who have since called it Marrhold.\nSince we rebuilt the tunnel connecting the Dwarovrod to the Hold, we must now decide whether to leave the Humans in charge or push them out."
+
+ Z56_expand_kuvendihr_title:0 "Expand Kuvëndihr"
+ Z56_expand_kuvendihr_desc:0 "The Hold of Kuvëndihr is still far from the architectural glory it achieved under the wretched Dwarves, despite our best efforts.\nWe must dig deeper and rebuild much of the infrastructure required for a functional and productive capital hold."
+
+ Z56_kuvendihr_dig_4_title:0 "Into the Depths"
+ Z56_kuvendihr_dig_4_desc:0 "We must dig deeper.\nOur capital continues to grow as the population expands, fueled by the resources of the Vale.\nThe only way we can continue to expand this hold is downward."
+
+ Z56_cold_respite_title:0 "Cold Respite"
+ Z56_cold_respite_desc:0 "The lands around Salt Grass Lake are rich in fertile soil, at least relative to the region.\nThis area could serve as an adequate secondary food supply, complementing the resources of the Serpent’s Vale."
+
+ Z56_kuvendihr_dig_8_title:0 "Even Deeper"
+ Z56_kuvendihr_dig_8_desc:0 "The Question is "Digging Deeper?" and the answer is yes!"
+
+ Z56_kuvendihr_dig_10_title:0 "Masters of the Vale"
+ Z56_kuvendihr_dig_10_desc:0 "We have dug so deep that even the pathetic Dwarves must bow to our hold.\nWe have reached depths where logic ceases to exist, where only the most heat-resistant Kobolds can live comfortably."
+
+ Z56_kuvendihr_dig_11_title:0 "Better than Dwarves"
+ Z56_kuvendihr_dig_11_desc:0 "The final frontier, the final step, only one other Hold has ever reached these depths.\nOne final push towards eternal greatness!"
+
+ Z56_kobold_knowledge_title:0 "Kobold Knowledge"
+ Z56_kobold_knowledge_desc:0 "Once known as the Assembly Hall, the walls of Kuvëndihr still hold vast collections of scrolls, tomes, books, and letters.\nSadly, much of this knowledge was damaged in the aftermath of the Hold's fall to the Orcs.\n\nIt is clear that we must learn from the failings of the Dwarves but also rebuild this hall as a center of knowledge, reorganizing the archives and filling the gaps in the shelves anew."
+
+ Z56_northern_control_title:0 "Northern Control"
+ Z56_northern_control_desc:0 "The vast timber supply of the tundra will be crucial if we are to repair the extensive Dwarven rail system that serves as the veins of our Empire.\nWe must drive out the Trolls for the sake of our realm!"
+
+ Z56_frozen_bastions_title:0 "Frozen Bastions"
+ Z56_frozen_bastions_desc:0 "Trade from the Forbidden Plains relies on our ability to properly control the northern pass.\nIt is in the nature of every Kobold to fortify and set traps everywhere."
+
+ Z56_fortify_vale_title:0 "Fortify the Vale"
+ Z56_fortify_vale_desc:0 "We have finally brought the Vale under our control and are gradually restoring it to the fertile breadbasket it once was for the Dwarven Empire.\nHowever, it remains vulnerable and exposed to threats from the north.\n\nWe must fortify the shores of the lake to ensure the security of our food supply."
+
+ Z56_past_uthojan_gaze_title:0 "Past Uthojan's Gaze"
+ Z56_past_uthojan_gaze_desc:0 "We have sufficiently fortified the valley, and the time has come to expand beyond Lake Uthujan and push northward.\nOur goal is to secure the Frozen Pass and claim the vast timber supply of the northern taiga."
+
+ Z56_strike_anvil_title:0 "Striking the Anvil"
+ Z56_strike_anvil_desc:0 "The Dwarven prison has been a persistent thorn in the side of our mines.\nWhile lacking substantial military power, it has never posed a significant threat, yet the potential for raids from their hold—or even a full military incursion should we become distracted on other fronts—is a risk we can no longer tolerate."
+
+ Z56_lonely_goblin_title:0 "Lonely is the Goblin"
+ Z56_lonely_goblin_desc:0 "The Coldcaves in the Lonely Mountains are home to one of the most backward and isolated Goblin clans.\nIt is more of an afterthought to take over those caves than a necessity."
+
+ Z56_masters_north_title:0 "Masters of the North"
+ Z56_masters_north_desc:0 "The Anvil has been shattered, the Troll hosts broken, and the Centaurs and Ogres live in fear of our northern Bastions!\nThe North belongs to us!"
+
+
+ Z55_revive_dragon_title:0 "How to Revive your Dragon"
+ Z55_revive_dragon_desc:0 ""

@@ -788,17 +788,19 @@ A26_branch_3 = {
 			}
 		}
 		
-		every_owned_province = {
-			limit = {
-				region = dragon_coast_region
-				OR = {
-					has_terrain = highlands
-					has_terrain = hills
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = dragon_coast_region
+					OR = {
+						has_terrain = highlands
+						has_terrain = hills
+					}
 				}
-			}
-			add_province_modifier = {
-				name = RSC_modifier_hillside_settlements
-				duration = -1
+				add_province_modifier = {
+					name = RSC_modifier_hillside_settlements
+					duration = -1
+				}
 			}
 		}
 	}

@@ -534,6 +534,103 @@ BSK_ideas = {
 		defensiveness = 0.3
 	}
 }
+
+#########Ishudhen Ideas#########
+
+ISD_ideas = {
+	start = {
+		naval_morale = 0.2
+		merchants = 1
+	}
+	bonus = {
+		development_cost_in_primary_culture = -0.2
+	}
 	
+	trigger = {
+		tag = ISD
+	}
+	free = yes
 	
+	ISD_scales_dome = {
+		build_cost = -0.2
+	}
+	
+	ISD_guardians_of_rahen = {
+		defensiveness = 0.25
+		allowed_marine_fraction = 0.25
+	}
+	
+	ISD_from_egg_to_ship = {
+		global_sailors_modifier = 0.25
+	}
+	
+	ISD_spawn_of_jyntas = {
+		navy_tradition = 1
+		discipline = 0.05
+	}
+	
+	ISD_legacy_jara = {
+		may_explore = yes
+		diplomats = 1
+	}
+	
+	ISD_mass_naval_assault = {
+		global_ship_cost = -0.15
+	}
+	
+	ISD_brass_scales = {
+		candidate_random_bonus = 2
+		republican_tradition = 0.3
+	}
+}
+	
+#########Drágzex Ideas#########
+
+DZX_ideas = {
+	start = {
+		technology_cost = -0.1
+		mercenary_discipline = 0.075
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = DZX
+	}
+	free = yes
+	
+	DZX_the_dragzex_donation = {
+		prestige = 1
+	}
+	
+	DZX_adstunad_tunnels = {
+		development_cost = -0.15
+	}
+	
+	DZX_the_doveblessed_guard = {
+		mercenary_manpower = 0.25
+		possible_condottieri = 1
+	}
+	
+	DZX_havoral_mining = {
+		production_efficiency = 0.1
+	}
+	
+	DZX_kobold_river_party = {
+		improve_relation_modifier = 0.2
+	}
+	
+	DZX_racial_cooperation = {
+		num_accepted_cultures = 1
+		merc_maintenance_modifier = -0.2
+	}
+	
+	DZX_ravellian_stronghold = {
+		papal_influence = 2
+		tolerance_own = 2
+	}
+}
+	
+		
 	

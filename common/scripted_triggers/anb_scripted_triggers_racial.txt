@@ -1021,6 +1021,8 @@ ruler_is_kobold = {
 			#Submod
 			ruler_culture = silverscale_kobold
 			ruler_culture = castellyr_kobold
+			ruler_culture = sunscale_kobold_base
+			ruler_culture = sunscale_kobold
 			ruler_culture = copperscale_kobold
 			ruler_culture = winescale_kobold
 			ruler_culture = pearlywine_kobold
@@ -1029,6 +1031,10 @@ ruler_is_kobold = {
 			ruler_culture = sornwine_kobold
 			ruler_culture = bloodwine_kobold
 			ruler_culture = silmunywine_kobold
+			ruler_culture = brassscale_kobold
+			ruler_culture = whitescale_kobold
+			ruler_culture = ruined_kobold
+			ruler_culture = imperial_kobold
 		}
 	}
 }
@@ -1835,6 +1841,8 @@ consort_is_kobold = {
 			#Submod
 			consort_culture = silverscale_kobold
 			consort_culture = castellyr_kobold
+			consort_culture = sunscale_kobold_base
+			consort_culture = sunscale_kobold
 			consort_culture = copperscale_kobold
 			consort_culture = winescale_kobold
 			consort_culture = pearlywine_kobold
@@ -1843,6 +1851,10 @@ consort_is_kobold = {
 			consort_culture = sornwine_kobold
 			consort_culture = bloodwine_kobold
 			consort_culture = silmunywine_kobold
+			consort_culture = brassscale_kobold
+			consort_culture = whitescale_kobold
+			consort_culture = ruined_kobold
+			consort_culture = imperial_kobold
 		}
 	}
 }
@@ -2631,6 +2643,8 @@ heir_is_kobold = {
 			#Submod
 			heir_culture = silverscale_kobold
 			heir_culture = castellyr_kobold
+			heir_culture = sunscale_kobold_base
+			heir_culture = sunscale_kobold
 			heir_culture = copperscale_kobold
 			heir_culture = winescale_kobold
 			heir_culture = pearlywine_kobold
@@ -2639,6 +2653,10 @@ heir_is_kobold = {
 			heir_culture = sornwine_kobold
 			heir_culture = bloodwine_kobold
 			heir_culture = silmunywine_kobold
+			heir_culture = brassscale_kobold
+			heir_culture = whitescale_kobold
+			heir_culture = ruined_kobold
+			heir_culture = imperial_kobold
 		}
 	}
 }
@@ -3019,6 +3037,9 @@ monstrous_culture = {
 		culture = goldscale_kobold
 		culture = cyazizeta_lizardfolk
 		culture = nzeri_harpy
+		
+		#Submod
+		culture = brassscale_kobold
 	}
 }
 
@@ -3225,6 +3246,8 @@ culture_is_kobold = {
 		culture_group = kobold
 		culture_group = wine_kobold_g
 		primary_culture = castellyr_kobold
+		primary_culture = sunscale_kobold_base
+		primary_culture = sunscale_kobold
 	}
 }
 

@@ -1,0 +1,19 @@
+
+setup_vision = yes
+government = republic
+government_rank = 1
+primary_culture = imperial_kobold
+religion = regent_court
+technology_group = tech_kobold
+
+capital = 263
+
+1428.3.18 = {
+	monarch = {
+		name = "Deekin Scalesinger"
+		birth_date = 1412.3.11
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}

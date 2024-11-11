@@ -145,3 +145,351 @@ order_of_blacksmiths = {
     }
     localization = holy_order
 }
+
+#########################
+#Binunsironkinnara Orders
+#########################
+
+harpy_order_BSK = {
+    icon = GFX_holy_order_exemplars
+    trigger = {
+		tag = BSK
+    }
+    cost = 100
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 2
+        change_culture = naleni_harpy
+		custom_tooltip = R82_galley_order_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					has_port = yes
+				}
+				light_ship = ROOT
+			}
+		}
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -2
+    }
+    modifier = {
+		allowed_num_of_buildings = 1
+	
+        trade_value = 1
+		local_sailors_modifier = 0.2
+		hostile_fleet_attrition = 0.5
+		province_trade_power_value = 1
+    }
+    ai_priority = {
+        factor = 1
+    }
+    localization = holy_order
+}
+
+foreign_quarter_order_BSK = {
+    icon = GFX_holy_order_exemplars
+    trigger = {
+		tag = BSK
+    }
+    cost = 100
+    cost_type = adm_power
+    per_province_effect = {
+        add_base_tax = 2
+    }
+    per_province_abandon_effect = {
+        add_base_tax = 2
+    }
+    modifier = {
+        allowed_num_of_buildings = 1
+		
+		local_tax_modifier = 0.2
+		local_production_efficiency = 0.2
+		
+    }
+    ai_priority = {
+        factor = 1
+    }
+    localization = holy_order
+}
+
+kobold_order_BSK = {
+    icon = GFX_holy_order_exemplars
+    trigger = {
+		tag = BSK
+    }
+    cost = 100
+    cost_type = dip_power
+    per_province_effect = {
+        add_base_production = 2
+        change_culture = goldscale_kobold
+		
+		ROOT = {
+			add_manpower = 1
+		}
+		
+		custom_tooltip = R82_removes_slaves_for_gold_tooltip
+        hidden_effect = {
+            if = {
+                limit = {
+                    trade_goods = slaves
+                }
+                change_trade_goods = gold
+            }
+        }
+    }
+    per_province_abandon_effect = {
+        add_base_production = -2
+    }
+    modifier = {
+        allowed_num_of_buildings = 1
+		
+		local_gold_depletion_chance_modifier = -0.33
+		local_build_cost = -0.2
+		local_manpower = 0.25
+		local_development_cost = -0.1
+		
+    }
+    ai_priority = {
+        factor = 1
+    }
+    localization = holy_order
+}
+
+#########################
+#Draconic Sun Cult#######
+#########################
+
+sun_dragon_dwarf_governor = {
+    icon = GFX_Dwarf_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+		add_base_manpower = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_manpower = -1
+    }
+	
+    modifier = {
+		local_defensiveness = 0.15
+		local_governing_cost = 0.15
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_orc_governor = {
+    icon = GFX_Orc_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+		add_base_manpower = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_manpower = -1
+    }
+	
+    modifier = {
+		local_manpower_modifier = 0.15
+		local_development_cost = 0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_gnoll_governor = {
+    icon = GFX_Gnoll_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+		add_base_manpower = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_manpower = -1
+    }
+	
+    modifier = {
+		local_hostile_attrition = 2
+		trade_goods_size_modifier = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_harpy_governor = {
+    icon = GFX_Harpy_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+		add_base_production = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_production = -1
+    }
+	
+    modifier = {
+        local_friendly_movement_speed = 0.15
+		local_defensiveness = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_kobold_governor = {
+    icon = GFX_Kobold_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+		add_base_production = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_production = -1
+    }
+	
+    modifier = {
+        local_development_cost = -0.1
+		local_tax_modifier = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_goblin_governor = {
+    icon = GFX_Goblin_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+		add_base_production = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_production = -1
+    }
+	
+    modifier = {
+        local_governing_cost_increase = -2
+		local_production_efficiency = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_human_governor = {
+    icon = GFX_Human_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = adm_power
+    per_province_effect = {
+		add_base_tax = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_tax = -1
+    }
+	
+    modifier = {
+		local_fort_maintenance_modifier = -0.5
+        local_manpower_modifier = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_elf_governor = {
+    icon = GFX_Elf_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = adm_power
+    per_province_effect = {
+		add_base_tax = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_tax = -1
+    }
+	
+    modifier = {
+		local_tax_modifier = 0.2
+		local_manpower = -0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}
+
+sun_dragon_halfling_governor = {
+    icon = GFX_Halfling_Governor_sun_cult
+    trigger = {
+		religion = sun_dragon_cult
+    }
+    cost = 50
+    cost_type = adm_power
+    per_province_effect = {
+		add_base_tax = 1
+    }
+	
+    per_province_abandon_effect = {
+		add_base_tax = -1
+    }
+	
+    modifier = {
+		trade_goods_size_modifier = 0.1
+		local_build_cost = 0.1
+    }
+	
+    ai_priority = {
+        factor = 1
+    }
+    localization = draconic_governor
+}

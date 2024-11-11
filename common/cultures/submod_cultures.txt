@@ -24,6 +24,24 @@ kobold = {
 	copperscale_kobold = {
 		primary = LSK
 	}
+	
+	sunscale_kobold_base = {
+		primary = XLF
+	}
+	
+	brassscale_kobold = {
+		primary = ISD
+	}
+	
+	whitescale_kobold = {
+	}
+	
+	ruined_kobold = {
+	}
+	
+	imperial_kobold = {
+		primary = ISK
+	}
 }
 
 ###########################################

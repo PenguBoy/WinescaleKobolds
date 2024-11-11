@@ -1,5 +1,218 @@
 
 country_decisions = {
+	submod_restore_the_asra_hold = {
+		color = { 235 171 52 }
+		major = yes
+		potential = {
+			OR = {
+				tag = Z55
+				tag = Z56
+			}
+			4074 = {
+				has_province_modifier = Z55_modifiers_the_asra_hold
+				owned_by = ROOT
+			}
+		}
+		
+		allow = {
+			treasury = 10000
+			adm_power = 300
+			dip_power = 300
+			mil_power = 300
+			
+			4074 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 50
+				}
+			}
+			
+			adm_tech = 14
+		}
+		
+		effect = {
+			4074 = {
+				remove_province_modifier = Z55_modifiers_the_asra_hold
+			}
+			
+			4074 = {
+				add_province_modifier = {
+					name = Z55_modifiers_the_asra_hold_restores
+					duration = -1
+				}
+			}
+			
+			4074 = {
+				kill_units = {
+					who = ROOT
+					amount = 50
+				}
+			}
+		}
+	}
+		
+
+	restore_irrigation_submod = {
+		color = { 92 27 54 }
+		major = yes
+		potential = {
+			tag = Z55
+			NOT = { has_global_flag = serpent_vale_irrigation }
+			amldihr_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { has_country_flag = repairing_irrigation }
+			NOT = {
+				AND = {
+					has_global_flag = irrigation_east_done
+					has_global_flag = irrigation_north_done
+					has_global_flag = irrigation_south_done
+					has_global_flag = irrigation_west_done
+				}
+			}
+			mission_completed = Z55_settle_vale
+		}
+		
+		provinces_to_highlight = {
+			has_province_modifier = flooded_province
+			owned_by = ROOT
+		}
+		
+		allow = {
+			
+			if = {
+				limit = { ai = no }
+				treasury = 1500
+			}
+			else = {
+				treasury = 500
+			}
+
+			adm_tech = 10
+			adm_power = 200
+		}
+		
+		effect = {
+			hidden_effect = { set_country_flag = repairing_irrigation }
+			country_event = { id = diggy.43 }
+		}
+		
+		ai_will_do = {
+			factor = 400
+		}
+	}
+
+	Z55_enshrine_nimrith_decision = {
+		major = yes
+		color = { 230 10 10 }
+		
+		potential = {
+			mission_completed = Z55_remains_nimrith
+		}
+		
+		allow = {
+			4119 = {
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			army_size = 45
+			prestige = 75
+			stability = 2
+		}
+		
+		effect = {
+			change_religion = nimrith_cult_religion
+			
+			amldihr_area = {
+				change_religion = ROOT
+			}
+			
+			add_stability = -2
+			
+			add_country_modifier = {
+				Z55_modifiers_converted_to_nimrith
+				duration = 9125
+			}
+			
+			4119 = {
+				if = {
+					limit = {
+						has_building = temple
+					}
+					upgrade_building = { tax = yes }
+				}
+				
+				else = {
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							has_building = fort_18th
+						}
+					}
+					upgrade_building = { fort = yes }
+				}
+				else = {
+					add_base_manpower = 3
+				}
+			}
+		}
+	}
+
+	SSK_jadd_temp_decision = {
+		major = yes
+		color = { 235 161 52 }
+		
+		potential = {
+			OR = {
+				tag = SSK
+				tag = XLF
+			}
+			NOT = { has_country_flag = converted_jadd_bold_flag }
+		}
+		allow = {
+			stability = 2
+			full_idea_group = religious_ideas
+			tag = XLF
+		}
+		
+		effect = {
+			override_country_name = SUNSCALE_THEO
+			change_country_color = {
+				color = { 235 161 52 }
+			}
+			set_country_flag = has_overriden_color_flag
+			set_country_flag = converted_jadd_bold_flag
+			change_religion = the_jadd
+			add_stability = -3
+			
+			change_government = theocracy
+			
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = silverscale_kobold
+					}
+					change_culture = sunscale_kobold_base
+				}
+			}
+			change_primary_culture = sunscale_kobold_base
+		}
+	}
 	
 	SSK_drakehounds_decision = {
 		major = yes
@@ -469,7 +682,7 @@ country_decisions = {
 			#Spare Capacity Explainer
 			custom_tooltip = R82_spare_capacity_explainer_tooltip
 		}
-	}		
+	}
 }
 				
 		

@@ -54,6 +54,8 @@ bluescale_sprite_pack	 = {
 			#submod
 			tag = SSK
 			tag = XLF
+			primary_culture = castellyr_kobold
+			primary_culture = whitescale_kobold
 		}
 	}
 
@@ -88,6 +90,9 @@ greenscale_sprite_pack	 = {
 			tag = A28
 			was_tag = A28
 			primary_culture = greenscale_kobold
+			
+			#submod
+			primary_culture = ruined_kobold
 		}
 	}
 
@@ -119,11 +124,15 @@ greenscale_sprite_pack	 = {
 goldscale_sprite_pack	 = {
 	# Tests against every tag in game
 	country_trigger = {
-			OR = {
-		tag = Y85
- 		was_tag = Y85
-		primary_culture = goldscale_kobold
-				}
+		OR = {
+			tag = Y85
+			was_tag = Y85
+			
+			#Submod
+			
+			primary_culture = goldscale_kobold
+			primary_culture = brassscale_kobold
+		}
 	}
 
 	sprite_infantry = {

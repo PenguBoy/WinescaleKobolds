@@ -1,0 +1,138 @@
+
+namespace = flavor_kobold_submod
+
+country_event = {
+	id = flavor_kobold_submod.1
+	title = flavor_kobold_submod.1.t
+	desc = flavor_kobold_submod.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		is_emperor = yes
+		OR = {
+			AND = {
+				NOT = { exists = A26 }
+				NOT = { exists = A27 }
+			}
+			
+			AND = {
+				NOT = { exists = A26 }
+				NOT = { exists = A28 }
+			}
+			
+			AND = {
+				NOT = { exists = A28 }
+				NOT = { exists = A27 }
+			}
+		}
+		NOT = { is_incident_active = any }
+	}
+	
+	option = {
+		name = flavor_kobold_submod.1.a
+		set_imperial_incident = incident_kobolds_seek_refuge
+	}
+}
+
+# Mock imperial incident
+country_event = {
+	id = flavor_kobold_submod.2
+	title = flavor_kobold_submod.2.t
+	desc = flavor_kobold_submod.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { #let them in
+		name = flavor_kobold_submod.2.a
+		
+		
+		263 = {
+			cede_province = DZX
+			add_core = DZX
+			change_culture = imperial_kobold
+			remove_core = A39
+		}
+		
+		DZX = {
+			set_country_flag = semi_monstrous
+		}
+		
+		hidden_effect = {
+			ROOT = {
+				country_event = {
+					id = flavor_kobold_submod.3
+				}
+			}
+			
+			263 = {
+				add_province_modifier = {
+					name = DZX_modifiers_kobold_refugees
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	option = { #let them in
+		name = flavor_kobold_submod.2.b
+		
+		add_prestige = 25
+		
+	}
+	
+	option = { #resettle them into the Empire
+		name = flavor_kobold_submod.2.c
+		
+		random_province = {
+			limit = {
+				region = esmaria_region
+				is_part_of_hre = yes
+				
+				NOT = {
+					OR = {
+						culture_group = dwarven
+						culture_group = elven
+						culture_group = gnomish
+						culture_group = halfling
+						culture_group = kobold
+					}
+					is_capital = yes
+				}
+			}
+			change_culture = imperial_kobold
+			
+			owner = {
+				largest_increase_of_kobold_tolerance_effect = yes
+			}
+		}
+	}
+	
+	country_event = {
+	id = flavor_kobold_submod.3
+	title = flavor_kobold_submod.3.t
+	desc = flavor_kobold_submod.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { #Play as Dragzex
+		name = flavor_kobold_submod.3.a
+		
+		switch_tag = DZX
+		
+	}
+	
+	option = { #Don't play as Dragzex
+		name = flavor_kobold_submod.3.b
+		
+		switch_tag = DZX
+		
+	}
+}
+	
+	
+		
+		

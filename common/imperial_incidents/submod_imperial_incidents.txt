@@ -1,0 +1,37 @@
+incident_kobolds_seek_refuge = {
+	event = flavor_kobold_submod.2
+	default_option = 0
+	
+	can_stop = {
+		263 = { 
+			is_part_of_hre = no
+			owner = {
+				is_part_of_hre = no
+			}
+		}
+	}
+	
+	0 = { #Let them into the Empire
+		factor = 4
+		modifier = {
+			factor = 2
+			high_tolerance_kobold_race_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			medium_tolerance_kobold_race_trigger = yes
+		}
+	}
+	
+	1 = { #refuse entry
+		factor = 1
+		modifier = {
+			factor = 3
+			has_country_modifier = racial_pop_kobold_purge
+		}
+	}
+	
+	2 = { #allow them to settle in the empire
+		factor = 2
+	}
+}

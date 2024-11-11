@@ -131,11 +131,11 @@
 144 = Muzuzalay #Dumb Field, can you believe they did the halflings this dirty?
 122 = Baiabilds #(Ko)boldsbay
 140 = Zaldolzua #Bloody wood
-138 = Vilkzexe #Murderers� home 
+138 = Vilkzexe #Murderers? home 
 129 = Nekezuasek #Tiring Coast
-126 = Perdkobild #Kobolds� Port
+126 = Perdkobild #Kobolds? Port
 142 = Apyruna #Broken Throne
-143 = Vilkztorra #Murderers� Fort
+143 = Vilkztorra #Murderers? Fort
 #Halfling shit that makes neat border
 141 = Errozoiviri #comfortable city
 103 = Kaobyzkar #Cow dinner (meal, technically)
@@ -144,9 +144,9 @@
 149 = Zegozalay #South field
 76 = Ezivaizald #Riverless (No-River) wood
 #dragon hills, westmounts
-150 = "Lodynexa Martx" #Lodan�s March
+150 = "Lodynexa Martx" #Lodan?s March
 211 = Arazadal #Trouble Valley
-213 = Zazivotorra #Bastard-bird (eagle) fortress (Eagles are a size to cause much more trouble to kobolds than larger people, so they don�t like them. They don�t much like the folks who identify with eagles and murder them for clothes either.)
+213 = Zazivotorra #Bastard-bird (eagle) fortress (Eagles are a size to cause much more trouble to kobolds than larger people, so they don?t like them. They don?t much like the folks who identify with eagles and murder them for clothes either.)
 212 = Lehorzildak # Dry hills
 336 = Vezzildak #wet hills
 217 = Zazivontu #Bastard-bird point
@@ -172,6 +172,10 @@
 #####################
 ##Kobold Submod######
 #####################
+
+#Lelatam
+
+3245 = "Aakhetam"
 
 #Inner Castonath
 833 = "Ipor Murrverra" #Northern Walled City
@@ -210,7 +214,7 @@
 515 = "Iratxonuorak" #Goblin Hills
 516 = "Pontuakapyx" #Pointy Cape
 517 = "Nuokapyx" #Hilly Cape
-518 = "Kobildlurreratze" #Kobold Landing (reference to the Greenscale MT)
+518 = "Kobildlurreratze" #Kobold Landing (reference to the kobold submod Greenscale MT)
 519 = "Itxaropenaydden" #Hope Mountain
 521 = "Tayekanix Zerga" #Tayekans' Tribute (Essentially a nod to the Greenscales original home close to the dragon cost)
 522 = "Arruaxix Zun" #Ruins of the Sun
@@ -233,5 +237,42 @@
 6759 = "Zilarragaru" #Silver Pass
 6760 = "Puzkatukaydak" #Broken Islands
 6762 = "Humacexa Kayd" #Island of Humac
+
+#Esmaria and Dameshead
+
+44 = "Tomangoturex"
+234 = "Ilargiaboieanakroa" #Moonwomancrown, using the elven word for woman (see 576)
+255 = "Kroazidea"
+259 = "Kembzidea"
+260 = "Axzobidezaverria"
+263 = "Txatxamai"
+266 = "Esmarivai"
+267 = "Tzirivai"
+268 = "Zikviri"
+269 = "Atayazald"
+270 = "Ziknuo"
+271 = "Exgizakrald"
+274 = "Notazuba"
+280 = "Estargia"
+302 = "Voragoturx"
+308 = "Zillararald"
+309 = "Vurtivai"
+310 = "Unarrzazuba"
+311 = "Lizarrazarai"
+333 = "Onumezu"
+575 = "Azukreagoturex"
+576 = "Arrazboieana" #Kobolds have no concept of gender, so they borrow the elven word for woman here
+901 = "Leslinbyak"
+902 = "Zutarfroddez"
+905 = "Errotabaia"
+911 = "Forjaketza"
+912 = "Zilarraforjaketza"
+916 = "Ablezariaviri"
+917 = "Bihotzazald"
+
+#Forlorn Vale
+
+356 = "Zaranmai"
+
 
 

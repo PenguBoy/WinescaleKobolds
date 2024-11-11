@@ -1,0 +1,588 @@
+
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+#Elvish Deities
+
+munas_moonsinger_nc = {
+	global_colonial_growth = 15
+	leader_naval_manuever = 1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 5
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.5
+			primary_culture = west_damerian
+		}
+		modifier = {
+			factor = 1.5
+			primary_culture = east_damerian
+		}
+		modifier = {
+			factor = 2
+			culture_group = elven
+		}
+	}
+}
+
+oloris_nc = {
+	ship_trade_power_modifier = 0.2
+	naval_maintenance_modifier = -0.1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 76
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			culture_group = elven
+		}
+	}
+}
+
+#Dwarven Deities
+
+balgar_nc = {
+	build_cost = -0.1
+	defensiveness = 0.1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 7
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 2
+			culture_group = dwarven
+		}
+		modifier = {
+			factor = 5
+			tag = G94 # Argezvale
+		}
+		modifier = {
+			factor = 5
+			tag = I07 # Khugdihr
+		}
+		modifier = {
+			factor = 1.5
+			tag = B36 # Marrhold
+		}
+		modifier = {
+			factor = 5
+			tag = A73 # Silverforge
+		}
+		modifier = {
+			factor = 5
+			tag = Z36 # Hammerhome
+		}
+	}
+}
+
+murri_nc = {
+	yearly_army_professionalism = 0.01
+	infantry_power = 0.1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 77
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 2
+			culture_group = dwarven
+		}
+		modifier = {
+			factor = 5
+			tag = I07 # Khugdihr
+		}
+		modifier = {
+			factor = 1.5
+			tag = B36 # Marrhold
+		}
+		modifier = {
+			factor = 5
+			tag = Z36 # Hammerhome
+		}
+	}
+}
+
+#Human Deities
+
+ara_nc = {
+	trade_efficiency = 0.1
+	trade_steering = 0.1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 6
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.2
+			government = republic
+		}
+		modifier = {
+			factor = 2
+			primary_culture = crownsman
+		}
+		modifier = {
+			factor = 10
+			tag = A53	#Aramari Temple
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = H44 #Shining Circle
+				tag = H45 #Beggaston
+			}
+		}
+	}
+}
+
+falah_nc = {
+	movement_speed = 0.15
+	army_tradition = 0.5
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 11
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.5
+			culture_group = elven
+		}
+		modifier = {
+			factor = 1.2
+			culture_group = anbennarian
+		}
+		modifier = {
+			factor = 1.5
+			primary_culture = blue_reachman
+		}
+		modifier = {
+			factor = 1.5
+			primary_culture = old_alenic
+		}
+		modifier = {
+			factor = 5
+			tag = H51
+		}
+	}
+}
+
+nerat_nc = {
+	global_unrest = -2
+	manpower_recovery_speed = 0.1
+	
+	potential = {
+		religion = northern_court
+	}
+	sprite = 12
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			primary_culture = corvurian
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				tag = H42 #Onyx Legion
+				tag = H43 #Neratica
+			}
+		}
+	}
+}
+
+#Orcish Deities
+
+dookan_nc = {
+	mercenary_discipline  = 0.05
+	merc_maintenance_modifier = -0.1
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = orcish
+		#	OR = {
+		#		medium_tolerance_half_orcish_race_trigger = yes
+		#		high_tolerance_half_orcish_race_trigger = yes
+		#		max_tolerance_half_orcish_race_trigger = yes
+		#	}
+		#	OR = {
+		#		medium_tolerance_orcish_race_trigger = yes
+		#		high_tolerance_orcish_race_trigger = yes
+		#		max_tolerance_orcish_race_trigger = yes
+		#	}
+		#}
+	}
+
+	sprite = 47
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				culture = half_orc
+				culture = chippengarder_half_orc
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = H58	#Chipped Tooth Company
+				was_tag = H58
+			} 
+		}
+	}
+}
+
+#Kobold Deities
+
+elkaesal_nc = {
+	fire_damage = 0.1
+	artillery_cost = -0.1
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = kobold
+		#	OR = {
+		#		medium_tolerance_kobold_race_trigger = yes
+		#		high_tolerance_kobold_race_trigger = yes
+		#		max_tolerance_kobold_race_trigger = yes
+		#	}
+		#}
+	}
+
+	sprite = 79
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				culture_group = kobold
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = A26
+				tag = A27
+				tag = A28
+			} 
+		}
+	}
+}
+
+iothoral_nc = {
+	diplomatic_reputation = 1
+	ae_impact = -0.1
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = kobold
+		#	OR = {
+		#		medium_tolerance_kobold_race_trigger = yes
+		#		high_tolerance_kobold_race_trigger = yes
+		#		max_tolerance_kobold_race_trigger = yes
+		#	}
+		#}
+	}
+
+	sprite = 69
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				culture_group = kobold
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = A26
+				tag = A27
+				tag = A28
+			} 
+		}
+	}
+}
+
+#Goblin Deities
+
+vortza_lesa_nc = {
+	hostile_attrition = 1
+	discipline = 0.05
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = goblin
+		#	OR = {
+		#		medium_tolerance_goblin_race_trigger = yes
+		#		high_tolerance_goblin_race_trigger = yes
+		#		max_tolerance_goblin_race_trigger = yes
+		#	}
+		#}
+	}
+	
+	sprite = 36
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+		
+		modifier = {
+			factor = 4
+			culture_group = goblin
+		}
+	}
+}
+
+vortza_krpa_nc = {
+	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.1
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = goblin
+		#	OR = {
+		#		medium_tolerance_goblin_race_trigger = yes
+		#		high_tolerance_goblin_race_trigger = yes
+		#		max_tolerance_goblin_race_trigger = yes
+		#	}
+		#}
+	}
+	
+	sprite = 37
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		
+		modifier = {
+			factor = 4
+			culture_group = goblin
+		}
+	}
+}
+
+zvaiko_udenzo_nc = {
+	navy_tradition = 1
+	privateer_efficiency = 0.15
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = goblin
+		#	OR = {
+		#		medium_tolerance_goblin_race_trigger = yes
+		#		high_tolerance_goblin_race_trigger = yes
+		#		max_tolerance_goblin_race_trigger = yes
+		#	}
+		#}
+	}
+	
+	sprite = 35
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			personality = ai_capitalist
+		}
+		
+		modifier = {
+			factor = 4
+			culture_group = goblin
+		}
+	}
+}
+
+#Harpy Deity
+
+firanya_nc = {
+	improve_relation_modifier = 0.2
+	diplomatic_annexation_cost = -0.2
+
+	potential = {
+		religion = northern_court
+		
+		#OR = {
+		#	culture_group = harpy
+		#	OR = {
+		#		medium_tolerance_harpy_race_trigger = yes
+		#		high_tolerance_harpy_race_trigger = yes
+		#		max_tolerance_harpy_race_trigger = yes
+		#	}
+		#}
+	}
+	
+	sprite = 75
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+		
+		modifier = {
+			factor = 4
+			culture_group = harpy
+		}
+	}
+}

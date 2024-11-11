@@ -1,3 +1,10 @@
 LSK_copper_island_modifier = {
 	trade_goods_size = 2
 }
+
+DZX_modifiers_kobold_refugees = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.25
+	local_hostile_attrition = 1
+	max_attrition = 1
+}

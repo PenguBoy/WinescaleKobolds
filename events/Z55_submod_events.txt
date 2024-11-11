@@ -1,0 +1,128 @@
+namespace = drkscl
+
+country_event = {
+	id = drkscl.1
+	title = drkscl.1.title
+	desc = drkscl.1.desc
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = Z55_modifiers_secure_rail_forts
+		
+			NOT = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		every_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+				}
+				
+				has_province_modifier = Z55_modifiers_secure_rail_forts
+			}
+			
+			remove_province_modifier = Z55_modifiers_secure_rail_forts
+		}
+	}
+}
+
+country_event = {
+	id = drkscl.2
+	title = drkscl.2.t
+	desc = drkscl.2.d
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+		mission_completed = Z56_ovdal_asra
+	}
+	
+	mean_time_to_happen = {
+		days = 9125
+		modifier = {
+			factor = 0.001
+			NOT = { has_country_modifier = Z55_modifiers_exploring_asra }
+		}
+	}
+	
+	option = {
+		name = drkscl.2.a
+		
+		if = {
+			limit = {
+				has_country_modifier = Z55_modifiers_exploring_asra
+			}
+			remove_country_modifier = Z55_modifiers_exploring_asra
+		}
+		
+		4074 = {
+			add_prestige = 50
+			
+			add_province_modifier = {
+				name = Z55_modifiers_the_asra_hold
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = drkscl.3
+	title = drkscl.3.t
+	desc = drkscl.3.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Keep Gobbo
+		name = drkscl.3.a
+		
+		2931 = {
+			add_province_modifier = {
+				name = Z55_modifiers_goblin_administration_natvir
+				duration = -1
+			}
+		}
+		
+		largest_increase_of_goblin_tolerance_effect = yes
+	}
+	
+	option = { #kill gobbo
+		name = drkscl.3.b
+		
+		2931 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			
+			change_culture = ROOT
+		}
+		
+		large_decrease_of_goblin_tolerance_effect = yes
+		
+	}
+}

@@ -1,0 +1,28 @@
+
+# No previous file for Banten
+owner = R38
+controller = R38
+add_core = R38
+add_core = R39
+add_core = R91
+add_core = ISD
+culture = brassscale_kobold
+religion = high_philosophy
+
+hre = no
+
+1000.1.1 = { 
+	set_country_flag = semi_monstrous
+}
+
+base_tax = 5
+base_production = 5
+base_manpower = 2
+
+center_of_trade = 1
+
+trade_goods = copper
+
+capital = "Jyntajing"
+
+is_city = yes

@@ -1,0 +1,129 @@
+dragon_cult = {
+	
+	nimrith_dragon_cult = {
+		color = { 136 8 8 }
+		icon = 94
+		
+		country = {
+			tolerance_own = 2
+			fire_damage = 0.15
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			fire_damage = 0.15
+		}
+		
+		uses_anglican_power = yes
+		aspects = {
+			nimrith_sight_aspect
+			nimrith_shrewdness_aspect
+			nimrith_greed_aspect
+			nimrith_wrath_aspect
+			nimrith_resilience_aspect
+			nimrith_obsession_aspect
+			nimrith_speed_aspect
+			nimrith_guile_aspect
+			nimrith_might_aspect
+			nimrith_fire_aspect
+			nimrith_illusion_aspect
+			nimrith_deception_aspect
+			nimrith_creation_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+		
+		on_convert = {
+			change_religion = nimrith_dragon_cult
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		heretic = { DENIER }
+	}
+}
+
+cannorian = {
+	northern_court = {
+		color = { 81 115 130 }
+		icon = 73
+		allowed_conversion = {
+			corinite
+			ravelian
+		}
+		
+		country = {
+			trade_efficiency = 0.1
+			num_accepted_cultures = 1
+		}
+		country_as_secondary = {
+			trade_efficiency = 0.1
+			num_accepted_cultures = 1
+		}
+		
+		personal_deity = yes
+		
+		on_convert = {
+			change_religion = northern_court
+			if = {
+				limit = { NOT = { has_country_flag = emperor_religion_change } }
+				add_prestige = -100
+
+				add_country_modifier = {
+					name = "conversion_zeal"
+					duration = 3650
+				}
+			}
+		}
+
+		heretic = { OLD_PANTHEON }
+		
+		date = 1510.1.1
+	}
+}
+
+bulwari = {
+	sun_dragon_cult = {
+		color = { 255 234 148 }
+		icon = 123
+		allowed_conversion = {
+			kobold_dragon_cult
+			the_jadd
+		}
+		
+		country = {
+			diplomatic_reputation = 1
+			legitimacy = 1
+			republican_tradition = 0.4
+			devotion = 1
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			legitimacy = 1
+			republican_tradition = 0.4
+			devotion = 1
+		}
+		
+		province = {
+			local_unrest = -2
+		}
+		
+		on_convert = {
+			change_religion = sun_dragon_cult
+			if = {
+				limit = { NOT = { has_country_flag = emperor_religion_change } }
+				add_prestige = -100
+
+				add_country_modifier = {
+					name = "conversion_zeal"
+					duration = 3650
+				}
+			}
+		}
+
+		heretic = { DENIER }
+		
+	}
+}

@@ -1,0 +1,16 @@
+﻿l_english:
+ #Tooltips
+  Z55_own_vale_provs_tooltip:0 "Any province in the Vale is a core of $COUNTRY$."
+  Z55_khugdir_cb_tooltip:0 "If this mission is completed while Khugdihr exists as a tag, you will gain a Diplomatic Insult CB on them."
+  Z55_decision_enshrine_nimrith_tooltip:0 "Enables the decision to enshrine the remains of Nimrith at Kuvëndihr."
+  Z55_khugdir_dev_redis_tooltip:0 "All development is removed from Khugdihr and redistributed amongst the Kuvëndihr Holds."
+  Z55_own_dagrinrod_11_17_tooltop:0 "All provinces from Dûr-Vazhatun to the Dagrinrod 11 is a core provinces of us."
+  Z55_secure_rail_tooltip:0 "Own all rail provinces around the Vale and have at least 6 forts built in those provinces."
+  Z55_secure_rail_reward_tooltip:0 "All provinces on those rail lines with a fort gain §G+1 Fort Levels§! and §G+20% Fort Defense§!. This modifier last until the end of the game or until the fort is destroyed."
+  Z55_gold_blood_dev_tooltip:0 "Have at least 400 development in all rail provinces and holds that surround the Serpent's Vale."
+  Z55_settle_vale_tooltip:0 "All provinces in the Serpent's Vale are a Darkscale core province and owned by us."
+  Z55_natvir_culture_info_tooltip:0 "§RRewards of future missions may change depending on if we leave the culture of this hold as Goblin or change it to be Kobolds.§!"
+  Z55_enshrine_remains_decision_access_tooltip:0 "Gain access to the decision to enshrine the remains of nimrith at the Hall of Ancestors."
+  Z55_upgrade_kuvendihr_area_dig_1_to_2_tooltip:0 "All holds around Kuvëndihr have their dig level upgraded from level 1 to level 2. If they already have level 2 or higher or if their dig level is lower than level 1, they gain 2 Development of each type instead."
+  Z55_upgrade_kuvendihr_area_dig_2_to_3_tooltip:0 "All holds around Kuvëndihr have their dig level upgraded from level 2 to level 3. If they already have level 3 or higher or if their dig level is lower than level 2, they gain 2 Development of each type instead."
+  Z55_upgrade_kuvendihr_area_dig_3_to_4_tooltip:0 "All holds around Kuvëndihr have their dig level upgraded from level 3 to level 4. If they already have level 4 or higher or if their dig level is lower than level 3, they gain 2 Development of each type instead."

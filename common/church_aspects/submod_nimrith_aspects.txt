@@ -1,0 +1,254 @@
+nimrith_sight_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_adm_power = 50
+		}
+	}
+	
+	modifier = {
+		technology_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 20
+	}
+}
+
+nimrith_shrewdness_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			random = {
+				33 = {
+					define_advisor = {
+						type = philosopher
+						skill = 2
+						discount = yes
+					}
+				}
+			
+				33 = {
+					define_advisor = {
+						type = trader
+						skill = 2
+						discount = yes
+					}
+				}
+			
+				34 = {
+					define_advisor = {
+						type = fortification_expert
+						skill = 2
+						discount = yes
+					}
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		advisor_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+nimrith_greed_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_years_of_income = 0.25
+		}
+	}
+	
+	modifier = {
+		global_tax_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_wrath_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_army_tradition = 5
+		}
+	}
+	
+	modifier = {
+		morale_damage = 0.1
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_resilience_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_yearly_manpower = 0.25
+		}
+	}
+	
+	modifier = {
+		defensiveness = 0.2
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_obsession_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_mil_power = 50
+		}
+	}
+	
+	modifier = {
+		idea_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+nimrith_speed_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			capital_scope = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+		}
+	}
+	
+	modifier = {
+		movement_speed = 0.2
+	}
+
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+nimrith_guile_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_dip_power = 50
+		}
+	}
+	
+	modifier = {
+		diplomats = 1
+	}
+
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+nimrith_might_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			create_general = { tradition = 75 }
+		}
+	}
+	
+	modifier = {
+		discipline = 0.05
+	}
+
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+nimrith_fire_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_army_professionalism = 0.05
+		}
+	}
+	
+	modifier = {
+		fire_damage = 0.1
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_illusion_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_mercantilism = 3
+		}
+	}
+	
+	modifier = {
+		trade_efficiency = 0.1
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_deception_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			all_rival_country = {
+				add_spy_network_from = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		spy_offence = 0.25
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+nimrith_creation_aspect = {
+	cost = 200
+	effect = {
+		hidden_effect = {
+			add_inflation = -1.5
+			add_corruption = -1.5
+		}
+	}
+	
+	modifier = {
+		build_cost = -0.15
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}

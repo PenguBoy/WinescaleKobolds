@@ -1,0 +1,1699 @@
+Z55_remains_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_memories_nimrith = {
+		icon = mission_fire_of_london
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			employed_advisor = { category = DIP } 
+			employed_advisor = { category = ADM } 
+		}
+
+		effect = {
+			custom_tooltip = Z55_khugdir_cb_tooltip
+			if = {
+				limit = { exists = I07 } 
+				add_casus_belli = {
+					target = I07
+					type = cb_insult
+					months = 240
+				}
+			}
+			else_if = {
+				limit = { exists = B17 } 
+				add_casus_belli = {
+					target = B17
+					type = cb_insult
+					months = 240
+				}
+			}
+			else = { 2863 = { add_permanent_claim = ROOT }  } 
+			create_conquistador = { tradition = 75 } 
+		}
+	}
+}
+Z55_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_seize_mithradhum = {
+		icon = mission_iron_and_copper
+		position = 9
+		required_missions = { Z55_secure_the_junctions } 
+		provinces_to_highlight = { area = mithradhum_area } 
+
+		trigger = {
+			mithradhum_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			mithradhum_area = { add_base_production = 3 } 
+			mithradhum_area = {
+				limit = { NOT = { trade_goods = mithril }  } 
+				change_trade_goods = mithril
+			}
+		}
+	}
+
+	Z55_restore_western_holds = {
+		icon = mission_prosperity_in_bengal
+		position = 10
+		required_missions = {
+			Z55_secure_orldhum
+			Z55_take_natvir
+			Z55_seize_mithradhum
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2868
+				province_id = 4236
+				province_id = 2931
+			}
+		}
+
+		trigger = {
+			2931 = { development = 35 } 
+			4236 = { development = 35 } 
+			2868 = { development = 35 } 
+		}
+
+		effect = {
+			2931 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+			}
+			4236 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+			}
+			2868 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+Z55_remains_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_burn_khugdihr = {
+		icon = mission_plc_golden_liberty
+		position = 2
+		required_missions = { Z55_memories_nimrith } 
+		provinces_to_highlight = { province_id = 2863 } 
+
+		trigger = {
+			if = {
+				limit = { NOT = { 2863 = { is_empty = yes }  }  } 
+				2863 = { controlled_by = ROOT } 
+			}
+			else = { 2863 = { infantry_in_province = ROOT }  } 
+		}
+
+		effect = {
+			custom_tooltip = Z55_decision_enshrine_nimrith_tooltip
+			custom_tooltip = Z55_khugdir_dev_redis_tooltip
+			hidden_effect = {
+				2863 = {
+					while = {
+						limit = { 2863 = { base_tax = 2 }  } 
+						2863 = { add_base_tax = -1 } 
+						random_owned_province = { limit = { area = amldihr_area }  } 
+						add_random_development = 1
+					}
+					while = {
+						limit = { 2863 = { base_production = 2 }  } 
+						2863 = { add_base_production = -1 } 
+						random_owned_province = { limit = { area = amldihr_area }  } 
+						add_random_development = 1
+					}
+					while = {
+						limit = { 2863 = { base_manpower = 2 }  } 
+						2863 = { add_base_manpower = -1 } 
+						random_owned_province = { limit = { area = amldihr_area }  } 
+						add_random_development = 1
+					}
+				}
+			}
+		}
+	}
+
+	Z55_remains_nimrith = {
+		icon = mission_junnagadh_fort
+		position = 3
+		required_missions = { Z55_burn_khugdihr } 
+		provinces_to_highlight = { province_id = 4128 } 
+
+		trigger = {
+			4128 = {
+				development = 50
+				num_of_buildings_in_province = 5
+			}
+		}
+
+		effect = {
+			custom_tooltip = Z55_enshrine_remains_decision_access_tooltip
+			add_prestige = 25
+		}
+	}
+
+	Z55_secure_the_junctions = {
+		icon = mission_grand_trunk_road_mug
+		position = 8
+		required_missions = { Z55_found_kuvendihr } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2933
+				province_id = 2992
+			}
+		}
+
+		trigger = {
+			2933 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			2992 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_colonisation_efforts"
+				duration = 7120
+			}
+		}
+	}
+}
+Z55_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_secure_orldhum = {
+		icon = mission_rb_inland_india
+		position = 9
+		required_missions = { Z55_secure_the_junctions } 
+		provinces_to_highlight = { province_id = 2868 } 
+
+		trigger = {
+			2868 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_stability = 1
+		}
+	}
+}
+Z55_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_dream_of_crown = {
+		icon = mission_empire
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = { stability = 1 } 
+
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+		}
+	}
+
+	Z55_light_at_the_end = {
+		icon = mission_control_the_desh
+		position = 2
+		required_missions = { Z55_dream_of_crown } 
+		provinces_to_highlight = { province_id = 4164 } 
+
+		trigger = { capital = 4164 } 
+
+		effect = { add_adm_tech = 1 } 
+	}
+
+	Z55_temp_home = {
+		icon = mission_iron_and_copper
+		position = 3
+		required_missions = { Z55_light_at_the_end } 
+		provinces_to_highlight = { province_id = 4147 } 
+
+		trigger = { capital = 4147 } 
+
+		effect = {
+			4147 = { change_trade_goods = iron } 
+			add_treasury = 125
+		}
+	}
+
+	Z55_dwarven_metal = {
+		icon = mission_marwari_horses
+		position = 4
+		required_missions = { Z55_temp_home } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			employed_advisor = { category = MIL } 
+			num_of_generals = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_ramsteel_salvaged"
+				duration = 3650
+			}
+			add_treasury = 125
+			amldihr_area = { discover_country = ROOT } 
+			4120 = { discover_country = ROOT } 
+		}
+	}
+
+	Z55_final_preparations = {
+		icon = mission_zambezi_gold
+		position = 5
+		required_missions = { Z55_dwarven_metal } 
+		provinces_to_highlight = {  } 
+
+		trigger = { army_size_percentage = 0.75 } 
+
+		effect = {
+			every_province = {
+				limit = { area = amldihr_area } 
+				add_core = ROOT
+			}
+			add_mil_tech = 1
+		}
+	}
+
+	Z55_shatter_shatterers = {
+		icon = mission_impaled_soldies
+		position = 6
+		required_missions = { Z55_final_preparations } 
+		provinces_to_highlight = { area = amldihr_area } 
+
+		trigger = {
+			amldihr_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+				is_state = yes
+			}
+		}
+
+		effect = {
+			set_capital = 4119
+			4119 = {
+				change_religion = ROOT
+				change_culture = ROOT
+				add_province_modifier = {
+					name = "Z55_modifiers_conquest_amldihr"
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = "Z55_modifiers_conquest_amldihr_country"
+				duration = 7300
+			}
+		}
+	}
+
+	Z55_found_kuvendihr = {
+		icon = mission_conquer_50_development
+		position = 7
+		required_missions = { Z55_shatter_shatterers } 
+		provinces_to_highlight = { area = amldihr_area } 
+
+		trigger = {
+			amldihr_area = {
+				type = all
+				NOT = { has_province_modifier = infested_hold } 
+				NOT = { has_province_modifier = ruined_hold } 
+			}
+			development_in_provinces = {
+				value = 100
+				area = amldihr_area
+			}
+		}
+
+		effect = {
+			4119 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_amldihr_seat_power"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z55_take_natvir = {
+		icon = mission_oceania_assemble_an_army
+		position = 9
+		required_missions = { Z55_secure_the_junctions } 
+		provinces_to_highlight = { province_id = 2931 } 
+
+		trigger = {
+			2931 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			create_general = { tradition = 100 } 
+			add_army_tradition = 15
+			custom_tooltip = Z55_natvir_culture_info_tooltip
+			country_event = { id = drkscl.3 } 
+		}
+	}
+
+	Z55_secure_the_rail = {
+		icon = fortress_of_belgrade
+		position = 10
+		required_missions = { Z55_found_kuvendihr } 
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_7_9_area
+				area = dwarovrod_10_12_area
+				area = dagrinrod_4_6_area
+				area = dagrinrod_7_9_area
+				area = dagrinrod_13_15_area
+				province_id = 3003
+				province_id = 3002
+				province_id = 2998
+				province_id = 2997
+				province_id = 2996
+				province_id = 2988
+				province_id = 2986
+				province_id = 2871
+				province_id = 2867
+			}
+			NOT = { owned_by = ROOT } 
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = Z55_secure_rail_tooltip
+				dwarovrod_7_9_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				dwarovrod_10_12_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				dagrinrod_4_6_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				dagrinrod_7_9_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				dagrinrod_13_15_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				3003 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				3002 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2998 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2997 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2996 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2988 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2986 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2871 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				2867 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				num_of_owned_provinces_with = {
+					OR = {
+						area = dwarovrod_7_9_area
+						area = dwarovrod_10_12_area
+						area = dagrinrod_4_6_area
+						area = dagrinrod_7_9_area
+						area = dagrinrod_13_15_area
+						province_id = 3003
+						province_id = 3002
+						province_id = 2998
+						province_id = 2997
+						province_id = 2996
+						province_id = 2988
+						province_id = 2986
+						province_id = 2871
+						province_id = 2867
+					}
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_18th
+						has_building = fort_17th
+					}
+					value = 6
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = Z55_secure_rail_reward_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = dwarovrod_7_9_area
+							area = dwarovrod_10_12_area
+							area = dagrinrod_4_6_area
+							area = dagrinrod_7_9_area
+							area = dagrinrod_13_15_area
+							province_id = 3003
+							province_id = 3002
+							province_id = 2998
+							province_id = 2997
+							province_id = 2996
+							province_id = 2988
+							province_id = 2986
+							province_id = 2871
+							province_id = 2867
+						}
+						OR = {
+							has_building = fort_15th
+							has_building = fort_16th
+							has_building = fort_18th
+							has_building = fort_17th
+						}
+					}
+					add_province_modifier = {
+						name = "Z55_modifiers_secure_rail_forts"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	Z55_ring_blood_gold = {
+		icon = mission_entrepot_of_india
+		position = 11
+		required_missions = {
+			Z55_restore_western_holds
+			Z55_restore_eastern_holds
+			Z55_secure_the_rail
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_7_9_area
+				area = dwarovrod_10_12_area
+				area = dagrinrod_4_6_area
+				area = dagrinrod_7_9_area
+				area = dagrinrod_13_15_area
+				area = orlazam_area
+				area = vazhatun_area
+				province_id = 2931
+				province_id = 2988
+				province_id = 2986
+				province_id = 2871
+				province_id = 2867
+				province_id = 2868
+				province_id = 4236
+			}
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = Z55_gold_blood_dev_tooltip
+				development_in_provinces = {
+					OR = {
+						area = dwarovrod_7_9_area
+						area = dwarovrod_10_12_area
+						area = dagrinrod_4_6_area
+						area = dagrinrod_7_9_area
+						area = dagrinrod_13_15_area
+						area = orlazam_area
+						area = vazhatun_area
+						province_id = 2931
+						province_id = 2988
+						province_id = 2986
+						province_id = 2871
+						province_id = 2867
+						province_id = 2868
+						province_id = 4236
+					}
+					Value = 400
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_the_empire_gold_blood"
+				duration = -1
+			}
+		}
+	}
+}
+Z55_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_reach_for_stars = {
+		icon = mission_venus
+		position = 9
+		required_missions = { Z55_secure_the_junctions } 
+		provinces_to_highlight = { province_id = 4020 } 
+
+		trigger = {
+			4020 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				cost_multiplier = 0.25
+			}
+		}
+	}
+
+	Z55_restore_eastern_holds = {
+		icon = mission_riches_of_golconda
+		position = 10
+		required_missions = { Z55_reach_for_stars } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4020
+				province_id = 4147
+			}
+		}
+
+		trigger = {
+			4020 = { development = 35 } 
+			4147 = { development = 35 } 
+		}
+
+		effect = {
+			4020 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+				change_trade_goods = damestear
+			}
+			4147 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+Z55_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z55
+			tag = Z56
+		}
+	}
+
+	Z55_secure_the_entrances = {
+		icon = mission_royal_roads
+		position = 8
+		required_missions = { Z55_found_kuvendihr } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4120
+				province_id = 4121
+			}
+		}
+
+		trigger = {
+			4120 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4121 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			4121 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_defenses_kuvendihr"
+					duration = -1
+				}
+			}
+			4120 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_defenses_kuvendihr"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z55_settle_vale = {
+		icon = mission_pow_just_around_the_riverbend
+		position = 10
+		required_missions = { Z55_secure_the_entrances } 
+		provinces_to_highlight = {
+			OR = {
+				area = castle_hill_area
+				area = assembly_terrace_area
+				area = royal_terrace_area
+				area = common_terrace_area
+			}
+			NOT = { province_id = 4120 } 
+			NOT = { province_id = 4121 } 
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = Z55_settle_vale_tooltip
+				irrigation_dwarovar = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+			amldihr_area = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+		}
+	}
+}
+Z56_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z56 } 
+
+	Z56_ancestral_home = {
+		icon = spa_spanish_road
+		position = 12
+		required_missions = { Z55_ring_blood_gold } 
+		provinces_to_highlight = {
+			OR = {
+				area = dark_depths_area
+				area = dwarfbreak_area
+				province_id = 4022
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			dark_depths_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dwarfbreak_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4022 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = { 4025 = { change_trade_goods = gold }  } 
+	}
+
+	Z56_northern_caves = {
+		icon = dominant_economy
+		position = 13
+		required_missions = { Z56_ancestral_home } 
+		provinces_to_highlight = {
+			OR = {
+				area = snotslair_area
+				province_id = 2869
+				province_id = 4163
+			}
+		}
+
+		trigger = {
+			snotslair_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2869 = { country_or_non_sovereign_subject_holds = ROOT } 
+			4163 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = {
+			snotslair_area = {
+				change_trade_goods = gems
+				add_province_modifier = {
+					name = "Z55_modifiers_gem_mines"
+					duration = -1
+				}
+			}
+			2869 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_gem_mines"
+					duration = -1
+				}
+			}
+			4163 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_gem_mines"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z56_goblin_caves = {
+		icon = mission_the_caucasus_tur
+		position = 15
+		required_missions = { Z56_northern_caves } 
+		provinces_to_highlight = {
+			OR = {
+				area = old_dagrinrod_area
+				area = goblins_bypass_area
+				area = broken_dagger_pass_area
+				area = skulkers_lair_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			old_dagrinrod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			goblins_bypass_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			broken_dagger_pass_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			skulkers_lair_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 2931 = { culture_group = goblin }  } 
+				2931 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 4
+				}
+				large_increase_of_goblin_tolerance_effect = yes
+			}
+			else = {
+				2931 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+
+	Z56_southern_junction = {
+		icon = protect_against_austria
+		position = 16
+		required_missions = { Z56_goblin_caves } 
+		provinces_to_highlight = {
+			OR = {
+				area = railyard_exchange_area
+				province_id = 2876
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			railyard_exchange_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2876 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = {
+			add_stability = 1
+			add_prestige = 25
+		}
+	}
+
+	Z56_hold_bad_luck = {
+		icon = mission_war_for_the_crown
+		position = 17
+		required_missions = { Z56_southern_junction } 
+		provinces_to_highlight = {
+			area = stunad_kozenad_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			stunad_kozenad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			4056 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_koboldic_hold"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z56_masters_south = {
+		icon = mission_crown_of_sweden
+		position = 18
+		required_missions = {
+			Z56_anumdihr_question
+			Z56_hold_bad_luck
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			army_size = 100
+			monthly_mil = 14
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_masters_south"
+				duration = -1
+			}
+		}
+	}
+}
+Z56_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z56 } 
+
+	Z56_gate_escann = {
+		icon = mission_lit_harness_steppes
+		position = 13
+		required_missions = { Z56_ancestral_home } 
+		provinces_to_highlight = {
+			OR = {
+				area = fallen_asra_caves
+				area = chainlink_mines_area
+				area = riftway_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			fallen_asra_caves = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chainlink_mines_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riftway_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			4552 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_cave_traps"
+					duration = -1
+				}
+			}
+			4553 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_cave_traps"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z56_ovdal_asra = {
+		icon = mission_golden_century
+		position = 14
+		required_missions = {
+			Z56_northern_caves
+			Z56_gate_escann
+		}
+		provinces_to_highlight = { province_id = 4074 } 
+
+		trigger = {
+			4074 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 20
+				}
+			}
+			treasury = 200
+		}
+
+		effect = {
+			4074 = {
+				kill_units = {
+					who = ROOT
+					amount = 50
+				}
+			}
+			4074 = {
+				add_country_modifier = {
+					name = "Z55_modifiers_exploring_asra"
+					duration = 9125
+				}
+			}
+			add_treasury = -200
+		}
+	}
+
+	Z56_kuvendihr_dig_6 = {
+		icon = mission_dalaskogen
+		position = 15
+		required_missions = { Z56_kuvendihr_dig_4 } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = { has_dwarven_hold_6 = yes } 
+			treasury = 2400
+		}
+
+		effect = {
+			custom_tooltip = Z55_upgrade_kuvendihr_area_dig_2_to_3_tooltip
+			add_treasury = -1200
+			hidden_effect = {
+				if = {
+					limit = { 4122 = { has_province_modifier = dig_2 }  } 
+					4122 = { upgrade_hold = yes } 
+				}
+				else = {
+					4122 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+				if = {
+					limit = { 4128 = { has_province_modifier = dig_2 }  } 
+					4128 = { upgrade_hold = yes } 
+				}
+				else = {
+					4128 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+				if = {
+					limit = { 4149 = { has_province_modifier = dig_2 }  } 
+					4149 = { upgrade_hold = yes } 
+				}
+				else = {
+					4149 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+			}
+		}
+	}
+
+	Z56_kobold_brethren = {
+		icon = mission_sw_torquoise_mining
+		position = 16
+		required_missions = { Z56_goblin_caves } 
+		provinces_to_highlight = {
+			OR = {
+				area = dagrite_depths_area
+				area = zokkorna_caverns_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			dagrite_depths_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zokkorna_caverns_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			4060 = {
+				add_province_modifier = {
+					name = "Z55_modifiers_cave_traps"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Z56_anumdihr_question = {
+		icon = alpine_defenses
+		position = 17
+		required_missions = { Z56_kobold_brethren } 
+		provinces_to_highlight = { province_id = 4097 } 
+
+		trigger = {
+			4097 = { country_or_non_sovereign_subject_holds = ROOT } 
+			OR = {
+				4065 = { has_great_project = { type = dwarovar_marrhold_tunnel }  } 
+				4097 = { has_great_project = { type = marrhold_dwarovar_tunnel }  } 
+			}
+		}
+
+		effect = {
+			4097 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+Z56_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z56 } 
+
+	Z56_expand_kuvendihr = {
+		icon = mission_empire
+		position = 12
+		required_missions = { Z55_ring_blood_gold } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = { has_dwarven_hold_3 = yes } 
+			num_of_buildings_in_province = 8
+		}
+
+		effect = {
+			amldihr_area = {
+				add_province_modifier = {
+					name = "Z55_modifiers_amldihr_manufact"
+					duration = 1
+				}
+			}
+		}
+	}
+
+	Z56_kuvendihr_dig_4 = {
+		icon = mission_rb_build_furnaces
+		position = 14
+		required_missions = { Z56_expand_kuvendihr } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = { has_dwarven_hold_4 = yes } 
+			treasury = 1200
+		}
+
+		effect = {
+			custom_tooltip = Z55_upgrade_kuvendihr_area_dig_1_to_2_tooltip
+			add_treasury = -2800
+			hidden_effect = {
+				if = {
+					limit = { 4122 = { has_province_modifier = dig_1 }  } 
+					4122 = { upgrade_hold = yes } 
+				}
+				else = {
+					4122 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+				if = {
+					limit = { 4128 = { has_province_modifier = dig_1 }  } 
+					4128 = { upgrade_hold = yes } 
+				}
+				else = {
+					4128 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+				if = {
+					limit = { 4149 = { has_province_modifier = dig_1 }  } 
+					4149 = { upgrade_hold = yes } 
+				}
+				else = {
+					4149 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+				}
+			}
+		}
+	}
+
+	Z56_cold_respite = {
+		icon = prosper_in_piedmont
+		position = 15
+		required_missions = { Z56_past_uthojan_gaze } 
+		provinces_to_highlight = {
+			OR = {
+				area = hidden_respite_area
+				province_id = 4180
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			hidden_respite_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4180 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = { add_prestige = 25 } 
+	}
+
+	Z56_kuvendihr_dig_8 = {
+		icon = mission_potosi_silver
+		position = 16
+		required_missions = { Z56_kuvendihr_dig_6 } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = {
+				has_dwarven_hold_8 = treasury
+				4500 = effect
+				custom_tooltip = Z55_upgrade_kuvendihr_area_dig_3_to_4_tooltip
+				add_treasury = -4500
+				hidden_effect = {
+					if = {
+						limit = { 4122 = { has_province_modifier = dig_3 }  } 
+						4122 = { upgrade_hold = yes } 
+					}
+					else = {
+						4122 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+					if = {
+						limit = { 4128 = { has_province_modifier = dig_3 }  } 
+						4128 = { upgrade_hold = yes } 
+					}
+					else = {
+						4128 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+					if = {
+						limit = { 4149 = { has_province_modifier = dig_3 }  } 
+						4149 = { upgrade_hold = yes } 
+					}
+					else = {
+						4149 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+				}
+			}
+		}
+
+		effect = {  } 
+	}
+
+	Z56_kuvendihr_dig_10 = {
+		icon = mission_crown_of_norway
+		position = 18
+		required_missions = { Z56_kuvendihr_dig_8 } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = {
+				has_dwarven_hold_10 = treasury
+				7500 = effect
+				custom_tooltip = Z55_upgrade_kuvendihr_area_dig_4_to_5_tooltip
+				add_treasury = -7500
+				hidden_effect = {
+					if = {
+						limit = { 4122 = { has_province_modifier = dig_4 }  } 
+						4122 = { upgrade_hold = yes } 
+					}
+					else = {
+						4122 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+					if = {
+						limit = { 4128 = { has_province_modifier = dig_4 }  } 
+						4128 = { upgrade_hold = yes } 
+					}
+					else = {
+						4128 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+					if = {
+						limit = { 4149 = { has_province_modifier = dig_4 }  } 
+						4149 = { upgrade_hold = yes } 
+					}
+					else = {
+						4149 = {
+							add_base_tax = 2
+							add_base_production = 2
+							add_base_manpower = 2
+						}
+					}
+				}
+			}
+		}
+
+		effect = {  } 
+	}
+
+	Z56_kuvendihr_dig_11 = {
+		icon = mission_growth_of_golcond
+		position = 19
+		required_missions = {
+			Z56_masters_north
+			Z56_masters_south
+			Z56_kuvendihr_dig_10
+		}
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = {
+			4119 = {
+				has_dwarven_hold_11 = development_in_provinces
+				value = 450
+				area = amldihr_area
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = dwarven_hold
+						has_terrain = surface_hold
+					}
+				}
+				add_province_modifier = {
+					name = "Z55_modifiers_ecclipsed_dwarves"
+					duration = 36500
+				}
+			}
+		}
+	}
+}
+Z56_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z56 } 
+
+	Z56_kobold_knowledge = {
+		icon = found_the_vatican_library
+		position = 13
+		required_missions = { Z56_expand_kuvendihr } 
+		provinces_to_highlight = { province_id = 4119 } 
+
+		trigger = { 4119 = { has_building = university }  } 
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_kobold_library"
+				duration = 7300
+			}
+		}
+	}
+
+	Z56_northern_control = {
+		icon = the_russian_campaign
+		position = 15
+		required_missions = { Z56_past_uthojan_gaze } 
+		provinces_to_highlight = {
+			OR = {
+				area = middle_logr_area
+				area = fyllstyn_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			middle_logr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fyllstyn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_wood_surplus"
+				duration = 7300
+			}
+		}
+	}
+
+	Z56_frozen_bastions = {
+		icon = mission_take_over_the_kremlin
+		position = 17
+		required_missions = { Z56_lonely_goblin } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4181
+				province_id = 4189
+				province_id = 6214
+			}
+		}
+
+		trigger = {
+			4181 = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			4189 = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			6214 = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+
+		effect = {
+			4189 = { upgrade_building = { fort = yes }  } 
+			4181 = { upgrade_building = { fort = yes }  } 
+			6214 = { upgrade_building = { fort = yes }  } 
+		}
+	}
+}
+Z56_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z56 } 
+
+	Z56_fortify_vale = {
+		icon = mission_lake_texcoco
+		position = 12
+		required_missions = {
+			Z55_ring_blood_gold
+			Z55_settle_vale
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4166
+				province_id = 4145
+			}
+		}
+
+		trigger = {
+			4166 = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			4145 = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+
+		effect = {
+			4145 = { upgrade_building = { fort = yes }  } 
+			4166 = { upgrade_building = { fort = yes }  } 
+		}
+	}
+
+	Z56_past_uthojan_gaze = {
+		icon = mission_ne_great_lakes_conquest
+		position = 14
+		required_missions = { Z56_fortify_vale } 
+		provinces_to_highlight = {
+			OR = {
+				area = the_copperwood_area
+				area = upper_logr_area
+				area = tanning_valley_area
+			}
+		}
+
+		trigger = {
+			the_copperwood_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_logr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tanning_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			4202 = { center_of_trade = 2 } 
+			4193 = { center_of_trade = 2 } 
+		}
+	}
+
+	Z56_strike_anvil = {
+		icon = mission_the_caucasus_rus
+		position = 15
+		required_missions = { Z56_fortify_vale } 
+		provinces_to_highlight = {
+			OR = {
+				area = anvils_horn_area
+				area = krakdhum_area
+				area = dead_end_tunnel_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			anvils_horn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			krakdhum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dead_end_tunnel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			4208 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+
+	Z56_lonely_goblin = {
+		icon = alpine_fortifications
+		position = 16
+		required_missions = {
+			Z56_cold_respite
+			Z56_northern_control
+			Z56_strike_anvil
+		}
+		provinces_to_highlight = { area = lonely_mountains_area } 
+
+		trigger = {
+			lonely_mountains_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = { add_years_of_income = 2 } 
+	}
+
+	Z56_masters_north = {
+		icon = mission_crown_of_denmark
+		position = 18
+		required_missions = { Z56_lonely_goblin } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			4202 = { is_strongest_trade_power = ROOT } 
+			5003 = { is_strongest_trade_power = ROOT } 
+			4236 = { is_strongest_trade_power = ROOT } 
+			4119 = { trade_node_value = 75 } 
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Z55_modifiers_masters_north"
+				duration = -1
+			}
+		}
+	}
+}

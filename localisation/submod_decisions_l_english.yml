@@ -1,0 +1,35 @@
+﻿l_english:
+ #Silverscale
+  #Temp Jadd decision
+   SSK_jadd_temp_decision_title:0 "Convert to the Jadd"
+   SSK_jadd_temp_decision_desc:0 "This decision is temporary until this tag has a Mission Tree."
+  #Drake Hounds
+   SSK_drakehounds_decision_title:0 "Establish Drake Hound Regiments"
+   SSK_drakehounds_decision_desc:0 "This decision is temporary until this tag has a Mission Tree."
+  #Establish Ibilzex
+   SSK_wallkingdom_nation_decision_title:0 "Establish Zurizex"
+   SSK_wallkingdom_nation_decision_desc:0 "The Walls around inner cannor are ideal to shelter a prosperous and powerful Kobold empire."
+  #Establish Sunscale
+   XLF_proclaim_sunscale_theocracy_decision_title:0 "Establish the Sunscale Order"
+   XLF_proclaim_sunscale_theocracy_decision_desc:0 "The structure of our nation needs to adapt to further aid us in spreading the light."
+  #Form Castellyr
+   castellyr_nation_kobold_title:0 "Revive the Kingdom of Castellyr"
+   castellyr_nation_kobold_desc:0 "The Kingdom of Castellyr, also known as the Kingdom of the Silver Dragon, was the feudal successor to ancient Castanor. Castellyr was first amongst equals in Feudal Escann, and was the shining bastion of the East.\n\n§R(If you're an Adventurer, this is mutually exclusive from the Form Our Own Country! decision)§!"
+ #Darkscale
+  #Restore Irrigation
+   restore_irrigation_submod_title:0 "Restore the Serpentvale Irrigation"
+   restore_irrigation_submod_desc:0 " "
+  #Restore the Asra Hold
+   submod_restore_the_asra_hold_title:0 "Rebuild the Asra Hold"
+   submod_restore_the_asra_hold_desc:0 "The Asra Hold has been found, so now we have to prepare for the incredibly expensive task of restoring such a massively damaged Hold."
+ #Winescale
+  #Expand the Hoard
+   WSK_expand_hoard_decision_title:0 "Expand our Hoard"
+   WSK_expand_hoard_decision_desc:0 "Our national treasury is ripe with shinies, time to fuel some of it into our glorious Hoard."
+  #Slave Trade
+   WSK_slaves_for_our_vineyard_decision_title:0 "Browse the Slave Markets"
+   WSK_slaves_for_our_vineyard_decision_desc:0 "We can send an envoy to Sarhal to browse the local slave markets."
+ #Xerdgonfa
+  #Cargo Capacity
+   BSK_capacity_indicator_title:0 "Our current cargo capacity."
+   BSK_capacity_indicator_desc:0 " "

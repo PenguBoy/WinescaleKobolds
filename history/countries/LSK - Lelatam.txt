@@ -3,7 +3,7 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = copperscale_kobold
-religion = nakavy_avo
+religion = aakhetist
 technology_group = tech_kobold
 
 capital = 3245
@@ -14,8 +14,8 @@ capital = 3245
 
 1444.1.1 = {
 	monarch = {
-		name = "Artrex"
-		dynasty = "Seaclaw"
+		name = "Aakhex"
+		dynasty = "Forgotten Sand"
 		birth_date = 1419.5.21
 		adm = 4
 		dip = 3

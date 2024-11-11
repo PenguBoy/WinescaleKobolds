@@ -1092,18 +1092,11 @@ WSK_branch_3 = {
 		
 		effect = {
 			
-			random_owned_province = {
-				limit = {
-					area = lower_winebay_area
-					NOT = { culture = winescale_kobold }
-				}
-				change_culture = winescale_kobold
-			}
-			
 			lower_winebay_area = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
+				change_culture = winescale_kobold
 			}
 			
 			lower_bloodwine_area = {
