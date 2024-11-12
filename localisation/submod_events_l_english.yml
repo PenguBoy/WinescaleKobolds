@@ -251,8 +251,8 @@
   #Playing ad Drágzex
    flavor_kobold_submod.3.t:0 "Playing as Drágzex"
    flavor_kobold_submod.3.d:0 "This event unly fulfills the purpose of allowing you to play as Drágzex once the Incident fires."
-   flavor_kobold_submod.a:0 "Play as them"
-   flavor_kobold_submod.b:0 "Don't play as them"
+   flavor_kobold_submod.3.a:0 "Play as them"
+   flavor_kobold_submod.3.b:0 "Don't play as them"
  ######Darkscale
   ##############
   #Asra Discovered

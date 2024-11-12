@@ -93,6 +93,7 @@ greenscale_sprite_pack	 = {
 			
 			#submod
 			primary_culture = ruined_kobold
+			primary_culture = imperial_kobold
 		}
 	}
 

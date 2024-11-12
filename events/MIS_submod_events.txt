@@ -7,6 +7,9 @@ country_event = {
 	desc = flavor_kobold_submod.1.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
+	fire_only_once = yes
+	major = yes
+	
 	trigger = {
 		is_emperor = yes
 		OR = {
@@ -26,6 +29,7 @@ country_event = {
 			}
 		}
 		NOT = { is_incident_active = any }
+		NOT = { exists = DZX }
 	}
 	
 	option = {
@@ -55,10 +59,6 @@ country_event = {
 			remove_core = A39
 		}
 		
-		DZX = {
-			set_country_flag = semi_monstrous
-		}
-		
 		hidden_effect = {
 			ROOT = {
 				country_event = {
@@ -71,6 +71,26 @@ country_event = {
 					name = DZX_modifiers_kobold_refugees
 					duration = 7300
 				}
+				
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			
+			DZX = {
+				add_manpower = 10
+				add_treasury = 50
+				set_country_flag = semi_monstrous
+			}
+			
+			every_province = {
+				limit = {
+					OR = {
+						superregion = western_cannor_superregion
+						superregion = gerudia_superregion
+					}
+				}
+				discover_country = DZX
 			}
 		}
 	}
@@ -129,7 +149,6 @@ country_event = {
 	option = { #Don't play as Dragzex
 		name = flavor_kobold_submod.3.b
 		
-		switch_tag = DZX
 		
 	}
 }

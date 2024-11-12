@@ -17,16 +17,16 @@ kobold = {
 		primary = WSK
 	}
 	
-	silverscale_kobold = {
-		primary = SSK
-	}
-	
 	copperscale_kobold = {
 		primary = LSK
 	}
 	
 	sunscale_kobold_base = {
 		primary = XLF
+	}
+	
+	silverscale_kobold = {
+		primary = SSK
 	}
 	
 	brassscale_kobold = {
