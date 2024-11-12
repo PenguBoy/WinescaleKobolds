@@ -369,8 +369,10 @@ Z55_branch_3 = {
 				change_culture = ROOT
 				add_province_modifier = {
 					name = "Z55_modifiers_conquest_amldihr"
-					duration = 7300
+					duration = 3650
 				}
+				
+				restored_hold = yes
 			}
 			add_country_modifier = {
 				name = "Z55_modifiers_conquest_amldihr_country"
@@ -389,7 +391,9 @@ Z55_branch_3 = {
 			amldihr_area = {
 				type = all
 				NOT = { has_province_modifier = infested_hold } 
-				NOT = { has_province_modifier = ruined_hold } 
+				NOT = { has_province_modifier = ruined_hold }
+				NOT = { has_province_modifier = damaged_hold }
+				NOT = { has_province_modifier = partially_ruined_hold }
 			}
 			development_in_provinces = {
 				value = 100
