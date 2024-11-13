@@ -867,12 +867,15 @@ Z56_branch_1 = {
 				}
 			}
 			2869 = {
+				change_trade_goods = gems
 				add_province_modifier = {
 					name = "Z55_modifiers_gem_mines"
 					duration = -1
 				}
+				
 			}
 			4163 = {
+				change_trade_goods = gems
 				add_province_modifier = {
 					name = "Z55_modifiers_gem_mines"
 					duration = -1
@@ -1225,7 +1228,7 @@ Z56_branch_3 = {
 			amldihr_area = {
 				add_province_modifier = {
 					name = "Z55_modifiers_amldihr_manufact"
-					duration = 1
+					duration = -1
 				}
 			}
 		}
@@ -1543,9 +1546,117 @@ Z56_branch_4 = {
 		}
 
 		effect = {
-			4189 = { upgrade_building = { fort = yes }  } 
-			4181 = { upgrade_building = { fort = yes }  } 
-			6214 = { upgrade_building = { fort = yes }  } 
+			custom_tooltip = Z55_upgrade_frozen_bastions_tooltip
+			hidden_effect = {
+				#####Province 4189
+				##################
+				if = {
+					limit = {
+						4189 = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+							}
+						}
+					}
+					4189 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						4189 = {
+							has_building = fort_17th
+						}
+					}
+					4189 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+					add_mil_power = 50
+				}
+				else = {
+					add_mil_power = 100
+				}
+				#####Province 4181
+				##################
+				if = {
+					limit = {
+						4181 = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+							}
+						}
+					}
+					4181 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						4181 = {
+							has_building = fort_17th
+						}
+					}
+					4181 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+					add_mil_power = 50
+				}
+				else = {
+					add_mil_power = 100
+				}
+				#####Province 6214
+				##################
+				if = {
+					limit = {
+						6214 = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+							}
+						}
+					}
+					6214 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						6214 = {
+							has_building = fort_17th
+						}
+					}
+					6214 = { 
+						upgrade_building = { 
+							fort = yes 
+						}
+					}
+					add_mil_power = 50
+				}
+				else = {
+					add_mil_power = 100
+				}
+			}
 		}
 	}
 }
@@ -1623,7 +1734,21 @@ Z56_branch_5 = {
 		}
 
 		effect = {
-			4202 = { center_of_trade = 2 } 
+		
+			if = {
+				limit = {
+					4202 = {
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
+				add_center_of_trade_level = 1
+			}
+			else = {
+				add_adm_power = 100
+			}
+			
 			4193 = { center_of_trade = 2 } 
 		}
 	}
