@@ -152,23 +152,27 @@ Z55_remains_branch_2 = {
 			custom_tooltip = Z55_decision_enshrine_nimrith_tooltip
 			custom_tooltip = Z55_khugdir_dev_redis_tooltip
 			hidden_effect = {
-				2863 = {
-					while = {
-						limit = { 2863 = { base_tax = 2 }  } 
-						2863 = { add_base_tax = -1 } 
-						random_owned_province = { limit = { area = amldihr_area }  } 
+				while = {
+					limit = { 2863 = { base_tax = 2 }  } 
+					2863 = { add_base_tax = -1 } 
+					random_owned_province = { 
+						limit = { area = amldihr_area }
 						add_random_development = 1
 					}
-					while = {
-						limit = { 2863 = { base_production = 2 }  } 
-						2863 = { add_base_production = -1 } 
-						random_owned_province = { limit = { area = amldihr_area }  } 
+				}
+				while = {
+					limit = { 2863 = { base_production = 2 }  } 
+					2863 = { add_base_production = -1 } 
+					random_owned_province = { 
+						limit = { area = amldihr_area } 
 						add_random_development = 1
 					}
-					while = {
-						limit = { 2863 = { base_manpower = 2 }  } 
-						2863 = { add_base_manpower = -1 } 
-						random_owned_province = { limit = { area = amldihr_area }  } 
+				}
+				while = {
+					limit = { 2863 = { base_manpower = 2 }  } 
+					2863 = { add_base_manpower = -1 } 
+					random_owned_province = { 
+						limit = { area = amldihr_area }
 						add_random_development = 1
 					}
 				}

@@ -19,6 +19,9 @@
   #Restore Irrigation
    restore_irrigation_submod_title:0 "Restore the Serpentvale Irrigation"
    restore_irrigation_submod_desc:0 " "
+  #Nimrith Remains
+   Z55_enshrine_nimrith_decision_title:0 "Enshrine the remains of Nimrith"
+   Z55_enshrine_nimrith_decision_desc:0 "We have finally recovered the remains of the great red dragon. With the Dwarven Hall of Ancestors as a fitting place to enshrine them, we can fully devote ourselves to the worship of Nimrith."
   #Restore the Asra Hold
    submod_restore_the_asra_hold_title:0 "Rebuild the Asra Hold"
    submod_restore_the_asra_hold_desc:0 "The Asra Hold has been found, so now we have to prepare for the incredibly expensive task of restoring such a massively damaged Hold."

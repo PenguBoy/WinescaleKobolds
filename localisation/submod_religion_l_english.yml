@@ -37,8 +37,8 @@
    northern_court_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
    northern_court_rebels_army:0 "$RELIGION$ Army"
   #Nimrith Dragon Cult
-   nimrith_dragon_cult:0 "Nimrith Dragon Cult"
-   nimrith_dragon_cult_religion_desc:0 " "
+   nimrith_dragon_cult:0 "Cult of the Nimrithan"
+   nimrith_dragon_cult_desc:0 "Many Kobolds worship the broader pantheon of dragons, honoring both metallic and chromatic dragons. However, after the Darkscale Kobolds recovered the remains of Nimrith the Red, a movement began within their ranks, gradually advocating for exclusive devotion to the red dragon."
    nimrith_dragon_cult_rebels_demand:0 "Convert $COUNTRYNAME$"
    nimrith_dragon_cult_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
    nimrith_dragon_cult_rebels_title:0 "Religious"
