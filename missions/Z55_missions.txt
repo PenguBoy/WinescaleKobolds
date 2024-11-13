@@ -1314,49 +1314,49 @@ Z56_branch_3 = {
 
 		trigger = {
 			4119 = {
-				has_dwarven_hold_8 = treasury
-				4500 = effect
-				custom_tooltip = Z55_upgrade_kuvendihr_area_dig_3_to_4_tooltip
-				add_treasury = -4500
-				hidden_effect = {
-					if = {
-						limit = { 4122 = { has_province_modifier = dig_3 }  } 
-						4122 = { upgrade_hold = yes } 
+				has_dwarven_hold_8 = yes
+				treasury = 4500
+			}
+		}
+		effect = {
+			custom_tooltip = Z55_upgrade_kuvendihr_area_dig_3_to_4_tooltip
+			add_treasury = -4500
+			hidden_effect = {
+				if = {
+					limit = { 4122 = { has_province_modifier = dig_3 }  } 
+					4122 = { upgrade_hold = yes } 
+				}
+				else = {
+					4122 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
-					else = {
-						4122 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
+				}
+				if = {
+					limit = { 4128 = { has_province_modifier = dig_3 }  } 
+					4128 = { upgrade_hold = yes } 
+				}
+				else = {
+					4128 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
-					if = {
-						limit = { 4128 = { has_province_modifier = dig_3 }  } 
-						4128 = { upgrade_hold = yes } 
-					}
-					else = {
-						4128 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
-					}
-					if = {
-						limit = { 4149 = { has_province_modifier = dig_3 }  } 
-						4149 = { upgrade_hold = yes } 
-					}
-					else = {
-						4149 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
+				}
+				if = {
+					limit = { 4149 = { has_province_modifier = dig_3 }  } 
+					4149 = { upgrade_hold = yes } 
+				}
+				else = {
+					4149 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
 				}
 			}
 		}
-
-		effect = {  } 
 	}
 
 	Z56_kuvendihr_dig_10 = {
@@ -1367,49 +1367,50 @@ Z56_branch_3 = {
 
 		trigger = {
 			4119 = {
-				has_dwarven_hold_10 = treasury
-				7500 = effect
-				custom_tooltip = Z55_upgrade_kuvendihr_area_dig_4_to_5_tooltip
-				add_treasury = -7500
-				hidden_effect = {
-					if = {
-						limit = { 4122 = { has_province_modifier = dig_4 }  } 
-						4122 = { upgrade_hold = yes } 
+				has_dwarven_hold_10 = yes
+				treasury = 7500
+			}
+		}
+		
+		effect = {
+			custom_tooltip = Z55_upgrade_kuvendihr_area_dig_4_to_5_tooltip
+			add_treasury = -7500
+			hidden_effect = {
+				if = {
+					limit = { 4122 = { has_province_modifier = dig_4 }  } 
+					4122 = { upgrade_hold = yes } 
+				}
+				else = {
+					4122 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
-					else = {
-						4122 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
+				}
+				if = {
+					limit = { 4128 = { has_province_modifier = dig_4 }  } 
+					4128 = { upgrade_hold = yes } 
+				}
+				else = {
+					4128 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
-					if = {
-						limit = { 4128 = { has_province_modifier = dig_4 }  } 
-						4128 = { upgrade_hold = yes } 
-					}
-					else = {
-						4128 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
-					}
-					if = {
-						limit = { 4149 = { has_province_modifier = dig_4 }  } 
-						4149 = { upgrade_hold = yes } 
-					}
-					else = {
-						4149 = {
-							add_base_tax = 2
-							add_base_production = 2
-							add_base_manpower = 2
-						}
+				}
+				if = {
+					limit = { 4149 = { has_province_modifier = dig_4 }  } 
+					4149 = { upgrade_hold = yes } 
+				}
+				else = {
+					4149 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
 				}
 			}
 		}
-
-		effect = {  } 
 	}
 
 	Z56_kuvendihr_dig_11 = {
@@ -1424,9 +1425,11 @@ Z56_branch_3 = {
 
 		trigger = {
 			4119 = {
-				has_dwarven_hold_11 = development_in_provinces
-				value = 450
-				area = amldihr_area
+				has_dwarven_hold_11 = yes
+				development_in_provinces = {
+					value = 450
+					area = amldihr_area
+				}
 			}
 		}
 
