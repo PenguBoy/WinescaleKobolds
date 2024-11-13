@@ -18,7 +18,7 @@
  #Darkscale
   #Restore Irrigation
    restore_irrigation_submod_title:0 "Restore the Serpentvale Irrigation"
-   restore_irrigation_submod_desc:0 " "
+   restore_irrigation_submod_desc:0 "§RThis file is identical to the Base Anbennar decision to restore the Irrigation System. But it was easier to create a new one for the Submod that enables the decision at an earlier tech than to have to maintain the digging relation decision file.§!"
   #Nimrith Remains
    Z55_enshrine_nimrith_decision_title:0 "Enshrine the remains of Nimrith"
    Z55_enshrine_nimrith_decision_desc:0 "We have finally recovered the remains of the great red dragon. With the Dwarven Hall of Ancestors as a fitting place to enshrine them, we can fully devote ourselves to the worship of Nimrith."
