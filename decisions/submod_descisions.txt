@@ -14,6 +14,19 @@ country_decisions = {
 					id = flavor_kobold_submod.2
 				}
 			}
+			
+			A13 = {
+				release_all_possible_countries = yes
+				release_all_subjects = yes
+			}
+			A01 = {
+				release_all_possible_countries = yes
+				release_all_subjects = yes
+			}
+			R62 = {
+				release_all_possible_countries = yes
+				release_all_subjects = yes
+			}
 		}
 	}
 
@@ -126,6 +139,7 @@ country_decisions = {
 		
 		potential = {
 			mission_completed = Z55_remains_nimrith
+			NOT = { has_country_flag = Z55_enshrine_nimrith_flag }
 		}
 		
 		allow = {
@@ -149,7 +163,7 @@ country_decisions = {
 		
 		effect = {
 			change_religion = nimrith_dragon_cult
-			
+			set_country_flag = Z55_enshrine_nimrith_flag
 			amldihr_area = {
 				change_religion = ROOT
 			}

@@ -1021,7 +1021,7 @@ Z56_branch_2 = {
 		required_missions = { Z56_ancestral_home } 
 		provinces_to_highlight = {
 			OR = {
-				area = fallen_asra_caves
+				area = fallen_asra_area
 				area = chainlink_mines_area
 				area = riftway_area
 			}
@@ -1029,7 +1029,7 @@ Z56_branch_2 = {
 		}
 
 		trigger = {
-			fallen_asra_caves = {
+			fallen_asra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
