@@ -1,6 +1,6 @@
 
 country_decisions = {
-	decision_fire_dragzex = {
+	test_decision_fire_dragzex = {
 		major = yes
 		potential = {
 			tag = A30
@@ -15,18 +15,6 @@ country_decisions = {
 				}
 			}
 			
-			A13 = {
-				release_all_possible_countries = yes
-				release_all_subjects = yes
-			}
-			A01 = {
-				release_all_possible_countries = yes
-				release_all_subjects = yes
-			}
-			R62 = {
-				release_all_possible_countries = yes
-				release_all_subjects = yes
-			}
 		}
 	}
 

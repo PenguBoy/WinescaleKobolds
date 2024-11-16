@@ -25,7 +25,7 @@ Z55_modifiers_colonisation_efforts = {
 
 Z55_modifiers_secure_rail_forts = {
 	fort_level = 1
-	defensiveness = 0.2
+	local_defensiveness = 0.2
 }
 
 Z55_modifiers_the_empire_gold_blood = {
@@ -54,9 +54,9 @@ Z55_modifiers_gem_mines = {
 }
 
 Z55_modifiers_cave_traps = {
-	defensiveness = 0.75
-	hostile_attrition = 2
-	max_hostile_attrition = 2
+	local_defensiveness = 0.75
+	local_hostile_attrition = 2
+	max_attrition = 2
 }
 
 Z55_modifiers_amldihr_manufact = {

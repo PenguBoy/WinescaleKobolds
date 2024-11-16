@@ -1809,7 +1809,10 @@ Z56_branch_5 = {
 			}
 		}
 
-		effect = { add_years_of_income = 2 } 
+		effect = { 
+			add_years_of_income = 2
+			create_conquistador = { tradition = 75 }
+		} 
 	}
 
 	Z56_masters_north = {
