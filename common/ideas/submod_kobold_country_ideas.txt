@@ -1,0 +1,636 @@
+#############Submod Idea Sets#################
+##############################################
+#########Winescale Ideas (unspecific)#########
+
+WSK_ideas = {
+	start = {
+		development_cost = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		artillery_fire = 0.75
+	}
+	
+	trigger = {
+		tag = WSK
+		NOT = { has_country_flag = WSK_efficient_cannons_flag }
+		NOT = { has_country_flag = WSK_bottleneck_cannons_flag }
+		NOT = { has_country_flag = WSK_dragon_head_cannons_flag}
+	}
+	free = yes
+	
+	WSK_kobold_wine = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	WSK_artificers = {
+		fire_damage = 0.15
+	}
+	
+	WSK_winebay_hoard = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	WSK_hold_back_lorent = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+	
+	WSK_kobolic_ingenuity = {
+		artillery_cost = -0.2
+	}
+	
+	WSK_kobold_artillery = {
+		backrow_artillery_damage = 0.10
+	}
+	
+	WSK_river_urbanization = {
+		state_governing_cost = -0.2
+	}
+}
+
+#########Dragon Head Version#######
+
+WSK_ideas_dragon = {
+	start = {
+		development_cost = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_dragon_head_cannons_flag
+	}
+	free = yes
+	
+	WSK_kobold_wine = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	WSK_artificers = {
+		fire_damage = 0.15
+	}
+	
+	WSK_winebay_hoard = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	WSK_hold_back_lorent = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+	
+	WSK_kobolic_ingenuity = {
+		artillery_cost = -0.2
+	}
+	
+	WSK_dragon_head_artillery = {
+		backrow_artillery_damage = 0.10
+		artillery_power = 0.15
+	}
+	
+	WSK_river_urbanization = {
+		state_governing_cost = -0.2
+	}
+}
+
+#########Ideas Bottle#########
+
+WSK_ideas_bottle = {
+	start = {
+		development_cost = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_bottleneck_cannons_flag
+	}
+	free = yes
+	
+	WSK_kobold_wine = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	WSK_artificers = {
+		fire_damage = 0.15
+		discipline = 0.05
+	}
+	
+	WSK_winebay_hoard = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	WSK_hold_back_lorent = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+	
+	WSK_kobolic_ingenuity = {
+		artillery_cost = -0.2
+	}
+	
+	WSK_bottle_artillery = {
+		backrow_artillery_damage = 0.10
+		siege_ability = 0.25
+	}
+	
+	WSK_river_urbanization = {
+		state_governing_cost = -0.2
+	}
+}
+
+########Efficient Artillery#######
+
+WSK_ideas_efficient = {
+	start = {
+		development_cost = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_efficient_cannons_flag
+	}
+	free = yes
+	
+	WSK_kobold_wine = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	WSK_artificers = {
+		fire_damage = 0.15
+		discipline = 0.05
+	}
+	
+	WSK_winebay_hoard = {
+		trade_steering = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	WSK_hold_back_lorent = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+	
+	WSK_kobolic_ingenuity = {
+		artillery_cost = -0.2
+	}
+	
+	WSK_efficient_artillery = {
+		backrow_artillery_damage = 0.2
+	}
+	
+	WSK_river_urbanization = {
+		state_governing_cost = -0.15
+	}
+}
+
+#########Venailywine Ideas#########
+
+VWR_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.15
+		trade_efficiency = 0.1
+	}
+	
+	bonus = {
+		artillery_fire = 0.5
+	}
+	
+	trigger = {
+		tag = VWR
+	}
+	free = yes
+	
+	VWR_master_glassmakers = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	VWR_elven_knowledge = {
+		naval_attrition = -0.1
+	}
+	
+	VWR_shipbuilders = {
+		galley_power = 0.2
+		galley_cost = -0.2
+	}
+	
+	VWR_born_sailors = {
+		global_sailors_modifier = 0.2
+	}
+	
+	WSK_kobolic_ingenuity = {
+		ship_durability = 0.1
+	}
+	
+	WSK_draconic_artillery = {
+		backrow_artillery_damage = 0.15
+	}
+	
+	VWR_isle_of_venail = {
+		development_cost = -0.1
+	}
+}
+
+###########Silverscale Ideas#############
+
+SSK_ideas = {
+	start = {
+		tribal_development_growth = 0.05
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		yearly_army_professionalism = 0.01
+	}
+	
+	trigger = {
+		tag = SSK
+	}
+	free = yes
+	
+	SSK_walls_of_castanor = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	
+	SSK_drakehound_riders = {
+		cav_to_inf_ratio = 0.25
+		can_recruit_hussars = yes
+	}
+	
+	SSK_city_of_worlds_desire = {
+		development_cost = -0.1
+	}
+	
+	SSK_scourge_of_escann = {
+		movement_speed = 0.1
+		cavalry_flanking = 1
+		special_unit_forcelimit = 0.20
+	}
+	
+	SSK_combat_excellence = {
+		leader_land_manuever = 1
+	}
+	
+	SSK_tolerant_militarism = {
+		national_unrest = -2
+		discipline = 0.05
+	}
+	
+	SSK_beast_tamers = {
+		cavalry_cost = -0.3
+	}
+}
+	
+####Ibilzex
+	
+XLF_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.5
+		cavalry_power = 0.33
+	}
+	
+	bonus = {
+		shock_damage = 0.15
+	}
+	
+	trigger = {
+		tag = XLF
+	}
+	free = yes
+	
+	SSK_walls_of_castanor = {
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}
+	
+	SSK_drakehound_riders = {
+		cavalry_shock = 0.5
+		can_recruit_hussars = yes
+	}
+	
+	SSK_city_of_worlds_desire = {
+		development_cost = -0.1
+	}
+	
+	SSK_scourge_of_escann = {
+		movement_speed = 0.25
+		cavalry_flanking = 1
+	}
+	
+	SSK_combat_excellence = {
+		leader_land_shock = 2
+		leader_land_manuever = 1
+	}
+	
+	SSK_tolerant_militarism = {
+		global_unrest = -3
+		discipline = 0.075
+	}
+	
+	SSK_beast_tamers = {
+		cavalry_cost = -0.5
+	}
+}	
+
+##############################################
+###############Copperscale####################
+
+LSK_ideas = {
+	start = {
+		development_cost_in_primary_culture = -0.2
+		naval_morale_damage = 0.15
+	}
+	
+	bonus = {
+		heavy_ship_cost = -0.1
+		heavy_ship_power = 0.1
+	}
+	
+	trigger = {
+		tag = LSK
+	}
+	free = yes
+	
+	LSK_copper_island = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	LSK_settle_cloves = {
+		colonists = 1
+		colony_cost_modifier = -0.5
+	}
+	
+	LSK_fahvanosy_ambition = {
+		regiment_disembark_speed = 0.2
+		global_sailors_modifier = 0.25
+	}
+	
+	LSK_forgotten_bolds = {
+		republican_tradition = 0.5
+		legitimacy = 1
+		devotion = 1
+	}
+	
+	LSK_scaly_solidarity = {
+		diplomatic_reputation = 1
+	}
+	
+	LSK_sea_of_riches = {
+		merchants = 1
+		global_prov_trade_power_modifier = 0.2
+	}
+	
+	LSK_defend_our_shores = {
+		own_coast_naval_combat_bonus = 1
+	}
+}
+
+##############################################
+###############Forgescale#####################
+	
+	
+FSK_ideas = {
+	start = {
+		defensiveness = 0.15
+		build_cost = -0.2
+	}
+	bonus = {
+		monarch_military_power = 1
+	}
+
+	trigger = {
+		tag = FSK
+	}
+	free = yes
+
+	Z55_red_dragon_scions = { #we are the crimson children of nimrith the red, our scales and hearts are strong like his!
+		shock_damage_received = -0.10
+	}
+	Z55_treasure_hunters = { #an unmatched hoard, gathered from ancient dwarven vaults and ruins, all to honour nimrith! gathered by exceptional treasure hunters like us.
+		loot_amount = 0.5
+	}
+	Z55_the_scattering = { #accursed adventurers slaughtered our father and stole our home. every kobold carries a coin in memory, and vengeance in their heart.
+		war_exhaustion = -0.03
+	}
+	Z55_stronger_together = { #the no-scales known as goblins are much like us. they fight the same foes, live in the same ways, we would be stronger together
+		colonist_placement_chance = 0.1
+	}
+	Z55_mushroom_meat = { #in order to survive we have adapted our methods of acquiring food. plentiful fungus can be found and grown if you know how, and where to look
+		production_efficiency = 0.1
+	}
+	Z55_ceiling_camps = { #some great caverns host enormous stalactites, in and around these we make our camps and settlements, watching from above
+		global_manpower_modifier = 0.15
+	}
+	Z55_our_grand_efforts = { #all darkscales are united in our efforts and willing to risk their lives for the cause.
+		stability_cost_modifier = -0.1
+	}
+}
+
+
+##############################################
+###############Mithrilscale###################
+	
+	
+MSK_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.15
+		global_regiment_cost = -0.1
+	}
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+
+	trigger = {
+		tag = MSK
+	}
+	free = yes
+
+	Z55_red_dragon_scions = { #we are the crimson children of nimrith the red, our scales and hearts are strong like his!
+		shock_damage_received = -0.10
+	}
+	Z55_treasure_hunters = { #an unmatched hoard, gathered from ancient dwarven vaults and ruins, all to honour nimrith! gathered by exceptional treasure hunters like us.
+		loot_amount = 0.5
+	}
+	Z55_the_scattering = { #accursed adventurers slaughtered our father and stole our home. every kobold carries a coin in memory, and vengeance in their heart.
+		war_exhaustion = -0.03
+	}
+	Z55_stronger_together = { #the no-scales known as goblins are much like us. they fight the same foes, live in the same ways, we would be stronger together
+		colonist_placement_chance = 0.1
+	}
+	Z55_mushroom_meat = { #in order to survive we have adapted our methods of acquiring food. plentiful fungus can be found and grown if you know how, and where to look
+		production_efficiency = 0.1
+	}
+	Z55_ceiling_camps = { #some great caverns host enormous stalactites, in and around these we make our camps and settlements, watching from above
+		global_manpower_modifier = 0.15
+	}
+	Z55_our_grand_efforts = { #all darkscales are united in our efforts and willing to risk their lives for the cause.
+		stability_cost_modifier = -0.1
+	}
+}
+
+#########Binunsironkinnara Ideas#########
+
+BSK_ideas = {
+	start = {
+		infantry_power = 0.2
+		coast_raid_range = 1
+	}
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = BSK
+	}
+	free = yes
+	
+	BSK_naaleni_co_government = {
+		disengagement_chance = 0.1
+	}
+	
+	BSK_monument_builders = {
+		build_cost = -0.15
+	}
+	
+	BSK_bi_racial_cooperation = {
+		technology_cost = -0.1
+	}
+	
+	BSK_legacy_rak_six_points = {
+		army_tradition_decay = -0.01
+	}
+	
+	BSK_prosperity_in_philantropy = {
+		inflation_reduction = 0.1
+		global_monthly_devastation = -0.3
+	}
+	
+	BSK_cosmopolitan_city_of_balrijing = {
+		num_accepted_cultures = 3
+		promote_culture_cost = -0.5
+	}
+	
+	BSK_dragon_of_sarhal = {
+		shock_damage_received = -0.10
+		defensiveness = 0.3
+	}
+}
+
+#########Ishudhen Ideas#########
+
+ISD_ideas = {
+	start = {
+		naval_morale = 0.2
+		merchants = 1
+	}
+	bonus = {
+		development_cost_in_primary_culture = -0.2
+	}
+	
+	trigger = {
+		tag = ISD
+	}
+	free = yes
+	
+	ISD_scales_dome = {
+		build_cost = -0.2
+	}
+	
+	ISD_guardians_of_rahen = {
+		defensiveness = 0.25
+		allowed_marine_fraction = 0.25
+	}
+	
+	ISD_from_egg_to_ship = {
+		global_sailors_modifier = 0.25
+	}
+	
+	ISD_spawn_of_jyntas = {
+		navy_tradition = 1
+		discipline = 0.05
+	}
+	
+	ISD_legacy_jara = {
+		may_explore = yes
+		diplomats = 1
+	}
+	
+	ISD_mass_naval_assault = {
+		global_ship_cost = -0.15
+	}
+	
+	ISD_brass_scales = {
+		candidate_random_bonus = 2
+		republican_tradition = 0.3
+	}
+}
+	
+#########Drágzex Ideas#########
+
+DZX_ideas = {
+	start = {
+		technology_cost = -0.1
+		mercenary_discipline = 0.075
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = DZX
+	}
+	free = yes
+	
+	DZX_the_dragzex_donation = {
+		prestige = 1
+	}
+	
+	DZX_adstunad_tunnels = {
+		development_cost = -0.15
+	}
+	
+	DZX_the_doveblessed_guard = {
+		mercenary_manpower = 0.25
+		possible_condottieri = 1
+	}
+	
+	DZX_havoral_mining = {
+		production_efficiency = 0.1
+	}
+	
+	DZX_kobold_river_party = {
+		improve_relation_modifier = 0.2
+	}
+	
+	DZX_racial_cooperation = {
+		num_accepted_cultures = 1
+		merc_maintenance_modifier = -0.2
+	}
+	
+	DZX_ravellian_stronghold = {
+		papal_influence = 2
+		tolerance_own = 2
+	}
+}
+	
+		
+	

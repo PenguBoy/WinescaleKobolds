@@ -1188,7 +1188,6 @@ republic = {
 				# manrent_reform
 				# merchant_arsenal_reform
 				# tercios_reform
-				administrating_officers_reform
 			}
 		}
 		parliamentary_vs_presidential = { #Tier 6
@@ -1235,7 +1234,6 @@ republic = {
 				cultural_administration_reform
 
 				#Anbennar
-				#administrating_officers_reform
 				eordand_academical_realm
 				eordand_sunlit_thalassocracy
 				eordand_frozen_heart
@@ -1467,7 +1465,7 @@ tribal = {
 				tribal_kingdom
 				siberian_tribe
 				# gond_kingdom
-				great_mongol_state_reform
+				# great_mongol_state_reform
 				stateless_society
 				polynesian_kingdom
 				polynesian_tribe

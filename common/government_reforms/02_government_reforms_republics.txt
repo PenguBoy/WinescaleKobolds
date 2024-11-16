@@ -2465,7 +2465,7 @@ lake_consolidated_state = {
 		num_accepted_cultures = 3
 		governing_capacity = 250
 		religious_unity = 0.25
-		core_creation = -0.1
+		#core_creation = -0.1
 		max_absolutism = -30
 	}
 	custom_attributes = {
@@ -2568,6 +2568,7 @@ damescrown_republic_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
+		anb_special_elections = yes
 	}
 }
 
@@ -2886,7 +2887,7 @@ azkare_court = {
 	icon = "three_classes_reform"
 	allow_convert = no
 	allow_normal_conversion = no
-
+	lock_level_when_selected = yes
 	legacy_equivalent = administrative_republic
 	potential = {
 		has_reform = azkare_court
@@ -3606,16 +3607,11 @@ republican_authoritarianism_reform = {
 	}
 	trigger = {
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3648,6 +3644,8 @@ nepotism_reform = {
 			has_reform = free_slave_reform
 			has_reform = golden_republic_reform
 			has_reform = feiten_reformist_movement
+			has_reform = jiangdu_war_empire_reform
+			has_reform = jiangdu_leadership_reform
 			culture_group = dwarven
 		}
 		OR = {
@@ -3670,16 +3668,11 @@ nepotism_reform = {
 			}
 		}
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3712,16 +3705,11 @@ republicanism_reform = {
 	}
 	trigger = {
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3751,16 +3739,11 @@ democratic_values_reform = {
 			NOT = { has_reform = krak_clan_council }
 		}
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3776,6 +3759,8 @@ democratic_values_reform = {
 		castonath_patricians_influence_modifier = 0.1
 		castonath_patricians_loyalty_modifier = 0.05
 		#vaisyas_non_muslim_influence_modifier = 0.1
+		middlecastes_influence_modifier = 0.1
+		middlecastes_loyalty_modifier = 0.05
 		
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.25
@@ -3800,16 +3785,11 @@ aristocratic_values_reform = {
 	}
 	trigger = {
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3820,6 +3800,10 @@ aristocratic_values_reform = {
 		nobles_loyalty_modifier = 0.05
 		#maratha_exclusive_loyalty_modifier = 0.05
 		#rajput_exclusive_loyalty_modifier = 0.05
+
+		#Anbennar
+		lowercastes_influence_modifier = 0.1
+		lowercastes_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 1
@@ -3846,16 +3830,11 @@ religious_values_reform = {
 	}
 	trigger = {
 		if = { #Anbennar, so Besolaki doesn't lose their factions from getting a gov reform before getting their special reform
-			limit = { 
-				OR = {
-					has_faction = beso_caribhen
-					has_faction = beso_kheinbhen
-					has_faction = beso_nautabhen
-					has_faction = beso_skighubhen
-					has_faction = beso_dhorbhen
-				}
+			limit = { tag = G54 } #Besolaki
+			OR = {
+				has_reform = besolaki_chaotic_republicanism
+				have_had_reform = besolaki_chaotic_republicanism
 			}
-			reform_level = 3
 		}
 	}
 	modifiers = {
@@ -3866,6 +3845,10 @@ religious_values_reform = {
 
 		church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
+
+		#Anbennar
+		uppercastes_influence_modifier = 0.1
+		uppercastes_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 1
@@ -4224,6 +4207,7 @@ lake_bastion_of_democracy = {
 		diplomats = 1
 		envoy_travel_time = -0.25
 		administrative_efficiency = 0.05
+		monthly_favor_modifier = 0.5
 	}
 	#custom_attributes = {
 	#	bastion_of_democracy = yes
@@ -6921,23 +6905,6 @@ reuyeli_republic = {
 	}
 }
 
-administrating_officers_reform = {
-	icon = "soldiers_7"
-	allow_normal_conversion = yes
-	
-	potential = {
-		OR = {
-			has_reform = administrating_officers_reform
-			have_had_reform = administrating_officers_reform
-		}
-	}
-
-	modifiers = {
-		state_maintenance_modifier = -0.10
-		yearly_army_professionalism = 0.002
-	}
-}
-
 # Anbennar Northern League stuff
 northern_league_magnates = {
 	icon = "man_on_podium"
@@ -7494,7 +7461,10 @@ orlghelovar_glass_worker_reform = {
 	icon = "merchant"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = orlghelovar_glass_worker_reform
+		OR = {
+			has_reform = orlghelovar_glass_worker_reform
+			have_had_reform = orlghelovar_glass_worker_reform
+		}
 	}
 	effect = {
 		custom_tooltip = orlghelovar_glass_worker_reform_tt
@@ -7990,6 +7960,8 @@ elected_clanspeakers_reform = {
 			culture_group = goblin
 			NOT = {
 				has_reform = mountainshark_govzenszel
+				has_reform = pentapandemonium_reform
+				has_reform = technocracy_republic_reform
 			}
 		}
 	modifiers = {
@@ -8236,6 +8208,11 @@ brelar_ynnic_dynastic_republic = {
 	has_term_election = no
 	election_on_death = yes
 	valid_for_nation_designer = no
+
+	custom_attributes = {
+		anb_special_elections = yes
+	}
+
 	modifiers = {
 		max_absolutism = 20
 		nobles_loyalty_modifier = 0.05
@@ -8669,6 +8646,8 @@ besolaki_chaotic_republicanism = {
 		beso_dhorbhen
 	}
 	effect = {
+		custom_tooltip = G54_elections_based_on_factions_tt
+		custom_tooltip = G54_disables_reelections_tt
 		custom_tooltip = G54_factions_in_power_get_influence_tt
 		custom_tooltip = G54_reelecting_loses_republican_tradition_tt
 	}
