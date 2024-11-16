@@ -1,0 +1,628 @@
+######################
+#Brassscale
+######################
+
+LSK_copper_island_modifier = {
+	trade_goods_size = 2
+}
+
+######################
+#Drágzex
+######################
+
+DZX_modifiers_kobold_refugees = {
+	local_development_cost = -0.4
+	local_defensiveness = 0.25
+	local_hostile_attrition = 1
+	max_attrition = 1
+}
+
+######################
+#Redscale
+######################
+
+RSC_modifier_eco_incent = {
+	build_cost = -0.2
+	build_time = -0.2
+}
+
+RSC_modifier_fish_produce_four = {
+	trade_goods_size = 4
+}
+
+RSC_modifier_fish_produce_two = {
+	trade_goods_size = 2
+}
+
+RSC_modifier_kobold_colony = {
+	local_development_cost_modifier = -0.3
+	local_manpower_modifier = -0.8
+	local_production_efficiency = -0.8
+	local_tax_modifier = -0.8
+}
+
+RSC_modifier_kobold_fortifications = {
+	local_defensiveness = 0.2
+	local_defender_dice_roll_bonus = 1
+}
+
+RSC_modifier_koboldic_council = {
+	advisor_cost = -0.15
+}
+
+RSC_modifier_kobold_drill = {
+	discipline = 0.05
+}
+
+RSC_modifier_kobild_arti = {
+	artillery_power = 0.15
+}
+
+RSC_modifier_baycodds_prod = {
+	trade_goods_size = 1
+}
+
+RSC_modifier_westmoor_drained = {
+	local_development_cost = -0.2
+}
+
+RSC_modifier_sociatal_adaptation = {
+	monthly_reform_progress_modifier = 0.33
+	state_maintenance_modifier = -0.15
+}
+
+RSC_modifier_naval_hegemon = {
+	naval_forcelimit_modifier = 0.25
+	global_sailors_modifier = 0.25
+}
+
+RSC_modifier_hillside_settlements = {
+	local_development_cost = -0.15
+	local_build_cost = -0.1
+}
+
+RSC_modifier_five_port_system = {
+	province_trade_power_value = 20
+}
+
+RSC_modifier_dalaire_mine = {
+	trade_goods_size = 2
+	local_gold_depletion_chance_modifier = -0.5
+}
+
+RSC_modifier_kobold_colonial_port = {
+	province_trade_power_value = 30
+}
+
+RSC_modifier_lel_passage_monopoly = {
+	province_trade_power_value = 10
+}
+
+RSC_modifier_southern_trade_posts = {
+	province_trade_power_value = 10
+}
+
+RSC_modifier_kobold_rush_aelentir = {
+	colonist_placement_chance = 0.25
+	global_colonial_growth = 20
+}
+
+RSC_modifier_KUZ_trade = {
+	global_prov_trade_power_modifier = 0.3
+}
+
+RSC_modifier_lord_of_cloves = {
+	colonists = 1
+	colony_development_boost = 1
+}
+
+RSC_modifier_cheap_heavies = {
+	heavy_ship_cost = -0.75
+	heavy_ship_power = 0.1
+}
+
+RSC_modifier_grand_capital = {
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_manpower_modifier = 0.5
+}
+
+######################
+#Winescale
+######################
+
+WSK_modifier_river_traps = {
+	local_hostile_attrition = 1
+	local_defensiveness = 0.2
+}
+
+WSK_modifier_kobold_landing = {
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+
+WSK_modifier_blood_gold_wine = {
+	development_cost = -0.05
+}
+
+WSK_modifier_secured_west = {
+	fort_defense = 0.1
+}
+
+WSK_modifier_kobold_capital = {
+	local_defensiveness = 0.2
+	reelection_cost = -0.1
+}
+
+WSK_modifiers_winebay_toll = {
+	province_trade_power_value = 15
+}
+
+WSK_modifier_soldiers_caves = {
+	manpower_recovery_speed = -0.10
+}
+
+WSK_modifier_merc_caves = {
+	merc_maintenance_modifier = 0.15
+}
+
+WSK_modifier_population_caves = {
+	global_unrest = 2
+}
+
+WSK_modifier_cave_rumblings = {
+	global_unrest = 1
+}
+
+WSK_modifier_koboldic_identity = {
+	num_accepted_cultures = 3
+}
+
+WSK_modifier_invested_wine = {
+	local_build_cost = -0.1
+	local_build_time = -0.1
+}
+
+WSK_modifier_kobold_cities = {
+	local_development_cost = -0.05
+	local_governing_cost = -0.1
+}
+
+WSK_modifier_fortified_frontier = {
+	local_defensiveness = 0.1
+	local_garrison_size = 0.25
+}
+
+WSK_modifier_immigration_port = {
+	province_trade_power_value = 15
+	local_unrest = 2
+}
+
+WSK_modifier_kobold_navy = {
+	ship_durability = 0.05
+	sailors_recovery_speed = 0.2
+}
+
+WSK_kobold_navigational_school = {
+	navy_tradition_decay = -0.005
+	naval_forcelimit = 5
+}
+
+WSK_modifier_gnoll_slaves = {
+	land_attrition = -0.1
+	global_prov_trade_power_modifier = 0.1
+	shock_damage = 0.05
+}
+
+WSK_modifier_lizard_slaves = {
+	global_ship_cost = -0.1
+	production_efficiency = 0.05
+	naval_morale = 0.05
+}
+
+WSK_modifier_harpy_slaves = {
+	movement_speed = 0.1
+	state_maintenance_modifier = -0.1
+	global_trade_goods_size_modifier = 0.05
+}
+	
+WSK_modifier_vertical_housing = {
+	local_development_cost = -0.1
+	statewide_governing_cost = -0.2
+}
+
+WSK_modifier_fiorgram_deforestation = {
+	local_development_cost = -0.2
+	local_build_cost = -0.15
+}
+
+WSK_modifier_kobold_constitution = {
+	candidate_random_bonus = 1
+	election_cycle = -1
+}
+
+WSK_modifier_draconic_evolution_1 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.05
+	fire_damage_received = -0.05
+}
+
+WSK_modifier_draconic_evolution_2 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.1
+	shock_damage_received = -0.05
+}
+
+WSK_modifier_draconic_evolution_3 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+	
+}
+
+WSK_modifier_draconic_evolution_4 = {
+	is_rajput_modifier = yes
+	morale_damage = 0.1
+	fire_damage_received = -0.15
+	shock_damage_received = -0.15
+	discipline = 0.05
+}
+
+WSK_modifier_experimental_shells = {
+	artillery_power = 0.15
+}
+
+WSK_modifier_masters_of_cannons = {
+	artillery_cost = -0.15
+}
+
+WSK_modifier_winebay_artificer_guild = {
+	artificers_influence_modifier = 0.1
+	artificers_loyalty_modifier = 0.1
+}
+
+WSK_modifier_artificer_assissted_vineyards = {
+	local_production_efficiency = 0.1
+}
+
+WSK_modifier_experimental_shells = {
+	artillery_level_modifier = 1
+	artillery_levels_available_vs_fort = 2
+}
+
+WSK_modifier_mechanized_racking = {
+	global_trade_goods_size_modifier = 0.2
+}
+
+WSK_modifier_gold_mithril = {
+	trade_efficiency = 0.1
+}
+
+WSK_modifier_copper_mithril = {
+	production_efficiency = 0.1
+}
+
+WSK_modifier_iron_mithril = {
+	global_tax_modifier = 0.15
+}
+
+WSK_modifier_central_filtration = {
+	trade_goods_size = 2
+}
+
+WSK_modifier_jewel_march = {
+	land_morale = 0.05
+}
+
+WSK_modifier_kobold_league_con = {
+	candidate_random_bonus = 2
+	election_cycle = -1
+}
+
+WSK_modifier_wine_leviathan = {
+	trade_efficiency = 0.1
+}
+
+WSK_modifier_pax_vinum = {
+	trade_goods_size = 0.5
+}
+
+WSK_modifier_venail_unrest = {
+	local_development_cost = -0.25
+	trade_value = 5
+	min_local_autonomy = 10
+}
+	
+WSK_modifier_standardized_wine = {
+	trade_efficiency = 0.1
+}
+
+WSK_modifier_venail_refused_help = {
+	local_unrest = 6
+}
+
+#Scripted Hoard Effect
+########################
+
+WSK_kobold_hoard_expanded = {
+	prestige = 0.5
+}
+
+WSK_kobold_hoard_1 = {
+	trade_goods_size = 0.25
+}
+
+WSK_kobold_hoard_2 = {
+	trade_goods_size = 0.5
+}
+
+WSK_kobold_hoard_3 = {
+	trade_goods_size = 0.75
+}
+
+WSK_kobold_hoard_4 = {
+	trade_goods_size = 1
+}
+
+WSK_kobold_hoard_5 = {
+	trade_goods_size = 1.25
+}
+
+WSK_kobold_hoard_6 = {
+	trade_goods_size = 1.5
+}
+
+WSK_kobold_hoard_7 = {
+	trade_goods_size = 1.75
+}
+
+WSK_kobold_hoard_8 = {
+	trade_goods_size = 2
+}
+
+WSK_kobold_hoard_9 = {
+	trade_goods_size = 2.25
+}
+
+WSK_kobold_hoard_10 = {
+	trade_goods_size = 2.5
+}
+
+WSK_kobold_hoard_11 = {
+	trade_goods_size = 2.75
+	global_trade_goods_size_modifier = 0.01
+}
+
+WSK_kobold_hoard_12 = {
+	trade_goods_size = 3
+	global_trade_goods_size_modifier = 0.02
+}
+
+WSK_kobold_hoard_13 = {
+	trade_goods_size = 3.25
+	global_trade_goods_size_modifier = 0.03
+}
+
+WSK_kobold_hoard_14 = {
+	trade_goods_size = 3.5
+	global_trade_goods_size_modifier = 0.04
+}
+
+WSK_kobold_hoard_15 = {
+	trade_goods_size = 3.75
+	global_trade_goods_size_modifier = 0.05
+}
+
+WSK_kobold_hoard_16 = {
+	trade_goods_size = 4
+	development_cost = -0.04
+	global_trade_goods_size_modifier = 0.06
+}
+
+WSK_kobold_hoard_17 = {
+	trade_goods_size = 4.25
+	development_cost = -0.08
+	global_trade_goods_size_modifier = 0.07
+}
+
+WSK_kobold_hoard_18 = {
+	trade_goods_size = 4.5
+	development_cost = -0.12
+	global_trade_goods_size_modifier = 0.08
+}
+
+WSK_kobold_hoard_19 = {
+	trade_goods_size = 4.75
+	development_cost = -0.16
+	global_trade_goods_size_modifier = 0.09
+}
+
+WSK_kobold_hoard_20 = {
+	trade_goods_size = 5
+	development_cost = -0.20
+	global_trade_goods_size_modifier = 0.1
+}
+
+WSK_experimental_shells_modifier = {
+	artillery_fire = 0.5
+}
+
+WSK_mech_rack_modifier = {
+	trade_goods_size = 1
+}
+
+WSK_modifier_qumado_draushum = {
+	max_flagships = 1
+	leader_naval_manuever = 1
+}
+
+WSK_modifier_kobold_navigational_school = {
+	admiral_cost = -0.2
+	max_admiral_maneuver = 1
+}
+
+###########################
+#Silverscale
+###########################
+
+mythical_cavalry_drakehounds = {
+	is_hussars_modifier = yes
+	cavalry_shock = 0.5
+	shock_damage = 0.3
+	cavalry_flanking = 1
+	morale_damage = 0.1
+	
+	reinforce_cost_modifier = 0.33
+}
+
+###########################
+#Xerdgonfa
+###########################
+
+R82_modifier_xerd_cultural_limits = {
+	build_cost = 0.3
+	local_culture_conversion_cost = 1
+	local_development_cost = -0.25
+}
+
+R82_modifier_xerd_no_limits = {
+	local_development_cost = -0.3
+}
+
+R82_modifier_brave_new_diplomacy = {
+	improve_relation_modifier = 0.25
+	diplomatic_reputation = 2
+}
+
+R82_modifier_balrijing = {
+	fort_level = 1
+	tax_income = 12
+}
+
+R82_modifier_balrijing_2 = {
+	fort_level = 2
+	tax_income = 24
+}
+
+###########################
+#Darkscale
+###########################
+
+Z55_modifiers_ramsteel_salvaged = {
+	infantry_power = 0.15
+	land_morale = 0.2
+}
+
+Z55_modifiers_conquest_amldihr = {
+	local_unrest = -10
+	institution_growth = 2.4
+}
+
+Z55_modifiers_amldihr_seat_power = {
+	trade_value = 5
+	local_development_cost_modifier = -0.2
+}
+
+Z55_modifiers_converted_to_nimrith = {
+	missionaries = 1
+	global_missionary_strength = 0.05
+}
+
+Z55_modifiers_colonisation_efforts = {
+	colonists = 1
+	colony_cost_modifier = -0.5
+}
+
+Z55_modifiers_secure_rail_forts = {
+	fort_level = 1
+	local_defensiveness = 0.2
+}
+
+Z55_modifiers_the_empire_gold_blood = {
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	
+	candidate_random_bonus = 2
+}
+
+Z55_modifiers_koboldic_hold = {
+	local_development_cost = -0.15
+	trade_goods_size = 1
+}
+
+Z55_modifiers_defenses_kuvendihr = {
+	fort_level = 2
+	local_fort_maintenance_modifier = -0.75
+}
+
+Z55_modifiers_conquest_amldihr_country = {
+	tax_income = 18
+}
+
+Z55_modifiers_gem_mines = {
+	trade_goods_size = 0.5
+}
+
+Z55_modifiers_cave_traps = {
+	local_defensiveness = 0.75
+	local_hostile_attrition = 2
+	max_attrition = 2
+}
+
+Z55_modifiers_amldihr_manufact = {
+	allowed_num_of_manufactories = 2
+}
+
+Z55_modifiers_ecclipsed_dwarves = {
+	local_tax_modifier = 0.33
+	local_manpower_modifier = 0.33
+	local_garrison_size = 0.33
+	local_unrest = -5
+	trade_goods_size_modifier = 0.33
+	province_trade_power_modifier = 0.33
+}
+
+Z55_modifiers_kobold_library = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+
+Z55_modifiers_wood_surplus = {
+	build_cost = -0.2
+	build_time = -0.2
+}
+
+Z55_modifiers_masters_north = {
+	trade_efficiency = 0.15
+	trade_steering = 0.1
+	caravan_power = 0.2
+}
+
+Z55_modifiers_masters_south = {
+	backrow_artillery_damage = 0.10
+	discipline = 0.05
+}
+
+Z55_modifiers_exploring_asra = {
+	global_tax_modifier = -0.1
+	manpower_recovery_speed = -0.10
+}
+
+Z55_modifiers_the_asra_hold = {
+	local_development_cost = -0.1
+}
+
+Z55_modifiers_the_asra_hold_restored = {
+	local_development_cost = -1.5
+	local_tax_modifier = 0.25
+	trade_goods_size_modifier = 0.25
+	local_manpower_modifier = 0.25
+}
+
+Z55_modifiers_goblin_administration_natvir = {
+	min_local_autonomy = 15
+	manpower_in_accepted_culture_provinces = 0.2
+	trade_value = 7
+}
