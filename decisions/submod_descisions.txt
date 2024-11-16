@@ -1,22 +1,5 @@
 
 country_decisions = {
-	test_decision_fire_dragzex = {
-		major = yes
-		potential = {
-			tag = A30
-			ai = no
-			NOT = { has_country_flag = spawned_dzx_flag }
-		}
-		
-		effect = {
-			A30 = {
-				country_event = {
-					id = flavor_kobold_submod.2
-				}
-			}
-			
-		}
-	}
 
 	submod_restore_the_asra_hold = {
 		color = { 235 171 52 }
