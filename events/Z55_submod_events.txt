@@ -126,3 +126,53 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = drkscl.4
+	title = drkscl.4.t
+	desc = drkscl.4.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = drkscl.4.a
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						4097 = {
+							culture = marrodic
+						}
+					}
+				}
+				change_culture = marrodic
+			}
+		}
+		
+		4097 = {
+			add_province_modifier = {
+				name = Z55_modifiers_human_administration_anum
+				duration = -1
+			}
+		}
+		
+		large_decrease_of_human_tolerance_effect = yes
+	}
+	
+	option = {
+		name = drkscl.4.b
+		
+		4097 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			
+			change_culture = ROOT
+		}
+		
+		large_decrease_of_human_tolerance_effect = yes
+		
+	}
+}

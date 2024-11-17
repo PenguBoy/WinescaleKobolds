@@ -1198,10 +1198,8 @@ Z56_branch_2 = {
 		}
 
 		effect = {
-			4097 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+			country_event = {
+				id = Z55_marrhold_administration_event
 			}
 		}
 	}

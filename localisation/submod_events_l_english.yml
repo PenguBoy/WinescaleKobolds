@@ -264,3 +264,8 @@
    drkscl.3.d:0 "The Hold of Er-Natvir has been under Goblin control for a long time, and while we could expel them forcibly, it may make sense to keep them in charge. On one hand, they know the Hold inside and out and could likely maximize its output, whereas Kobolds would need to adapt many of its facilities to suit our specific needs. So, we face a choice: allow the Goblins to retain control with some autonomy or force them out entirely."
    drkscl.3.a:0 "They should stay"
    drkscl.3.b:0 "Get rid of them!"
+  #Humans of Anumdihr
+   drkscl.4.t:0 "Oh the Humanity..."
+   drkscl.4.d:0 "The Humans of the Marrhold have been in charge of it for centuries, in addition to that the Hold opens to Escann. As such keeping Humans in charge of the Hold would allow us to essentially use it as a diplomatic center for all interactions with the Human realms West of the Serpentspine."
+   drkscl.4.a:0 "Leave them in charge."
+   drkscl.4.b:0 "We draw the Line at humans."

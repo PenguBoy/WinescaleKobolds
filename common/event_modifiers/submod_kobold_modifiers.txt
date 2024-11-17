@@ -626,3 +626,9 @@ Z55_modifiers_goblin_administration_natvir = {
 	manpower_in_accepted_culture_provinces = 0.2
 	trade_value = 7
 }
+
+Z55_modifiers_human_administration_anum = {
+	min_local_autonomy = 15
+	diplomatic_reputation = 1
+	local_tax_modifier = 0.25
+}

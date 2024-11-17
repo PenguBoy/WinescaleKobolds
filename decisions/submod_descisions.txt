@@ -51,58 +51,6 @@ country_decisions = {
 			}
 		}
 	}
-		
-
-	restore_irrigation_submod = {
-		color = { 92 27 54 }
-		major = yes
-		potential = {
-			tag = Z55
-			NOT = { has_global_flag = serpent_vale_irrigation }
-			amldihr_area = {
-				type = all
-				owned_by = ROOT
-			}
-			NOT = { has_country_flag = repairing_irrigation }
-			NOT = {
-				AND = {
-					has_global_flag = irrigation_east_done
-					has_global_flag = irrigation_north_done
-					has_global_flag = irrigation_south_done
-					has_global_flag = irrigation_west_done
-				}
-			}
-			mission_completed = Z55_settle_vale
-		}
-		
-		provinces_to_highlight = {
-			has_province_modifier = flooded_province
-			owned_by = ROOT
-		}
-		
-		allow = {
-			
-			if = {
-				limit = { ai = no }
-				treasury = 1500
-			}
-			else = {
-				treasury = 500
-			}
-
-			adm_tech = 10
-			adm_power = 200
-		}
-		
-		effect = {
-			hidden_effect = { set_country_flag = repairing_irrigation }
-			country_event = { id = diggy.43 }
-		}
-		
-		ai_will_do = {
-			factor = 400
-		}
-	}
 
 	Z55_enshrine_nimrith_decision = {
 		major = yes
