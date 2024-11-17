@@ -72,9 +72,9 @@ country_event = {
 					duration = 7300
 				}
 				
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+				add_base_tax = 3
+				add_base_production = 4
+				add_base_manpower = 4
 			}
 			
 			DZX = {
@@ -88,6 +88,7 @@ country_event = {
 					OR = {
 						superregion = western_cannor_superregion
 						superregion = gerudia_superregion
+						region = dameshead_sea_region
 					}
 				}
 				discover_country = DZX
