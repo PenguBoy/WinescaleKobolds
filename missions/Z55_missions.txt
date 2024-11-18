@@ -1199,7 +1199,7 @@ Z56_branch_2 = {
 
 		effect = {
 			country_event = {
-				id = Z55_marrhold_administration_event
+				id = drkscl.4
 			}
 		}
 	}
