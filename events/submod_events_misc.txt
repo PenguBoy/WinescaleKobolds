@@ -81,6 +81,16 @@ country_event = {
 				add_manpower = 10
 				add_treasury = 50
 				set_country_flag = semi_monstrous
+				add_historical_friend = A81
+				add_historical_friend = A38
+			}
+			
+			A81 = {
+				add_historical_friend = DZX
+			}
+			
+			A38 = {
+				add_historical_friend = DZX
 			}
 			
 			every_province = {

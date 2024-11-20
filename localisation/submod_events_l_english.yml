@@ -253,6 +253,32 @@
    flavor_kobold_submod.3.d:0 "This event unly fulfills the purpose of allowing you to play as Drágzex once the Incident fires."
    flavor_kobold_submod.3.a:0 "Play as them"
    flavor_kobold_submod.3.b:0 "Don't play as them"
+  #Administration Choice Event
+   flavor_dragzex.1.title:0 "Governmental Focus"
+   flavor_dragzex.1.desc:0 "Our young nation must decide where to focus its early efforts. Should we prioritize diplomacy to build alliances and secure trade? Strengthen our administration to ensure efficient governance and long-term growth? Or focus on military development to protect our borders and expand our influence? Each choice will shape how we face the challenges ahead."
+   flavor_dragzex.1.a:0 "Focus on Diplomacy"
+   flavor_dragzex.1.b:0 "Focus on Administration"
+   flavor_dragzex.1.c:0 "Focus on Militarism"
+  #Culture of Bennon
+   flavor_dragzex.2.title:0 "The Administration of Bennon"
+   flavor_dragzex.2.desc:0 "After the partnership between Giberd and ourselves, the city of Bennon that was previously given to the Gnomes in the Duchy's partition is now technically back in our possession.\nTo honor our deal with the Gnomes would be to put the city under their purview. However we could go back on the agreement and leave the city to the Humans instead."
+   flavor_dragzex.2.a:0 "A Deal is a Deal"
+   flavor_dragzex.2.b:0 "It was a bad Deal anyway!"
+  #The Esmaraine glass guilds
+   flavor_dragzex.3.title:0 "The Guilds of Esmarainé"
+   flavor_dragzex.3.desc:0 "Giberd has long lived in the shadow of the former capital of Cann Esmar, especially their proud glassmakers. But now that we made the city our own, we can decide about their fate.\n\nWe could either grant Giberd the monopoly on the production of glass which would cause the artisans and guilds of Esmarainé to run out of business.\n\nAlternatively we can simply put the city into the jurisdiction of the Gnomes so they can be in charge of the glassmakers."
+   flavor_dragzex.3.a:0 "Grant Giberd the Monopoly."
+   flavor_dragzex.3.b:0 "Put the city under Gnomish jurisdiction."
+  #The Elves of Elvelenn
+   flavor_dragzex.4.title:0 "The Elves of Elvelenn"
+   flavor_dragzex.4.desc:0 "After taking over the Hearthswood from Leslinpár we are now in the position that the elvish population in the area is now under our Administration.\nWe could establish an Elven jurisdiction inside our realm and put the entire forest under their supervision giving us the benefit of their governing skills.\nThe other option would be to simple be content with the Elven population being restricted to the city of Elvelenn."
+   flavor_dragzex.4.a:0 "An Elven Forest"
+   flavor_dragzex.4.b:0 "Just leave them be"
+  #The Hold of Anvilwrigth"
+   flavor_dragzex.5.title:0 "A Hold lot to manage!"
+   flavor_dragzex.5.desc:0 "The future of Anvilwright presents a delicate choice. Honoring the agreement and leaving the Hold under Dwarven control could maintain stability and ensure we earn the trust of the Dwarves, while taking it for our own would strengthen our position and provide direct control over its resources.\nEach path has its merits, and the decision will massively impact our relationship with other Dwarven nations."
+   flavor_dragzex.5.a:0 "Of course we will honor the agreement,..."
+   flavor_dragzex.5.b:0 "...unless?"
  ######Darkscale
   ##############
   #Asra Discovered

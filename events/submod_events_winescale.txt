@@ -1,0 +1,1276 @@
+namespace = wiscko
+
+#Winescale spawn event
+
+country_event = {
+	id = wiscko.1
+	title = wiscko.1.t
+	desc = wiscko.1.d
+	picture = SHIP_SAILING_eventPicture
+	goto = 81
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = A26
+		is_year = 1445
+		NOT = { is_year = 1450 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = wiscko.1.a
+			
+		81 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		
+		84 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		
+		86 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		hidden_effect = {
+		
+			WSK = {
+				set_country_flag = semi_monstrous
+			}
+			81 = {
+				center_of_trade = 2
+			}
+			WSK = {
+				add_truce_with = A01
+			}
+			WSK = {
+				add_truce_with = A10
+			}
+			WSK = {
+				add_truce_with = A16
+			}
+			WSK = {
+				add_truce_with = A15
+			}
+			WSK = {
+				add_truce_with = A18
+			}
+			lencenor_region = {
+				discover_country = WSK
+			}
+			west_dameshead_region = {
+				discover_country = WSK
+			}
+			east_dameshead_region = {
+				discover_country = WSK
+			}
+			dameshead_sea_region = {
+				discover_country = WSK
+			}
+			divenhal_sea_region = {
+				discover_country = WSK
+			}
+			the_borders_region = {
+				discover_country = WSK
+			}
+			esmaria_region = {
+				discover_country = WSK
+			}
+			WSK = {
+				add_manpower = 10
+				add_treasury = 120
+				add_prestige = 25
+			}
+				
+		}
+		WSK = {
+			define_ruler = {
+				name = "Korbax"
+				dynasty = "Winescale"
+				adm = 2
+				dip = 5
+				mil = 6
+				age = 53
+				claim = 95
+				culture = winescale_kobold
+			}
+		}
+			
+	}
+	
+	option = {
+		name = wiscko.1.b
+		81 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		
+		84 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		
+		86 = {
+			cede_province = WSK
+			add_core = WSK
+			change_culture = winescale_kobold
+		}
+		hidden_effect = {
+			DZX = {
+				set_country_flag = semi_monstrous
+			}
+			81 = {
+				center_of_trade = 2
+			}
+			WSK = {
+				add_truce_with = A01
+			}
+			WSK = {
+				add_truce_with = A10
+			}
+			WSK = {
+				add_truce_with = A16
+			}
+			WSK = {
+				add_truce_with = A15
+			}
+			WSK = {
+				add_truce_with = A18
+			}
+			lencenor_region = {
+				discover_country = WSK
+			}
+			west_dameshead_region = {
+				discover_country = WSK
+			}
+			east_dameshead_region = {
+				discover_country = WSK
+			}
+			dameshead_sea_region = {
+				discover_country = WSK
+			}
+			divenhal_sea_region = {
+				discover_country = WSK
+			}
+			the_borders_region = {
+				discover_country = WSK
+			}
+			esmaria_region = {
+				discover_country = WSK
+			}
+			WSK = {
+				add_manpower = 10
+				add_treasury = 120
+				add_prestige = 25
+			}
+		}
+		WSK = {
+			define_ruler = {
+				name = "Korbax"
+				dynasty = "Winescale"
+				adm = 2
+				dip = 5
+				mil = 6
+				age = 53
+				claim = 95
+				culture = winescale_kobold
+			}
+		}
+		switch_tag = WSK
+	}
+}
+
+country_event = {
+	id = wiscko.2
+	title = wiscko.2.t
+	desc = wiscko.2.d
+	picture = COURT_eventPicture
+	goto = 81
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Stay Kobold Alley
+		name = wiscko.2.a
+		
+		81 = {
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+	
+	option = { #Move Wineport
+		name = wiscko.2.b
+		
+		101 = {
+			move_capital_effect = yes
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+	
+	option = { #Move Bottlepoint
+		name = wiscko.2.c
+		
+		86 = {
+			move_capital_effect = yes
+			add_province_modifier = {
+				name = WSK_modifier_kobold_capital
+				duration = -1
+			}
+		}
+	}
+}
+		
+country_event = {
+	id = wiscko.3
+	title = wiscko.3.t
+	desc = wiscko.3.d
+	picture = SAD_MERCHANT_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	
+	option = { #Hire Mercenaries to explore the caves
+		name = wiscko.3.a
+		add_treasury = -100
+		add_country_modifier = {
+			name = WSK_modifier_merc_caves
+			duration = 1825
+		}
+	}
+	
+	option = { #Use soldiers to explore caves
+		name = wiscko.3.b
+		add_manpower = -5
+		add_country_modifier = {
+			name = WSK_modifier_soldiers_caves
+			duration = 1825
+		}
+	}
+	
+	option = { #Use local peasants to explore
+		name = wiscko.3.a
+		random_owned_province = {
+			limit = {
+				base_tax = 3
+			}
+			add_base_tax = -2
+		}
+		add_country_modifier = {
+			name = WSK_modifier_population_caves
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.4
+	title = wiscko.4.t
+	desc = wiscko.4.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	is_triggered_only = yes
+	
+	option = { #expand hoard
+		name = wiscko.4.a
+		if = {
+			limit = {
+				100 = {
+			has_province_modifier = WSK_kobold_hoard_1
+				}
+			}
+			add_treasury = -100
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_2
+				}
+			}
+			add_treasury = -115
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_3
+				}
+			}
+			add_treasury = -130
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_4
+				}
+			}
+			add_treasury = -150
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_5
+				}
+			}
+			add_treasury = -170
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_6
+				}
+			}
+			add_treasury = -200
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_7
+				}
+			}
+			add_treasury = -230
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_8
+				}
+			}
+			add_treasury = -280
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_9
+				}
+			}
+			add_treasury = -330
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_10
+				}
+			}
+			add_treasury = -405
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_11
+				}
+			}
+			add_treasury = -480
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_12
+				}
+			}
+			add_treasury = -580
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_13
+				}
+			}
+			add_treasury = -750
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_14
+				}
+			}
+			add_treasury = -1000
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_15
+				}
+			}
+			add_treasury = -1500
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_16
+				}
+			}
+			add_treasury = -2500
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_17
+				}
+			}
+			add_treasury = -5000
+		}
+		else_if = {
+			limit = {
+				100 = {
+					has_province_modifier = WSK_kobold_hoard_18
+				}
+			}
+			add_treasury = -7500
+		}
+		else = {
+			add_treasury = -10000
+		}
+		100 = {
+			upgrade_hoard_effect = yes
+		}
+		add_country_modifier = {
+			name = WSK_kobold_hoard_expanded
+			duration = 1095
+		}
+	}
+	
+	option = {
+		name = wiscko.4.b
+	}
+}
+#Let the Hunt begin
+country_event = {
+	id = wiscko.5
+	title = wiscko.5.t
+	desc = wiscko.5.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Only one option: This event sets the flag for the dragon horror events
+		name = wiscko.5.a
+		
+		add_prestige = 10
+		set_country_flag = WSK_let_dragon_hunting_begin_flag
+	}
+}
+#Mysterious Quakes
+country_event = {
+	id = wiscko.6
+	title = wiscko.6.t
+	desc = wiscko.6.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		mission_completed = WSK_purple_scale
+		has_country_flag = WSK_let_dragon_hunting_begin_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = { #Mysterious Quakes
+		name = wiscko.6.a
+		
+		add_country_modifier = {
+			name = WSK_modifier_cave_rumblings
+			duration = 365
+		}
+		set_country_flag = WSK_mysterious_quakes_flag
+	}
+}
+#Missing Gold
+country_event = {
+	id = wiscko.7
+	title = wiscko.7.t
+	desc = wiscko.7.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_mysterious_quakes_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = { #Missing Gold
+		name = wiscko.7.a
+		add_treasury = -200
+		
+		set_country_flag = WSK_missing_gold_flag
+	}
+}
+#Corpse Found
+country_event = {
+	id = wiscko.8
+	title = wiscko.8.t
+	desc = wiscko.8.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_missing_gold_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = wiscko.8.a
+		add_manpower = -0.001
+		add_stability = -1
+		set_country_flag = WSK_corpse_found_flag
+	}
+}
+#Rumblings get louder
+country_event = {
+	id = wiscko.9
+	title = wiscko.9.t
+	desc = wiscko.9.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_corpse_found_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = wiscko.9.a
+		
+		add_country_modifier = {
+			name = WSK_modifier_cave_rumblings
+			duration = 730
+		}
+		
+		set_country_flag = WSK_rumblings_get_louder_flag
+	}
+}
+#Footsteps approaching
+country_event = {
+	id = wiscko.10
+	title = wiscko.10.t
+	desc = wiscko.10.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_rumblings_get_louder_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = wiscko.10.a
+		
+		set_country_flag = WSK_footsteps_approaching_flag
+	}
+}
+#It is around the corner
+country_event = {
+	id = wiscko.11
+	title = wiscko.11.t
+	desc = wiscko.11.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_footsteps_approaching_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = wiscko.11.a
+		
+		set_country_flag = WSK_around_the_corner_flag
+	}
+}
+#Dragon is here
+country_event = {
+	id = wiscko.12
+	title = wiscko.12.t
+	desc = wiscko.12.d
+	picture = SPY_eventPicture
+	goto = 100
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		has_country_flag = WSK_around_the_corner_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = wiscko.12.a
+		add_stability = 2
+		add_prestige = 25
+		set_country_flag = WSK_dragon_arrived_flag
+	}
+}
+
+
+country_event = {
+	id = wiscko.13
+	title = wiscko.13.t
+	desc = wiscko.13.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WSK
+		mission_completed = WSK_rapid_urbanization
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = wiscko.13.a
+		capital_scope = {
+			add_base_tax = 2
+		}
+		random_owned_province = {
+			limit = {
+				is_winekobold_region = yes
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = WSK_modifier_immigration_port
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.14
+	title = wiscko.14.t
+	desc = wiscko.14.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.14.a
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = wiscko.15
+	title = wiscko.15.t
+	desc = wiscko.15.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.15.a
+		add_stability = 2
+	}
+}
+
+country_event = {
+	id = wiscko.16
+	title = wiscko.16.t
+	desc = wiscko.16.d
+	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+	goto = 406
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.16.a
+		
+		add_years_of_income = -2
+		
+		add_country_modifier = {
+			name = WSK_modifier_gnoll_slaves
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = wiscko.16.b
+		
+		add_years_of_income = -2.5
+		
+		add_country_modifier = {
+			name = WSK_modifier_lizard_slaves
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = wiscko.16.c
+		
+		add_years_of_income = -3
+		
+		add_country_modifier = {
+			name = WSK_modifier_harpy_slaves
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = wiscko.16.d
+	}
+}
+	
+province_event = {
+	id = wiscko.17
+	title = wiscko.17.t
+	desc = wiscko.17.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		owner = {
+			mission_completed = WSK_vertical_housing_act
+			tag = WSK
+		}
+		OR = {
+			has_terrain = farmlands
+			has_terrain = city_terrain
+		}
+		development = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = {
+			factor = 10
+			owner = {
+				mission_completed = WSK_dwarven_council
+			}
+		}
+	}
+	
+	option = {
+		name = wiscko.17.a
+			
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+			
+		add_devastation = 25
+	}
+}
+
+province_event = {
+	id = wiscko.18
+	title = wiscko.18.t
+	desc = wiscko.18.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		owner = {
+			mission_completed = WSK_vertical_housing_act
+			tag = WSK
+		}
+		OR = {
+			has_terrain = farmlands
+			has_terrain = city_terrain
+		}
+		development = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 10
+			owner = {
+				mission_completed = WSK_dwarven_council
+			}
+		}
+	}
+	
+	option = {
+		name = wiscko.18.a
+			
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+			
+		add_devastation = 50
+	}
+}
+
+country_event = {
+	id = wiscko.19
+	title = wiscko.19.t
+	desc = wiscko.19.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.19.a
+		if = {
+			limit = {
+				A11 = {
+					is_elector = yes
+				}
+			}
+			A11 = {
+				elector = no
+			}
+			WSK = {
+				elector = yes
+			}
+		}
+		else = {
+			random_elector = {
+				elector = no
+			}
+			WSK = {
+				elector = yes
+			}
+		}
+		WSK = {
+			country_event = {
+				id = wiscko.20
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {
+		name = wiscko.19.b
+		
+		WSK = {
+			country_event = {
+				id = wiscko.21
+			}
+			add_prestige = -50
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.20
+	title = wiscko.20.t
+	desc = wiscko.20.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.20.a
+		
+		add_prestige = 20
+		
+	}
+}
+
+country_event = {
+	id = wiscko.21
+	title = wiscko.21.t
+	desc = wiscko.21.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wiscko.21.a
+		
+		set_in_empire = no
+	}
+	
+	option = {
+		name = wiscko.21.b
+		
+		add_stability = -1
+	}
+	
+}
+	
+country_event = {
+	id = wiscko.22
+	title = wiscko.22.t
+	desc = wiscko.22.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Dragon Head Cannons
+		name = wiscko.22.a
+	
+		custom_tooltip = dragon_head_cannons_tooltip
+		set_country_flag = WSK_dragon_head_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	
+	option = { #Bottleneck Cannons
+		name = wiscko.22.b
+	
+		custom_tooltip = bottleneck_cannons_tooltip
+		set_country_flag = WSK_bottleneck_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	
+	option = { #Most efficient Cannons
+		name = wiscko.22.c
+	
+		custom_tooltip = efficient_cannons_tooltip
+		set_country_flag = WSK_efficient_cannons_flag
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = wiscko.23
+	title = wiscko.23.t
+	desc = wiscko.23.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_treasury = -4000
+		}
+	}
+		
+	option = { #Elven Architecture
+		name = wiscko.23.a
+		custom_tooltip = elven_architecture_event_tooltip
+		set_country_flag = elven_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+	
+	option = { #Dwarven Architecture
+		name = wiscko.23.b
+		custom_tooltip = dwarven_architecture_event_tooltip
+		set_country_flag = dwarven_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+	
+	option = { #Bulwari Architecture
+		name = wiscko.23.c
+		custom_tooltip = bulwari_architecture_event_tooltip
+		set_country_flag = bulwari_architecture_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.24
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.24
+	title = wiscko.24.t
+	desc = wiscko.24.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Marble Hoard
+		name = wiscko.24.a
+		custom_tooltip = marble_material_event_tooltip
+		set_country_flag = marble_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+	
+	option = { #Exotic Wood Hoard
+		name = wiscko.24.b
+		custom_tooltip = exwood_material_event_tooltip
+		set_country_flag = exwood_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+	
+	option = { #Dragon Stone Hoard
+		name = wiscko.24.c
+		custom_tooltip = dragon_material_event_tooltip
+		set_country_flag = dragon_material_flag
+		hidden_effect = {
+			country_event = {
+				id = wiscko.25
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.25
+	title = wiscko.25.t
+	desc = wiscko.25.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Greenery Hoard
+		name = wiscko.25.a
+		custom_tooltip = greenery_accent_event_tooltip
+		set_country_flag = greenery_accent_flag
+	}
+	
+	option = { #Statues Hoard
+		name = wiscko.25.b
+		custom_tooltip = statues_accent_event_tooltip
+		set_country_flag = statues_accent_flag
+	}
+	
+	option = { #Bookshelves Hoard
+		name = wiscko.25.c
+		custom_tooltip = books_accent_event_tooltip
+		set_country_flag = books_accent_flag
+	}
+}
+
+
+country_event = {
+	id = wiscko.26
+	title = wiscko.26.t
+	desc = wiscko.26.d
+	picture = indiangfx_ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Gold
+		name = wiscko.26.a
+		add_country_modifier = {
+			name = WSK_modifier_gold_mithril
+			duration = 5475
+		}
+	}
+	
+	option = { #Copper
+		name = wiscko.26.b
+		add_country_modifier = {
+			name = WSK_modifier_copper_mithril
+			duration = 5475
+		}
+	}
+	
+	option = { #ron
+		name = wiscko.26.c
+		add_country_modifier = {
+			name = WSK_modifier_iron_mithril
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = wiscko.27
+	title = wiscko.27.t
+	desc = wiscko.27.d
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Make March
+		name = wiscko.27.a
+		A11 = {
+			override_country_name = JEWEL_MARCHES
+		}
+		if = {
+			limit = {
+				owns_or_non_sovereign_subject_of = 43
+			}
+			43 = {
+				cede_province = A11
+			}
+		}
+		
+		if = {
+			limit = {
+				owns_or_non_sovereign_subject_of = 46
+			}
+			43 = {
+				cede_province = A11
+			}
+		}
+		
+		every_owned_province = {
+			limit = {
+				area = neckcliffe_area
+			}
+			cede_province = A11
+			if = {
+				limit = {
+					NOT = {
+						is_core = A11
+					}
+				}
+				add_core = A11
+			}
+		}
+		create_march = A11
+		
+		
+		add_country_modifier = {
+			name = WSK_modifier_jewel_march
+			duration = -1
+		}
+	}
+	
+	option = { #Make March
+		name = wiscko.27.b
+		
+		add_stability = 1
+	}
+}
+	
+country_event = { #Venailglass Issue
+	id = wiscko.28
+	title = wiscko.28.t
+	desc = wiscko.28.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		mission_completed = WSK_new_koboldic_idenity
+		tag = WSK
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		set_country_flag = solved_venailywine_flag
+	}
+	
+	option = { #accomodate the kobolds on the island
+		name = wiscko.28.a
+		
+		venail_area = {
+			add_province_modifier = {
+				name = WSK_modifier_venail_unrest
+				duration = -1
+			}
+		}
+		venail_area = {
+			limit = {
+				NOT = { trade_goods = glass }
+			}
+			change_trade_goods = glass
+		}
+	}
+	
+	option = { #the Venailywine March
+		name = wiscko.28.b
+		
+		venail_area = {
+			create_march = VSK
+			add_base_production = 3
+			add_base_tax = 3
+		}
+		
+		
+	}
+	
+	option = { #Nonsense we have standards
+		name = wiscko.28.c
+		
+		add_country_modifier = {
+			name = WSK_modifier_standardized_wine
+			duration = -1
+		}
+		
+		venail_area = {
+			add_province_modifier = {
+				name = WSK_modifier_venail_refused_help
+				duration = -1
+			}
+		}
+	}
+}
+
+
+		
+	
+
+
+

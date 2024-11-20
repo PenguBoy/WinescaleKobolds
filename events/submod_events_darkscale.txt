@@ -53,6 +53,8 @@ country_event = {
 	desc = drkscl.2.d
 	picture = BATTLE_eventPicture
 	
+	fire_only_once = yes
+	
 	trigger = {
 		OR = {
 			tag = Z55

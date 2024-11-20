@@ -1218,8 +1218,10 @@ Z56_branch_3 = {
 		provinces_to_highlight = { province_id = 4119 } 
 
 		trigger = {
-			4119 = { has_dwarven_hold_3 = yes } 
-			num_of_buildings_in_province = 8
+			4119 = { 
+				has_dwarven_hold_3 = yes 
+				num_of_buildings_in_province = 8
+			}
 		}
 
 		effect = {
