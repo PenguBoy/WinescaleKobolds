@@ -1,0 +1,4 @@
+﻿l_english:
+ DZX_new_home_effect_tooltip:0 "If we complete this mission while the modifier §MKobold Migration Target§! is still active then you gain the following effects:\n§GThe modifier will get extended by 10 years. \nGain a level 2 Statesman advisor that is 65% cheaper to maintain.§!\n\nIf we complete this mission while the modifier is no longer active:\n§GGain a level 2 Statesman advisor that is 50% cheaper to maintain.§!"
+ DZX_prospecting_other_side_tooltip:0 "If we complete this mission the province of Txatxamai gains §MCentral Havoral Mining§! until the end of the game granting:\n§G+1 Local Goods Produced§!\n\nIf we complete this mission while we also own the province of Ár Éinnas, then both Txatxamai and Ár Éinnas gain the modifier and the value is doubled."
+ DZX_mineral_madness_trigger_tooltip:0 "All mining provinces West of the Havoral Divide are owned by us or our non-tributary subject and we have at least 3 weapons manufactories in them."

@@ -1,0 +1,105 @@
+﻿l_english:
+ DZX_short_diplomacy_title:0 "Short Diplomacy"
+ DZX_short_diplomacy_desc:0 ""
+
+ DZX_partnership_eye_level_title:0 "Partnership at Eye Level"
+ DZX_partnership_eye_level_desc:0 ""
+
+ DZX_lakefront_property_title:0 "Lakefront Real Estate"
+ DZX_lakefront_property_desc:0 ""
+
+ DZX_kobold_castle_title:0 "Kobold Casle"
+ DZX_kobold_castle_desc:0 ""
+
+ DZX_carve_goat_title:0 "Carve the Goat"
+ DZX_carve_goat_desc:0 ""
+
+ DZX_mechanically_inclined_title:0 "Mechanically Inclined"
+ DZX_mechanically_inclined_desc:0 ""
+
+ DZX_nascent_theocracy_title:0 "Nascent Theocracy"
+ DZX_nascent_theocracy_desc:0 ""
+
+ DZX_heart_of_glass_title:0 "Heart of Glass"
+ DZX_heart_of_glass_desc:0 ""
+
+ DZX_home_hearth_is_title:0 "Home is where the Hearth is"
+ DZX_home_hearth_is_desc:0 ""
+
+ DZX_new_home_title:0 "A New Home"
+ DZX_new_home_desc:0 ""
+
+ DZX_establish_administration_title:0 "Establish an Administration"
+ DZX_establish_administration_desc:0 ""
+
+ DZX_expanding_tunnels_title:0 "Expanding the Tunnels"
+ DZX_expanding_tunnels_desc:0 ""
+
+ DZX_iron_and_iron_title:0 "Iron and Iron"
+ DZX_iron_and_iron_desc:0 ""
+
+ DZX_initial_stabilization_title:0 "Initial Stabilization"
+ DZX_initial_stabilization_desc:0 ""
+
+ DZX_reopen_the_mines_title:0 "Reopen the Mines"
+ DZX_reopen_the_mines_desc:0 ""
+
+ DZX_proper_prospecting_title:0 "Proper Prospecting"
+ DZX_proper_prospecting_desc:0 ""
+
+ DZX_havoral_havoc_title:0 "Havoral Havoc"
+ DZX_havoral_havoc_desc:0 ""
+
+ DZX_seize_gabmor_title:0 "Seize Gabmórionn"
+ DZX_seize_gabmor_desc:0 ""
+
+ DZX_mineral_madness_title:0 "Mineral Madness"
+ DZX_mineral_madness_desc:0 ""
+
+ DZX_kobold_party_title:0 "Kobold River Party"
+ DZX_kobold_party_desc:0 ""
+
+ DZX_deal_dwarves_title:0 "A Deal they can't refuse"
+ DZX_deal_dwarves_desc:0 ""
+
+ DZX_forge_rights_revoked_title:0 "Forge Privilege Revoked!"
+ DZX_forge_rights_revoked_desc:0 ""
+
+ DZX_gutter_crown_title:0 "Crown to the Gutter"
+ DZX_gutter_crown_desc:0 ""
+
+
+ DZX_new_home_title:0 "A New Home"
+ DZX_new_home_desc:0 ""
+ DZX_partnership_eye_title:0 "Partnership at Eye Level"
+ DZX_partnership_eye_desc:0 ""
+ DZX_nascent_technocracy_title:0 "Nascent Technocracy"
+ DZX_nascent_technocracy_desc:0 ""
+ DZX_heart_of_glass_title:0 "Heart of Glass"
+ DZX_heart_of_glass_desc:0 ""
+ DZX_home_hearth_title:0 "Home is where the Hearth is"
+ DZX_home_hearth_desc:0 ""
+ DZX_establish_administration_title:0 "Establish an Administration"
+ DZX_establish_administration_desc:0 ""
+ DZX_expanding_tunnels_title:0 "Expanding the Tunnels"
+ DZX_expanding_tunnels_desc:0 ""
+ DZX_iron_and_iron_title:0 "Iron and Iron"
+ DZX_iron_and_iron_desc:0 ""
+ DZX_reopen_mines_title:0 "Reopen the Mines"
+ DZX_reopen_mines_desc:0 ""
+ DZX_proper_prospecting_title:0 "Proper Prospecting"
+ DZX_proper_prospecting_desc:0 ""
+ DZX_havoral_havoc_title:0 "Havoral Havoc"
+ DZX_havoral_havoc_desc:0 ""
+ DZX_seize_gabmor_title:0 "Seize Gabmórionn"
+ DZX_seize_gabmor_desc:0 ""
+ DZX_mineral_madness_title:0 "Mineral Madness"
+ DZX_mineral_madness_desc:0 ""
+ DZX_kobold_river_party_title:0 "Kobold River Party"
+ DZX_kobold_river_party_desc:0 ""
+ DZX_deal_with_dwarves_title:0 "A Deal they can't refuse"
+ DZX_deal_with_dwarves_desc:0 ""
+ DZX_revoke_forging_rights_title:0 "Forging Rights Revoked!"
+ DZX_revoke_forging_rights_desc:0 ""
+ DZX_take_crown_title:0 "Crown Play"
+ DZX_take_crown_desc:0 ""
