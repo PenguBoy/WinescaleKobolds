@@ -1,0 +1,240 @@
+namespace = flavor_dragzex
+
+country_event = {
+	id = flavor_dragzex.1
+	title = flavor_dragzex.1.title
+	desc = flavor_dragzex.1.desc
+	picture = LIBERUM_VETO_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		#Diplomatic Focus
+		name = flavor_dragzex.1.a
+		
+		add_country_modifier = {
+			name = DZX_modifiers_diplomatic_administration
+			duration = 5475
+		}
+	}
+	
+	option = {
+		#Administrative Focus
+		name = flavor_dragzex.1.b
+		
+		add_country_modifier = {
+			name = DZX_modifiers_administrative_administration
+			duration = 5475
+		}
+	}
+	
+	option = {
+		#Military Focus
+		name = flavor_dragzex.1.c
+		
+		add_country_modifier = {
+			name = DZX_modifiers_militaristic_administration
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = flavor_dragzex.2
+	title = flavor_dragzex.2.title
+	desc = flavor_dragzex.2.desc
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		#Bennon becomes Gnomish
+		name = flavor_dragzex.2.a
+		
+		268 = {
+			change_culture = imperial_gnome
+		}
+		
+		if = {
+			limit = {
+				271 = {
+					culture = imperial_gnome
+					NOT = {
+						has_owner_accepted_culture = yes
+					}
+				}
+			}
+			add_accepted_culture = imperial_gnome
+		}
+		
+		else = {
+			add_dip_power = 100
+		}
+	}
+	
+	option = {
+		#Bennon stays human
+		name = flavor_dragzex.2.b
+		
+		268 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_gnomish_minority_size_effect = yes
+		}
+		
+		271 = {
+			add_province_modifier = {
+				name = DZX_modifiers_upset_gnomes
+				duration = 7300
+			}
+		}
+		
+		every_country = {
+			limit = {
+				primary_culture = esmari
+			}
+			add_trust = {
+				who = ROOT
+				value = 5
+				mutual = yes
+			}
+		}
+	}
+}
+			
+country_event = {
+	id = flavor_dragzex.3
+	title = flavor_dragzex.3.title
+	desc = flavor_dragzex.3.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes			
+	
+	option = {
+		#Only dissolve the Esmaraine glass guilds
+		name = flavor_dragzex.3.a
+		
+		266 = {
+			change_trade_goods = cloth
+		}
+		
+		271 = {
+			add_base_production = 6
+		}
+	}
+	
+	option = {
+		#Put it under the authority of the Gnomish guilds
+		name = flavor_dragzex.3.b
+		
+		266 = {
+			change_culture = imperial_gnome
+			add_base_production = 2
+		}
+		
+		271 = {
+			add_base_production = 2
+		}
+	}
+}
+
+country_event = {
+	id = flavor_dragzex.4
+	title = flavor_dragzex.4.title
+	desc = flavor_dragzex.4.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		#Grant the Hearthswood to the Elves
+		
+		hearthswood_area = {
+			add_base_tax = 1
+			change_culture = moon_elf
+		}
+		
+		add_country_modifier = {
+			name = DZX_modifiers_increasing_diversity
+			duration = -1
+		}
+		
+		add_accepted_culture = moon_elf
+		large_increase_of_elven_tolerance_effect = yes
+	}
+	
+	option = {
+		#Contain them to Elvelenn
+		name = flavor_dragzex.4.b
+		
+		900 = {
+			add_base_tax = 4
+		}
+		
+		add_years_of_income = 1.5
+	}
+}
+		
+province_event = {
+	id = flavor_dragzex.5
+	title = flavor_dragzex.5.title
+	desc = flavor_dragzex.5.desc
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 912
+		912 = {
+			owned_by = DZX
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		#Leave the Hold to the Dwarves
+		name = flavor_dragzex.5.a
+		
+		large_increase_of_dwarven_tolerance_effect = yes
+		add_accepted_culture = silver_dwarf
+		912 = {
+			add_province_modifier = {
+				name = DZX_modifiers_kobold_aid_hold
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		#Make the Hold Kobold
+		name = flavor_dragzex.5.b
+		
+		large_decrease_of_dwarven_tolerance_effect = yes
+		912 = {
+			change_culture = ROOT
+			
+			add_base_production = 2
+			add_base_tax = 2
+			add_base_manpower = 2
+		}
+		
+		every_country = {
+			limit = {
+				culture_group = dwarven
+			}
+			add_aggressive_expansion = {
+				who = DZX
+				value = 50
+				apply_calc = yes
+			}
+		}
+			
+	}
+}
+		
+		
+		
+		

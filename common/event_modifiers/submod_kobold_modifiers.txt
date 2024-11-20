@@ -17,6 +17,70 @@ DZX_modifiers_kobold_refugees = {
 	max_attrition = 1
 }
 
+DZX_modifiers_diplomatic_administration = {
+	country_diplomatic_power = 1
+	diplomatic_reputation = 1
+	reverse_relation_with_same_religion = 25
+}
+
+DZX_modifiers_administrative_administration = {
+	country_admin_power = 1
+	global_autonomy = -0.05
+	global_unrest = -2
+}
+
+DZX_modifiers_militaristic_administration = {
+	country_military_power = 1
+	land_maintenance_modifier = -0.10
+	morale_damage = 0.1
+}
+
+DZX_modifiers_tunnel_lvl_1 = {
+	local_development_cost = -0.6
+	province_trade_power_value = 5
+	local_state_maintenance_modifier = 0.1
+	local_defensiveness = 0.05
+	picture = "hold_01"
+}
+
+DZX_modifiers_upset_gnomes = {
+	local_unrest = 6
+	local_production_efficiency = -0.25
+}
+
+DZX_modifiers_dragzex_artificer_guild = {
+	land_maintenance_modifier = -0.1
+	is_rajput_modifier = yes
+}
+
+DZX_modifiers_increasing_diversity = {
+	num_accepted_cultures = 2
+}
+
+DZX_modifiers_stable_government = {
+	candidate_random_bonus = 1
+}
+
+DZX_modifiers_havoral_pass_mining_one = {
+	trade_goods_size = 1
+}
+
+DZX_modifiers_havoral_pass_mining_two = {
+	trade_goods_size = 2
+}
+
+DZX_modifiers_kobold_diplomacy = {
+	ae_impact = -0.1
+}
+
+DZX_modifiers_kobold_aid_hold = {
+	local_development_cost_modifier = -0.05
+}
+
+DZX_modifiers_control_esmar = {
+	trade_efficiency = 0.1
+}
+
 ######################
 #Redscale
 ######################
