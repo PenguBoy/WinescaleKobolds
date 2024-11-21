@@ -222,13 +222,16 @@ province_event = {
 		}
 		
 		every_country = {
-			limit = {
-				culture_group = dwarven
-			}
-			add_aggressive_expansion = {
-				who = DZX
-				value = 50
-				apply_calc = yes
+			custom_tooltip = DZX_dwarf_ae_tooltip
+			hidden_effect = {
+				limit = {
+					culture_group = dwarven
+				}
+				add_aggressive_expansion = {
+					who = DZX
+					value = 75
+					apply_calc = no
+				}
 			}
 		}
 			

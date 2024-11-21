@@ -67,7 +67,7 @@ DZX_branch_1 = {
 				
 				estate_loyalty = {
 					estate = estate_artificers
-					influence = 60
+					loyalty = 60
 				}
 			}
 			
@@ -130,7 +130,7 @@ DZX_branch_1 = {
 		} 
 
 		effect = {
-			ryalnar_area = {
+			ryalanar_area = {
 				limit = {
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -246,6 +246,7 @@ DZX_branch_2 = {
 						is_in_war = {
 							attacker_leader = ROOT
 							attackers = A81
+							defenders = THIS
 						}
 					}
 				
@@ -254,6 +255,7 @@ DZX_branch_2 = {
 							is_in_war = {
 								attacker_leader = ROOT
 								attackers = A81
+								defenders = THIS
 							}
 						}
 					}
@@ -263,6 +265,7 @@ DZX_branch_2 = {
 							is_in_war = {
 								attacker_leader = ROOT
 								attackers = A81
+								defenders = THIS
 							}
 						}
 					}
@@ -860,7 +863,78 @@ DZX_branch_4 = {
 			}
 			custom_tooltip = DZX_havoral_industrial_tooltip
 			hidden_effect = {
+				if = {
+					limit = {
+						263 = {
+							has_province_modifier = DZX_modifiers_havoral_pass_mining_one
+						}
+					}
+					263 = {
+						remove_province_modifier = DZX_modifiers_havoral_pass_mining_two
+						add_province_modifier = {
+							name = DZX_modifiers_havoral_mining_two
+							duration = -1
+						}
+					}
+				}
 				
+				else = {
+					263 = {
+						remove_province_modifier = DZX_modifiers_havoral_pass_mining_two
+						add_province_modifier = {
+							name = DZX_modifiers_havoral_mining_three
+							duration = -1
+						}
+					}
+					
+					263 = {
+						remove_province_modifier = DZX_modifiers_havoral_pass_mining_two
+						add_province_modifier = {
+							name = DZX_modifiers_havoral_mining_three
+							duration = -1
+						}
+					}
+				}
+				
+				912 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				911 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				308 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				254 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				262 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				270 = {
+					add_province_modifier = {
+						name = DZX_modifiers_havoral_mining_one
+						duration = -1
+					}
+				}
+				
+			}
+					
 		} 
 	}
 }
