@@ -198,14 +198,19 @@ province_event = {
 		#Leave the Hold to the Dwarves
 		name = flavor_dragzex.5.a
 		
-		large_increase_of_dwarven_tolerance_effect = yes
-		add_accepted_culture = silver_dwarf
 		912 = {
 			add_province_modifier = {
 				name = DZX_modifiers_kobold_aid_hold
 				duration = -1
 			}
 		}
+		
+		909 = {
+			change_culture = silver_dwarf
+		}
+		
+		large_increase_of_dwarven_tolerance_effect = yes
+		add_accepted_culture = silver_dwarf
 	}
 	
 	option = {
@@ -237,7 +242,133 @@ province_event = {
 			
 	}
 }
+
+#Mission event about inheriting esmarian countries to form the Republic of Esmaria
+country_event = {
+	id = flavor_dragzex.6
+	title = flavor_dragzex.6.title
+	desc = flavor_dragzex.6.desc
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Merge with them
+		name = flavor_dragzex.6.a
 		
+		from = {
+			hidden_effect = { country_event = { id = flavor_dragzex.7 } }
+			tooltip = { inherit = ROOT	}
+		}
+		if = {
+			limit = { ai = no }
+			custom_tooltip = full_annexation_tooltip
+		}
+		
+		ai_chance = {
+			factor = 1.2
+			
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = from
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				
+				alliance_with = from
+			}
+			modifier = {
+				factor = 0
+				is_enemy = from
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = from
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = from
+					value = 190
+				}
+			}
+			modifier = {
+				factor = 0.75
+				num_of_cities = 3
+			}
+			modifier = {
+				factor = 0.5
+				num_of_cities = 5
+			}
+		}
+	}
+	
+	option = { # do not join them
+		name = flavor_dragzex.6.b
+
+		add_stability = -1
+		from = { country_event = { id = flavor_dragzex.8 } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = from
+					value = 120
+				}
+				NOT = {
+					num_of_cities = 5
+				}
+			}
+		}
+	}
+}
+
+#Said yes to .6
+country_event = {
+	id = flavor_dragzex.7
+	title = flavor_dragzex.7.title
+	desc = flavor_dragzex.7.desc
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_dragzex.7.a
+		inherit = from
+	}
+}
+
+#Said no to .6
+country_event = {
+	id = flavor_dragzex.8
+	title = flavor_dragzex.8.title
+	desc = flavor_dragzex.8.desc
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_dragzex.8.a
+		from = {
+			every_owned_province = {
+				limit = {
+					culture = esmari
+					region = esmaria_region
+				}
+				add_claim = root
+			}
+		}
+	}
+}	
 		
 		
 		

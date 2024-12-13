@@ -1,7 +1,4 @@
 ﻿l_english:
- #Monuments
-  great_wine_hoard_monument:0 "The Great Wine Hoard"
-  balris_memorial:0 "Balris Memorial"
  #Disaster
   WSK_great_flood_disaster:0 "The Great Flood"
   desc_WSK_great_flood_disaster:0 "Our nation is suffering from housing shortages, overwhelmed administration and poverty."

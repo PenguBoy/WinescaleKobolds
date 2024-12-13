@@ -279,6 +279,19 @@
    flavor_dragzex.5.desc:0 "The future of Anvilwright presents a delicate choice. Honoring the agreement and leaving the Hold under Dwarven control could maintain stability and ensure we earn the trust of the Dwarves, while taking it for our own would strengthen our position and provide direct control over its resources.\nEach path has its merits, and the decision will massively impact our relationship with other Dwarven nations."
    flavor_dragzex.5.a:0 "Of course we will honor the agreement,..."
    flavor_dragzex.5.b:0 "...unless?"
+  #Mission about merging river lords
+   flavor_dragzex.6.title:0 "The Drágzex Proclamation"
+   flavor_dragzex.6.desc:0 "The burgeoning state of the Imperial Kobolds has demonstrated not only diplomatic finesse and military capability but also genuine kindness and appreciation toward other races, like the Gnomes.\nThey have shown a deep respect for Esmarian customs, to the point where their society has, in many ways, become almost indistinguishable from that of the local lords.\n\nNow, they have proclaimed that all of Esmaria must work together if it is to remain relevant on the world stage. Without unity, Esmaria risks becoming little more than a historical footnote or falling prey to foreign powers like Gawed, Lorent, or Wex, nations that would exploit internal divisions to conquer the land or reduce its people to mere puppets.\n\nIn response to this looming threat, the Imperial Kobolds have made a bold proposal: the formation of a federal republic to unite the region and bring prosperity to all of Esmaria."
+   flavor_dragzex.6.a:0 "United we stand..."
+   flavor_dragzex.6.b:0 "But alone we thrive!"
+  #They have accepted
+   flavor_dragzex.7.title:0 "[From.GetName] accepted!"
+   flavor_dragzex.7.desc:0 "Our proclamation was ambitious, and though it had the backing of the Gnomes, it seemed unlikely to garner widespread appeal.\n\nYet, it is a promising sign of great things to come that [From.GetName] has accepted the proposal for unification."
+   flavor_dragzex.7.a:0 "Splendid!"
+  #They have refused
+   flavor_dragzex.8.title:0 "[From.GetName] refused!"
+   flavor_dragzex.8.desc:0 "Our proclamation was ambitious, and though it had the backing of the Gnomes, it was always a long shot to gain widespread support.\n\nUnfortunately, [From.GetName] has refused the proposal for unification, a reminder that the path to unity will not be an easy one."
+   flavor_dragzex.8.a:0 "Unfortunate!"
  ######Darkscale
   ##############
   #Asra Discovered

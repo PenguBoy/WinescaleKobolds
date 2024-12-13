@@ -1,100 +1,209 @@
 ﻿l_english:
  DZX_short_diplomacy_title:0 "Short Diplomacy"
- DZX_short_diplomacy_desc:0 ""
+ DZX_short_diplomacy_desc:0 "The Gnomes of Giberd ensured that we Kobolds could settle in Esmaria, acting with no apparent motive beyond their good-heartedness and solidarity with fellow refugees.\n\nSince the Letter of 1467 and the subsequent donation of land to our people, a strong bond has formed between our two nations. Now, the time has come to take the next step and formalize these diplomatic ties."
 
  DZX_partnership_eye_level_title:0 "Partnership at Eye Level"
- DZX_partnership_eye_level_desc:0 ""
+ DZX_partnership_eye_level_desc:0 "Bennon has been defeated, and we now stand on the brink of greatness. \n\nIndividually, the artificer guilds of Giberd and Dragzex are small and relatively powerless. However, by forging a partnership and merging our states in a union of equals, we can combine the strength of our guilds. Together, we could push back against the Gnommo with their extensive customer networks and resist the Magisterium's overwhelming influence. \n\nSmall folk together strong."
 
- DZX_lakefront_property_title:0 "Lakefront Real Estate"
- DZX_lakefront_property_desc:0 ""
-
- DZX_kobold_castle_title:0 "Kobold Casle"
- DZX_kobold_castle_desc:0 ""
-
- DZX_carve_goat_title:0 "Carve the Goat"
- DZX_carve_goat_desc:0 ""
-
- DZX_mechanically_inclined_title:0 "Mechanically Inclined"
- DZX_mechanically_inclined_desc:0 ""
-
- DZX_nascent_theocracy_title:0 "Nascent Theocracy"
- DZX_nascent_theocracy_desc:0 ""
-
- DZX_heart_of_glass_title:0 "Heart of Glass"
- DZX_heart_of_glass_desc:0 ""
+ DZX_ravelian_stronghold_title:0 "Ravelian Stronghold"
+ DZX_ravelian_stronghold_desc:0 ""
 
  DZX_home_hearth_is_title:0 "Home is where the Hearth is"
- DZX_home_hearth_is_desc:0 ""
+ DZX_home_hearth_is_desc:0 "The elves of Elvelenn are a peculiar group. Under the Duchy of Leslinpar, they were largely left to govern themselves. However, Anbennar is home to many scattered elven communities, and their unparalleled ability to efficiently administer even the most remote and disconnected lands could prove to be our saving grace. \n\nIf we entrust the various woodland regions to their control, we stand to gain not only their allegiance but also the benefits of their exceptional tax collection skills. This partnership could strengthen our hold over these territories and ensure smoother governance."
+
+ DZX_crush_wex_title:0 "Crush Wex"
+ DZX_crush_wex_desc:0 ""
+
+ DZX_green_safe_haven_title:0 "A Green Safe Haven"
+ DZX_green_safe_haven_desc:0 ""
+
+ DZX_esmarian_abolitionism_title:0 "Flames of Abolitionism"
+ DZX_esmarian_abolitionism_desc:0 ""
+
+ DZX_swords_hire_title:0 "Swords for Hire"
+ DZX_swords_hire_desc:0 ""
+
+ DZX_doveblessed_guard_title:0 "Doveblessed Guard"
+ DZX_doveblessed_guard_desc:0 ""
+
+ DZX_artifcer_mercenaries_title:0 "Artificer Mercenaries"
+ DZX_artifcer_mercenaries_desc:0 ""
+
+ DZX_kobold_castle_title:0 "Trapper Workshop"
+ DZX_kobold_castle_desc:0 "Kobolds have an innate love for traps! \n\nNow that the tunnels are properly secured, we can shift our focus toward nurturing the natural military instincts that define Kobold ingenuity and strategy."
+
+ DZX_carve_goat_title:0 "Carve the Goat"
+ DZX_carve_goat_desc:0 "The Duchy of Bennon looms over both Giberd and our lands.\n\nWhile the former duke maintained a benevolent attitude toward us, his heir is far less welcoming, openly resenting the presence of these "pests" in his backyard. At the same time, his ambitions extend beyond mere disdain, as he openly covets the glass workshops and artificer secrets within Giberd.\n\nFaced with this looming threat, we may need to consider a preemptive strike and the partitioning of Bennon before it can gather the strength to crush us."
+
+ DZX_mechanically_inclined_title:0 "Mechanically Inclined"
+ DZX_mechanically_inclined_desc:0 "Kobolds possess a natural affinity for artificery, and our connection with the Gnomes has only strengthened this talent. \n\nNow that our nation is gradually taking shape, we can focus on establishing a powerful artificer guild—one capable of achieving remarkable results, even with the limited funding it is likely to receive."
+
+ DZX_nascent_theocracy_title:0 "Nascent Theocracy"
+ DZX_nascent_theocracy_desc:0 "Artificery within Drágzex faces the same challenges as its counterpart in Giberd: it is massively underfunded, and very few are willing to invest without a guaranteed return. \n\nThis is especially true with the Magisterium's heavy influence, which stifles innovation. However, we wouldn't be Kobolds if we didn't find a way to maximize the use of the little funds we have."
+
+ DZX_heart_of_glass_title:0 "Heart of Glass"
+ DZX_heart_of_glass_desc:0 "The Esmarian den of sin, the party capital of the Empire, and home to the wealthiest glassmakers far and wide, Esmarainé stands as a true gem of a city. \n\nBeyond its glamour, it serves as the political center of Esmaria. If we are to truly unite these lands and bring its many races together in equality, owning this city would grant legitimacy to our cause. \n\nMoreover, it would alleviate the immense pressure currently placed on the glassmakers of Giberd, creating opportunities for prosperity and stability to the Gnomes."
+
+ DZX_path_esmaria_title:0 "The Path to a New Esmaria"
+ DZX_path_esmaria_desc:0 "The Kingdom, and later Duchy, of Esmaria has endured nearly unending strife. From its foundation during the Dragonwake as a response to the establishment of the Wexonard Kingdom, to its dissolution and the chaotic succession crisis during the Lilac Wars, these lands have been in constant turmoil.\n\nSince then, Esmaria has remained divided, not only by its winding rivers but also by the differences between its races, lords, and conflicting ideals.\n\nIn this fractured state, the vision of a united and thriving Esmaria seems to exist only in the dreams of the most naive or ambitious nobles.\nPerhaps monarchical ideals were never truly the path meant for the Esmarian people. Instead, we may find our destiny in forging a new Republic, a nation built on equality, prosperity, and, of course, grand celebrations!"
+
+ DZX_appeal_to_the_esmari_title:0 "Appeal to the Esmari People"
+ DZX_appeal_to_the_esmari_desc:0 ""
+
+ DZX_ashes_to_ashes_title:0 "Ashes to Ashes"
+ DZX_ashes_to_ashes_desc:0 ""
+
+ DZX_esmaria_reforged_title:0 "Esmaria Reforged"
+ DZX_esmaria_reforged_desc:0 ""
+
+ DZX_eastern_halflings_title:0 "Riverfoot Halflings"
+ DZX_eastern_halflings_desc:0 ""
+
+ DZX_esmaria_for_all_title:0 "Esmaria for All!"
+ DZX_esmaria_for_all_desc:0 ""
+
+ DZX_iron_embroidery_title:0 "Metal Embroidery"
+ DZX_iron_embroidery_desc:0 ""
+
+ DZX_sapper_corps_title:0 "Imperial Sapper Corps"
+ DZX_sapper_corps_desc:0 ""
+
+ DZX_pink_yellow_cloth_title:0 "Pink and Yellow Clothes"
+ DZX_pink_yellow_cloth_desc:0 ""
+
+ DZX_advanced_embroidery_title:0 "Advanced Embroidery"
+ DZX_advanced_embroidery_desc:0 ""
 
  DZX_new_home_title:0 "A New Home"
- DZX_new_home_desc:0 ""
+ DZX_new_home_desc:0 "A new land to call home, far removed from the constant threats posed by the Cliff Gnomes, the Alenic and Reverian people, and Celmaldor. \n\nHowever, just as Anbenncóst wasn't built in a day, neither can we transform this disconnected assortment of Kobold refugees into a proper state overnight. Even with the generous aid and tools provided by the Elves and Dwarves, the task ahead remains daunting. \n\nWe must gather the brightest minds among our people and determine the steps necessary to forge a true nation from these scattered beginnings."
 
  DZX_establish_administration_title:0 "Establish an Administration"
- DZX_establish_administration_desc:0 ""
+ DZX_establish_administration_desc:0 "Now that the nation is taking shape, we must begin refining the specifics. \n\nWe need advisors, ministers, judges, and many others to properly establish an administrative state. Not to mention the monumental task of drafting constitutions, laws, and rules, as well as codifying diplomatic relations, trade deals and treatise."
 
  DZX_expanding_tunnels_title:0 "Expanding the Tunnels"
- DZX_expanding_tunnels_desc:0 ""
+ DZX_expanding_tunnels_desc:0 "Despite our tunnels not being as grand or vast as a Dwarven hold, we can still dig down to create an intricate and deep system of paths and chambers. \n\nThey may not be as elaborate as the Mazes of Kekig or the Labyrinthine complex of Verkal Vazkron, but perhaps... eventually..."
 
  DZX_iron_and_iron_title:0 "Iron and Iron"
- DZX_iron_and_iron_desc:0 ""
+ DZX_iron_and_iron_desc:0 "Iron begets iron, mines beget mines.\nThe more we dig, the more we gain.\nAlways further, always deeper. \n\n~Inscription on the building of the Drágzex Ministry of Coal and Iron."
+
+ DZX_labyrinthian_complex_title:0 "Labyrinthian Complex"
+ DZX_labyrinthian_complex_desc:0 ""
+
+ DZX_quest_for_knowledge_title:0 "Quest For Knowledge"
+ DZX_quest_for_knowledge_desc:0 ""
+
+ DZX_public_schools_title:0 "Establish Public Schools"
+ DZX_public_schools_desc:0 ""
+
+ DZX_kobold_new_clothes_title:0 "The Kobold's New Clothes"
+ DZX_kobold_new_clothes_desc:0 "Area 5"
+
+ DZX_wool_imports_title:0 "Wool Imports"
+ DZX_wool_imports_desc:0 ""
+
+ DZX_ashwoven_fabrics_title:0 "Ashwoven Uniforms"
+ DZX_ashwoven_fabrics_desc:0 ""
+
+ DZX_estalleni_fashion_title:0 "Estalleni Fashion"
+ DZX_estalleni_fashion_desc:0 ""
 
  DZX_initial_stabilization_title:0 "Initial Stabilization"
- DZX_initial_stabilization_desc:0 ""
+ DZX_initial_stabilization_desc:0 "We have traveled far and endured the turbulent era of Imperial Resettlement to reach our new lands. \n\nNow, it is time to pause, reflect, and work toward establishing a sense of stability in our newfound home."
 
  DZX_reopen_the_mines_title:0 "Reopen the Mines"
- DZX_reopen_the_mines_desc:0 ""
+ DZX_reopen_the_mines_desc:0 "The old mines in those tunnels have been abandoned since the Silver Dwarves left ages ago. \n\nAlthough they are dangerous, there is still a lot of ore down there. These mines could provide the financial stability needed for a fledgling nation."
 
  DZX_proper_prospecting_title:0 "Proper Prospecting"
- DZX_proper_prospecting_desc:0 ""
+ DZX_proper_prospecting_desc:0 "Kobold mining efforts in the Havoral Mountains have been progressing well, but we lack the knowledge the Dwarves once had to properly locate the larger veins and identify which parts of the mountain are best suited for mining. \n\nWe should establish a serious prospecting company and hire a few Dwarves to assist us with this task. Perhaps, we should also consider "taking a look" at the other side of the divide."
 
  DZX_havoral_havoc_title:0 "Havoral Havoc"
- DZX_havoral_havoc_desc:0 ""
+ DZX_havoral_havoc_desc:0 "The old Havoral Clans of Bennon still inhabit the vast countryside behind the city of Bennon. Resentful of the toppling of their dukes, they are beyond compromise. \n\nIt is time to dispel their influence and assert our authority over these hills!"
 
  DZX_seize_gabmor_title:0 "Seize Gabmórionn"
- DZX_seize_gabmor_desc:0 ""
+ DZX_seize_gabmor_desc:0 "The well-fortified city of Gabmórionn sits at a crucial fork of the Esmar River and holds sway over little beyond the woodlands surrounding it. Under Isobel’s guidance, the city flourished into a renowned center of learning and education. \n\nIf we take control of Gabmórionn, it is imperative to preserve Isobel’s legacy—ensuring that her vision of educating even society's most marginalized endures. Her name must continue to shine as a beacon of knowledge and enlightenment."
 
  DZX_mineral_madness_title:0 "Mineral Madness"
- DZX_mineral_madness_desc:0 ""
+ DZX_mineral_madness_desc:0 "The western side of the Havoral Divide mountains is one of the richest areas in Cannor, brimming with iron and other valuable minerals. \n\nOnce we have fully secured control over this region and perfected the art of ore extraction, we could use its wealth as a foundation to fund the extensive projects needed to modernize and industrialize Esmaria."
+
+ DZX_engineers_themarenn_title:0 "Engineers of Themarenn"
+ DZX_engineers_themarenn_desc:0 ""
+
+ DZX_basic_hydroponics_title:0 "Basic Hydroponics"
+ DZX_basic_hydroponics_desc:0 ""
+
+ DZX_connecting_esmaria_title:0 "Connecting Esmaria"
+ DZX_connecting_esmaria_desc:0 ""
+
+ DZX_public_transport_title:0 "Free Public Transport"
+ DZX_public_transport_desc:0 ""
+
+ DZX_ryalanar_cloth_ports_title:0 "Ryalanar Cloth Ports"
+ DZX_ryalanar_cloth_ports_desc:0 "Area 1"
+
+ DZX_elven_silks_title:0 "Elven Silks"
+ DZX_elven_silks_desc:0 ""
+
+ DZX_archive_carpets_title:0 "Archival Carpeting"
+ DZX_archive_carpets_desc:0 ""
+
+ DZX_of_cloth_and_rivers_title:0 "Of Cloth and Rivers"
+ DZX_of_cloth_and_rivers_desc:0 ""
 
  DZX_kobold_party_title:0 "Kobold River Party"
- DZX_kobold_party_desc:0 ""
+ DZX_kobold_party_desc:0 "When the Kobolds settled in the old Dwarven tunnels, many Esmarians feared this would disrupt the cultural balance of Esmaria and its delicate nature of its festivities.\n\nHowever, the Kobolds quickly developed a love for the river parties and seamlessly integrated into local customs. They often supplied boats with stolen liquor from Ibevar and were among the few daring enough to accept Dwarven drinking challenges.\n\nAs a result, the Kobolds of Drágzex soon became a natural and cherished part of Esmarian society."
 
  DZX_deal_dwarves_title:0 "A Deal they can't refuse"
- DZX_deal_dwarves_desc:0 ""
+ DZX_deal_dwarves_desc:0 "Dwarves are much more than just grudge-bearing, alcohol-loving companions. Above all else, they value two things: profits and, eventually, finishing their hold. \n\nWe could offer a deal to absorb their state into our nation, under the condition that we provide Kobold labor to complete the Hold. Though their electorate would pass to us, we will ensure that they retain the right to vote on imperial matters, and we will not strip that right from their hands."
 
  DZX_forge_rights_revoked_title:0 "Forge Privilege Revoked!"
- DZX_forge_rights_revoked_desc:0 ""
+ DZX_forge_rights_revoked_desc:0 "The Vanbury Guild of Telgeir stands as a thorn in the side of the Dwarves. Once reliant on Dwarven knowledge to master metallurgy, they have since shifted to mass-producing cheap and flimsy goods that mock the craftsmanship of those who taught them. \n\nPutting an end to this upstart guild could earn us valuable favor with the Dwarves, strengthening our ties and honoring their traditions."
 
  DZX_gutter_crown_title:0 "Crown to the Gutter"
- DZX_gutter_crown_desc:0 ""
+ DZX_gutter_crown_desc:0 "The Republic of the Damescrown is an absolute mess. They claim the name of the Dame but worship Ara, and are holding no connection to Esmarian customs. Despite this, their control over the mouth of the Esmar River allows them to wield immense influence over these lands. \n\nMost troubling of all are the tolls they impose on goods shipped down the river, effectively making all of Esmaria tributaries to their whims. This cannot continue. The flow of goods must be freed from the grasp of these outsiders once and for all!"
+
+ DZX_develop_countryside_title:0 "Develop the Countryside"
+ DZX_develop_countryside_desc:0 ""
+
+ DZX_expand_urban_centers_title:0 "Expand Urban Centers"
+ DZX_expand_urban_centers_desc:0 ""
+
+ DZX_river_cities_title:0 "River Cities"
+ DZX_river_cities_desc:0 ""
+
+ DZX_floating_university_title:0 "The Floating University"
+ DZX_floating_university_desc:0 ""
+
+ DZX_war_against_sea_title:0 "War against the Sea"
+ DZX_war_against_sea_desc:0 ""
+
+ DZX_hydraulic_empire_title:0 "Hydraulic Empire"
+ DZX_hydraulic_empire_desc:0 ""
+
+ DZX_royal_robes_title:0 "Royal Robes"
+ DZX_royal_robes_desc:0 ""
+
+ DZX_clothen_sails_title:0 "Clothen Sails"
+ DZX_clothen_sails_desc:0 ""
 
 
- DZX_new_home_title:0 "A New Home"
- DZX_new_home_desc:0 ""
+ new_mission_title:0 ""
+ new_mission_desc:0 ""
+ DZX_develop_country_side_title:0 "Develop the Countryside"
+ DZX_develop_country_side_desc:0 ""
+ DZX_wex_no_more_title:0 "Wex No More"
+ DZX_wex_no_more_desc:0 ""
+ DZX_smallfolk_participation_title:0 "Smallfolk Participation"
+ DZX_smallfolk_participation_desc:0 ""
+ DZX_a_truly_tolerant_state_title:0 "A Truly Tolerant State"
+ DZX_a_truly_tolerant_state_desc:0 ""
  DZX_partnership_eye_title:0 "Partnership at Eye Level"
  DZX_partnership_eye_desc:0 ""
  DZX_nascent_technocracy_title:0 "Nascent Technocracy"
  DZX_nascent_technocracy_desc:0 ""
- DZX_heart_of_glass_title:0 "Heart of Glass"
- DZX_heart_of_glass_desc:0 ""
  DZX_home_hearth_title:0 "Home is where the Hearth is"
  DZX_home_hearth_desc:0 ""
- DZX_establish_administration_title:0 "Establish an Administration"
- DZX_establish_administration_desc:0 ""
- DZX_expanding_tunnels_title:0 "Expanding the Tunnels"
- DZX_expanding_tunnels_desc:0 ""
- DZX_iron_and_iron_title:0 "Iron and Iron"
- DZX_iron_and_iron_desc:0 ""
  DZX_reopen_mines_title:0 "Reopen the Mines"
  DZX_reopen_mines_desc:0 ""
- DZX_proper_prospecting_title:0 "Proper Prospecting"
- DZX_proper_prospecting_desc:0 ""
- DZX_havoral_havoc_title:0 "Havoral Havoc"
- DZX_havoral_havoc_desc:0 ""
- DZX_seize_gabmor_title:0 "Seize Gabmórionn"
- DZX_seize_gabmor_desc:0 ""
- DZX_mineral_madness_title:0 "Mineral Madness"
- DZX_mineral_madness_desc:0 ""
  DZX_kobold_river_party_title:0 "Kobold River Party"
  DZX_kobold_river_party_desc:0 ""
  DZX_deal_with_dwarves_title:0 "A Deal they can't refuse"

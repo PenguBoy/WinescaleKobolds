@@ -1,3 +1,97 @@
+#######################
+Imperial Kobold Fashion
+#######################
+
+upgrade_kobold_fabrics_modifier = {
+	# 1 is at the bottom
+	if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_1 }
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_1
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_2 }
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_2
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_3	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_3
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_4	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_4
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_5
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_5	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_5
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_6
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_6	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_6
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_7
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_7	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_7
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_8
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_8	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_8
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_9
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_9	}
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_9
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_10
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = DZX_modifiers_kobold_fabrics_10 }
+		remove_country_modifier = DZX_modifiers_kobold_fabrics_10
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_11
+			duration = -1
+		}
+	}
+	else = {
+		add_country_modifier = {
+			name = DZX_modifiers_kobold_fabrics_1
+			duration = -1
+		}
+	}
+}
+
 upgrade_hoard_effect = {
 	# 1 is at the bottom
 	if = {

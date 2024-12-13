@@ -93,6 +93,65 @@ DZX_modifiers_havoral_mining_three = {
 	trade_goods_size = 3
 }
 
+DZX_modifiers_esmaraine_ownership = {
+	diplomatic_upkeep = 2
+}
+
+DZX_modifiers_kobold_fabrics_1 = {
+	global_trade_goods_size_modifier = 0.01
+	production_efficiency = 0.01
+}
+
+DZX_modifiers_kobold_fabrics_2 = {
+	global_trade_goods_size_modifier = 0.02
+	production_efficiency = 0.02
+}
+
+DZX_modifiers_kobold_fabrics_3 = {
+	global_trade_goods_size_modifier = 0.03
+	production_efficiency = 0.03
+}
+
+DZX_modifiers_kobold_fabrics_4 = {
+	global_trade_goods_size_modifier = 0.04
+	production_efficiency = 0.04
+}
+
+DZX_modifiers_kobold_fabrics_5 = {
+	global_trade_goods_size_modifier = 0.05
+	production_efficiency = 0.05
+}
+
+DZX_modifiers_kobold_fabrics_6 = {
+	global_trade_goods_size_modifier = 0.06
+	production_efficiency = 0.06
+}
+
+DZX_modifiers_kobold_fabrics_7 = {
+	global_trade_goods_size_modifier = 0.07
+	production_efficiency = 0.07
+}
+
+DZX_modifiers_kobold_fabrics_8 = {
+	global_trade_goods_size_modifier = 0.08
+	production_efficiency = 0.08
+}
+
+DZX_modifiers_kobold_fabrics_9 = {
+	global_trade_goods_size_modifier = 0.09
+	production_efficiency = 0.09
+}
+
+DZX_modifiers_kobold_fabrics_10 = {
+	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.1
+}
+
+DZX_modifiers_kobold_fabrics_11 = {
+	global_trade_goods_size_modifier = 0.15
+	production_efficiency = 0.15
+}
+
 ######################
 #Redscale
 ######################
@@ -222,7 +281,7 @@ WSK_modifier_blood_gold_wine = {
 }
 
 WSK_modifier_secured_west = {
-	fort_defense = 0.1
+	defensiveness = 0.1
 }
 
 WSK_modifier_kobold_capital = {
